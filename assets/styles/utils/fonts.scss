@@ -1,13 +1,28 @@
 @font-face {
-   font-family: NunitoSans;
+   font-family: "GothamPro";
+   src: url("../fonts/GothamPro.eot");
+   src: url("../fonts/GothamPro.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/GothamPro.woff") format("woff"),
+   url("../fonts/GothamPro.ttf") format("truetype");
    font-style: normal;
-   font-weight: 400;
-   src: url("../fonts/NunitoSans/NunitoSans-Regular.woff");
-}
-
-@font-face {
-   font-family: NunitoSans;
+   font-weight: normal;
+ }
+ @font-face {
+   font-family: "GothamProBold";
+   src: url("../fonts/GothamPro-Bold.eot");
+   src: url("../fonts/GothamPro-Bold.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/GothamPro-Bold.woff") format("woff"),
+   url("../fonts/GothamPro-Bold.ttf") format("truetype");
    font-style: normal;
-   font-weight: 700;
-   src: url("../fonts/NunitoSans/NunitoSans-Bold.woff");
+   font-weight: normal;
+ }
+ @font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro-Medium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro-Medium.woff") format("woff"),
+  url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
+ 

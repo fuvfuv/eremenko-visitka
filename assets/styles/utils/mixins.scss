@@ -21,3 +21,36 @@
       @content;
    }
 }
+
+@mixin header-default {
+   font-size: 48px;
+   font-weight: 700;
+   font-family: 'GothamProBold', sans-serif;
+}
+@mixin btn-default {
+    width: 100%;
+    max-width: 240px;
+    height: 54px;
+    background-color: $global-black;
+    color: $global-white;
+    box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+}
+@mixin link {
+   text-decoration: none;
+   &:hover {
+      text-decoration: none;
+   }
+}
+@mixin svg {
+   fill: currentColor;
+   width: 100%;
+   height: 100%;
+   display: block;
+ }

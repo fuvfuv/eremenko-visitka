@@ -2,27 +2,24 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-
-html {
-   box-sizing: border-box;
-   //  outline: 1px solid red;
-}
-
-*,
-*::before,
-*::after {
-   box-sizing: inherit;
-   outline: none;
-}
-
-body {
-   color: $text-color;
-   font-family: $base-font-family;
-   font-size: $base-font-size;
-   margin: 0;
-   min-width: 320px;
-   padding: 0;
-}
-
 //Модули
 @import "modules/modules";
+
+* {
+   margin: 0;
+   padding: 0;
+ }
+ body {
+   margin: 0;
+   font-family: 'GothamPro', sans-serif;
+   font-size: 16px;
+   font-weight: 500px;
+   line-height: normal;
+   text-transform: uppercase;
+   color: $global-black;
+ }
+.container-full{
+   width: 100%;
+   max-width: 1680px;
+   margin: 0 auto;
+ }

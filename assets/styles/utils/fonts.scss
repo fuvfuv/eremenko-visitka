@@ -1,26 +1,20 @@
 @font-face {
-  font-family: $main-font;
+  font-family: GothamPro;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamPro/GothamPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: GothamPro;
   font-style: normal;
   font-weight: 500;
-  src:
-    url("../fonts/GothamPro.woff") format("woff2"),
-    url("../fonts/GothamPro.woff") format("woff");
+  src: url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"),
 }
 
 @font-face {
-  font-family: $main-font;
+  font-family: GothamPro;
   font-style: normal;
-  font-weight: 400;
-  src:
-    url("../fonts/GothamPro-Black.woff") format("woff2"),
-    url("../fonts/GothamPro-Black.woff") format("woff");
-}
-
-@font-face {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../fonts/GothamPro-Medium.woff") format("woff"),
-    url("../fonts/GothamPro-Medium.woff") format("woff2");
+  font-weight: 700;
+  src: url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff");
 }

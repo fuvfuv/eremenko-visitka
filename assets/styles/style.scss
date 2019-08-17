@@ -3,28 +3,26 @@
 @import "utils/mixins";
 @import "utils/fonts";
 
-
 * {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-   color: $global-black;
-   font-family: "GothamPro", sans-serif;
-   font-size: 16px;
-   font-weight: 500px;
-   line-height: normal;
-   margin: 0;
-   text-transform: uppercase;
+  color: $global-black;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .container-full {
-   margin: 0 auto;
-   max-width: 1680px;
-   width: 100%;
+  margin: 0 auto;
+  max-width: 1680px;
+  width: 100%;
 }
-
 
 //Модули
 @import "modules/modules";

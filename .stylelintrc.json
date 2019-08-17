@@ -4,7 +4,7 @@
   "rules": {
     "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": true,
-    "indentation": 3,
+    "indentation": 2,
     "string-quotes": "double",
     "no-duplicate-selectors": true,
     "color-hex-case": "lower",

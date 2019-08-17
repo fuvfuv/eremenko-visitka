@@ -39,7 +39,6 @@
    max-width: 240px;
    text-align: center;
    width: 100%;
-
    &:focus {
       outline: none;
    }
@@ -47,7 +46,6 @@
 
 @mixin link {
    text-decoration: none;
-
    &:hover {
       text-decoration: none;
    }

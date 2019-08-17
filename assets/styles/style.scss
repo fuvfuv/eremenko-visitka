@@ -2,8 +2,7 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-//Модули
-@import "modules/modules";
+
 
 * {
    margin: 0;
@@ -25,3 +24,7 @@ body {
    max-width: 1680px;
    width: 100%;
 }
+
+
+//Модули
+@import "modules/modules";

@@ -1,23 +1,26 @@
 @font-face {
-   font-family: "GothamPro";
-   font-style: normal;
-   font-weight: normal;
-   src: url("../fonts/GothamPro.eot");
-   src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../fonts/GothamPro.woff") format("woff2"),
+    url("../fonts/GothamPro.woff") format("woff");
 }
 
 @font-face {
-   font-family: "GothamProBold";
-   font-style: normal;
-   font-weight: normal;
-   src: url("../fonts/GothamPro-Bold.eot");
-   src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/GothamPro-Black.woff") format("woff2"),
+    url("../fonts/GothamPro-Black.woff") format("woff");
 }
 
 @font-face {
-   font-family: "GothamProMedium";
-   font-style: normal;
-   font-weight: normal;
-   src: url("../fonts/GothamPro-Medium.eot");
-   src: url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/GothamPro-Medium.woff") format("woff"),
+    url("../fonts/GothamPro-Medium.woff") format("woff2");
 }

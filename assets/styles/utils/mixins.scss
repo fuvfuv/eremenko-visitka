@@ -44,16 +44,3 @@
    }
 }
 
-@mixin link {
-   text-decoration: none;
-   &:hover {
-      text-decoration: none;
-   }
-}
-
-@mixin svg {
-   display: block;
-   fill: currentColor;
-   height: 100%;
-   width: 100%;
-}

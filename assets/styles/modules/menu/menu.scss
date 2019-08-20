@@ -1,3 +1,46 @@
-.button {
-  @include btn-default();
+.menu {
+  border-left: 1px solid #ededed;
+  bottom: 0;
+  height: auto;
+  max-width: 120px;
+  outline: 1px solid red;
+  padding-top: 65px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 120px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid green;
+    width: 120px;
+  }
+
+  &__item {
+    color: $menu-link-color;
+    display: flex;
+    justify-content: center;
+    outline: 1px solid red;
+    // width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
+    &--active {
+      color: $global-black;
+    }
+  }
+
+  a {
+    color: inherit;
+    display: inline-flex;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 45px 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: auto;
+  }
 }

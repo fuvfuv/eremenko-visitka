@@ -3,6 +3,18 @@
 @import "utils/mixins";
 @import "utils/fonts";
 
+html {
+  box-sizing: border-box;
+  //  outline: 1px solid red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -5,7 +5,7 @@ import htmlmin from "gulp-htmlmin";
 import browsersync from "browser-sync";
 
 const htmlPath = {
-  input: `./assets/html/*.html`,
+  input: `./assets/html/**/*.html`,
   output: `./build/`,
 };
 

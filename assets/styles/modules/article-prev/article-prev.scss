@@ -1,0 +1,55 @@
+.article-prev {
+  max-width: 768px;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__likes {
+    font-weight: 500;
+    white-space: nowrap;
+
+    .likes-title {
+      font-size: 12px;
+      opacity: 0.5;
+    }
+
+    .likes-count {
+      font-size: 18px;
+    }
+  }
+
+  &__tags {
+    margin-left: auto;
+  }
+
+  &__image-wrapper {
+    align-items: center;
+    background-color: $global-light-grey;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    min-height: 400px;
+  }
+
+  &__caption {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 665px;
+    opacity: 0.5;
+  }
+
+  &__footer {
+    margin-top: 47px;
+  }
+}

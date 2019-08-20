@@ -1,0 +1,22 @@
+.tags {
+  display: flex;
+  width: auto;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    background-color: $tag-color;
+    box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
+
+    a {
+      color: inherit;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      white-space: nowrap;
+    }
+  }
+}

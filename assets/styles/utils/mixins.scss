@@ -1,46 +1,46 @@
 /* stylelint-disable */
 @mixin size($a, $b: $a) {
-   height: $b;
-   width: $a;
+  height: $b;
+  width: $a;
 }
 
 @mixin placeholder {
-   ::-webkit-input-placeholder {
-      @content;
-   }
+  ::-webkit-input-placeholder {
+    @content;
+  }
 
-   :-moz-placeholder {
-      @content;
-   }
+  :-moz-placeholder {
+    @content;
+  }
 
-   ::-moz-placeholder {
-      @content;
-   }
+  ::-moz-placeholder {
+    @content;
+  }
 
-   :-ms-input-placeholder {
-      @content;
-   }
+  :-ms-input-placeholder {
+    @content;
+  }
 }
 
 @mixin header-default {
-   font-family: "GothamProBold", sans-serif;
-   font-size: 48px;
-   font-weight: 700;
+  font-family: "GothamProBold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 @mixin btn-default {
-   background-color: $global-black;
-   border: none;
-   -webkit-box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
-   box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
-   color: $global-white;
-   cursor: pointer;
-   height: 54px;
-   max-width: 240px;
-   text-align: center;
-   width: 100%;
-   &:focus {
-      outline: none;
-   }
-}
+  background-color: $global-black;
+  border: none;
+  box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+  color: $global-white;
+  cursor: pointer;
+  font-family: inherit;
+  height: 54px;
+  max-width: 240px;
+  text-align: center;
+  width: 100%;
 
+  &:focus {
+    outline: none;
+  }
+}

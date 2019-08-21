@@ -1,6 +1,7 @@
 .btn {
   @include btn-default;
 
+  box-sizing: border-box;
   padding: 20px 30px;
   text-align: left;
   text-transform: uppercase;

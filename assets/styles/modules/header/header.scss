@@ -51,4 +51,9 @@
   &__categories {
     // margin-right: -100px;
   }
+
+  // модификаторы
+  &--article-inner {
+    justify-content: flex-start;
+  }
 }

@@ -1,0 +1,13 @@
+.video {
+  max-width: 643px;
+  min-height: 387px;
+
+  &__image-wrapper {
+    align-items: center;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    min-height: 387px;
+    width: 643px;
+  }
+}

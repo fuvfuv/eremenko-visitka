@@ -1,0 +1,5 @@
+.caption {
+  &--h1 {
+    @include header-default;
+  }
+}

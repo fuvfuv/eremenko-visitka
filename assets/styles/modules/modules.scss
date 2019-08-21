@@ -2,7 +2,13 @@
 @import "button/button";
 @import "header/header";
 @import "footer/footer";
+// Кнопка меню
+@import "sandwich/sandwich";
 @import "menu/menu";
+//Заголовки
+@import "caption/caption";
 // cтраница блога
 @import "article-prev/article-prev";
 @import "tags/tags";
+@import "categories/categories";
+@import "blog/blog";

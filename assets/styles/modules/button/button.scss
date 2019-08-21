@@ -4,4 +4,8 @@
   padding: 20px 30px;
   text-align: left;
   text-transform: uppercase;
+
+  @media screen and (max-width: $media-mobile) {
+    max-width: 100%;
+  }
 }

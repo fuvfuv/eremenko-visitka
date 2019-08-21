@@ -2,30 +2,98 @@
   border-left: 1px solid #ededed;
   bottom: 0;
   height: auto;
-  max-width: 120px;
-  outline: 1px solid red;
+  outline: 1px solid red; // временно
   padding-top: 65px;
   position: fixed;
   right: 0;
   top: 0;
   width: 120px;
 
+  @media screen and (max-width: $media-mobile) {
+    background-color: #fff;
+    outline: none; // временно
+    padding: 0 10px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+
+  &__header {
+    align-items: center;
+    background-color: #fff;
+    display: none;
+    justify-content: space-between;
+    padding: 35px 0;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: $media-mobile) {
+      display: flex;
+    }
+  }
+
+  &__fake-logo {
+    background-color: #000;
+    height: 14px;
+    width: 14px;
+  }
+
+  &__body {
+    background-color: #fff;
+    box-sizing: border-box;
+    left: 0;
+    outline: none; // временно
+    position: absolute;
+    top: 47px;
+    width: 100%;
+    z-index: 0;
+
+    @media screen and (max-width: $media-mobile) {
+      padding: 0 10px;
+      padding-bottom: 35px;
+      top: 0;
+      transform: translateY(-100%);
+      transition: transform ease-in-out 0.3s;
+    }
+  }
+
+  &.is-active {
+    .menu__body {
+      box-shadow: 0 0 100px -45px rgba(0, 0, 0, 0.5);
+      transform: translateY(0);
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
-    outline: 1px solid green;
     width: 120px;
+
+    @media screen and (max-width: $media-mobile) {
+      margin-bottom: 40px;
+      width: 100%;
+    }
   }
 
   &__item {
     color: $menu-link-color;
     display: flex;
     justify-content: center;
-    outline: 1px solid red;
-    // width: 100%;
+    outline: 1px solid red; // временно
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 45px;
+
+      @media screen and (max-width: $media-mobile) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (max-width: $media-mobile) {
+      color: #000;
+      justify-content: flex-start;
+      outline: none; // временно
     }
 
     &--active {
@@ -35,12 +103,19 @@
 
   a {
     color: inherit;
-    display: inline-flex;
+    display: inline-block;
     font-size: 10px;
     font-weight: 400;
     padding: 45px 0;
     transform: rotate(-90deg);
     white-space: nowrap;
     width: auto;
+
+    @media screen and (max-width: $media-mobile) {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 0;
+      transform: none;
+    }
   }
 }

@@ -5,5 +5,5 @@ import svg4everybody from "svg4everybody";
 svg4everybody();
 
 // // Imported  modules
-import {fooFunction} from "./modules/foo";
-fooFunction();
+import {siteMenu} from "./modules/site-menu";
+siteMenu();

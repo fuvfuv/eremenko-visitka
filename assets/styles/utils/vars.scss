@@ -6,10 +6,11 @@ $global-white: #fff;
 $bg-color: #f7f7f7;
 $tag-color: #f7f7f7;
 $menu-link-color: rgb(136, 135, 135);
+$white: #fff;
 
 $main-font: "GothamPro", "Arial", sans-serif;
 
 //Media queries;
 $mediaTablet: (max-width: 1200px);
 $mediaTabletMobile: (min-width: 786px) and (max-width:1199px);
-$mediaMobile: (max-width: 767px);
+$media-mobile: 1200px;

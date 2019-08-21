@@ -49,10 +49,16 @@ input[type="radio"].visually-hidden {
 }
 
 .container-full {
+  box-sizing: content-box;
   margin: 0 auto;
-  max-width: 1680px;
-  padding: 0 120px;
+  max-width: 1560px;
+  padding-left: 120px;
+  padding-right: 220px;
   width: 100%;
+
+  @media screen and (max-width: $media-mobile) {
+    padding: 0 10px;
+  }
 }
 
 .hidden {
@@ -72,3 +78,7 @@ ul.p-list {
   }
 }
 // ===================================================================
+
+// .page-wrapper {
+//   padding-right: 120px;
+// }

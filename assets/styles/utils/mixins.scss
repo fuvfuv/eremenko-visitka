@@ -23,7 +23,8 @@
 }
 
 @mixin header-default {
-  font-family: "GothamProBold", sans-serif;
+  color: $global-black;
+  font-family: $main-font;
   font-size: 48px;
   font-weight: 700;
 }

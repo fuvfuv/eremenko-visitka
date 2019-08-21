@@ -1,0 +1,62 @@
+$bar-length: 26px;
+$primary: #000;
+$bar-radius: 3px;
+
+.sandwich {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  width: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &__bars {
+    background-color: $primary;
+    border-radius: $bar-radius;
+    display: block;
+    height: 3px;
+    position: relative;
+    top: 50%;
+    width: $bar-length;
+
+    &::before,
+    &::after {
+      background-color: $primary;
+      border-radius: $bar-radius;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: 0.2s ease-in-out;
+      width: $bar-length;
+    }
+
+    &::before {
+      transform: translateY(-(6px * 1.2));
+    }
+
+    &::after {
+      transform: translateY((6px * 1.2));
+    }
+  }
+
+  &.is-active {
+    transform: rotate(-45deg);
+
+    .sandwich__bars {
+      &::before,
+      &::after {
+        transform: translateX(0) rotate(-90deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.categories {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    background-color: #000;
+    box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    color: $white;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 30px;
+    white-space: nowrap;
+
+    @media screen and (max-width: $media-mobile) {
+      font-size: 11px;
+      padding: 10px;
+    }
+  }
+}

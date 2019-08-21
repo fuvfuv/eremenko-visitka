@@ -1,1 +1,54 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 66px 0;
 
+  @media screen and (max-width: $media-mobile) {
+    padding: 0;
+  }
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: $media-mobile) {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    color: #000;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    height: 18px;
+    margin-right: 95px;
+    width: 107px;
+
+    @media screen and (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 0;
+
+    @media screen and (max-width: $media-mobile) {
+      font-size: 24px;
+      margin-right: 30px;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__categories {
+    // margin-right: -100px;
+  }
+}

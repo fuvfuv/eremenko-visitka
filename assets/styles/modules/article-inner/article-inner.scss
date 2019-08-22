@@ -1,5 +1,10 @@
 .article-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1416px;
+
   &__content {
+    margin-right: 60px;
     max-width: 1030px;
     text-transform: initial;
   }
@@ -109,5 +114,9 @@
       opacity: 0.5;
       padding-bottom: 70px;
     }
+  }
+
+  &__likes {
+    margin-bottom: 60px;
   }
 }

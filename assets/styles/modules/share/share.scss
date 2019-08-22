@@ -1,0 +1,24 @@
+.share {
+  margin-top: 40px;
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    background-color: #fef;
+    height: 35px;
+    width: 36px;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+}

@@ -2,17 +2,20 @@
 @import "button/button";
 @import "header/header";
 @import "footer/footer";
-// Кнопка меню
+// Сommon modules
+@import "likes/likes";
+@import "tags/tags";
 @import "sandwich/sandwich";
 @import "menu/menu";
+
 //Заголовки
 @import "caption/caption";
 // cтраница блога
 @import "article-prev/article-prev";
-@import "tags/tags";
 @import "categories/categories";
 @import "blog/blog";
 //Страница статьи блога
 @import "article-inner/article-inner";
 @import "video/video";
+@import "share/share";
 @import "article-inner-footer/article-inner-footer";

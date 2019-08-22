@@ -1,0 +1,17 @@
+.likes {
+  align-items: center;
+  display: flex;
+
+  &__heart {
+    background-color: #000;
+    display: inline-block;
+    height: 54px;
+    margin-right: 20px;
+    width: 54px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

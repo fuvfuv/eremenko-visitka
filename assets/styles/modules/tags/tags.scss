@@ -1,11 +1,6 @@
 .tags {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
-
-  @media screen and (max-width: $media-mobile) {
-    margin-left: 0;
-  }
 
   &__item {
     background-color: $tag-color;

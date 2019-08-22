@@ -20,12 +20,13 @@
     <!-- шапка сайта -->
     <header class="header header--article-inner">
       <a class="header__logo" href="#">Ieromin</a>
-      <a class="btn" href="#">back</a>
+      <a class="header__btn btn" href="#">back</a>
     </header>
 
     <!-- MAIN -->
     <main>
       <article class="article-inner">
+        <!-- Статья контент -->
         <div class="article-inner__content">
           <div class="article-inner__image-wrapper">
             <img src="#" alt="article-preview">
@@ -81,7 +82,7 @@
           <div class="article-inner__video-wrapper">
             <div class="article-inner__video video">
               <div class="video__image-wrapper">
-                <img src="" alt="video-preview">
+                <img src="#" alt="video-preview">
               </div>
               <div class="video__wrapper">
                 <!-- <iframe src="" frameborder="0"></iframe> -->
@@ -104,6 +105,33 @@
           </div>
 
         </div>
+
+        <!-- Статья статисика -->
+        <div class="article-inner__stats">
+          <div class="article-inner__likes likes">
+            //= "modules/likes/likes.html"
+          </div>
+          <!-- теги -->
+          <ul class="article-inner__tags tags">
+            <li class="tags__item"><a href="#">tag 1</a></li>
+            <li class="tags__item"><a href="#">long tag 2</a></li>
+            <li class="tags__item"><a href="#">very long tag 3</a></li>
+          </ul>
+          <!-- поделиться -->
+          <div class="article-inner__share share">
+            <span class="share__title">Share:</span>
+            <ul class="share__list">
+              <li class="share__item"></li>
+              <li class="share__item"></li>
+              <li class="share__item"></li>
+              <li class="share__item"></li>
+              <li class="share__item"></li>
+              <li class="share__item"></li>
+            </ul>
+          </div>
+
+        </div>
+
       </article>
     </main>
 
@@ -112,8 +140,6 @@
       <a class="article-inner-footer__link btn" href="#">Back</a>
     </footer>
   </div>
-
-
 
   <!-- Скрипты -->
   <script src="../js/bundle.js"></script>

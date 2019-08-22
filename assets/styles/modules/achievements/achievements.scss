@@ -1,0 +1,28 @@
+.achievements {
+  background-color: $bg-color;
+  height: 100vh;
+  padding-top: 66px;
+  width: 50%;
+
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  &__header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__body {
+    height: 686px; // определить js-ом
+    overflow-x: auto;
+    padding-left: 80px;
+    padding-right: 90px;
+    padding-top: 80px;
+  }
+
+  &__masonry {
+    padding-bottom: 50px;
+  }
+}

@@ -79,6 +79,11 @@ ul.p-list {
 }
 // ===================================================================
 
-// .page-wrapper {
-//   padding-right: 120px;
-// }
+.rev-achiev-page {
+  overflow-y: hidden;
+
+  main {
+    align-items: flex-start;
+    display: flex;
+  }
+}

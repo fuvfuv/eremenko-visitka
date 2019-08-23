@@ -9,4 +9,19 @@
   @media screen and (max-width: $media-mobile) {
     max-width: 100%;
   }
+
+  &--indent {
+    align-self: flex-end;
+    margin-right: 82px;
+    width: 240px;
+
+    @media screen and (max-width: 768px) {
+      align-self: flex-start;
+      height: 50px;
+      margin-left: 10px;
+      margin-right: 0;
+      padding: 18px 30px;
+      width: 300px;
+    }
+  }
 }

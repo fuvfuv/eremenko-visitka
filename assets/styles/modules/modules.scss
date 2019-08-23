@@ -2,6 +2,7 @@
 @import "button/button";
 @import "header/header";
 @import "footer/footer";
+
 // Сommon modules
 @import "likes/likes";
 @import "tags/tags";
@@ -11,15 +12,24 @@
 
 //Заголовки
 @import "caption/caption";
+
 // cтраница блога
 @import "article-prev/article-prev";
 @import "categories/categories";
 @import "blog/blog";
+
 //Страница статьи блога
 @import "article-inner/article-inner";
 @import "video/video";
 @import "share/share";
 @import "article-inner-footer/article-inner-footer";
+
 // Страница отзывов и ачивок
 @import "achievements/achievements";
 @import "reviews/reviews";
+
+//Страница контактов
+@import "contact-header/contact-header";
+@import "contact-links/contact-links";
+@import "form/form";
+@import "contact-footer/contact-footer";

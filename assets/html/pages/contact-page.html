@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <title>new site</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>new site</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="x-ua-compatible" content="IE=edge" />
-  <meta name="theme-color" content="#000" />
-  <meta name="robots" content="noindex, nofollow" />
-  <meta name="googlebot" content="noindex, nofollow" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
-</head>
+  <body class="contact-page">
+    <!-- обертка для меню -->
+    <div class="menu-wrapper">
+      //= "modules/menu/menu.html"
+    </div>
 
-<body class="index-page">
-  //= "modules/menu/menu.html"
+    <!-- обертка для основного контента -->
+    <div class="page-wrapper container">
+      <!-- MAIN -->
+      <main class="contact-wrapper">
+        <div class="contact">
+          <div class="contact__header ">
+            <a class="contact__header__logo " href="#">Ieromin</a>
+            <h1 class="contact__header__caption ">contact</h1>
+          </div>
 
-  <main>
-    Я контакты СТРАНИЦА
-  </main>
+          <div class="contact__content">
+            <div class="contact__email email">
+              <p class="email__text">work email:</p>
+              <a href="#" class="email__link">vsieromin@gmail.com</a>
+            </div>
+            <div class="contact__social social">
+              <p class="social__text">I Am in social:</p>
+              <div class="social__link">
+                <a href="#" class="social__link-text">facebook</a>
+                <a href="#" class="social__link-text">linkedin</a>
+                <a href="#" class="social__link-text">telegram</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__footer">
+            <p class="contact__footer-text">какая-то крутая, немного длинная, весёлая фраза</p>
+          </div>
+        </div>
 
-  <!-- Подвал сайта -->
-  <!-- //= "modules/footer/footer.html" -->
+        <div class="form">
+          <div class="form__content">
+            <div class="form__header header">
+              <h2 class="header__caption caption caption--size-2">Write for any questions, I'm always in touch</h2>
+            </div>
 
-  <!-- Скрипты -->
-  <script src="../js/bundle.js"></script>
-</body>
+            <div class="form__wrapper">
+              <div class="form__name name">
+                <label for="name">Name</label>
+                <input class="name__input" id="name" type="text" value="" />
+              </div>
+              <div class="form__email email">
+                <label for="email">Email</label>
+                <input class="email__input" id="email" type="email" value="" required />
+              </div>
+              <div class="form__text text">
+                <label for="mess">Message</label>
+                <textarea class="text__input" id="mess" type="text" value=""></textarea>
+              </div>
+            </div>
+            <a class="form__btn btn btn--indent">send</a>
+          </div>
+          <div class="form__footer">
+            <p class="form__footer-sign">2019© Vladimir Ieromin</p>
+          </div>
+        </div>
+      </main>
+    </div>
 
+    <!-- Скрипты -->
+    <script src="../js/bundle.js"></script>
+  </body>
 </html>

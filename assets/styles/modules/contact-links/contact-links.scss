@@ -1,0 +1,107 @@
+.contact-wrapper {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact {
+  float: left;
+  height: 100vh;
+  position: relative;
+  width: 50%;
+
+  @media screen and (max-width: 768px) {
+    float: none;
+    height: 388px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .email {
+    display: flex;
+    margin-bottom: 75px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: $media-mobile) {
+      margin-bottom: 62px;
+    }
+
+    &__text {
+      color: $global-dark-grey;
+      margin-right: 86px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+        margin: 0 0 18px 0;
+      }
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        margin-right: 10px;
+      }
+    }
+
+    &__link {
+      color: $global-black;
+      font-size: 24px;
+      font-weight: 700;
+
+      @media screen and (max-width: $media-mobile) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__text {
+      color: $global-dark-grey;
+      margin-right: 72px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+        margin: 0 0 18px 0;
+      }
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        margin-right: 56px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__link-text {
+      color: $global-black;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

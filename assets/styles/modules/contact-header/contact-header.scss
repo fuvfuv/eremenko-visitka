@@ -1,0 +1,21 @@
+.contact {
+  .contact__header {
+    align-items: center;
+    display: flex;
+    padding: 66px 0 356px;
+
+    &__logo {
+      color: #000;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 700;
+      height: 18px;
+      margin-right: 95px;
+      width: 107px;
+    }
+
+    &__caption {
+      margin-bottom: 0;
+    }
+  }
+}

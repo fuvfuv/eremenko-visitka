@@ -1,0 +1,78 @@
+.form {
+  background-color: $bg-color;
+  float: right;
+  height: 100vh;
+  width: 50%;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 195px;
+    padding-right: 90px;
+
+    @media (min-width: 786px) and (max-width: 1199px) {
+      padding-right: 20px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 156px;
+    max-width: 368px;
+
+    @media (min-width: 786px) and (max-width: 1199px) {
+      padding-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 37px;
+
+    .name,
+    .email,
+    .text {
+      font-size: 16px;
+      margin-bottom: 41px;
+      padding-left: 63px;
+      width: 530px;
+
+      label {
+        display: block;
+        margin-bottom: 19px;
+      }
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        max-width: 350px;
+        padding-left: 30px;
+      }
+    }
+
+    .name__input,
+    .email__input,
+    .text__input {
+      background-color: $global-white;
+      border: none;
+      box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
+      box-sizing: border-box;
+      color: $global-black;
+      font-size: 16px;
+      height: 70px;
+      // max-width: 530px;
+      padding-left: 20px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        max-width: 350px;
+      }
+    }
+
+    .text__input {
+      height: 134px;
+      resize: none;
+    }
+  }
+}

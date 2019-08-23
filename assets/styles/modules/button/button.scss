@@ -9,4 +9,10 @@
   @media screen and (max-width: $media-mobile) {
     max-width: 100%;
   }
+
+  &--indent {
+    align-self: flex-end;
+    margin-right: 82px;
+    width: 240px;
+  }
 }

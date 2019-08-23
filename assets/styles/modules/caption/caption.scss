@@ -2,4 +2,14 @@
   &--h1 {
     @include header-default;
   }
+
+  &--size-2 {
+    @include header-default;
+
+    font-size: 24px;
+
+    @media screen and (max-width: $media-mobile) {
+      padding-top: 66px;
+    }
+  }
 }

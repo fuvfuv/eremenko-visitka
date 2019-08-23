@@ -4,6 +4,10 @@
     display: flex;
     padding: 66px 0 310px;
 
+    @media (min-width: 786px) and (max-width: 1199px) {
+      padding-bottom: 248px;
+    }
+
     @media screen and (max-width: 768px) {
       padding: 40px 0 39px;
     }
@@ -17,12 +21,12 @@
       margin-right: 95px;
       width: 107px;
 
-      @media screen and (max-width: 768px) {
-        display: none;
+      @media screen and (max-width: $media-mobile) {
+        font-size: 18px;
       }
 
-      @media screen and (max-width: $media-mobile) {
-        margin-right: 65px;
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
 
@@ -35,7 +39,7 @@
       }
 
       @media screen and (max-width: $media-mobile) {
-        font-size: 36px;
+        font-size: 30px;
       }
     }
   }

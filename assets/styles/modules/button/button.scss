@@ -11,15 +11,13 @@
   }
 
   &--indent {
-    align-self: flex-end;
-    margin-right: 82px;
+    float: right;
+    margin-bottom: 195px;
     width: 240px;
 
     @media screen and (max-width: 768px) {
-      align-self: flex-start;
       height: 50px;
-      margin-left: 10px;
-      margin-right: 0;
+      margin-bottom: 35px;
       padding: 18px 30px;
       width: 300px;
     }

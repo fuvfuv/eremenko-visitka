@@ -1,7 +1,5 @@
 .contact__footer {
-  bottom: 52px;
-  left: 0;
-  position: absolute;
+  margin-bottom: 64px;
 
   &-text {
     font-size: 10px;
@@ -14,9 +12,7 @@
 }
 
 .form__footer {
-  bottom: 52px;
-  position: absolute;
-  right: 33%;
+  margin-bottom: 64px;
 
   &-sign {
     font-size: 10px;

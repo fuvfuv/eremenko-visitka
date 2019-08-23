@@ -1,13 +1,29 @@
 .contact__footer {
+  bottom: 52px;
+  left: 0;
+  position: absolute;
+
   &-text {
     font-size: 10px;
     font-weight: 400;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .form__footer {
+  bottom: 52px;
+  position: absolute;
+  right: 33%;
+
   &-sign {
     font-size: 10px;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

@@ -2,7 +2,11 @@
   .contact__header {
     align-items: center;
     display: flex;
-    padding: 66px 0 356px;
+    padding: 66px 0 310px;
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 0 39px;
+    }
 
     &__logo {
       color: #000;
@@ -12,10 +16,27 @@
       height: 18px;
       margin-right: 95px;
       width: 107px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        margin-right: 65px;
+      }
     }
 
     &__caption {
+      font-size: 48px;
       margin-bottom: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        font-size: 36px;
+      }
     }
   }
 }

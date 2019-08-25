@@ -1,0 +1,53 @@
+.modal-wrapper {
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal {
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: 721px 1080px;
+  box-shadow: 0 15px 34px 9px rgba(0, 0, 0, 0.15);
+  display: none;
+  height: 1080px;
+  left: 50%;
+  margin-left: -361px;
+  max-width: 722px;
+  overflow: auto;
+  position: absolute;
+  top: 194px;
+  width: 100%;
+  z-index: 1;
+
+  @media screen and (max-width: $media-mobile) {
+    top: 281px;
+  }
+
+  @media (min-width: 786px) and (max-width: 1199px) {
+    top: 281px;
+  }
+}
+
+.modal-content {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.close {
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 55px;
+  width: 50px;
+  z-index: 1;
+}

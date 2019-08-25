@@ -1,0 +1,101 @@
+.gallery-inner {
+  margin: 0 auto;
+  max-height: 811px;
+  overflow-y: scroll;
+
+  @media (min-width: 786px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    max-height: 1030px;
+  }
+
+  &-info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+
+    @media (min-width: 786px) and (max-width: 1199px) {
+      padding-top: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+    }
+
+    .info__title {
+      font-size: 30px;
+      font-weight: 700;
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        max-width: 234px;
+      }
+    }
+  }
+
+  &-item {
+    margin-bottom: 40px;
+
+    img {
+      height: auto;
+      width: 360px;
+
+      @media (min-width: 786px) and (max-width: 1199px) {
+        height: auto;
+        width: 330px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: auto;
+        width: 320px;
+      }
+    }
+
+    @media (min-width: 786px) and (max-width: 1199px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .gallery-item__hover {
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    .hover__wrapper {
+      height: 100%;
+      position: relative;
+      width: 100%;
+
+      &::after {
+        background: url("/images/content/gallery-page/zoom.png");
+        content: "";
+        height: 50px;
+        left: 0;
+        margin: auto;
+        margin-top: -25px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        vertical-align: middle;
+        width: 53px;
+      }
+    }
+  }
+
+  .gallery-item:hover .gallery-item__hover {
+    display: block;
+    transition: all 2s;
+  }
+}

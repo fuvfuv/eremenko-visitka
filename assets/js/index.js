@@ -7,3 +7,9 @@ svg4everybody();
 // // Imported  modules
 import {siteMenu} from "./modules/site-menu/site-menu";
 siteMenu();
+
+import {galleryMasonry} from "./modules/gallery/gallery";
+galleryMasonry();
+
+import {galleryModal} from "./modules/gallery/gallery";
+galleryModal();

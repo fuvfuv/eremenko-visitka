@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <title>new site</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body class="photogallery-page--inner">
+    <!-- обертка для меню -->
+    <div class="menu-wrapper">
+      //= "modules/menu/menu.html"
+    </div>
+    <!-- обертка для основного контента -->
+    <div class="page-wrapper container-full">
+      <div class="modal-wrapper" id="modalWrapper"></div>
+      <div class="modal-content">
+        <img id="close" class="close" src="/images/content/gallery-page/close.png" alt="#" />
+      </div>
+      <div id="modal" class="modal"></div>
+      <header class="header header--gallery-inner">
+        <a class="header__logo" href="#">Ieromin</a>
+        <a class="header__btn btn btn--gallery" href="#">back</a>
+      </header>
+
+      <main>
+        <div class="gallery-inner-info info">
+          <h2 class="info__title">Social Mobility in the legal profession</h2>
+          <div class="info__likes likes--reverse">
+            //= "modules/likes/likes.html"
+          </div>
+        </div>
+        <section id="gallery" class="gallery-inner">
+          //= "modules/gallery-inner/gallery-inner.html"
+        </section>
+      </main>
+
+      <!-- Подвал сайта -->
+      <!-- //= "modules/footer/footer.html" -->
+    </div>
+    <!-- Скрипты -->
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="../js/bundle.js"></script>
+  </body>
+</html>

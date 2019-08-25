@@ -18,15 +18,33 @@
     <div class="menu-wrapper">
       //= "modules/menu/menu.html"
     </div>
+    <!-- обертка для основного контента -->
+    <div class="page-wrapper container-full">
+      <header class="header">
+        <a class="header__logo" href="#">Ieromin</a>
 
-    <main>
-      Я фотогалереия СТРАНИЦА
-    </main>
+        <div class="header__wrapper">
+          <h1 class="header__caption">photogalery</h1>
+          <ul class="header__categories categories">
+            <li class="categories__item"><a class="categories__link" href="#">category 1</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">category 2</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">category 3</a></li>
+          </ul>
+        </div>
+      </header>
 
-    <!-- Подвал сайта -->
-    <!-- //= "modules/footer/footer.html" -->
+      <main>
+        <section id="gallery" class="gallery">
+          //= "modules/gallery-prev/gallery-prev.html"
+        </section>
+      </main>
 
+      <!-- Подвал сайта -->
+      <!-- //= "modules/footer/footer.html" -->
+    </div>
     <!-- Скрипты -->
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="../js/bundle.js"></script>
   </body>
 </html>

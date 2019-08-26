@@ -3,7 +3,8 @@ export const galleryMasonry = () => {
   let msnry = new Masonry(container, {
     // Настройки
     itemSelector: `.gallery-item`,
-    gutter: 40,
+    gutter: `.gutter-width`,
+    // gutter: 40,
     horizontalOrder: true,
     isResizeBound: true,
     fitWidth: true,

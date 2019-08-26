@@ -12,7 +12,7 @@
 .modal {
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-size: 721px 1080px;
+  background-size: 721px auto;
   box-shadow: 0 15px 34px 9px rgba(0, 0, 0, 0.15);
   display: none;
   height: 1080px;
@@ -32,6 +32,14 @@
   @media (min-width: 786px) and (max-width: 1199px) {
     top: 281px;
   }
+
+  @media screen and (max-width: 768px) {
+    background-size: 320px auto;
+    height: 550px;
+    margin-left: -152px;
+    max-width: 320px;
+    top: 195px;
+  }
 }
 
 .modal-content {
@@ -50,4 +58,10 @@
   top: 55px;
   width: 50px;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    height: 30px;
+    top: 33px;
+    width: 30px;
+  }
 }

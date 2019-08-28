@@ -3,11 +3,28 @@
   display: flex;
 
   &__heart {
+    position: relative;
     background-color: #000;
     display: inline-block;
     height: 54px;
     margin-right: 20px;
     width: 54px;
+
+    .icon {
+      top: 3px;
+      left: 2px;
+      position: absolute;
+      stroke: white;
+      stroke-width: 33px;
+      width: 33px;
+      height: 28px;
+      top: 13px;
+      left: 11px;
+
+      &:hover {
+        fill: white;
+      }
+    }
   }
 
   &__text {
@@ -15,8 +32,10 @@
     font-weight: 500;
     margin-right: 20px;
 
-    @media screen and (max-width: 768px) {
-      display: none;
+    .text__word {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -26,3 +45,5 @@
     flex-direction: row-reverse;
   }
 }
+
+

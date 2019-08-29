@@ -3,26 +3,26 @@
   display: flex;
 
   &__heart {
-    position: relative;
     background-color: #000;
     display: inline-block;
     height: 54px;
     margin-right: 20px;
+    position: relative;
     width: 54px;
 
     .icon {
-      top: 3px;
-      left: 2px;
-      position: absolute;
-      stroke: white;
-      stroke-width: 33px;
-      width: 33px;
       height: 28px;
-      top: 13px;
+      left: 2px;
       left: 11px;
+      position: absolute;
+      stroke: #fff;
+      stroke-width: 33;
+      top: 3px;
+      top: 13px;
+      width: 33px;
 
       &:hover {
-        fill: white;
+        fill: #fff;
       }
     }
   }
@@ -43,7 +43,9 @@
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
+
+    .likes__heart {
+      margin-right: 0;
+    }
   }
 }
-
-

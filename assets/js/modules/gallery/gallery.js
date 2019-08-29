@@ -4,7 +4,6 @@ export const galleryMasonry = () => {
     // Настройки
     itemSelector: `.gallery-item`,
     gutter: `.gutter-width`,
-    // gutter: 40,
     horizontalOrder: true,
     isResizeBound: true,
     fitWidth: true,

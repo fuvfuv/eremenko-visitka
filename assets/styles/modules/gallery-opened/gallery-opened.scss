@@ -20,8 +20,9 @@
   margin-left: -361px;
   max-width: 722px;
   overflow: auto;
+  padding-bottom: 80px;
   position: absolute;
-  top: 194px;
+  top: 292px;
   width: 100%;
   z-index: 1;
 
@@ -30,7 +31,7 @@
   }
 
   @media (min-width: 786px) and (max-width: 1199px) {
-    top: 281px;
+    top: 238px;
   }
 
   @media screen and (max-width: 768px) {
@@ -55,9 +56,13 @@
   height: 50px;
   left: 50%;
   position: absolute;
-  top: 55px;
+  top: 67px;
   width: 50px;
   z-index: 1;
+
+  @media (min-width: 786px) and (max-width: 1199px) {
+    top: 36px;
+  }
 
   @media screen and (max-width: 768px) {
     height: 30px;

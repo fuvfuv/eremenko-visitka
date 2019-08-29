@@ -1,8 +1,6 @@
 .gallery {
   margin: 0 auto;
   max-height: 811px;
-  overflow-y: scroll;
-  // width: 100%;
 
   @media (min-width: 786px) and (max-width: 1199px) {
     margin: 0 auto;
@@ -17,7 +15,7 @@
     width: 40px;
 
     @media (min-width: 786px) and (max-width: 1199px) {
-      width: 30px;
+      width: 20px;
     }
 
     @media screen and (max-width: 768px) {
@@ -26,22 +24,16 @@
   }
 
   &-item {
+    background-color: $global-light-grey;
+    cursor: pointer;
+    height: auto;
     margin-bottom: 40px;
+    max-width: 360px;
 
     img {
       display: block;
       height: auto;
-      width: 360px;
-
-      @media (min-width: 786px) and (max-width: 1199px) {
-        height: auto;
-        width: 330px;
-      }
-
-      @media screen and (max-width: 768px) {
-        height: auto;
-        width: 145px;
-      }
+      width: 100%;
     }
 
     @media (min-width: 786px) and (max-width: 1199px) {
@@ -50,6 +42,7 @@
 
     @media screen and (max-width: 768px) {
       margin-bottom: 10px;
+      width: 150px;
     }
   }
 

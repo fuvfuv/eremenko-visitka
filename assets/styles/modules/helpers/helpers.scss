@@ -81,6 +81,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.visible {
+  display: block;
+}
+
 // Для демонстрации страниц. Под конец это удалим. ПОКА НЕ ТРОГАТЬ !!!:)
 ul.p-list {
   padding-left: 60px;

@@ -2,14 +2,16 @@
   .contact__header {
     align-items: center;
     display: flex;
-    padding: 66px 0 310px;
+    margin-bottom: 310px;
+    padding-top: 66px;
 
     @media (min-width: 786px) and (max-width: 1199px) {
-      padding-bottom: 248px;
+      margin-bottom: 248px;
     }
 
     @media screen and (max-width: 768px) {
-      padding: 40px 0 39px;
+      margin-bottom: 39px;
+      padding-top: 40px;
     }
 
     &__logo {
@@ -32,6 +34,7 @@
 
     &__caption {
       font-size: 48px;
+      font-weight: 700;
       margin-bottom: 0;
 
       @media screen and (max-width: 768px) {

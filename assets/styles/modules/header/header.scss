@@ -2,7 +2,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 66px 0;
+  margin-bottom: 66px;
+  padding-top: 66px;
 
   @media screen and (max-width: $media-mobile) {
     padding: 0;

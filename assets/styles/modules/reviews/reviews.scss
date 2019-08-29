@@ -1,51 +1,128 @@
 .reviews {
-  color: #000;
-  float: left;
-  height: 100vh;
-  padding-top: 66px;
-  width: 50%;
+  //   color: #000;
+  //   // float: left;
+  //   // height: 100vh;
+  //   padding-top: 66px;
+  //   width: 50%;
 
-  &::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
+  //   &::-webkit-scrollbar {
+  //     height: 0;
+  //     width: 0;
+  //   }
+
+  //   &__header {
+  //     align-items: baseline;
+  //     display: flex;
+  //     margin-bottom: 70px;
+  //     position: relative;
+  //   }
+
+  //   &__body {
+  //     // height: calc(100vh - 260px);
+  //     outline: 1px solid red;
+  //     -ms-overflow-style: none; // IE 10+
+  //     overflow-x: auto;
+  //     padding-right: 90px;
+  //     padding-top: 70px;
+  //     scrollbar-width: none; // Firefox
+
+  //     &::-webkit-scrollbar {
+  //       display: none; // Safari and Chrome
+  //     }
+
+  //     @media (min-width: 786px) and (max-width: 1199px) {
+  //       padding-right: 70px;
+  //       padding-top: 50px;
+  //     }
+  //   }
+
+  //   &__body-wrapper {
+  //     position: relative;
+
+  //     &::before,
+  //     &::after {
+  //       content: "";
+  //       display: block;
+  //       height: 120px;
+  //       left: 0;
+  //       position: absolute;
+  //       right: 0;
+  //       z-index: 5;
+  //     }
+
+  //     &::before {
+  //       background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
+  //       top: 0;
+  //     }
+
+  //     &::after {
+  //       background-image: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+  //       bottom: 0;
+  //       height: 30px;
+  //     }
+  //   }
+
+  //   &__logo {
+  //     margin-right: 90px;
+  //   }
+
+  //   &__list {
+  //     max-width: 630px;
+  //     padding-bottom: 78px;
+  //   }
+
+  //   &__item {
+  //     background-image: url("../images/icons/quote.svg");
+  //     background-repeat: no-repeat;
+  //     background-size: 37px 37px;
+  //     padding-left: 100px;
+
+  //     @media (min-width: 786px) and (max-width: 1199px) {
+  //       background-size: 30px 30px;
+  //       padding-left: 70px;
+  //     }
+
+  //     &:not(:last-child) {
+  //       margin-bottom: 78px;
+  //     }
+
+  //     &-text {
+  //       font-size: 16px;
+  //       font-weight: 300;
+  //       line-height: 24px;
+  //     }
+
+  //     &-author-info {
+  //       margin-top: 36px;
+  //     }
+
+  //     &-author-name {
+  //       color: inherit;
+  //       font-size: 16px;
+  //       font-weight: 500;
+  //       line-height: 24px;
+  //       margin-bottom: 14px;
+  //     }
+
+  //     &-author-about {
+  //       font-size: 12px;
+  //       font-weight: 400;
+  //       line-height: 24px;
+  //       opacity: 0.5;
+  //     }
+  //   }
+  // }
+  margin-bottom: 0;
+  outline: 1px solid #000;
 
   &__header {
     align-items: baseline;
     display: flex;
-    margin-bottom: 50px;
-    position: relative;
-  }
-
-  &__body {
-    height: 686px; // определить js-ом
-    overflow-x: auto;
-    padding-top: 80px;
-  }
-
-  &__body-wrapper {
+    margin-bottom: 70px;
     position: relative;
 
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      height: 120px;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: 10;
-    }
-
-    &::before {
-      background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
-      top: 0;
-    }
-
-    &::after {
-      background-image: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
-      bottom: 0;
-      height: 30px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
     }
   }
 
@@ -53,41 +130,142 @@
     margin-right: 90px;
   }
 
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 65px;
+  }
+
+  &__logo {
+    display: block;
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
   &__list {
-    max-width: 630px;
-    padding-bottom: 78px;
+    &.slick-slider {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__slider-bullets {
+    display: flex;
+
+    li {
+      background-color: transparent;
+      border: 2px solid #000;
+      height: 14px;
+      width: 14px;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+
+      &.slick-active {
+        background-color: #000;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      li {
+        height: 12px;
+        width: 12px;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
   }
 
   &__item {
-    padding-left: 120px;
+    font-size: 18px;
+    font-weight: 300;
+    height: auto;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-transform: initial;
 
-    &:not(:last-child) {
-      margin-bottom: 78px;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 20px;
     }
 
     &-text {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 24px;
-    }
+      margin-bottom: 25px;
 
-    &-author-info {
-      margin-top: 36px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 22px;
+      }
     }
 
     &-author-name {
-      color: inherit;
-      font-size: 16px;
+      color: #000;
+      font-size: 14px;
       font-weight: 500;
       line-height: 24px;
-      margin-bottom: 14px;
+      margin-bottom: 13px;
+      opacity: 1;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 768px) {
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
     }
 
-    &-author-about {
+    &-author-info {
+      color: #000;
       font-size: 12px;
       font-weight: 400;
-      line-height: 24px;
-      opacity: 0.5;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__slider {
+    padding-left: 120px;
+    padding-right: 180px;
+
+    @media screen and (max-width: 1199px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-controls {
+      align-items: center;
+      display: none;
+
+      @media screen and (max-width: 1199px) {
+        display: flex;
+      }
+    }
+
+    &-bullets {
+      margin-left: auto;
+    }
+
+    &-swap {
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 500;
+      padding: 4px;
+      text-transform: uppercase;
     }
   }
 }

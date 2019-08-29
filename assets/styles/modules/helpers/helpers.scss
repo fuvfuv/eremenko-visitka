@@ -65,15 +65,17 @@ input[type="radio"].visually-hidden {
   box-sizing: content-box;
   margin: 0 auto;
   max-width: 1680px;
-  padding: 0 125px;
+  padding: 0 120px;
   width: 100%;
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    padding: 0 15px;
+  @media (min-width: 786px) and (max-width: 1200px) {
+    box-sizing: border-box;
+    padding: 0 10px;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0;
+    box-sizing: border-box;
+    padding: 0 15px;
   }
 }
 
@@ -98,12 +100,3 @@ ul.p-list {
   }
 }
 // ===================================================================
-
-.rev-achiev-page {
-  overflow-y: hidden;
-
-  main {
-    align-items: flex-start;
-    display: flex;
-  }
-}

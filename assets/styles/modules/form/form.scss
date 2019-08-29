@@ -7,7 +7,7 @@
 
 .form {
   float: right;
-  height: 100%;
+  height: 100vh;
   position: relative;
   width: 50%;
 
@@ -85,9 +85,10 @@
       box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
       box-sizing: border-box;
       color: $global-black;
+      font-family: inherit;
       font-size: 16px;
       height: 70px;
-      padding-left: 20px;
+      padding: 0 20px;
       width: 100%;
 
       &:focus {
@@ -106,6 +107,7 @@
 
     .text__input {
       height: 134px;
+      padding: 20px;
       resize: none;
 
       @media screen and (max-width: 768px) {

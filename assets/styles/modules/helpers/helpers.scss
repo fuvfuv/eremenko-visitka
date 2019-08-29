@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
   box-sizing: content-box;
   margin: 0 auto;
   max-width: 1680px;
-  padding: 0 120px;
+  padding: 0 125px;
   width: 100%;
 
   @media (min-width: 786px) and (max-width: 1199px) {
@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0 10px;
+    padding: 0;
   }
 }
 

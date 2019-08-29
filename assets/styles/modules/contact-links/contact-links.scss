@@ -7,7 +7,7 @@
 
 .contact {
   float: left;
-  height: 100vh;
+  height: 100%;
   position: relative;
   width: 50%;
 
@@ -18,11 +18,11 @@
   }
 
   &__content {
-    padding-left: 25px;
+    padding-left: 20px;
 
-    @media screen and (max-width: 768px) {
-      padding-left: 0;
-    }
+    // @media screen and (max-width: 768px) {
+    //   padding-left: 0;
+    // }
   }
 
   .email {
@@ -46,6 +46,7 @@
 
     &__text {
       color: $global-dark-grey;
+      cursor: pointer;
       margin-right: 86px;
 
       @media (min-width: 786px) and (max-width: 1199px) {
@@ -79,7 +80,6 @@
 
   .social {
     display: flex;
-    margin-bottom: 415px;
 
     @media screen and (max-width: 768px) {
       align-items: baseline;
@@ -107,6 +107,7 @@
 
     &__link-text {
       color: $global-black;
+      cursor: pointer;
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 40px;

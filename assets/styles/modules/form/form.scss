@@ -13,7 +13,6 @@
 
   @media screen and (max-width: 768px) {
     float: none;
-    max-height: 600px;
     width: 100%;
   }
 
@@ -23,9 +22,12 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 100%;
     padding-left: 20px;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
   }
 
   &__header {
@@ -54,16 +56,16 @@
       width: 530px;
 
       @media screen and (max-width: $media-mobile) {
-        width: 480px;
+        width: 440px;
       }
 
       @media (min-width: 786px) and (max-width: 1199px) {
-        width: 350px;
+        width: 335px;
       }
 
       @media screen and (max-width: 768px) {
         margin-bottom: 38px;
-        width: 301px;
+        width: 290px;
       }
 
       label {

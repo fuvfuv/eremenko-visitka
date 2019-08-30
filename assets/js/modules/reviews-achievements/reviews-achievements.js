@@ -1,8 +1,10 @@
 import $ from "jquery"; // если нужен jquery
 import "slick-carousel";
+import "jquery-mousewheel";
+import "malihu-custom-scrollbar-plugin";
 
 export function reviewsSlider() {
-  if ($(window).width() < 1199) {
+  if ($(window).width() < 1200) {
     $(`.reviews__list`).slick({
       slidesToShow: 1,
       adaptiveHeight: true,
@@ -16,5 +18,17 @@ export function reviewsSlider() {
     });
   } else {
     $(`#items.slick-initialized`).slick(`unslick`);
+  }
+}
+
+export function customScroll() {
+  if ($(window).width() > 1200) {
+    $(`.reviews__body`).mCustomScrollbar({
+      alwaysShowScrollbar: 0,
+    });
+
+    $(`.achievements__body`).mCustomScrollbar({
+      alwaysShowScrollbar: 0,
+    });
   }
 }

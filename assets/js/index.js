@@ -20,7 +20,8 @@ if (page.classList.contains(`photogallery-page`) || page.classList.contains(`pho
 
 // Reviews and achievements
 
-import {reviewsSlider} from "./modules/reviews-achievements/reviews-achievements";
+import {reviewsSlider, customScroll} from "./modules/reviews-achievements/reviews-achievements";
 if (page.classList.contains(`rev-achiev-page`)) {
   reviewsSlider();
+  customScroll();
 }

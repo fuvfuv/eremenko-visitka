@@ -1,79 +1,42 @@
 .achievements {
   background-color: #f7f7f7;
-  //   background-color: $bg-color;
-  //   // height: 100vh;
-  //   padding-top: 66px;
-  //   width: 49%;
+  padding-top: 50px;
+  position: relative;
 
-  //   &::-webkit-scrollbar {
-  //     height: 0;
-  //     width: 0;
-  //   }
+  @media screen and (max-width: 1200px) {
+    background-color: transparent;
+    padding-top: 0;
+  }
 
-  //   &__header {
-  //     margin-bottom: 70px;
-  //     text-align: center;
-  //   }
+  .mCSB_draggerContainer {
+    opacity: 0;
+  }
 
-  //   &__body {
-  //     // height: calc(100vh - 260px);
-  //     outline: 1px solid red;
-  //     -ms-overflow-style: none; // IE 10+
-  //     overflow-x: auto;
-  //     padding-left: 80px;
-  //     padding-right: 90px;
-  //     padding-top: 70px;
-  //     scrollbar-width: none; // Firefox
+  &::after {
+    background-color: #f7f7f7;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 50vw;
+    z-index: -1;
 
-  //     &::-webkit-scrollbar {
-  //       display: none; // Safari and Chrome
-  //     }
-
-  //     @media (min-width: 786px) and (max-width: 1199px) {
-  //       padding-left: 60px;
-  //       padding-right: 70px;
-  //       padding-top: 50px;
-  //     }
-  //   }
-
-  //   &__body-wrapper {
-  //     position: relative;
-
-  //     &::before,
-  //     &::after {
-  //       content: "";
-  //       display: block;
-  //       height: 120px;
-  //       left: 0;
-  //       position: absolute;
-  //       right: 0;
-  //       z-index: 5;
-  //     }
-
-  //     &::before {
-  //       background-image: linear-gradient(to bottom, #f7f7f7, rgba(255, 255, 255, 0));
-  //       top: 0;
-  //     }
-
-  //     &::after {
-  //       background-image: linear-gradient(to top, #f7f7f7, rgba(255, 255, 255, 0));
-  //       bottom: 0;
-  //       height: 30px;
-  //     }
-  //   }
-
-  //   &__masonry {
-  //     padding-bottom: 50px;
-  //   }
-
-  //   &__item {
-  //     width: 198px;
-  //   }
-  // }
-  outline: 1px solid #000;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
 
   &__caption {
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 24px;
+      text-align: left;
+    }
 
     @media screen and (max-width: 768px) {
       margin-bottom: 30px;
@@ -81,21 +44,64 @@
   }
 
   &__header {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 30px;
     }
   }
 
-  &__body {
-    padding-bottom: 30px;
+  &__masonry {
     padding-left: 70px;
     padding-right: 80px;
+    padding-top: 50px;
 
-    @media screen and (max-width: 1199px) {
-      padding-left: 0;
-      padding-right: 0;
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &__body-wrapper {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 80px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &::before {
+      background-image: linear-gradient(to bottom, #f7f7f7, rgba(255, 255, 255, 0));
+      top: 0;
+    }
+
+    // &::after {
+    //   background-image: linear-gradient(to top, #f7f7f7, rgba(255, 255, 255, 0));
+    //   bottom: 0;
+    //   height: 30px;
+    // }
+  }
+
+  &__body {
+    height: calc(100vh - 206px);
+    overflow: scroll;
+    scrollbar-width: none; // Firefox
+
+    &::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+
+    @media screen and (max-width: 1200px) {
+      height: auto;
     }
   }
 }

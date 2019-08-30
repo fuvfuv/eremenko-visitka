@@ -1,10 +1,14 @@
 .contact__footer {
   margin-bottom: 64px;
-  padding-top: 415px;
+  padding-top: 384px;
 
   &-text {
     font-size: 10px;
     font-weight: 400;
+  }
+
+  @media (min-width: 786px) and (max-width: 1199px) {
+    padding-top: 365px;
   }
 
   @media screen and (max-width: 768px) {
@@ -14,11 +18,15 @@
 
 .form__footer {
   margin-bottom: 64px;
-  padding-top: 195px;
+  padding-top: 160px;
 
   &-sign {
     font-size: 10px;
     font-weight: 400;
+  }
+
+  @media (min-width: 786px) and (max-width: 1199px) {
+    padding-top: 130px;
   }
 
   @media screen and (max-width: 768px) {

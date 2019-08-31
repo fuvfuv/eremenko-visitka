@@ -77,6 +77,16 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     padding: 0 15px;
   }
+
+  &--contacts {
+    @media screen and (max-width: $media-mobile) {
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
 }
 
 .hidden {

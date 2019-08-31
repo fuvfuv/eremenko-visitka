@@ -1,4 +1,7 @@
 .contact-wrapper {
+  align-items: flex-start;
+  display: flex;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -6,13 +9,11 @@
 }
 
 .form {
-  float: right;
   height: 100vh;
   position: relative;
   width: 50%;
 
   @media screen and (max-width: 768px) {
-    float: none;
     width: 100%;
   }
 
@@ -22,11 +23,12 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    height: 100vh;
     width: 100%;
 
     @media screen and (max-width: 768px) {
       height: 100%;
+      padding-left: 20px;
     }
   }
 
@@ -65,7 +67,7 @@
 
       @media screen and (max-width: 768px) {
         margin-bottom: 38px;
-        width: 290px;
+        width: 270px;
       }
 
       label {

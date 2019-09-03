@@ -1,35 +1,67 @@
 .contact__footer {
   margin-bottom: 20px;
-  padding-top: 384px;
+  padding-top: 314px;
 
   &-text {
     font-size: 10px;
     font-weight: 400;
   }
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    padding-top: 365px;
+  @media screen and (max-height: 900px) {
+    padding-top: 255px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-lg-plus) {
+    padding-top: 275px;
+  }
+
+  @media screen and (max-height: 800px) {
+    padding-top: 222px;
+  }
+
+  @media screen and (max-height: 768px) {
+    padding-top: 141px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    padding-top: 255px;
+  }
+
+  @media screen and (max-width: $media-sm) {
     display: none;
   }
 }
 
 .form__footer {
   margin-bottom: 20px;
-  padding-top: 160px;
+  padding-top: 92px;
 
   &-sign {
     font-size: 10px;
     font-weight: 400;
   }
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    padding-top: 130px;
+  @media screen and (max-width: $media-lg-plus) {
+    padding-top: 92px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-height: 800px) {
+    padding-top: 45px;
+  }
+
+  @media screen and (max-height: 768px) {
+    padding-top: 42px;
+  }
+
+  @media screen and (max-width: $media-mobile) {
+    padding-top: 109px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    padding-top: 92px;
+  }
+
+  @media screen and (max-width: $media-sm) {
     display: none;
   }
 }

@@ -1,11 +1,19 @@
 .share {
   margin-top: 40px;
 
+  @media screen and (max-width: $media-md) {
+    margin-top: 44px;
+  }
+
   &__title {
     display: block;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -19,6 +27,16 @@
 
     &:not(:last-child) {
       margin-right: 22px;
+
+      @media screen and (max-width: $media-md) {
+        margin-right: 16px;
+      }
     }
+  }
+
+  &__link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }

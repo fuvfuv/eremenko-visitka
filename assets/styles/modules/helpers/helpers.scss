@@ -27,10 +27,25 @@ button {
   display: block;
   height: auto;
   max-width: 100%;
+  width: 100%;
 }
 
 .img-cover {
   object-fit: cover;
+}
+
+.img-overlay {
+  position: relative;
+
+  &::after {
+    background-color: #000;
+    box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+    content: "";
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -56,8 +71,19 @@ input[type="radio"].visually-hidden {
   padding-right: 220px;
   width: 100%;
 
-  @media screen and (max-width: $media-mobile) {
-    padding: 0 10px;
+  @media screen and (max-width: $media-xl-plus) {
+    padding-left: 30px;
+    padding-right: 160px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    padding-left: 10px;
+    padding-right: 140px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    box-sizing: border-box;
+    padding: 0 20px;
   }
 }
 
@@ -68,22 +94,22 @@ input[type="radio"].visually-hidden {
   padding: 0 120px;
   width: 100%;
 
-  @media (min-width: 786px) and (max-width: 1200px) {
+  @media (min-width: $media-sm) and (max-width: $media-lg) {
     box-sizing: border-box;
     padding: 0 10px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-sm) {
     box-sizing: border-box;
     padding: 0 15px;
   }
 
   &--contacts {
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-lg) {
       padding: 0 10px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $media-sm) {
       padding: 0;
     }
   }

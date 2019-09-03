@@ -3,26 +3,54 @@
   justify-content: space-between;
   max-width: 1416px;
 
+  @media screen and (max-width: $media-sm) {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   &__content {
     margin-right: 60px;
     max-width: 1030px;
     text-transform: initial;
+
+    @media screen and (max-width: $media-lg) {
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      margin-right: 0;
+    }
+  }
+
+  &__stats {
+    height: 515px;
+    position: sticky;
+    top: 30px;
+
+    @media screen and (max-width: $media-md) {
+      width: 310px;
+    }
   }
 
   &__image-wrapper {
     align-items: center;
     background-color: #f7f7f7;
     display: flex;
+    height: auto;
     justify-content: center;
     margin-bottom: 70px;
     max-width: 1030px;
-    min-height: 540px;
   }
 
   &__caption {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 40px;
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__sub-caption {
@@ -35,10 +63,18 @@
   &__text-block {
     &:not(:last-child) {
       margin-bottom: 70px;
+
+      @media screen and (max-width: $media-md) {
+        margin-bottom: 60px;
+      }
     }
 
     &--main {
       margin-bottom: 90px;
+
+      @media screen and (max-width: $media-md) {
+        margin-bottom: 80px;
+      }
     }
   }
 
@@ -48,6 +84,12 @@
     line-height: 30px;
     margin-bottom: 50px;
     opacity: 0.85;
+
+    @media screen and (max-width: $media-md) {
+      font-size: 17px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
 
     &-link {
       color: inherit;
@@ -62,6 +104,10 @@
       line-height: 36px;
       margin-bottom: 50px;
       padding-left: 100px;
+
+      @media screen and (max-width: $media-md) {
+        margin-bottom: 40px;
+      }
     }
 
     &--big {
@@ -69,6 +115,12 @@
       line-height: 36px;
       margin-bottom: 40px;
       opacity: 1;
+
+      @media screen and (max-width: $media-md) {
+        font-size: 23px;
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
     }
 
     &--bold {
@@ -83,6 +135,10 @@
 
       &:not(:last-child) {
         margin-bottom: 40px;
+
+        @media screen and (max-width: $media-md) {
+          margin-bottom: 30px;
+        }
       }
 
       &::before {
@@ -102,10 +158,25 @@
     align-items: flex-end;
     display: flex;
     margin-bottom: 70px;
+
+    @media screen and (max-width: $media-md) {
+      align-items: flex-start;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
   }
 
   &__video {
     margin-right: 30px;
+
+    @media screen and (max-width: $media-lg) {
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
 
     &-about {
       font-size: 18px;
@@ -113,6 +184,10 @@
       line-height: 30px;
       opacity: 0.5;
       padding-bottom: 70px;
+
+      @media screen and (max-width: $media-md) {
+        padding-bottom: 0;
+      }
     }
   }
 

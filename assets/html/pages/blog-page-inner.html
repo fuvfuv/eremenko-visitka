@@ -28,8 +28,14 @@
       <article class="article-inner">
         <!-- Статья контент -->
         <div class="article-inner__content">
-          <div class="article-inner__image-wrapper">
-            <img src="#" alt="article-preview">
+          <div class="article-inner__image-wrapper img-overlay">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="../images/content/blog-page-inner/preview-mobile.jpg, ../images/content/blog-page-inner/preview-mobile@2x.jpg 2x">
+              <img class="article-inner__image img-responsive img-cover"
+                src="../images/content/blog-page-inner/preview.jpg"
+                srcset="../images/content/blog-page-inner/preview@2x.jpg 2x" alt="article-preview">
+            </picture>
           </div>
 
           <div class="article-inner__text-block article-inner__text-block--main">
@@ -81,8 +87,19 @@
 
           <div class="article-inner__video-wrapper">
             <div class="article-inner__video video">
-              <div class="video__image-wrapper">
-                <img src="#" alt="video-preview">
+              <div class="video__image-wrapper img-overlay">
+                <picture>
+                  <source media="(max-width: 575px)"
+                    srcset="../images/content/blog-page-inner/video-prev-mobile.jpg, ../images/content/blog-page-inner/video-prev-mobile@2x.jpg 2x">
+                  <img class="article-inner__image img-responsive img-cover"
+                    src="../images/content/blog-page-inner/video-prev.jpg"
+                    srcset="../images/content/blog-page-inner/video-prev@2x.jpg 2x" alt="video-preview">
+                </picture>
+                <button class="video__play-btn">
+                  <svg class="icon-video-play video__play-icon">
+                    <use xlink:href="../images/sprite/sprite.svg#video-play"></use>
+                  </svg>
+                </button>
               </div>
               <div class="video__wrapper">
                 <!-- <iframe src="" frameborder="0"></iframe> -->
@@ -122,12 +139,36 @@
           <div class="article-inner__share share">
             <span class="share__title">Share:</span>
             <ul class="share__list">
-              <li class="share__item"></li>
-              <li class="share__item"></li>
-              <li class="share__item"></li>
-              <li class="share__item"></li>
-              <li class="share__item"></li>
-              <li class="share__item"></li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/twitter.png" alt="twitter">
+                </a>
+              </li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/facebook.png" alt="facebook">
+                </a>
+              </li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/google-plus.png" alt="google-plus">
+                </a>
+              </li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/instagram.png" alt="instagram">
+                </a>
+              </li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/telegram.png" alt="telegram">
+                </a>
+              </li>
+              <li class="share__item">
+                <a class="share__link" href="#">
+                  <img class="share__link-icon" src="../images/icons/linkedin.png" alt="linkedin">
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -22,7 +22,12 @@
     padding: 20px 30px;
     white-space: nowrap;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-lg) {
+      font-size: 13px;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: $media-sm) {
       font-size: 11px;
       padding: 10px;
     }

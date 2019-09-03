@@ -8,14 +8,14 @@
     display: inline-block;
     margin-bottom: 20px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 10px;
     }
 
     &:not(:last-child) {
       margin-right: 20px;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         margin-right: 10px;
       }
     }
@@ -28,8 +28,8 @@
       padding: 10px;
       white-space: nowrap;
 
-      @media screen and (max-width: $media-mobile) {
-        font-size: 11px;
+      @media screen and (max-width: $media-lg) {
+        font-size: 13px;
         padding: 9px 5px;
       }
     }

@@ -6,15 +6,15 @@
   text-align: left;
   text-transform: uppercase;
 
-  @media screen and (max-width: $media-mobile) {
-    max-width: 100%;
+  @media screen and (max-width: $media-sm) {
+    max-width: auto;
   }
 
   &--indent {
     float: right;
     width: 240px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $media-sm) {
       height: 50px;
       margin-bottom: 35px;
       padding: 18px 30px;

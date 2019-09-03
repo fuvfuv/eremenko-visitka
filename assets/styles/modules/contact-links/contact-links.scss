@@ -25,7 +25,7 @@
     display: flex;
     margin-bottom: 75px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 62px;
     }
 
@@ -60,7 +60,7 @@
       font-size: 24px;
       font-weight: 700;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         font-size: 20px;
       }
 
@@ -112,11 +112,11 @@
         margin-bottom: 0;
       }
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         font-size: 20px;
       }
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         font-size: 18px;
       }
 

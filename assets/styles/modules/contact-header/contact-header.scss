@@ -23,7 +23,7 @@
       margin-right: 95px;
       width: 107px;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         font-size: 18px;
       }
 
@@ -41,7 +41,7 @@
         font-size: 24px;
       }
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-lg) {
         font-size: 30px;
       }
     }

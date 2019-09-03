@@ -1,11 +1,15 @@
 .article-prev {
   flex-basis: calc(50% - 20px);
 
-  @media screen and (max-width: $media-mobile) {
+  @media screen and (max-width: $media-lg) {
+    flex-basis: calc(50% - 15px);
+  }
+
+  @media screen and (max-width: $media-md) {
     flex-basis: calc(50% - 10px);
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: $media-sm) {
     flex-basis: 100%;
   }
 
@@ -20,7 +24,7 @@
     margin-right: 20px;
     white-space: nowrap;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       display: none;
     }
 
@@ -37,7 +41,7 @@
   &__tags {
     margin-left: auto;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       margin-left: 0;
       margin-right: auto;
     }
@@ -49,12 +53,33 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    min-height: 400px;
+    min-height: 186px;
     overflow: hidden;
+    position: relative;
 
-    @media screen and (max-width: $media-mobile) {
+    &::after {
+      background-color: #000;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 0.35;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      display: block;
       margin-bottom: 20px;
-      min-height: 230px;
+      min-height: 215px;
+    }
+  }
+
+  &__image {
+    filter: grayscale(100%);
+
+    @media screen and (max-width: $media-md) {
+      filter: none;
     }
   }
 
@@ -63,7 +88,7 @@
     font-weight: 700;
     margin-bottom: 28px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       font-size: 14px;
       margin-bottom: 18px;
     }
@@ -76,7 +101,7 @@
     max-width: 665px;
     opacity: 0.5;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       font-size: 10px;
       line-height: 15px;
     }
@@ -85,7 +110,7 @@
   &__footer {
     margin-top: 47px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       margin-top: 28px;
     }
   }

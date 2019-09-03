@@ -1,13 +1,30 @@
 .video {
+  height: auto;
   max-width: 643px;
-  min-height: 387px;
 
   &__image-wrapper {
     align-items: center;
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
-    min-height: 387px;
+    min-height: auto;
+    position: relative;
     width: 643px;
+
+    @media screen and (max-width: $media-lg) {
+      width: 500px;
+    }
+  }
+
+  &__play-icon {
+    box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05), 0 0 29px 7px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    height: 88px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70px;
+    z-index: 1;
   }
 }

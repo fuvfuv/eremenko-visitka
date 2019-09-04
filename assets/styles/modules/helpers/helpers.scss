@@ -42,8 +42,10 @@ button {
     box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
     content: "";
     height: 100%;
+    left: 0;
     opacity: 0.4;
     position: absolute;
+    top: 0;
     width: 100%;
   }
 }
@@ -77,8 +79,8 @@ input[type="radio"].visually-hidden {
   }
 
   @media screen and (max-width: $media-lg) {
-    padding-left: 10px;
-    padding-right: 140px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media screen and (max-width: $media-md) {

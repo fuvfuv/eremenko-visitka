@@ -23,7 +23,7 @@ gulp.task(`css`, () => {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(autoprefixer(autoprefixerConfig))
+    // .pipe(autoprefixer(autoprefixerConfig))
     .pipe(gulp.dest(cssPath.output))
     .on(`end`, browsersync.reload);
 });

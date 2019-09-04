@@ -121,3 +121,13 @@
     }
   }
 }
+
+.menu-wrapper {
+  &--inner {
+    display: none;
+
+    @media screen and (max-width: $media-sm) {
+      display: block;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-width: 1416px;
 
-  @media screen and (max-width: $media-sm) {
+  @media screen and (max-width: $media-md) {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,7 +18,7 @@
       margin-right: 40px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media screen and (max-width: $media-md) {
       margin-right: 0;
     }
   }
@@ -29,7 +29,35 @@
     top: 30px;
 
     @media screen and (max-width: $media-md) {
-      width: 310px;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      order: -1;
+      position: initial;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      margin-bottom: 50px;
+      order: 1;
+    }
+  }
+
+  &__share {
+    margin-top: 40px;
+
+    @media screen and (max-width: $media-md) {
+      align-items: center;
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      justify-content: center;
     }
   }
 
@@ -41,6 +69,16 @@
     justify-content: center;
     margin-bottom: 70px;
     max-width: 1030px;
+    position: relative;
+
+    @media screen and (max-width: $media-md) {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      margin-bottom: 20px;
+    }
   }
 
   &__caption {
@@ -48,16 +86,24 @@
     font-weight: 700;
     margin-bottom: 40px;
 
-    @media screen and (max-width: $media-md) {
-      margin-bottom: 30px;
+    @media screen and (max-width: $media-xs) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 18px;
     }
   }
 
-  &__sub-caption {
+  &__description {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     opacity: 0.5;
+
+    @media screen and (max-width: $media-xs) {
+      font-size: 10px;
+      line-height: 15px;
+      margin-bottom: 18px;
+    }
   }
 
   &__text-block {
@@ -67,13 +113,22 @@
       @media screen and (max-width: $media-md) {
         margin-bottom: 60px;
       }
+
+      @media screen and (max-width: $media-xs) {
+        margin-bottom: 40px;
+      }
     }
 
-    &--main {
+    &--main:not(:last-child) {
       margin-bottom: 90px;
+      text-transform: uppercase;
 
       @media screen and (max-width: $media-md) {
         margin-bottom: 80px;
+      }
+
+      @media screen and (max-width: $media-xs) {
+        margin-bottom: 20px;
       }
     }
   }
@@ -91,6 +146,12 @@
       margin-bottom: 40px;
     }
 
+    @media screen and (max-width: $media-sm) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
     &-link {
       color: inherit;
       font-weight: 500;
@@ -99,6 +160,10 @@
     }
 
     &-note {
+      background-image: url(../images/icons/quote.svg);
+      background-position: 30px 5px;
+      background-repeat: no-repeat;
+      background-size: 37px 37px;
       font-size: 24px;
       font-weight: 300;
       line-height: 36px;
@@ -106,7 +171,16 @@
       padding-left: 100px;
 
       @media screen and (max-width: $media-md) {
+        background-position: 2px 0;
+        background-size: 20px 20px;
         margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 0;
+        padding-top: 30px;
       }
     }
 
@@ -121,23 +195,47 @@
         line-height: 34px;
         margin-bottom: 30px;
       }
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 26px;
+      }
     }
 
     &--bold {
       font-weight: 700;
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 14px;
+        line-height: 30px;
+      }
     }
   }
 
   &__list {
+    @media screen and (max-width: $media-sm) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
     &-item {
       padding-left: 80px;
       position: relative;
+
+      @media screen and (max-width: $media-sm) {
+        padding-left: 20px;
+      }
 
       &:not(:last-child) {
         margin-bottom: 40px;
 
         @media screen and (max-width: $media-md) {
           margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: $media-sm) {
+          margin-bottom: 20px;
         }
       }
 
@@ -150,6 +248,13 @@
         top: 50%;
         transform: translateY(-50%);
         width: 12px;
+
+        @media screen and (max-width: $media-sm) {
+          height: 10px;
+          left: 0;
+          top: 12px;
+          width: 10px;
+        }
       }
     }
   }
@@ -163,6 +268,10 @@
       align-items: flex-start;
       flex-direction: column;
       margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      margin-bottom: 40px;
     }
   }
 
@@ -188,10 +297,28 @@
       @media screen and (max-width: $media-md) {
         padding-bottom: 0;
       }
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
 
   &__likes {
     margin-bottom: 60px;
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tags {
+  }
+
+  &__share-title {
+    @media screen and (max-width: $media-xs) {
+      display: none;
+    }
   }
 }

@@ -6,8 +6,12 @@
   text-align: left;
   text-transform: uppercase;
 
+  @media screen and (max-width: $media-md) {
+    max-width: 185px;
+  }
+
   @media screen and (max-width: $media-sm) {
-    max-width: auto;
+    max-width: 160px;
   }
 
   &--indent {

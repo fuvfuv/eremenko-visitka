@@ -61,6 +61,12 @@
   // модификаторы
   &--article-inner {
     justify-content: flex-start;
+
+    @media screen and (max-width: $media-md) {
+      justify-content: space-between;
+      margin-bottom: 40px;
+      padding-top: 100px;
+    }
   }
 
   &--gallery-inner {

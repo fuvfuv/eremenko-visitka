@@ -76,21 +76,10 @@
         margin-right: 55px;
       }
 
-<<<<<<< HEAD
       @media screen and (max-width: $media-md) {
         margin: 0 44px 25px 0;
       }
 
-=======
-      @media screen and (max-height: 768px) {
-        font-size: 14px;
-      }
-
-      @media screen and (max-width: $media-md) {
-        margin: 0 44px 25px 0;
-      }
-
->>>>>>> d0a2b471f899910d3571923e2ab4485e88c7b873
       @media screen and (max-width: $media-sm) {
         font-size: 14px;
         margin-right: 60px;
@@ -107,9 +96,12 @@
       font-size: 24px;
       font-weight: 700;
 
-      @media screen and (max-height: 900px) {
-<<<<<<< HEAD
+      @media (max-width: $media-lg-plus) {
         font-size: 20px;
+      }
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 18px;
       }
 
       @media (max-width: $media-lg-plus) {
@@ -120,23 +112,6 @@
         font-size: 18px;
       }
 
-=======
-        font-size: 20px;
-      }
-
-      @media (max-width: $media-lg-plus) {
-        font-size: 20px;
-      }
-
-      @media screen and (max-height: 768px) {
-        font-size: 18px;
-      }
-
-      @media screen and (max-width: $media-lg) {
-        font-size: 18px;
-      }
-
->>>>>>> d0a2b471f899910d3571923e2ab4485e88c7b873
       @media screen and (max-width: $media-sm) {
         font-size: 15px;
       }
@@ -160,7 +135,6 @@
 
       @media screen and (max-width: $media-lg) {
         margin-right: 43px;
-<<<<<<< HEAD
       }
 
       @media screen and (max-width: $media-md) {
@@ -171,84 +145,66 @@
         font-size: 14px;
         margin-right: 48px;
       }
-
-=======
-      }
-
-      @media screen and (max-height: 768px) {
-        font-size: 14px;
-      }
-
-      @media screen and (max-width: $media-md) {
-        margin-right: 30px;
-      }
-
-      @media screen and (max-width: $media-sm) {
-        font-size: 14px;
-        margin-right: 48px;
-      }
-
->>>>>>> d0a2b471f899910d3571923e2ab4485e88c7b873
-      @media screen and (max-width: $media-xs) {
-        font-size: 10px;
-        margin: 0 33px 18px 0;
-      }
     }
 
-    &__link {
-      display: flex;
-      flex-direction: column;
+    @media screen and (max-width: $media-md) {
+      margin-right: 30px;
     }
 
-    &__link-text {
-      color: $global-black;
-      cursor: pointer;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 40px;
+    @media screen and (max-width: $media-sm) {
+      font-size: 14px;
+      margin-right: 48px;
+    }
 
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+    @media screen and (max-width: $media-xs) {
+      font-size: 10px;
+      margin: 0 33px 18px 0;
+    }
+  }
 
-      @media screen and (max-height: 900px) {
-<<<<<<< HEAD
-        font-size: 20px;
-      }
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
 
-      @media (max-width: $media-lg-plus) {
-        font-size: 20px;
-      }
+  &__link-text {
+    color: $global-black;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
 
-      @media screen and (max-width: $media-lg) {
-        font-size: 18px;
-      }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
-=======
-        font-size: 20px;
-      }
+    @media (max-width: $media-lg-plus) {
+      font-size: 20px;
+    }
 
-      @media (max-width: $media-lg-plus) {
-        font-size: 20px;
-      }
+    @media screen and (max-width: $media-lg) {
+      font-size: 18px;
+    }
 
-      @media screen and (max-height: 768px) {
-        font-size: 18px;
-      }
+    @media (max-width: $media-lg-plus) {
+      font-size: 20px;
+    }
 
-      @media screen and (max-width: $media-lg) {
-        font-size: 18px;
-      }
+    @media screen and (max-height: 768px) {
+      font-size: 18px;
+    }
 
->>>>>>> d0a2b471f899910d3571923e2ab4485e88c7b873
-      @media screen and (max-width: $media-sm) {
-        font-size: 15px;
-      }
+    @media screen and (max-width: $media-lg) {
+      font-size: 18px;
+    }
 
-      @media screen and (max-width: $media-xs) {
-        font-size: 14px;
-        margin: 0 33px 18px 0;
-      }
+    @media screen and (max-width: $media-sm) {
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      font-size: 14px;
+      margin: 0 33px 18px 0;
     }
   }
 }

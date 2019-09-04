@@ -14,7 +14,15 @@
     float: right;
     width: 240px;
 
-    @media screen and (max-width: 768px) {
+    @media (max-width: $media-lg-plus) {
+      width: 220px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: $media-sm) {
       height: 50px;
       margin-bottom: 35px;
       padding: 18px 30px;

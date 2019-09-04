@@ -1,5 +1,5 @@
 .contact-wrapper {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-sm) {
     display: flex;
     flex-direction: column;
   }
@@ -7,35 +7,52 @@
 
 .contact {
   float: left;
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   width: 50%;
 
-  @media screen and (max-width: 768px) {
-    float: none;
-    height: 388px;
+  @media screen and (max-width: $media-sm) {
+    display: flex;
+    height: 460px;
+    justify-content: center;
     width: 100%;
   }
 
+  @media screen and (max-width: $media-xs) {
+    display: block;
+    height: 325px;
+  }
+
   &__content {
-    padding-left: 20px;
+    @media screen and (max-width: $media-mobile) {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      height: 100%;
+    }
   }
 
   .email {
     display: flex;
     margin-bottom: 75px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 62px;
     }
 
-    @media (min-width: 786px) and (max-width: 1199px) {
+    @media screen and (max-width: $media-md) {
       flex-direction: column;
+      margin-bottom: 39px;
     }
 
-    @media screen and (max-width: 768px) {
-      align-items: baseline;
-      flex-wrap: wrap;
+    @media screen and (max-width: $media-sm) {
+      flex-direction: row;
+      margin-bottom: 39px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      flex-direction: column;
       margin-bottom: 39px;
       max-width: 302px;
     }
@@ -45,11 +62,20 @@
       cursor: pointer;
       margin-right: 86px;
 
-      @media (min-width: 786px) and (max-width: 1199px) {
-        margin: 0 0 25px 0;
+      @media screen and (max-width: $media-lg) {
+        margin-right: 55px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $media-md) {
+        margin: 0 44px 25px 0;
+      }
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 14px;
+        margin-right: 60px;
+      }
+
+      @media screen and (max-width: $media-xs) {
         font-size: 10px;
         margin: 0 40px 18px 0;
       }
@@ -60,15 +86,23 @@
       font-size: 24px;
       font-weight: 700;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-height: 900px) {
         font-size: 20px;
       }
 
-      @media (min-width: 786px) and (max-width: 1199px) {
+      @media (max-width: $media-lg-plus) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: $media-lg) {
         font-size: 18px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $media-sm) {
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: $media-xs) {
         font-size: 14px;
       }
     }
@@ -77,22 +111,30 @@
   .social {
     display: flex;
 
-    @media screen and (max-width: 768px) {
-      align-items: baseline;
-      flex-wrap: wrap;
+    @media screen and (max-width: $media-xs) {
+      flex-direction: column;
     }
 
     &__text {
       color: $global-dark-grey;
       margin-right: 72px;
 
-      @media screen and (max-width: 768px) {
-        font-size: 10px;
-        margin: 0 33px 18px 0;
+      @media screen and (max-width: $media-lg) {
+        margin-right: 43px;
       }
 
-      @media (min-width: 786px) and (max-width: 1199px) {
-        margin-right: 50px;
+      @media screen and (max-width: $media-md) {
+        margin-right: 30px;
+      }
+
+      @media screen and (max-width: $media-sm) {
+        font-size: 14px;
+        margin-right: 48px;
+      }
+
+      @media screen and (max-width: $media-xs) {
+        font-size: 10px;
+        margin: 0 33px 18px 0;
       }
     }
 
@@ -112,16 +154,25 @@
         margin-bottom: 0;
       }
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-height: 900px) {
         font-size: 20px;
       }
 
-      @media screen and (max-width: $media-mobile) {
+      @media (max-width: $media-lg-plus) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: $media-lg) {
         font-size: 18px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $media-sm) {
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: $media-xs) {
         font-size: 14px;
+        margin: 0 33px 18px 0;
       }
     }
   }

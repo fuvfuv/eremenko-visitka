@@ -68,10 +68,6 @@ input[type="radio"].visually-hidden {
   padding: 0 125px;
   width: auto;
 
-  // @media (min-width: 786px) and (max-width: 1199px) {
-  //   padding: 0 15px;
-  // }
-
   @media screen and (max-width: 768px) {
     padding: 0;
   }

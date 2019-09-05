@@ -119,3 +119,14 @@
     }
   }
 }
+
+.menu-wrapper--contacts {
+  .menu {
+    background-color: transparent;
+    z-index: 12;
+
+    &__header {
+      background-color: transparent;
+    }
+  }
+}

@@ -15,11 +15,13 @@
     width: 240px;
 
     @media (max-width: $media-xl-plus) {
-      width: 220px;
+      width: 200px;
+      height: 50px;
     }
 
     @media screen and (max-width: $media-md) {
-      width: 200px;
+      width: 170px;
+      height: 50px;
     }
 
     @media screen and (max-width: $media-xs) {

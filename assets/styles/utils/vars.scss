@@ -11,7 +11,8 @@ $white: #fff;
 $main-font: "GothamPro", "Arial", sans-serif;
 
 //Media queries;
-$mediaTablet: (max-width: 1200px);
-$mediaTabletMobile: (min-width: 786px) and (max-width:1199px);
-
-$media-mobile: 1200px;
+$media-xl-plus: (1400px);
+$media-lg: (1199px);
+$media-md: (991px);
+$media-sm: (767px);
+$media-xs: (575px);

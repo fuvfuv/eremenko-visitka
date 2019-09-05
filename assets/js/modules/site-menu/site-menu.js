@@ -1,13 +1,13 @@
+import {MEDIA} from "../constants/constants";
+
 export const siteMenu = () => {
   const switcher = document.querySelector(`.menu__switcher`);
   const menu = document.querySelector(`.menu`);
   const commonBlock = document.querySelector(`.common-block`);
 
-  const mediaMobile = 1200;
-
   function onWindow() {
     switcher.classList.remove(`hidden`);
-    if (window.innerWidth > mediaMobile) {
+    if (window.innerWidth > MEDIA.MD) {
       switcher.classList.add(`hidden`);
       commonBlock.classList.add(`hidden`);
     }

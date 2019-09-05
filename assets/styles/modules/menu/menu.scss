@@ -1,19 +1,21 @@
 .menu {
+  background-color: #fff;
   border-left: 1px solid #ededed;
   bottom: 0;
   height: auto;
-  outline: 1px solid red; // временно
+  // outline: 1px solid red; // временно
   padding-top: 65px;
   position: fixed;
   right: 0;
   top: 0;
   width: 120px;
+  z-index: 1000;
 
-  @media screen and (max-width: $media-mobile) {
+  @media screen and (max-width: $media-md) {
     background-color: #fff;
+    height: 100px;
     outline: none; // временно
-    padding: 0 10px;
-    position: relative;
+    padding: 0 20px;
     width: 100%;
     z-index: 10;
   }
@@ -27,7 +29,7 @@
     position: relative;
     z-index: 10;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       display: flex;
     }
   }
@@ -48,8 +50,8 @@
     width: 100%;
     z-index: 0;
 
-    @media screen and (max-width: $media-mobile) {
-      padding: 0 10px;
+    @media screen and (max-width: $media-md) {
+      padding: 0 20px;
       padding-bottom: 35px;
       top: 0;
       transform: translateY(-100%);
@@ -69,7 +71,7 @@
     flex-direction: column;
     width: 120px;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       margin-bottom: 40px;
       width: 100%;
     }
@@ -79,18 +81,18 @@
     color: $menu-link-color;
     display: flex;
     justify-content: center;
-    outline: 1px solid red; // временно
+    // outline: 1px solid red; // временно
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 45px;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-md) {
         margin-bottom: 30px;
       }
     }
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       color: #000;
       justify-content: flex-start;
       outline: none; // временно
@@ -111,11 +113,21 @@
     white-space: nowrap;
     width: auto;
 
-    @media screen and (max-width: $media-mobile) {
+    @media screen and (max-width: $media-md) {
       font-size: 24px;
       font-weight: 700;
       padding: 0;
       transform: none;
+    }
+  }
+}
+
+.menu-wrapper {
+  &--inner {
+    display: none;
+
+    @media screen and (max-width: $media-sm) {
+      display: block;
     }
   }
 }

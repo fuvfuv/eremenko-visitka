@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8" />
-    <title>new site</title>
+    <title>photogallery-page-inner</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <meta name="theme-color" content="#000" />
@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
 
-  <body class="photogallery-page--inner">
+  <body class="photogallery-page-inner">
     <!-- обертка для меню -->
-    <div class="menu-wrapper">
+    <div class="menu-wrapper menu-wrapper--inner">
       //= "modules/menu/menu.html"
     </div>
     <!-- обертка для основного контента -->
@@ -26,11 +26,11 @@
       </div>
       <div id="modal" class="modal"></div>
       <header class="header header--gallery-inner">
-        <a class="header__logo" href="#">Ieromin</a>
+        <a class="header__logo" href="#">Eremin</a>
         <a class="header__btn btn btn--gallery" href="#">back</a>
       </header>
 
-      <main>
+      <main class="gallery-inner">
         <div class="gallery-inner-info info">
           <h2 class="info__title">Social Mobility in the legal profession</h2>
           <div class="info__likes likes--reverse">
@@ -42,9 +42,6 @@
           //= "modules/gallery-inner/gallery-inner.html"
         </section>
       </main>
-
-      <!-- Подвал сайта -->
-      <!-- //= "modules/footer/footer.html" -->
     </div>
     <!-- Скрипты -->
 

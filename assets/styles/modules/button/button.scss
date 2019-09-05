@@ -14,7 +14,7 @@
     float: right;
     width: 240px;
 
-    @media (max-width: $media-lg-plus) {
+    @media (max-width: $media-xl-plus) {
       width: 220px;
     }
 
@@ -22,7 +22,7 @@
       width: 200px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media screen and (max-width: $media-xs) {
       height: 50px;
       margin-bottom: 35px;
       padding: 18px 30px;

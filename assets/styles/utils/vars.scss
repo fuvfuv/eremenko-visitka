@@ -11,14 +11,8 @@ $white: #fff;
 $main-font: "GothamPro", "Arial", sans-serif;
 
 //Media queries;
-$media-lg-plus: 1400px;
-
-$media-lg: 1200px;
-
-$media-lg: 1199px;
-
-$media-md: 991px;
-
-$media-sm: 767px;
-
-$media-xs: 575px;
+$media-xl-plus: (1400px);
+$media-lg: (1199px);
+$media-md: (991px);
+$media-sm: (767px);
+$media-xs: (575px);

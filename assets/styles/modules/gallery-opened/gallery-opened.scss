@@ -31,26 +31,26 @@
     margin-left: -152px;
     max-width: 320px;
   }
+}
 
-  .modal-content {
-    height: 100%;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-  }
+.modal-content {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
 
-  .close {
-    cursor: pointer;
-    display: none;
-    height: 50px;
-    left: 50%;
-    position: absolute;
-    width: 50px;
-    z-index: 1;
+.close {
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  width: 50px;
+  z-index: 1;
 
-    @media screen and (max-width: $media-sm) {
-      height: 30px;
-      width: 30px;
-    }
+  @media screen and (max-width: $media-sm) {
+    height: 30px;
+    width: 30px;
   }
 }

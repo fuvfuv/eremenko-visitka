@@ -114,6 +114,7 @@
     .email,
     .text {
       margin-bottom: 5%;
+
       @media screen and (max-width: $media-xl-plus) {
         margin-bottom: 4%;
       }

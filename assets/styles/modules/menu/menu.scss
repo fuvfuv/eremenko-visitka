@@ -52,10 +52,10 @@
 
     @media screen and (max-width: $media-md) {
       padding: 0 20px;
+      padding-top: 100px;
     }
 
     @media screen and (max-width: $media-lg) {
-      padding: 0 10px;
       padding-bottom: 35px;
       top: 0;
       transform: translateY(-100%);

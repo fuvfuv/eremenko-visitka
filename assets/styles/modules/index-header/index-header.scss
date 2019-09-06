@@ -1,0 +1,9 @@
+.index-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0;
+
+  &__link {
+    margin-right: 120px;
+  }
+}

@@ -40,3 +40,9 @@ import {blogInnerPageSettings} from "./modules/blog-inner-page/blog-inner-page";
 if (page.classList.contains(PAGE.BLOG_INNER)) {
   blogInnerPageSettings();
 }
+
+// index-page
+import {indexPage} from "./modules/index-page/index-page";
+if (page.classList.contains(PAGE.INDEX)) {
+  indexPage();
+}

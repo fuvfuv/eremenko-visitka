@@ -5,10 +5,6 @@
     flex-basis: calc(50% - 15px);
   }
 
-  @media screen and (max-width: $media-md) {
-    flex-basis: calc(50% - 10px);
-  }
-
   @media screen and (max-width: $media-sm) {
     flex-basis: 100%;
   }

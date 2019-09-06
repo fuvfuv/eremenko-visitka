@@ -11,7 +11,7 @@
   width: 120px;
   z-index: 1000;
 
-  @media screen and (max-width: $media-md) {
+  @media screen and (max-width: $media-lg) {
     background-color: #fff;
     height: 100px;
     outline: none; // временно
@@ -52,6 +52,10 @@
 
     @media screen and (max-width: $media-md) {
       padding: 0 20px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      padding: 0 10px;
       padding-bottom: 35px;
       top: 0;
       transform: translateY(-100%);
@@ -71,7 +75,7 @@
     flex-direction: column;
     width: 120px;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 40px;
       width: 100%;
     }
@@ -113,7 +117,7 @@
     white-space: nowrap;
     width: auto;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       font-size: 24px;
       font-weight: 700;
       padding: 0;
@@ -128,6 +132,17 @@
 
     @media screen and (max-width: $media-sm) {
       display: block;
+    }
+  }
+}
+
+.menu-wrapper--contacts {
+  .menu {
+    background-color: transparent;
+    z-index: 12;
+
+    &__header {
+      background-color: transparent;
     }
   }
 }

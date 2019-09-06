@@ -107,8 +107,12 @@ input[type="radio"].visually-hidden {
   }
 
   &--contacts {
+    @media (max-width: $media-xl-plus) {
+      padding: 0 125px 0 100px;
+    }
+
     @media screen and (max-width: $media-lg) {
-      padding: 0 10px;
+      padding: 0 0 0 20px;
     }
 
     @media screen and (max-width: $media-sm) {

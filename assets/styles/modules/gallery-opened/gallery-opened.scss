@@ -22,24 +22,14 @@
   overflow: auto;
   padding-bottom: 80px;
   position: absolute;
-  top: 292px;
   width: 100%;
   z-index: 1;
 
-  @media screen and (max-width: $media-lg) {
-    top: 281px;
-  }
-
-  @media (min-width: 786px) and (max-width: 1199px) {
-    top: 238px;
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-sm) {
     background-size: 320px auto;
     height: 550px;
     margin-left: -152px;
     max-width: 320px;
-    top: 195px;
   }
 }
 
@@ -56,17 +46,11 @@
   height: 50px;
   left: 50%;
   position: absolute;
-  top: 67px;
   width: 50px;
   z-index: 1;
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    top: 36px;
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-sm) {
     height: 30px;
-    top: 12px;
     width: 30px;
   }
 }

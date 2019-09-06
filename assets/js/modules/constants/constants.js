@@ -14,4 +14,5 @@ export const PAGE = {
   REV_ACHIEV: `rev-achiev-page`,
   BLOG: `blog-page`,
   BLOG_INNER: `blog-page-inner`,
+  ABOUT_ME: `about-me-page`,
 };

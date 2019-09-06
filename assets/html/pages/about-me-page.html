@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8" />
+  <title>about-me-page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="theme-color" content="#000" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" />
+</head>
+
+<body class="about-me-page">
+  <!-- обертка для меню -->
+  <div class="menu-wrapper">
+    //= "modules/menu/menu.html"
+  </div>
+  <!-- обертка для основного контента -->
+  <div class="page-wrapper container">
+    <!-- шапка сайта -->
+    <header class="header header--about-me">
+      <a class="header__logo" href="#">Ieromin</a>
+      <h1 class="header__caption--size-1">about me</h1>
+      <div class="header__after"></div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- <div class="mCustomScrollbar"> -->
+      <div class="about-me">
+        <!-- Контроллы слайдера -->
+        <div class="about-me__slider-controls">
+          <span class="about-me__slider-swap">scroll down</span>
+        </div>
+        <!-- Слайды -->
+        <div class="about-me__list">
+          //= "modules/about-me-slides/about-me-slide1.html"
+          //= "modules/about-me-slides/about-me-slide2.html"
+          //= "modules/about-me-slides/about-me-slide3.html"
+          //= "modules/about-me-slides/about-me-slide4.html"
+          //= "modules/about-me-slides/about-me-slide5.html"
+          //= "modules/about-me-slides/about-me-slide6.html"
+        </div>
+      </div>
+    <!-- </div> -->
+    </main>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="../js/bundle.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+
+</html>

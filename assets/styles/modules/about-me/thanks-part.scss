@@ -1,0 +1,81 @@
+// .header .header__after {
+//   display: block;
+// }
+
+.slider-item {
+  align-items: flex-start;
+  display: flex !important;
+  width: 100%;
+
+  &__thanks-part {
+    float: left;
+    margin-right: 7%;
+    padding-top: 109px;
+    width: 35%;
+  }
+
+  .thanks-part__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .thanks-part__caption {
+    background-color: $global-black;
+    height: 181px;
+    margin-bottom: 59px;
+    position: relative;
+    width: 268px;
+  
+
+    &::after {
+      background-image: url(../images/icons/thank_you.png);
+      background-repeat: no-repeat;
+      content: "";
+      height: 53px;
+      left: 0;
+      position: absolute;
+      top: 57px;
+      width: 447px;
+    }
+
+    &::before {
+      background: url(../images/icons/viewing.png) left no-repeat;
+      content: "";
+      height: 13px;
+      left: 14px;
+      position: absolute;
+      top: 138px;
+      width: 227px;
+    }
+  }
+
+  .text-one {
+    max-width: 403px;
+    margin-bottom: 119px;
+  }
+
+  .text-two__items {
+    background-image: url(../images/icons/quote.svg);
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+    font-size: 18px;
+    font-weight: 300;
+    height: auto;
+    line-height: 20px;
+    margin-bottom: 78px;
+    padding-left: 78px;
+    text-transform: initial;
+
+    .text-two__items-text {
+      width: 100%;
+      max-width: 397px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: none;
+    }
+  }
+}

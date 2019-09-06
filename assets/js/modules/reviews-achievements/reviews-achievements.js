@@ -22,13 +22,7 @@ export function reviewsSlider() {
 }
 
 export function customScroll() {
-  if ($(window).width() > 1200) {
-    $(`.reviews__body`).mCustomScrollbar({
-      alwaysShowScrollbar: 0,
-    });
-
-    $(`.achievements__body`).mCustomScrollbar({
-      alwaysShowScrollbar: 0,
-    });
-  }
+  $(window).on(`load`, function () {
+    $(`.about-me`).mCustomScrollbar();
+  });
 }

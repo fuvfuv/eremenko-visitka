@@ -12,11 +12,20 @@ import {siteMenu} from "./modules/site-menu/site-menu";
 siteMenu();
 
 // Gallery and gallery inner
-import {galleryModal} from "./modules/gallery/gallery";
 import {galleryMasonry} from "./modules/gallery/gallery";
 if (page.classList.contains(PAGE.PHOTOGALLERY) || page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
   galleryMasonry();
+}
+
+import {galleryModal} from "./modules/gallery-inner/gallery-inner";
+if (page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
   galleryModal();
+}
+
+// gallery inner
+import {galleryInnerSettings} from "./modules/gallery-inner/gallery-inner";
+if (page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
+  galleryInnerSettings();
 }
 
 // Reviews and achievements
@@ -30,4 +39,16 @@ if (page.classList.contains(PAGE.REV_ACHIEV)) {
 import {blogInnerPageSettings} from "./modules/blog-inner-page/blog-inner-page";
 if (page.classList.contains(PAGE.BLOG_INNER)) {
   blogInnerPageSettings();
+}
+
+// About-me
+import {aboutMeSlider} from "./modules/about-me/about-me";
+if (page.classList.contains(PAGE.ABOUT_ME)) {
+  aboutMeSlider();
+  // customScrollSlides();
+}
+
+import {slideSixView} from "./modules/about-me/about-me";
+if (page.classList.contains(PAGE.ABOUT_ME)) {
+  slideSixView();
 }

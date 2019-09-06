@@ -35,7 +35,15 @@
 @import "contact-links/contact-links";
 @import "form/form";
 @import "contact-footer/contact-footer";
+
 //Фотогалерея
 @import "gallery/gallery";
 @import "gallery-inner/gallery-inner";
 @import "gallery-opened/gallery-opened";
+
+//Страница обо мне
+// @import "about-me/citizen";
+@import "about-me/inner-parts";
+@import "about-me/about-me";
+@import "about-me/website-form";
+@import "about-me/thanks-part";

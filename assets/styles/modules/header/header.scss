@@ -39,6 +39,12 @@
     @media screen and (max-width: $media-md) {
       display: none;
     }
+
+    &--gallery {
+      @media screen and (max-width: $media-lg) {
+        margin-right: 66px;
+      }
+    }
   }
 
   &__caption {
@@ -71,14 +77,9 @@
 
   &--gallery-inner {
     justify-content: flex-start;
-    padding-bottom: 168px;
 
-    @media (min-width: $media-sm) and (max-width: $media-lg) {
-      padding-bottom: 66px;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      padding-bottom: 40px;
+    @media screen and (max-width: $media-xs) {
+      justify-content: space-between;
     }
   }
 }

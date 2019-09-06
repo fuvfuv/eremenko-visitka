@@ -6,6 +6,10 @@
   text-align: left;
   text-transform: uppercase;
 
+  @media screen and (max-width: $media-lg) {
+    max-width: 100%;
+  }
+
   @media screen and (max-width: $media-md) {
     max-width: 185px;
   }
@@ -28,5 +32,13 @@
 
   &--gallery {
     max-width: 240px;
+
+    @media screen and (max-width: $media-md) {
+      max-width: 185px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      max-width: 151px;
+    }
   }
 }

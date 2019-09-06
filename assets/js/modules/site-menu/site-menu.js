@@ -5,7 +5,6 @@ export const siteMenu = () => {
   const menu = document.querySelector(`.menu`);
   const commonBlock = document.querySelector(`.common-block`);
 
-
   function onWindow() {
     switcher.classList.remove(`hidden`);
     if (window.innerWidth > MEDIA.MD) {

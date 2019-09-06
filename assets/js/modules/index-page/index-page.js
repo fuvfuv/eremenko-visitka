@@ -23,11 +23,11 @@ export function indexPage() {
   }
 }
 
-indexSlider.mousewheel(function (evt) {
+indexSlider.on(`mousewheel`, function (evt) {
   evt.preventDefault();
-  if (evt.deltaY < 0) {
+  if (evt.deltaX > 0 || evt.deltaY < 0) {
     $(indexSlider).slick(`slickNext`);
-  } else {
+  } else if (evt.deltaX < 0 || evt.deltaY > 0) {
     $(indexSlider).slick(`slickPrev`);
   }
 });

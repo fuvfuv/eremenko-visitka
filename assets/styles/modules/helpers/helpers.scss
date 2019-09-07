@@ -115,6 +115,18 @@ input[type="radio"].visually-hidden {
       padding: 0;
     }
   }
+
+  &--about-me {
+    @media screen and (max-width: $media-lg) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+  }
 }
 
 .hidden {

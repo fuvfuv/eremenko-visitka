@@ -34,6 +34,10 @@
         padding-top: 165px;
       }
 
+      @media screen and (max-width: 1200px) {
+        flex-basis: calc(48% - 22px);
+      }
+
       @media screen and (max-width: $media-lg) {
         flex-basis: calc(40% - 62px);
         font-size: 14px;
@@ -67,8 +71,8 @@
         }
 
         @media screen and (max-width: $media-md) {
+          font-size: 12px;
           padding-top: 80px;
-          font-size: 12px; 
         }
       }
     }
@@ -78,8 +82,12 @@
     flex-basis: calc(60% - 10px);
     height: 100vh;
 
+    @media screen and (max-width: 1200px) {
+      flex-basis: calc(60% - 60px);
+    }
+
     @media screen and (max-width: $media-lg) {
-      flex-basis: calc(60% - 25px);
+      flex-basis: calc(60% - 125px);
       margin-right: 150px;
     }
 
@@ -125,6 +133,7 @@
         @media screen and (max-width: $media-lg) {
           margin-bottom: 20px;
         }
+
         @media screen and (max-width: $media-md) {
           margin-bottom: 10px;
         }
@@ -160,7 +169,6 @@
       @media screen and (max-width: $media-md) {
         font-size: 12px;
       }
-      
     }
   }
 }

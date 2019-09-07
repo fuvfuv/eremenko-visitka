@@ -86,16 +86,10 @@
   &--about-me {
     justify-content: flex-start;
     margin-bottom: 0;
+  }
 
-    // margin-bottom: 259px;
-
-    // @media (min-width: 786px) and (max-width: 1199px) {
-    //   margin-bottom: 130px;
-    // }
-
-    // @media screen and (max-width: 768px) {
-    //   margin-bottom: 27px;
-    // }
+  &--about-form {
+    padding-top: 0;
   }
 }
 
@@ -110,7 +104,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 47%;
     z-index: -1;
 
     @media screen and (max-width: $media-sm) {

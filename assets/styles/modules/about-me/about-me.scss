@@ -85,13 +85,16 @@
     padding-top: 170px;
 
     @media screen and (max-width: $media-xl-plus) {
-      margin-right: 80px;
+      margin-right: 40px;
       padding-top: 140px;
     }
 
+    @media screen and (max-width: 1200px) {
+      margin-right: 32px;
+    }
+
     @media screen and (max-width: $media-lg) {
-      margin-right: 80px;
-      padding-top: 140px;
+      margin-right: 40px;
     }
 
     @media screen and (max-width: $media-md) {

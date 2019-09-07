@@ -1,17 +1,13 @@
-// .header .header__after {
-//   display: block;
-// }
-
 .slider-item {
   align-items: flex-start;
-  display: flex !important;
+  display: flex !important; // костыль, но пока не убирать:)
   width: 100%;
 
   &__thanks-part {
     float: left;
-    margin-right: 7%;
     padding-top: 109px;
-    width: 35%;
+    position: relative;
+    width: 46%;
   }
 
   .thanks-part__text {
@@ -28,7 +24,6 @@
     margin-bottom: 59px;
     position: relative;
     width: 268px;
-  
 
     &::after {
       background-image: url(../images/icons/thank_you.png);
@@ -53,8 +48,8 @@
   }
 
   .text-one {
-    max-width: 403px;
     margin-bottom: 119px;
+    max-width: 403px;
   }
 
   .text-two__items {
@@ -70,12 +65,12 @@
     text-transform: initial;
 
     .text-two__items-text {
-      width: 100%;
-      max-width: 397px;
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
+      max-width: 397px;
       text-transform: none;
+      width: 100%;
     }
   }
 }

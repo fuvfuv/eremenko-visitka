@@ -8,7 +8,12 @@
 //   }
 // }
 
-.slider-item__form-part {
+.slider-item--six {
+  align-items: flex-start;
+  display: flex;
+}
+
+.form-part {
   background-color: $bg-color;
   height: 100vh;
   position: relative;
@@ -27,20 +32,6 @@
       display: none;
     }
   }
-
-  // &::before {
-  //   background-color: #f7f7f7;
-  //   content: "";
-  //   // display: none;
-  //   height: 103px;
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  //   width: 51vw;
-  //   z-index: -1;
-  // }
-
-
 
   @media screen and (max-width: $media-sm) {
     width: 100%;
@@ -64,16 +55,17 @@
   }
 
   &__header {
-    margin-bottom: 13%;
+    margin-bottom: 105px;
+    // margin-bottom: 13%;
     max-width: 370px;
 
     @media screen and (max-width: $media-lg) {
-      margin-bottom: 9%;
+      // margin-bottom: 9%;
       z-index: 12;
     }
 
     @media screen and (max-width: $media-md) {
-      margin-bottom: 10%;
+      // margin-bottom: 10%;
 
       span {
         display: none;
@@ -81,42 +73,41 @@
     }
 
     @media screen and (max-width: $media-sm) {
-      margin-bottom: 6%;
+      // margin-bottom: 6%;
     }
   }
 
   &__wrapper {
     font-size: 16px;
-    width: 520px;
+    max-width: 530px;
+    width: 100%;
 
     @media screen and (max-width: $media-xl-plus) {
       font-size: 14px;
-      width: 350px;
+      // width: 350px;
     }
 
     @media screen and (max-width: $media-lg) {
-      width: 320px;
+      // width: 320px;
     }
 
     @media screen and (max-width: $media-md) {
-      width: 280px;
+      // width: 280px;
     }
 
     @media screen and (max-width: $media-sm) {
-      width: 370px;
+      // width: 370px;
     }
 
     @media screen and (max-width: $media-xs) {
-      width: 270px;
+      // width: 270px;
     }
 
-    .name,
-    .email,
-    .text {
-      margin-bottom: 5%;
+    .field {
+      margin-bottom: 35px;
 
       @media screen and (max-width: $media-xl-plus) {
-        margin-bottom: 4%;
+        // margin-bottom: 4%;
       }
 
       label {
@@ -137,9 +128,7 @@
       }
     }
 
-    .name__input,
-    .email__input,
-    .text__input {
+    .field__input {
       background-color: $global-white;
       border: none;
       box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
@@ -157,47 +146,47 @@
 
       @media screen and (max-width: $media-xl-plus) {
         font-size: 14px;
-        height: 50px;
+        // height: 50px;
       }
 
       @media screen and (max-width: $media-lg) {
-        height: 45px;
+        // height: 45px;
       }
 
       @media screen and (max-width: $media-md) {
-        height: 40px;
+        // height: 40px;
       }
 
       @media screen and (max-width: $media-sm) {
         font-size: 14px;
-        height: 45px;
+        // height: 45px;
       }
 
       @media screen and (max-width: $media-xs) {
         font-size: 12px;
-        height: 40px;
+        // height: 40px;
       }
     }
 
-    .text__input {
-      height: 134px;
+    .text {
+      height: 128px;
       padding: 20px;
       resize: none;
 
       @media screen and (max-width: $media-xl-plus) {
-        height: 90px;
+        // height: 90px;
       }
 
       @media screen and (max-width: $media-lg) {
-        height: 80px;
+        // height: 80px;
       }
 
       @media screen and (max-width: $media-sm) {
-        height: 70px;
+        // height: 70px;
       }
 
       @media screen and (max-width: $media-xs) {
-        height: 40px;
+        // height: 40px;
       }
     }
   }

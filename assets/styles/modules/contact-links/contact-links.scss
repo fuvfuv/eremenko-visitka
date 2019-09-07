@@ -20,27 +20,21 @@
 
   @media screen and (max-width: $media-xs) {
     display: block;
-    height: 320px;
-  }
-
-  &__content {
-    @media screen and (max-width: $media-xs) {
-      padding-left: 20px;
-    }
+    height: 400px;
   }
 
   .email {
     align-items: baseline;
     display: flex;
-    margin-bottom: 75px;
+    margin-bottom: 62px;
 
     @media screen and (max-width: $media-lg) {
-      margin-bottom: 62px;
+      margin-bottom: 40px;
     }
 
     @media screen and (max-width: $media-md) {
-      flex-direction: column;
-      margin-bottom: 39px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
     }
 
     @media screen and (max-width: $media-sm) {
@@ -67,7 +61,7 @@
       }
 
       @media screen and (max-width: $media-md) {
-        margin: 0 44px 25px 0;
+        margin: 0 44px 0 0;
       }
 
       @media screen and (max-width: $media-sm) {
@@ -87,11 +81,11 @@
       font-weight: 700;
 
       @media (max-width: $media-xl-plus) {
-        font-size: 18px;
+        font-size: 17px;
       }
 
       @media screen and (max-width: $media-lg) {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       @media screen and (max-width: $media-sm) {
@@ -99,7 +93,7 @@
       }
 
       @media screen and (max-width: $media-xs) {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
   }
@@ -135,6 +129,7 @@
       }
 
       @media screen and (max-width: $media-xs) {
+        font-size: 10px;
         margin: 0 0 18px 0;
       }
     }
@@ -151,6 +146,7 @@
         }
 
         @media screen and (max-width: $media-xs) {
+          font-size: 13px;
           margin: 0 0 18px 0;
         }
       }
@@ -163,11 +159,11 @@
       font-weight: 700;
 
       @media (max-width: $media-xl-plus) {
-        font-size: 18px;
+        font-size: 17px;
       }
 
       @media screen and (max-width: $media-lg) {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       @media screen and (max-width: $media-sm) {

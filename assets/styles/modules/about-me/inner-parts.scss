@@ -1,11 +1,20 @@
 .slider-item {
   align-items: flex-start;
-  display: flex !important;
+  display: flex !important; //костыль, но лучше пока не убирать:)
   justify-content: space-around;
   width: 100%;
 
+  @media screen and (max-width: $media-md) {
+    justify-content: space-between;
+  }
+
   &__text-part {
-    flex-basis: calc(40% - 20px);
+    flex-basis: calc(40% - 10px);
+
+    @media screen and (max-width: $media-lg) {
+      height: 13px;
+      width: 13px;
+    }
 
     &-text {
       font-size: 16px;
@@ -16,27 +25,67 @@
       text-transform: none;
       width: 100%;
 
+      p:first-of-type {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: $media-xl-plus) {
+        max-width: 325px;
+        padding-top: 165px;
+      }
+
+      @media screen and (max-width: $media-lg) {
+        flex-basis: calc(40% - 62px);
+        font-size: 14px;
+        max-width: 300px;
+        padding-top: 157px;
+      }
+
+      @media screen and (max-width: $media-md) {
+        padding-top: 86px;
+      }
+
       &--slide2 {
-        max-width: 441px;
+        @media screen and (max-width: $media-lg) {
+          max-width: 300px;
+        }
       }
 
       &--slide4 {
         max-width: 448px;
+
+        @media screen and (max-width: $media-lg) {
+          max-width: 320px;
+        }
       }
 
       &--slide5 {
         max-width: 435px;
-      }
 
-      @media screen and (max-width: $media-lg) {
-        padding-top: 157px;
+        @media screen and (max-width: $media-lg) {
+          max-width: 320px;
+        }
+
+        @media screen and (max-width: $media-md) {
+          padding-top: 80px;
+          font-size: 12px; 
+        }
       }
     }
   }
 
   &__photo-part {
-    flex-basis: calc(60% - 5px);
+    flex-basis: calc(60% - 10px);
     height: 100vh;
+
+    @media screen and (max-width: $media-lg) {
+      flex-basis: calc(60% - 25px);
+      margin-right: 150px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-right: 0;
+    }
 
     &-img {
       max-width: 721px;
@@ -48,18 +97,43 @@
       padding-top: 100px;
       width: 100%;
 
+      @media screen and (max-width: $media-xl-plus) {
+        padding-top: 58px;
+      }
+
       @media screen and (max-width: $media-lg) {
         padding-top: 90px;
       }
 
+      @media screen and (max-width: $media-md) {
+        padding-top: 0;
+      }
+
       &--slide3 {
         padding-top: 105px;
+
+        @media screen and (max-width: $media-md) {
+          padding-top: 17px;
+        }
       }
 
       &--slide2,
       &--slide4 {
-        margin-bottom: 60px;
+        margin-bottom: 35px;
         padding-top: 0;
+
+        @media screen and (max-width: $media-lg) {
+          margin-bottom: 20px;
+        }
+        @media screen and (max-width: $media-md) {
+          margin-bottom: 10px;
+        }
+      }
+
+      &--slide5 {
+        @media screen and (max-width: $media-md) {
+          padding-top: 50px;
+        }
       }
     }
 
@@ -67,9 +141,26 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      max-width: 449px;
+      max-width: 500px;
       text-transform: none;
       width: 100%;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $media-md) {
+          margin-bottom: 0;
+        }
+      }
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $media-md) {
+        font-size: 12px;
+      }
+      
     }
   }
 }

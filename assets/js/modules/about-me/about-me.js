@@ -34,11 +34,22 @@ export function slideSixView() {
     slideSixHeader.style.display = `flex`;
   };
 
+  let basicHeader = () => {
+    const pageHeader = document.querySelector(`.header--about-me`);
+    const slideSixHeader = document.querySelector(`.header--slideSix`);
+    pageHeader.classList.remove(`header--slideSix`);
+    slideSixHeader.style.display = `none`;
+    pageHeader.style.display = `flex`;
+  };
+
   let observer = new MutationObserver((mutationRecords) => {
     mutationRecords.forEach((mutationObject) => {
-      let DOMTokenList = mutationObject.target.classList;
-      if (DOMTokenList.length) {
-        changeHeader();
+      if (mutationObject.attributeName === `class`) {
+        if (mutationObject.oldValue === `slick-active`) {
+          basicHeader();
+        } else if (mutationObject.target.className === `slick-active`) {
+          changeHeader();
+        }
       }
     });
   });
@@ -46,6 +57,4 @@ export function slideSixView() {
     attributes: true,
     attributeOldValue: true,
   });
-
-  // if (mutationObject.oldValue !=== )
 }

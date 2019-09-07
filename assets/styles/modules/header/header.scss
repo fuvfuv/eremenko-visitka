@@ -97,24 +97,24 @@
     //   margin-bottom: 27px;
     // }
   }
+}
 
-  &--slideSix {
-    display: none;
-    justify-content: flex-start;
-    margin-bottom: 0;
+.header--slideSix {
+  display: none;
+  justify-content: flex-start;
+  margin-bottom: 0;
 
-    .header__after {
-      background-color: #f7f7f7;
-      height: 50%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 51vw;
-      z-index: -1;
+  .header__after {
+    background-color: #f7f7f7;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: -1;
 
-      @media screen and (max-width: $media-sm) {
-        display: none;
-      }
+    @media screen and (max-width: $media-sm) {
+      display: none;
     }
   }
 }

@@ -45,3 +45,11 @@
     outline: none;
   }
 }
+
+@mixin hide-on-menu-hover {
+  transition: .3s opacity;
+
+  .menu-hovered & {
+    opacity: 0;
+  }
+}

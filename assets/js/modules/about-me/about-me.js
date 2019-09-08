@@ -21,14 +21,14 @@ export function aboutMeSlider() {
   });
 }
 
-// aboutBlockSlider.on(`mousewheel`, function (evt) {
-//   evt.preventDefault();
-//   if (evt.deltaX > 0 || evt.deltaY < 0) {
-//     $(aboutBlockSlider).slick(`slickNext`);
-//   } else if (evt.deltaX < 0 || evt.deltaY > 0) {
-//     $(aboutBlockSlider).slick(`slickPrev`);
-//   }
-// });
+aboutBlockSlider.on(`mousewheel`, function (evt) {
+  evt.preventDefault();
+  if (evt.deltaX > 0 || evt.deltaY < 0) {
+    $(aboutBlockSlider).slick(`slickNext`);
+  } else if (evt.deltaX < 0 || evt.deltaY > 0) {
+    $(aboutBlockSlider).slick(`slickPrev`);
+  }
+});
 
 export function slideSixView() {
   const sixDot = document.querySelector(`#slick-slide-control05`).parentNode;

@@ -45,7 +45,6 @@ if (page.classList.contains(PAGE.BLOG_INNER)) {
 import {aboutMeSlider} from "./modules/about-me/about-me";
 if (page.classList.contains(PAGE.ABOUT_ME)) {
   aboutMeSlider();
-  // customScrollSlides();
 }
 
 import {slideSixView} from "./modules/about-me/about-me";

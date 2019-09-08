@@ -1,10 +1,12 @@
+import {MEDIA} from "../constants/constants";
 import $ from "jquery"; // если нужен jquery
 import "slick-carousel";
 import "jquery-mousewheel";
-import "malihu-custom-scrollbar-plugin";
+
+const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
-  $(`.about-me__list`).slick({
+  aboutBlockSlider.slick({
     slidesToShow: 1,
     adaptiveHeight: true,
     dots: true,
@@ -19,11 +21,14 @@ export function aboutMeSlider() {
   });
 }
 
-// export function customScrollSlides() {
-//   $(window).on(`load`, function () {
-//     $(`.about-me-wrapper`).mCustomScrollbar();
-//   });
-// }
+// aboutBlockSlider.on(`mousewheel`, function (evt) {
+//   evt.preventDefault();
+//   if (evt.deltaX > 0 || evt.deltaY < 0) {
+//     $(aboutBlockSlider).slick(`slickNext`);
+//   } else if (evt.deltaX < 0 || evt.deltaY > 0) {
+//     $(aboutBlockSlider).slick(`slickPrev`);
+//   }
+// });
 
 export function slideSixView() {
   const sixDot = document.querySelector(`#slick-slide-control05`).parentNode;
@@ -58,3 +63,14 @@ export function slideSixView() {
     attributeOldValue: true,
   });
 }
+
+// мобтльный слайдер
+
+// let desktopView = document.querySelector(`.about-me-page`);
+// let mobileView = document.querySelector(`.about-me-page-mobile`);
+// if ($(window).width() < MEDIA.MD) {
+//   console.log(desktopView);
+//   console.log(mobileView);
+//   desktopView.hide();
+//   mobileView.show();
+// }

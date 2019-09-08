@@ -1,16 +1,11 @@
-// .contact-wrapper {
-//   align-items: flex-start;
-//   display: flex;
-
-//   @media screen and (max-width: $media-sm) {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
-
 .slider-item--six {
   align-items: flex-start;
   display: flex;
+
+  @media screen and (max-width: $media-sm) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form-part {
@@ -31,14 +26,25 @@
     @media screen and (max-width: 1200px) {
       display: none;
     }
+
+    @media screen and (max-width: $media-lg) {
+      background-color: #f7f7f7;
+      content: "";
+      display: block;
+      height: 10%;
+      position: absolute;
+      top: -10%;
+      width: 50vw;
+      z-index: 10;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      display: none;
+    }
   }
 
   @media screen and (max-width: $media-sm) {
     width: 100%;
-  }
-
-  @media screen and (max-width: $media-xs) {
-    padding-left: 20px;
   }
 
   &__content {
@@ -46,34 +52,10 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 100%;
 
     @media screen and (max-width: $media-xs) {
       align-items: flex-start;
-    }
-  }
-
-  &__header {
-    margin-bottom: 105px;
-    // margin-bottom: 13%;
-    max-width: 370px;
-
-    @media screen and (max-width: $media-lg) {
-      // margin-bottom: 9%;
-      z-index: 12;
-    }
-
-    @media screen and (max-width: $media-md) {
-      // margin-bottom: 10%;
-
-      span {
-        display: none;
-      }
-    }
-
-    @media screen and (max-width: $media-sm) {
-      // margin-bottom: 6%;
     }
   }
 
@@ -84,110 +66,106 @@
 
     @media screen and (max-width: $media-xl-plus) {
       font-size: 14px;
-      // width: 350px;
+      max-width: 430px;
     }
 
     @media screen and (max-width: $media-lg) {
-      // width: 320px;
+      max-width: 350px;
     }
 
     @media screen and (max-width: $media-md) {
-      // width: 280px;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      // width: 370px;
+      max-width: 300px;
     }
 
     @media screen and (max-width: $media-xs) {
-      // width: 270px;
+      max-width: 280px;
+    }
+  }
+
+  .field {
+    margin-bottom: 35px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 25px;
     }
 
-    .field {
-      margin-bottom: 35px;
-
-      @media screen and (max-width: $media-xl-plus) {
-        // margin-bottom: 4%;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 19px;
-
-        @media screen and (max-width: $media-md) {
-          font-size: 14px;
-        }
-
-        @media screen and (max-width: $media-sm) {
-          font-size: 12px;
-        }
-
-        @media screen and (max-width: $media-xs) {
-          font-size: 10px;
-        }
-      }
+    @media screen and (max-width: $media-lg) {
+      margin-bottom: 20px;
     }
 
-    .field__input {
-      background-color: $global-white;
-      border: none;
-      box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
-      box-sizing: border-box;
-      color: $global-black;
-      font-family: inherit;
-      font-size: 16px;
-      height: 70px;
-      padding: 0 20px;
-      width: 100%;
-
-      &:focus {
-        outline: none;
-      }
+    label {
+      display: block;
+      margin-bottom: 19px;
 
       @media screen and (max-width: $media-xl-plus) {
-        font-size: 14px;
-        // height: 50px;
+        margin-bottom: 13px;
       }
 
       @media screen and (max-width: $media-lg) {
-        // height: 45px;
-      }
-
-      @media screen and (max-width: $media-md) {
-        // height: 40px;
-      }
-
-      @media screen and (max-width: $media-sm) {
-        font-size: 14px;
-        // height: 45px;
-      }
-
-      @media screen and (max-width: $media-xs) {
         font-size: 12px;
-        // height: 40px;
-      }
-    }
-
-    .text {
-      height: 128px;
-      padding: 20px;
-      resize: none;
-
-      @media screen and (max-width: $media-xl-plus) {
-        // height: 90px;
-      }
-
-      @media screen and (max-width: $media-lg) {
-        // height: 80px;
-      }
-
-      @media screen and (max-width: $media-sm) {
-        // height: 70px;
+        margin-bottom: 10px;
       }
 
       @media screen and (max-width: $media-xs) {
-        // height: 40px;
+        font-size: 10px;
       }
+    }
+  }
+
+  .field__input {
+    background-color: $global-white;
+    border: none;
+    box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.01);
+    box-sizing: border-box;
+    color: $global-black;
+    font-family: inherit;
+    font-size: 16px;
+    height: 70px;
+    padding: 0 20px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: $media-xl-plus) {
+      font-size: 14px;
+      height: 55px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      height: 45px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      height: 42px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      font-size: 12px;
+      height: 40px;
+    }
+  }
+
+  .text {
+    height: 128px;
+    padding: 20px;
+    resize: none;
+
+    @media screen and (max-width: $media-xl-plus) {
+      height: 90px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      height: 60px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      height: 70px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      height: 40px;
     }
   }
 }

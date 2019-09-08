@@ -15,15 +15,125 @@
 </head>
 
 <body class="index-page">
-  //= "modules/menu/menu.html"
+  <!-- обертка для меню -->
+  <div class="menu-wrapper">
+    //= "modules/menu/menu.html"
+  </div>
 
+  <!-- основной контент -->
   <main>
-    Я ГЛАВНАЯ СТРАНИЦА
+
+    <div class="index-slider">
+      <!-- // слайд 1 -->
+      <section class="ieromin">
+
+        <div class="ieromin__image-wrapper img-overlay">
+          <img class="img-responsive img-cover" src="../images/content/index-page/photo.jpg" alt="vladimir ieromin">
+        </div>
+
+        <div class="ieromin__content-wrapper container">
+
+          <div class="index-header">
+            <span class="index-header__logo">
+              <img src="../images/general/logo.svg" alt="logo">
+            </span>
+            <a class="index-header__link btn" href="#">view resume</a>
+          </div>
+
+          <div class="ieromin__body">
+            <span>Надпись</span>
+          </div>
+
+          <div class="ieromin__footer">
+            <div class="ieromin__footer-col ieromin__footer-col--slogan">
+              <p class="ieromin__footer-slogan">corporate responsibility</p>
+            </div>
+            <div class="ieromin__footer-col ieromin__footer-col--about">
+              <p class="ieromin__footer-about">I am a clear communicator,
+                project manager and a leader</p>
+              <p class="ieromin__footer-about">who can think 'outside the box'
+                and adapt to complex environments.</p>
+            </div>
+            <div class="ieromin__footer-col ieromin__footer-col--awards">
+              <span class="ieromin__footer-awards">17+ <br>awards</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- // слайд 2 -->
+      <section class="ieromin-about">
+        <div class="ieromin-about__container container">
+          <div class="index-header">
+            <span class="index-header__logo">
+              <img src="../images/general/logo.svg" alt="logo">
+            </span>
+            <a class="index-header__link btn" href="#">view resume</a>
+          </div>
+
+          <div class="ieromin-about__info">
+            <div class="ieromin-about__wrapper">
+              <div class="ieromin-about__image-wrapper">
+                <img src="#" alt="ieromin">
+              </div>
+              <ul class="ieromin-about__list">
+                <li class="ieromin-about__item">
+                  <span>country:</span>
+                  <p>great britain</p>
+                </li>
+                <li class="ieromin-about__item">
+                  <span>specialization:</span>
+                  <p>corporate responsibility</p>
+                </li>
+                <li class="ieromin-about__item">
+                  <span>hobies:</span>
+                  <p>dancing, theater, movies</p>
+                </li>
+              </ul>
+            </div>
+            <div class="ieromin-about__slogan">
+              <p class="ieromin__footer-slogan">i see myself very much as a "citizen of the world"</p>
+            </div>
+          </div>
+
+          <div class="ieromin-about__video">
+            <div class="ieromin-about__video-preview">
+              <img src="" alt="video-prev">
+            </div>
+            <div class="ieromin-about__video-frame">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- // слайд 3 -->
+      <section class="ieromin-contact">
+        <div class="ieromin-contact__container container">
+          Write to me
+        </div>
+      </section>
+    </div>
+    <div class="index-slider__controls">
+      <span class="index-slider__swap swap">scroll down</span>
+    </div>
   </main>
 
-  <!-- Подвал сайта -->
-  <!-- //= "modules/footer/footer.html" -->
+  <footer class="index-footer">
+    <div class="container index-footer__container">
+      <div class="index-footer__soc">
+        <span class="index-footer__soc-title">social:</span>
+        <ul class="index-footer__soc-list">
+          <li class="index-footer__soc-item"><a class="index-footer__soc-link" href="#">/facebook</a></li>
+          <li class="index-footer__soc-item"><a class="index-footer__soc-link" href="#">/linkedin</a></li>
+          <li class="index-footer__soc-item"><a class="index-footer__soc-link" href="#">/telegram</a></li>
+        </ul>
+      </div>
 
+      <p class="index-footer__copyright">2019 © vladimir ieromin</p>
+    </div>
+  </footer>
+  <!-- </div> -->
   <!-- Скрипты -->
   <script src="../js/bundle.js"></script>
 </body>

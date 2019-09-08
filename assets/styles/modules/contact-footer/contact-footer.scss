@@ -1,35 +1,21 @@
 .contact__footer {
-  margin-bottom: 20px;
-  padding-top: 384px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  margin-bottom: 3%;
+  max-width: 1680px;
+  position: fixed;
+  width: 100%;
 
-  &-text {
-    font-size: 10px;
-    font-weight: 400;
-  }
-
-  @media (min-width: 786px) and (max-width: 1199px) {
-    padding-top: 365px;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
-.form__footer {
-  margin-bottom: 20px;
-  padding-top: 160px;
-
+  &-text,
   &-sign {
     font-size: 10px;
     font-weight: 400;
+    text-transform: none;
   }
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    padding-top: 130px;
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $media-sm) {
     display: none;
   }
 }

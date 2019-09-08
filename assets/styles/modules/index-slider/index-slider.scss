@@ -1,0 +1,41 @@
+.index-slider {
+  &__swap {
+    margin-right: 20px;
+  }
+
+  &__controls {
+    align-items: center;
+    bottom: 60px;
+    display: flex;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  &__bullets {
+    display: flex;
+    font-size: 0;
+
+    li {
+      background-color: transparent;
+      border: 2px solid #000;
+      cursor: pointer;
+      height: 14px;
+      width: 14px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 0;
+      }
+
+      &.slick-active {
+        background-color: #000;
+      }
+    }
+  }
+}

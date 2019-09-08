@@ -1,0 +1,83 @@
+.ieromin {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &__image-wrapper {
+    height: 100%;
+    left: 50%;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    img {
+      left: 50%;
+      min-height: 100%;
+      min-width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__footer {
+    align-items: flex-start;
+    display: flex;
+    height: 260px;
+    justify-content: space-between;
+    margin-bottom: 76px;
+    margin-right: 120px;
+    margin-top: auto;
+
+    &-col {
+      &:nth-child(1) {
+        box-sizing: border-box;
+        padding-right: 150px;
+        width: 40%;
+      }
+
+      &:nth-child(2) {
+        padding-right: 75px;
+        width: 24%;
+      }
+
+      &:nth-child(3) {
+        flex: 1;
+        padding-left: 180px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &-slogan {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    &-about {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-awards {
+      flex: 1;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+}

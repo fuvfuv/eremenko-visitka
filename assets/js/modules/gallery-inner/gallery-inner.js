@@ -41,7 +41,8 @@ export const galleryModal = () => {
       modalWrapper.style.display = `block`;
       if (document.body.clientWidth < 990 && document.body.clientWidth > 768) {
         close.style.top = window.pageYOffset + 110 + `px`;
-      } if (document.body.clientWidth < 767) {
+      }
+      if (document.body.clientWidth < 767) {
         close.style.top = window.pageYOffset + 122 + `px`;
       } else {
         close.style.top = window.pageYOffset + 55 + `px`;

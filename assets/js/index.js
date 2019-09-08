@@ -51,3 +51,9 @@ import {slideSixView} from "./modules/about-me/about-me";
 if (page.classList.contains(PAGE.ABOUT_ME)) {
   slideSixView();
 }
+
+// index-page
+import {indexPage} from "./modules/index-page/index-page";
+if (page.classList.contains(PAGE.INDEX)) {
+  indexPage();
+}

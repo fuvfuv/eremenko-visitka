@@ -2,17 +2,22 @@
   .contact__header {
     align-items: center;
     display: flex;
-    margin-bottom: 230px;
+    margin-bottom: 23%;
     padding-top: 66px;
 
-    // @media (min-width: 786px) and (max-width: 1199px) {
-    //   margin-bottom: 190px;
-    // }
+    @media screen and (max-width: $media-lg) {
+      margin-bottom: 15%;
+      padding-top: 0;
+    }
 
-    // @media screen and (max-width: 768px) {
-    //   margin-bottom: 39px;
-    //   padding-top: 40px;
-    // }
+    @media screen and (max-width: $media-sm) {
+      padding-top: 40px;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      margin-bottom: 39px;
+      padding-top: 0;
+    }
 
     &__logo {
       color: #000;
@@ -23,13 +28,9 @@
       margin-right: 95px;
       width: 107px;
 
-      // @media screen and (max-width: $media-lg) {
-      //   font-size: 18px;
-      // }
-
-      // @media screen and (max-width: 768px) {
-      //   display: none;
-      // }
+      @media screen and (max-width: $media-lg) {
+        display: none;
+      }
     }
 
     &__caption {
@@ -37,13 +38,13 @@
       font-weight: 700;
       margin-bottom: 0;
 
-      // @media screen and (max-width: 768px) {
-      //   font-size: 24px;
-      // }
+      @media screen and (max-width: $media-lg) {
+        font-size: 36px;
+      }
 
-      // @media screen and (max-width: $media-lg) {
-      //   font-size: 30px;
-      // }
+      @media screen and (max-width: $media-md) {
+        font-size: 28px;
+      }
     }
   }
 }

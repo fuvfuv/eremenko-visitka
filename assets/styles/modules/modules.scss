@@ -40,6 +40,7 @@
 @import "gallery/gallery";
 @import "gallery-inner/gallery-inner";
 @import "gallery-opened/gallery-opened";
+<<<<<<< HEAD
 
 //Страница обо мне
 // @import "about-me/citizen";
@@ -47,3 +48,12 @@
 @import "about-me/about-me";
 @import "about-me/website-form";
 @import "about-me/thanks-part";
+=======
+// Главная страница
+@import "ieromin/ieromin";
+@import "ieromin-about/ieromin-about";
+@import "ieromin-contact/ieromin-contact";
+@import "index-header/index-header";
+@import "index-footer/index-footer";
+@import "index-slider/index-slider";
+>>>>>>> 1bdee0441374f345bc0c7812860ba9e0d17f6d52

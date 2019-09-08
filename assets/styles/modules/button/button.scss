@@ -6,6 +6,10 @@
   text-align: left;
   text-transform: uppercase;
 
+  @media screen and (max-width: $media-lg) {
+    max-width: 100%;
+  }
+
   @media screen and (max-width: $media-md) {
     max-width: 185px;
   }
@@ -18,7 +22,17 @@
     float: right;
     width: 240px;
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-xl-plus) {
+      height: 50px;
+      width: 200px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      height: 50px;
+      width: 170px;
+    }
+
+    @media screen and (max-width: $media-xs) {
       height: 50px;
       margin-bottom: 35px;
       padding: 18px 30px;
@@ -36,5 +50,9 @@
     @media screen and (max-width: $media-sm) {
       max-width: 151px;
     }
+  }
+
+  &--inner-blog {
+    max-width: 240px;
   }
 }

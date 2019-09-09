@@ -53,3 +53,11 @@
     opacity: 0;
   }
 }
+
+@mixin hide-on-name-lettering-hover {
+  transition: .3s opacity;
+
+  .name-lettering-hovered & {
+    opacity: 0;
+  }
+}

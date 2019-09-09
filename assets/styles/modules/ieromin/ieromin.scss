@@ -38,6 +38,8 @@
     margin-right: 120px;
     margin-top: auto;
 
+    @include hide-on-name-lettering-hover;
+
     &-col {
       &:nth-child(1) {
         box-sizing: border-box;

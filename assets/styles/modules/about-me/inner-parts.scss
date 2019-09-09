@@ -9,7 +9,7 @@
   }
 
   &__text-part {
-    width: 45%;
+    width: 40%;
 
     @media screen and (max-width: $media-md) {
       width: 40%;
@@ -100,10 +100,7 @@
 
   &__photo-part {
     height: 100vh;
-    width: 50%;
-
-    @media screen and (max-width: 1200px) {
-    }
+    width: 55%;
 
     @media screen and (max-width: $media-lg) {
       margin-right: 150px;

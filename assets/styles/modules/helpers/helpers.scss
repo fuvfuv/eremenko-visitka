@@ -131,6 +131,12 @@ input[type="radio"].visually-hidden {
       padding: 0 20px;
     }
   }
+
+  &--about-content {
+    @media screen and (max-width: $media-md) {
+      padding: 0 20px 0 0;
+    }
+  }
 }
 
 .hidden {

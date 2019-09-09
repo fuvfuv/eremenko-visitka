@@ -6,6 +6,19 @@ import "jquery-mousewheel";
 const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
+  const dots = document.querySelector(`#about-me__slider-controls`);
+  const swap = document.querySelector(`#fake-slider__slider-swap`);
+  const arrow = document.querySelector(`#fake-slider__arrow`);
+  aboutBlockSlider.on(`init`, function () {
+    dots.style.display = `none`;
+    swap.style.display = `inline-block`;
+    arrow.style.display = `block`;
+  });
+  aboutBlockSlider.on(`afterChange`, () => {
+    dots.style.display = `flex`;
+    swap.style.display = `none`;
+    arrow.style.display = `none`;
+  });
   aboutBlockSlider.slick({
     slidesToShow: 1,
     adaptiveHeight: true,
@@ -18,6 +31,8 @@ export function aboutMeSlider() {
     responsive: true,
     vertical: true,
     verticalSwiping: true,
+    useTransform: true,
+    // cssEase: `ease-in-out`,
   });
 }
 
@@ -31,7 +46,7 @@ aboutBlockSlider.on(`mousewheel`, function (evt) {
 });
 
 export function slideSixView() {
-  const sixDot = document.querySelector(`#slick-slide-control05`).parentNode;
+  const sixDot = document.querySelector(`#slick-slide-control06`).parentNode;
   let changeHeader = () => {
     const pageHeader = document.querySelector(`.header--about-me`);
     const slideSixHeader = document.querySelector(`.header--slideSix`);
@@ -65,12 +80,13 @@ export function slideSixView() {
 }
 
 // мобтльный слайдер
-
-// let desktopView = document.querySelector(`.about-me-page`);
-// let mobileView = document.querySelector(`.about-me-page-mobile`);
-// if ($(window).width() < MEDIA.MD) {
-//   console.log(desktopView);
-//   console.log(mobileView);
-//   desktopView.hide();
-//   mobileView.show();
-// }
+export function changeToMobileSlider() {
+  let desktopView = document.querySelector(`.about-me-desk`);
+  let mobileView = document.querySelector(`.about-me-mob`);
+  if ($(window).width() < MEDIA.MD) {
+    console.log(desktopView);
+    console.log(mobileView);
+    // desktopView.hide();
+    // mobileView.show();
+  }
+}

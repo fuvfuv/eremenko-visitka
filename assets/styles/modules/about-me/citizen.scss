@@ -1,13 +1,29 @@
 .citizen {
-  height: 100%;
-  margin-bottom: 60px;
+  display: flex !important;
+  height: 100vh;
+  position: relative;
   width: 100%;
+
+  .citizen-wrap {
+    background: url(../images/content/cover/planet.png) right no-repeat;
+    background-size: 90% auto;
+    margin-top: -100px;
+    width: 100%;
+  }
 
   &__title {
     max-width: 741px;
 
+    .title__text {
+      padding-top: 260px;
+    }
+
     .text__main {
       font-size: 180px;
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 30px;
+      }
 
       span {
         color: $global-white;
@@ -17,21 +33,25 @@
     .text__minor {
       font-size: 91px;
 
+      @media screen and (max-width: $media-lg) {
+        font-size: 20px;
+      }
+
       span {
         color: #fff;
       }
     }
   }
 
-  &__back {
-    bottom: 66px;
-    position: absolute;
-    right: 120px;
-    z-index: -1;
+  // &__back {
+  //   bottom: 66px;
+  //   position: absolute;
+  //   right: 120px;
+  //   z-index: -1;
 
-    &____image {
-      height: auto;
-      width: 1320px;
-    }
-  }
+  //   &____image {
+  //     height: auto;
+  //     width: 1320px;
+  //   }
+  // }
 }

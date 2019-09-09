@@ -32,17 +32,20 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="about-me-desk">
       <!-- <div class="mCustomScrollbar"> -->
       <div class="about-me">
         <!-- Контроллы слайдера -->
-        <div class="about-me__slider-controls">
-          <span class="about-me__slider-swap">scroll down</span>
+        <div class="about-me__slider-controls" id="about-me__slider-controls">
+          <span class="about-me__slider-swap" id="about-me__slider-swap">scroll down</span>
         </div>
-        <div class="preview-slide">
-        </div>
+        <div class="about-me__fake-slider">
+            <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
+            <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
+          </div>
         <!-- Слайды -->
         <div class="about-me__list">
+          //= "modules/about-me-slides/about-me-slide0.html"
           //= "modules/about-me-slides/about-me-slide1.html"
           //= "modules/about-me-slides/about-me-slide2.html"
           //= "modules/about-me-slides/about-me-slide3.html"

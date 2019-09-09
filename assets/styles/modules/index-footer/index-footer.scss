@@ -6,6 +6,7 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+  @include hide-on-menu-hover;
 
   &__soc {
     align-items: center;

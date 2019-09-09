@@ -1,0 +1,42 @@
+.slider-item-mob {
+  align-items: flex-start;
+  display: flex !important; //костыль, но пока не убирать:)
+  justify-content: space-around;
+  max-width: 750px;
+  width: 100%;
+
+  // @media screen and (max-width: $media-sm) {
+  //   flex-direction: column-reverse;
+  //   // height: 100vh;
+  // }
+
+  &__text-part {
+    width: 100%;
+
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 750px;
+      text-transform: none;
+      width: 100%;
+
+      // p:first-of-type {
+      //   margin-bottom: 20px;
+      // }
+    }
+  }
+
+  &__photo-part {
+    height: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+
+    &__photo {
+      display: block;
+      height: auto;
+      padding-top: 30px;
+      width: 100%;
+    }
+  }
+}

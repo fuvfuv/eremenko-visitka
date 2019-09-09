@@ -32,17 +32,16 @@
     </header>
 
     <!-- MAIN -->
-    <main class="about-me-desk">
-      <!-- <div class="mCustomScrollbar"> -->
-      <div class="about-me">
+    <main>
+      <div class="about-me" id="about-me">
         <!-- Контроллы слайдера -->
         <div class="about-me__slider-controls" id="about-me__slider-controls">
           <span class="about-me__slider-swap" id="about-me__slider-swap">scroll down</span>
         </div>
         <div class="about-me__fake-slider">
-            <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
-            <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
-          </div>
+          <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
+          <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
+        </div>
         <!-- Слайды -->
         <div class="about-me__list">
           //= "modules/about-me-slides/about-me-slide0.html"
@@ -54,7 +53,36 @@
           //= "modules/about-me-slides/about-me-slide6.html"
         </div>
       </div>
-    <!-- </div> -->
+
+      <div class="about-me-mobile" id="about-me-mobile">
+          <!-- <div class="about-me__fake-slider">
+            <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
+            <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
+          </div> -->
+          <div class="about-mob__content content">
+            <!-- <div class="content__slider content__slider">
+              <div class="content__slider__photo"></div>
+            </div>
+            <div class="content__slider">
+              <div class="content__slider__photo"></div>
+            </div> -->
+            <div class="content__slider">
+              <div class="content__slider__photo-part">
+                  <!-- //= "modules/about-me-slides-mobile/about-me-slide-mob2-photo.html" -->
+              </div>
+              <div class="content__slider__text">
+                //= "modules/about-me-slides-mobile/about-me-slide-mob2.html"
+                //= "modules/about-me-slides-mobile/about-me-slide-mob2.1.html"
+                //= "modules/about-me-slides-mobile/about-me-slide-mob2.2.html"
+              </div>
+              <div class="about-me-mobile__slider-controls" id="about-me__slider-controls">
+                  <span class="about-me-mobile__slider-swap" id="about-me__slider-swap">scroll down</span>
+              </div>
+            </div>
+          </div>
+          <!-- Контроллы слайдера -->
+
+      </div>
     </main>
   </div>
 
@@ -65,7 +93,4 @@
 
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
-</body>
 
-
-</html>

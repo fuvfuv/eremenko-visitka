@@ -9,16 +9,32 @@ export function aboutMeSlider() {
   const dots = document.querySelector(`#about-me__slider-controls`);
   const swap = document.querySelector(`#fake-slider__slider-swap`);
   const arrow = document.querySelector(`#fake-slider__arrow`);
+
   aboutBlockSlider.on(`init`, function () {
     dots.style.display = `none`;
     swap.style.display = `inline-block`;
     arrow.style.display = `block`;
   });
-  aboutBlockSlider.on(`afterChange`, () => {
-    dots.style.display = `flex`;
-    swap.style.display = `none`;
-    arrow.style.display = `none`;
+  // aboutBlockSlider.on(`afterChange`, (slick, currentSlide) => {
+  //   if (currentSlide.currentSlide !== 0) {
+  //     dots.style.display = `flex`;
+  //     swap.style.display = `none`;
+  //     arrow.style.display = `none`;
+  //   }
+  // });
+
+  aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
+    if (nextSlide === 0) {
+      dots.style.display = `none`;
+      swap.style.display = `inline-block`;
+      arrow.style.display = `block`;
+    } else if (nextSlide > 0) {
+      dots.style.display = `flex`;
+      swap.style.display = `none`;
+      arrow.style.display = `none`;
+    }
   });
+
   aboutBlockSlider.slick({
     slidesToShow: 1,
     adaptiveHeight: true,
@@ -44,6 +60,51 @@ aboutBlockSlider.on(`mousewheel`, function (evt) {
     $(aboutBlockSlider).slick(`slickPrev`);
   }
 });
+
+// const deskScroll = $(`.about-me-desk`);
+// const elem = document.querySelector(`.slide-zero`);
+// scrolling
+
+// export function scrollFromZeroSlider() {
+//   let temp;
+//   return function (sel) {
+//     cancelAnimationFrame(temp);
+//     let start = performance.now();
+//     let from = window.pageYOffset || document.documentElement.scrollTop;
+//     let to = document.querySelector(sel).getBoundingClientRect().top;
+//     requestAnimationFrame(function step(timestamp) {
+//       let progress = (timestamp - start) / duration;
+//       progress >= 1 && (progress = 1);
+//       window.scrollTo(0, (from + to * progress) | 0);
+//       progress < 1 && (temp = requestAnimationFrame(step));
+//     });
+//   };
+// }
+
+// console.log(elem);
+// export function zeroSlider() {
+//   elem.slick({
+//     slidesToShow: 1,
+//     adaptiveHeight: true,
+//     dots: true,
+//     dotsClass: `about-me__slider-bullets`,
+//     appendDots: $(`.about-me__slider-controls`),
+//     infinite: false,
+//     prevArrow: null,
+//     nextArrow: null,
+//     responsive: true,
+//     vertical: true,
+//     verticalSwiping: true,
+//     useTransform: true,
+//   });
+// }
+
+// elem.on(`mousewheel`, function (evt) {
+//   evt.preventDefault();
+//   if (evt.deltaX > 0 || evt.deltaY < 0) {
+//     $(elem).slick(`.about-me__list`);
+//   }
+// });
 
 export function slideSixView() {
   const sixDot = document.querySelector(`#slick-slide-control06`).parentNode;
@@ -77,16 +138,4 @@ export function slideSixView() {
     attributes: true,
     attributeOldValue: true,
   });
-}
-
-// мобтльный слайдер
-export function changeToMobileSlider() {
-  let desktopView = document.querySelector(`.about-me-desk`);
-  let mobileView = document.querySelector(`.about-me-mob`);
-  if ($(window).width() < MEDIA.MD) {
-    console.log(desktopView);
-    console.log(mobileView);
-    // desktopView.hide();
-    // mobileView.show();
-  }
 }

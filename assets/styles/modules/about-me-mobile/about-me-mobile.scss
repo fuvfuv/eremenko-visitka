@@ -4,8 +4,7 @@
 
   .about-me-mobile__slider-bullets {
     display: flex;
-    // flex-direction: column;
-    max-width: 76px;
+    // max-width: 76px;
 
     li {
       background-color: transparent;
@@ -13,46 +12,17 @@
       height: 14px;
       width: 14px;
 
-      &:first-child {
-        display: none;
-      }
-
-      @media screen and (max-width: $media-lg) {
-        height: 13px;
-        width: 13px;
-      }
-
       &:not(:last-child) {
-        margin-bottom: 55px;
-
-        @media screen and (max-width: $media-xl-plus) {
-          margin-bottom: 40px;
-        }
-
-        @media screen and (max-width: $media-lg) {
-          margin-bottom: 36px;
-        }
-
-        @media screen and (max-width: $media-md) {
-          margin-bottom: 30px;
-        }
+        margin-right: 40px;
       }
 
-      &:last-child {
-        margin-bottom: 92px;
+      // &:first-child {
+      //   display: none;
+      // }
 
-        @media screen and (max-width: $media-xl-plus) {
-          margin-bottom: 65px;
-        }
-
-        @media screen and (max-width: $media-lg) {
-          margin-bottom: 50px;
-        }
-
-        @media screen and (max-width: $media-md) {
-          margin-bottom: 40px;
-        }
-      }
+      // &:last-child {
+      //   margin-bottom: 92px;
+      // }
 
       &.slick-active {
         background-color: #000;
@@ -66,40 +36,22 @@
   }
 
   .about-me-mobile__slider {
-    padding-left: 120px;
-    padding-right: 180px;
+    // padding-left: 120px;
+    // padding-right: 180px;
 
-    @media screen and (max-width: 1200px) {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    // @media screen and (max-width: 1200px) {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
   }
 
   .about-me-mobile__slider-controls {
     display: none;
     display: flex;
     flex-direction: column-reverse;
-    margin-right: 110px;
-    max-width: 76px;
-    padding-top: 170px;
-
-    @media screen and (max-width: $media-xl-plus) {
-      margin-right: 40px;
-      padding-top: 140px;
-    }
-
-    @media screen and (max-width: 1200px) {
-      margin-right: 32px;
-    }
-
-    @media screen and (max-width: $media-lg) {
-      margin-right: 40px;
-    }
-
-    @media screen and (max-width: $media-md) {
-      margin-right: 46px;
-      padding-top: 80px;
-    }
+    // margin-right: 110px;
+    // max-width: 76px;
+    // padding-top: 95px;
   }
 
   .about-me-mobile__slider-swap {

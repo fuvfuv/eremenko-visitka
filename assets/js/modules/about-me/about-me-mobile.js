@@ -3,22 +3,36 @@ import $ from "jquery"; // если нужен jquery
 import "slick-carousel";
 import "jquery-mousewheel";
 
-const aboutMobSlider = $(`.content__slider__text`);
-// const aboutMobSlider = document.querySelector(`.content__slider__text`);
+let sliders = {
+  2: {textSlide: `#content__slider__text2`},
+  3: {textSlide: `#content__slider__text3`},
+};
+// const textThreeSlide = $(`.content__slider__text3`);
 
 export function aboutMeMobileSlider() {
-  aboutMobSlider.slick({
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    dots: true,
-    dotsClass: `about-me-mobile__slider-bullets`,
-    appendDots: $(`.about-me-mobile__slider-controls`),
-    infinite: false,
-    prevArrow: null,
-    nextArrow: null,
-    responsive: true,
+  $.each(sliders, function () {
+    $(this.textSlide).slick({
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      dots: true,
+      dotsClass: `about-me-mobile__slider-bullets`,
+      appendDots: $(`.about-me-mobile__slider-controls`),
+      infinite: false,
+      prevArrow: null,
+      nextArrow: null,
+      responsive: true,
+    });
   });
 }
+// console.log(element);
+// console.log(index);
+// let test = document.createElement(`div`);
+// test.className = `index` + index + ` ` + `about-me-mobile__slider-bullets`;
+// console.log(test);
+// console.log(test.attributes);
+// console.log(test.classList);
+// element.parentElement.appendChild(test);
+// console.log(element.parentElement);
 
 // aboutMobSlider.on(`mousewheel`, function (evt) {
 //   evt.preventDefault();

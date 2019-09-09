@@ -1,0 +1,49 @@
+.citizen {
+  display: flex !important; //костыль, но пока не убирать:)
+  // height: 100vh;
+  position: relative;
+  width: 100%;
+
+  // .citizen-wrap {
+  //   background: url(../images/content/cover/planet.png) right no-repeat;
+  //   background-size: 100% auto;
+  //   // margin-top: -100px;
+  //   width: 100%;
+  // }
+
+  // &__title {
+  //   max-width: 265px;
+
+  //   .title__text {
+  //   }
+
+  //   .text__main {
+  //     font-size: 32px;
+
+  //     span {
+  //       color: $global-white;
+  //     }
+  //   }
+
+  //   .text__minor {
+  //     font-size: 24px;
+
+  //     span {
+  //       color: #fff;
+  //     }
+  //   }
+  // }
+}
+
+.content__slider__photo-part {
+  height: 100%;
+  margin-bottom: 40px;
+  width: 100%;
+
+  .photo-part__photo {
+    display: block;
+    height: auto;
+    padding-top: 30px;
+    width: 100%;
+  }
+}

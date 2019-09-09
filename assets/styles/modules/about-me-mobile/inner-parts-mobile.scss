@@ -17,6 +17,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
+      margin-bottom: 40px;
       max-width: 750px;
       text-transform: none;
       width: 100%;
@@ -26,17 +27,17 @@
       // }
     }
   }
+}
 
-  &__photo-part {
-    height: 100%;
-    margin-bottom: 40px;
+.content__slider__photo-part {
+  height: 100%;
+  margin-bottom: 40px;
+  width: 100%;
+
+  .photo-part__photo {
+    display: block;
+    height: auto;
+    padding-top: 30px;
     width: 100%;
-
-    &__photo {
-      display: block;
-      height: auto;
-      padding-top: 30px;
-      width: 100%;
-    }
   }
 }

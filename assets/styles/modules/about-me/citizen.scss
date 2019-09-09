@@ -1,47 +1,95 @@
 .citizen {
   display: flex !important;
   height: 100vh;
-  position: relative;
   width: 100%;
 
   .citizen-wrap {
     background: url(../images/content/cover/planet.png) right no-repeat;
-    background-size: 90% auto;
+    background-size: 85% auto;
     margin-top: -100px;
+    position: relative;
     width: 100%;
   }
 
-  &__title {
-    max-width: 741px;
+  .about-me__fake-slider {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.5%;
+    width: 76px;
 
-    .title__text {
-      padding-top: 260px;
+    @media screen and (max-width: $media-xl-plus) {
+      top: 7%;
     }
 
-    .text__main {
-      font-size: 180px;
+    // @media screen and (max-width: 1200px) {
+    //   margin-right: 32px;
+    // }
 
-      @media screen and (max-width: $media-lg) {
-        font-size: 30px;
-      }
+    // @media screen and (max-width: $media-lg) {
+    //   margin-right: 40px;
+    // }
 
-      span {
-        color: $global-white;
-      }
+    // @media screen and (max-width: $media-md) {
+    //   margin-right: 46px;
+    //   padding-top: 80px;
+    // }
+
+    .fake-slider__slider-swap {
+      background-color: #000;
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 500;
+      margin-bottom: 80px;
+      padding: 2px;
+      text-transform: uppercase;
+      width: 76px;
     }
 
-    .text__minor {
-      font-size: 91px;
-
-      @media screen and (max-width: $media-lg) {
-        font-size: 20px;
-      }
-
-      span {
-        color: #fff;
-      }
+    .fake-slider__arrow {
+      background: url(../images/icons/arrow.svg) no-repeat;
+      background-size: auto;
+      display: block;
+      height: 109px;
+      width: 10px;
     }
   }
+  // &__title {
+  //   max-width: 741px;
+
+  //   .title__text {
+  //     padding-top: 260px;
+  //   }
+
+  //   .text__main {
+  //     font-size: 180px;
+
+  //     @media screen and (max-width: $media-lg) {
+  //       font-size: 30px;
+  //     }
+
+  //     span {
+  //       color: $global-white;
+  //     }
+  //   }
+
+  //   .text__minor {
+  //     font-size: 91px;
+
+  //     @media screen and (max-width: $media-lg) {
+  //       font-size: 20px;
+  //     }
+
+  //     span {
+  //       color: #fff;
+  //     }
+  //   }
+  // }
 
   // &__back {
   //   bottom: 66px;

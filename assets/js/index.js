@@ -52,11 +52,6 @@ if (page.classList.contains(PAGE.ABOUT_ME)) {
   aboutMeMobileSlider();
 }
 
-import {slideSixView} from "./modules/about-me/about-me";
-if (page.classList.contains(PAGE.ABOUT_ME)) {
-  slideSixView();
-}
-
 import {changeToMobileSlider} from "./modules/about-me/about-me-mobile";
 if (page.classList.contains(PAGE.ABOUT_ME)) {
   changeToMobileSlider();

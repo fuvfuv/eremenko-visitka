@@ -5,11 +5,6 @@
   max-width: 750px;
   width: 100%;
 
-  // @media screen and (max-width: $media-sm) {
-  //   flex-direction: column-reverse;
-  //   // height: 100vh;
-  // }
-
   &__text-part {
     width: 100%;
 
@@ -21,10 +16,6 @@
       max-width: 750px;
       text-transform: none;
       width: 100%;
-
-      // p:first-of-type {
-      //   margin-bottom: 20px;
-      // }
     }
   }
 }

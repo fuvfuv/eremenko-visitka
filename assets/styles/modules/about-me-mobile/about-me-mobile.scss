@@ -1,10 +1,13 @@
+.content__slider {
+  margin-bottom: 20px;
+}
+
 .about-me-mobile {
   align-items: flex-start;
   display: flex;
 
   .about-me-mobile__slider-bullets {
     display: flex;
-    // max-width: 76px;
 
     li {
       background-color: transparent;
@@ -15,14 +18,6 @@
       &:not(:last-child) {
         margin-right: 40px;
       }
-
-      // &:first-child {
-      //   display: none;
-      // }
-
-      // &:last-child {
-      //   margin-bottom: 92px;
-      // }
 
       &.slick-active {
         background-color: #000;
@@ -35,23 +30,10 @@
     }
   }
 
-  .about-me-mobile__slider {
-    // padding-left: 120px;
-    // padding-right: 180px;
-
-    // @media screen and (max-width: 1200px) {
-    //   padding-left: 0;
-    //   padding-right: 0;
-    // }
-  }
-
   .about-me-mobile__slider-controls {
     display: none;
     display: flex;
     flex-direction: column-reverse;
-    // margin-right: 110px;
-    // max-width: 76px;
-    // padding-top: 95px;
   }
 
   .about-me-mobile__slider-swap {
@@ -68,28 +50,30 @@
   }
 }
 
-// .about-me__fake-slider {
-//   .fake-slider__slider-swap {
-//     background-color: #000;
-//     border: 0;
-//     color: #fff;
-//     cursor: pointer;
-//     display: none;
-//     display: inline-block;
-//     font-size: 9px;
-//     font-weight: 500;
-//     margin-bottom: 177px;
-//     margin-top: 600px;
-//     padding: 2px;
-//     text-transform: uppercase;
-//     width: 76px;
-//   }
+.fake-slider {
+  text-align: center;
 
-//   .fake-slider__arrow {
-//     background: url(../images/icons/arrow.svg) no-repeat;
-//     background-size: auto;
-//     display: none;
-//     height: 109px;
-//     width: 10px;
-//   }
-// }
+  .fake-slider__slider-swap {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    // margin-bottom: 177px;
+    // margin-top: 600px;
+    padding: 2px;
+    text-transform: uppercase;
+    width: 76px;
+  }
+
+  .fake-slider__arrow {
+    background: url(../images/icons/arrow-mobile.svg) no-repeat;
+    background-size: auto;
+    display: none;
+    height: 49px;
+    width: 10px;
+  }
+}

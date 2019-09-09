@@ -5,20 +5,20 @@
   z-index: 1;
 
   &__image-wrapper {
-    height: 100%;
-    left: 50%;
-    min-width: 100%;
-    position: absolute;
-    transform: translateX(-50%);
-
-    img {
-      left: 50%;
-      min-height: 100%;
-      min-width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+    // height: 100%;
+    // left: 50%;
+    // min-width: 100%;
+    // position: absolute;
+    // transform: translateX(-50%);
+    // 
+    // img {
+    //   left: 50%;
+    //   min-height: 100%;
+    //   min-width: 100%;
+    //   position: absolute;
+    //   top: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
   }
 
   &__content-wrapper {
@@ -79,5 +79,227 @@
       font-weight: 700;
       line-height: 32px;
     }
+  }
+}
+
+$letteringTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
+$letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
+
+// .ieromin__lettering {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   z-index: 10;
+//   top: $letteringTop;
+//   padding-left: 120px;
+//   font-weight: 900;
+//   font-size: 276px;
+//   line-height: 182px;
+//   color: #fff;
+//   text-transform: uppercase;
+//
+//   &::before,
+//   &::after {
+//     position: absolute;
+//     left: 120px;
+//     top: -90px;
+//     display: block;
+//     width: 54px;
+//     height: 54px;
+//     margin-left: 0.07em;
+//     content: '';
+//     transition: 1s all;
+//   }
+//
+//   &::before {
+//     background-image:
+//     linear-gradient(rgba(#000, .25), rgba(#000, .25)),
+//     url("../images/content/index-page/photo.jpg");
+//     background-attachment: fixed;
+//     // filter: brightness(1) contrast(100%);
+//     filter: brightness(0.75) contrast(200%);
+//   }
+//
+//   &::after {
+//     background-color: #fff;
+//     opacity: 0;
+//   }
+//
+//   span {
+//     position: relative;
+//     z-index: 1;
+//     display: block;
+//     height: 100%;
+//     overflow: hidden;
+//
+//     transition: .3s opacity;
+//   }
+//
+//   &:hover {
+//     &::before,
+//     .ieromin__lettering-pic {
+//       filter: brightness(1) contrast(100%);
+//     }
+//
+//     .ieromin__lettering-pic {
+//       top: -100vw;
+//       bottom: -100vw;
+//     }
+//
+//     span {
+//       opacity: .5;
+//     }
+//
+//     &:after {
+//       opacity: .5;
+//     }
+//   }
+// }
+//
+// .ieromin__lettering-pic {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1;
+//   display: block;
+//   background-image:
+//     linear-gradient(rgba(#000, .25), rgba(#000, .25)),
+//     url("../images/content/index-page/photo.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   content: '';
+//   pointer-events: none;
+//   transition: 1s all;
+//   filter: brightness(0.75) contrast(200%);
+//
+//   // &::before {
+//   //   position: absolute;
+//   //   top: 0;
+//   //   left: 0;
+//   //   right: 0;
+//   //   bottom: 0;
+//   //   display: block;
+//   //   background-color: #000;
+//   //   opacity: .5;
+//   //   content: '';
+//   // }
+// }
+
+.ieromin__lettering {
+  position: absolute;
+  z-index: -1;
+  top: calc(#{$letteringTop});
+  left: 0;
+  right: 0;
+  bottom: calc(#{$letteringBottom});
+
+  height: 182px;
+  font-weight: 900;
+  font-size: 276px;
+  line-height: 182px;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    span {
+      opacity: .15;
+    }
+
+    .ieromin__lettering-back {
+      filter: brightness(1) contrast(100%);
+    }
+
+    .ieromin__lettering-front {
+      &:after {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        filter: brightness(1) contrast(100%);
+      }
+
+      &:before {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+}
+
+.ieromin__lettering-back,
+.ieromin__lettering-front {
+  pointer-events: none;
+  position: absolute;
+  top: calc((#{$letteringTop}) * -1);
+  left: 0;
+  right: 0;
+  bottom: calc((#{$letteringBottom}) * -1);
+
+  span {
+    position: absolute;
+    display: block;
+    top: calc(#{$letteringTop});
+    // top: 0;
+    left: 120px;
+    transition: .5s all;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -90px;
+      display: block;
+      width: 54px;
+      height: 54px;
+      margin-left: 0.07em;
+      background-color: #fff;
+      content: '';
+    }
+  }
+}
+
+.ieromin__lettering-back {
+  background-image:
+    linear-gradient(rgba(#000, .25), rgba(#000, .25)),
+    url("../images/content/index-page/photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(0.75) contrast(200%);
+  transition: .5s all;
+}
+
+.ieromin__lettering-front {
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+    background-color: #fff;
+    background-image:
+      linear-gradient(#727272, #727272);
+    background-size: 54px 54px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: calc(120px + 0.07em) calc((#{$letteringTop}) - 54px - 36px);
+    clip-path: polygon(0 0, 100% 0, 100% calc(#{$letteringTop}), 0 calc(#{$letteringTop}));
+    transition: .5s all;
+    filter: brightness(0.75) contrast(200%);
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+    background-color: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% calc(#{$letteringBottom}), 0 calc(#{$letteringBottom}));
+    transition: .5s all;
   }
 }

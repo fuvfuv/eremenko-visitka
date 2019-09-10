@@ -1,0 +1,58 @@
+.certificates {
+  &__gap {
+    width: 48px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      width: 20px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      width: 14px;
+    }
+  }
+
+  &__item {
+    background-color: #fefefe;
+    height: auto;
+    margin-bottom: 50px;
+    position: relative;
+    width: 190px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 15px;
+      width: 153px;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      margin-bottom: 15px;
+      width: 153px;
+    }
+  }
+
+  &__year {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__image-overlay {
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    left: 0;
+    line-height: 18px;
+    opacity: 0;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 0.2s;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

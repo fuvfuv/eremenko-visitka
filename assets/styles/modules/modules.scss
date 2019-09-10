@@ -28,6 +28,7 @@
 // Страница отзывов и ачивок
 @import "rev-achive-page/rev-achive-page";
 @import "achievements/achievements";
+@import "certificates/certificates";
 @import "reviews/reviews";
 
 //Страница контактов
@@ -35,10 +36,12 @@
 @import "contact-links/contact-links";
 @import "form/form";
 @import "contact-footer/contact-footer";
+
 //Фотогалерея
 @import "gallery/gallery";
 @import "gallery-inner/gallery-inner";
 @import "gallery-opened/gallery-opened";
+
 // Главная страница
 @import "ieromin/ieromin";
 @import "ieromin-about/ieromin-about";

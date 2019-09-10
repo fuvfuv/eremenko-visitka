@@ -29,9 +29,10 @@ if (page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
 }
 
 // Reviews and achievements
-import {reviewsSlider, customScroll} from "./modules/reviews-achievements/reviews-achievements";
+import {reviewsSlider, customScroll, certificatesMsnry} from "./modules/reviews-achievements/reviews-achievements";
 if (page.classList.contains(PAGE.REV_ACHIEV)) {
   reviewsSlider();
+  certificatesMsnry();
   customScroll();
 }
 
@@ -44,5 +45,5 @@ if (page.classList.contains(PAGE.BLOG_INNER)) {
 // index-page
 import {indexPage} from "./modules/index-page/index-page";
 if (page.classList.contains(PAGE.INDEX)) {
-  indexPage();
+  // indexPage();
 }

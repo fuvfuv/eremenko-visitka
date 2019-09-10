@@ -17,6 +17,7 @@
 
     @media screen and (max-width: $media-md) {
       margin-bottom: 107px;
+      // padding-top: 0;
     }
 
     @media screen and (max-width: $media-sm) {
@@ -25,6 +26,7 @@
 
     @media screen and (max-width: $media-xs) {
       margin-bottom: 39px;
+      // padding-top: 0;
     }
 
     &__logo {

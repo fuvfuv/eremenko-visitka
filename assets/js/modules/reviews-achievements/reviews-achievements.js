@@ -3,6 +3,17 @@ import "slick-carousel";
 import "jquery-mousewheel";
 import "malihu-custom-scrollbar-plugin";
 
+export function certificatesMsnry() {
+  const container = document.querySelector(`.certificates`);
+  const msnry = new Masonry(container, {
+    itemSelector: `.certificates__item`,
+    gutter: `.certificates__gap`,
+    horizontalOrder: true,
+    isResizeBound: true,
+    fitWidth: true,
+  });
+}
+
 export function reviewsSlider() {
   if ($(window).width() < 1200) {
     $(`.reviews__list`).slick({

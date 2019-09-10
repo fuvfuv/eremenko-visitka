@@ -1,8 +1,8 @@
 .reviews {
   padding-top: 50px;
 
-  @media screen and (max-width: 1200px) {
-    padding-top: 0;
+  @media screen and (max-width: $media-lg) {
+    padding-top: 100px;
   }
 
   .mCSB_draggerContainer {
@@ -13,7 +13,7 @@
     font-size: 48px;
     font-weight: 700;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       font-size: 24px;
     }
   }
@@ -24,7 +24,11 @@
     margin-bottom: 100px;
     position: relative;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 30px;
     }
   }
@@ -33,14 +37,14 @@
     margin-right: 90px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $media-lg) {
     margin-bottom: 65px;
   }
 
   &__logo {
     display: block;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       display: none;
     }
   }
@@ -48,7 +52,7 @@
   &__list {
     padding-top: 50px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       padding-top: 0;
     }
 
@@ -67,7 +71,11 @@
       display: none; // Safari and Chrome
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-xl-plus) {
+      height: calc(100vh - 160px);
+    }
+
+    @media screen and (max-width: $media-lg) {
       height: auto;
     }
   }
@@ -85,7 +93,7 @@
       right: 0;
       z-index: 5;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: $media-lg) {
         display: none;
       }
     }
@@ -150,7 +158,13 @@
     padding-right: 170px;
     text-transform: initial;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1400px) {
+      background-size: 25px 25px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media screen and (max-width: $media-lg) {
       background-size: 30px 30px;
       font-size: 14px;
       margin-bottom: 30px;
@@ -205,7 +219,7 @@
     padding-left: 120px;
     padding-right: 180px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -214,7 +228,7 @@
       align-items: center;
       display: none;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: $media-lg) {
         display: flex;
       }
     }

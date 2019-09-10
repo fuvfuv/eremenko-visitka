@@ -3,24 +3,7 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-
-  &__image-wrapper {
-    // height: 100%;
-    // left: 50%;
-    // min-width: 100%;
-    // position: absolute;
-    // transform: translateX(-50%);
-    // 
-    // img {
-    //   left: 50%;
-    //   min-height: 100%;
-    //   min-width: 100%;
-    //   position: absolute;
-    //   top: 50%;
-    //   transform: translate(-50%, -50%);
-    // }
-  }
-
+  
   &__content-wrapper {
     display: flex;
     flex-direction: column;
@@ -87,117 +70,8 @@
 // $letteringTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
 // $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
 
-// $partOne: (((260px + 76px) - 184px - 182px) / 2) - 184px;
-// $partTwo: 182px;
-
-// $letteringTop: "50vh - #{abs($partOne)}";
-// $letteringBottom: "(50vh - #{abs($partOne)}) + #{abs($partTwo)}";
-
 $letteringTop: "50vh - 167px";
 $letteringBottom: "50vh + 15px";
-
-// .ieromin__lettering {
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   z-index: 10;
-//   top: $letteringTop;
-//   padding-left: 120px;
-//   font-weight: 900;
-//   font-size: 276px;
-//   line-height: 182px;
-//   color: #fff;
-//   text-transform: uppercase;
-//
-//   &::before,
-//   &::after {
-//     position: absolute;
-//     left: 120px;
-//     top: -90px;
-//     display: block;
-//     width: 54px;
-//     height: 54px;
-//     margin-left: 0.07em;
-//     content: '';
-//     transition: 1s all;
-//   }
-//
-//   &::before {
-//     background-image:
-//     linear-gradient(rgba(#000, .25), rgba(#000, .25)),
-//     url("../images/content/index-page/photo.jpg");
-//     background-attachment: fixed;
-//     // filter: brightness(1) contrast(100%);
-//     filter: brightness(0.75) contrast(200%);
-//   }
-//
-//   &::after {
-//     background-color: #fff;
-//     opacity: 0;
-//   }
-//
-//   span {
-//     position: relative;
-//     z-index: 1;
-//     display: block;
-//     height: 100%;
-//     overflow: hidden;
-//
-//     transition: .3s opacity;
-//   }
-//
-//   &:hover {
-//     &::before,
-//     .ieromin__lettering-pic {
-//       filter: brightness(1) contrast(100%);
-//     }
-//
-//     .ieromin__lettering-pic {
-//       top: -100vw;
-//       bottom: -100vw;
-//     }
-//
-//     span {
-//       opacity: .5;
-//     }
-//
-//     &:after {
-//       opacity: .5;
-//     }
-//   }
-// }
-//
-// .ieromin__lettering-pic {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: -1;
-//   display: block;
-//   background-image:
-//     linear-gradient(rgba(#000, .25), rgba(#000, .25)),
-//     url("../images/content/index-page/photo.jpg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   content: '';
-//   pointer-events: none;
-//   transition: 1s all;
-//   filter: brightness(0.75) contrast(200%);
-//
-//   // &::before {
-//   //   position: absolute;
-//   //   top: 0;
-//   //   left: 0;
-//   //   right: 0;
-//   //   bottom: 0;
-//   //   display: block;
-//   //   background-color: #000;
-//   //   opacity: .5;
-//   //   content: '';
-//   // }
-// }
 
 .ieromin__lettering {
   position: absolute;

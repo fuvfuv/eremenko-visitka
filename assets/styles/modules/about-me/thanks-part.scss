@@ -1,19 +1,21 @@
-.slider-item {
+.slider-item--six {
   align-items: flex-start;
+  display: block;
   display: flex !important; // костыль, но пока не убирать:)
   width: 100%;
 
   &__thanks-part {
     float: left;
-    padding-top: 109px;
+    height: 100vh;
     position: relative;
-    width: 45%;
+    width: 35%;
   }
 
   .thanks-part__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    padding-top: 109px;
     text-transform: none;
     width: 100%;
 

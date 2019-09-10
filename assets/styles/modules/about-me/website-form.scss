@@ -1,12 +1,12 @@
-.slider-item--six {
-  align-items: flex-start;
-  display: flex;
+// .slider-item--six {
+//   align-items: flex-start;
+//   display: flex;
 
-  @media screen and (max-width: $media-sm) {
-    display: flex;
-    flex-direction: column;
-  }
-}
+//   // @media screen and (max-width: $media-sm) {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   // }
+// }
 
 .form-part {
   background-color: $bg-color;
@@ -14,34 +14,34 @@
   position: relative;
   width: 50%;
 
-  &::after {
-    background-color: #f7f7f7;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 51vw;
-    z-index: -1;
+  // &::after {
+  //   background-color: #f7f7f7;
+  //   content: "";
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 51vw;
+  //   z-index: -1;
 
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
+  //   @media screen and (max-width: 1200px) {
+  //     display: none;
+  //   }
 
-    @media screen and (max-width: $media-lg) {
-      background-color: #f7f7f7;
-      content: "";
-      display: block;
-      height: 10%;
-      position: absolute;
-      top: -10%;
-      width: 50vw;
-      z-index: 10;
-    }
+  //   @media screen and (max-width: $media-lg) {
+  //     background-color: #f7f7f7;
+  //     content: "";
+  //     display: block;
+  //     height: 10%;
+  //     position: absolute;
+  //     top: -10%;
+  //     width: 50vw;
+  //     z-index: 10;
+  //   }
 
-    @media screen and (max-width: $media-sm) {
-      display: none;
-    }
-  }
+  //   @media screen and (max-width: $media-sm) {
+  //     display: none;
+  //   }
+  // }
 
   @media screen and (max-width: $media-sm) {
     width: 100%;

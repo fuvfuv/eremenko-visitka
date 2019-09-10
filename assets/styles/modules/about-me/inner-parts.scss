@@ -1,27 +1,16 @@
 .slider-item {
   align-items: flex-start;
   display: flex !important; //костыль, но пока не убирать:)
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
 
-  @media screen and (max-width: $media-md) {
-    justify-content: space-between;
-  }
-
-  @media screen and (max-width: $media-sm) {
-    flex-direction: column-reverse;
-  }
-
   &__text-part {
-    width: 40%;
+    margin-right: 15px;
+    width: 35%;
 
-    @media screen and (max-width: $media-md) {
-      width: 40%;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      width: 100%;
-    }
+    // @media screen and (max-width: $media-md) {
+    //   width: 40%;
+    // }
 
     &-text {
       font-size: 16px;
@@ -50,11 +39,6 @@
       @media screen and (max-width: $media-md) {
         font-size: 12px;
         padding-top: 86px;
-      }
-
-      @media screen and (max-width: $media-sm) {
-        max-width: 750px;
-        padding-top: 0;
       }
 
       &--slide2 {
@@ -113,23 +97,7 @@
 
   &__photo-part {
     height: 100vh;
-    width: 55%;
-
-    @media screen and (max-width: $media-lg) {
-      margin-right: 150px;
-    }
-
-    @media screen and (max-width: $media-md) {
-      margin-right: 0;
-      width: 55%;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      flex-direction: column-reverse;
-      height: 100%;
-      margin-bottom: 40px;
-      width: 100%;
-    }
+    width: 50%;
 
     &-img {
       max-width: 721px;
@@ -151,10 +119,6 @@
 
       @media screen and (max-width: $media-md) {
         padding-top: 0;
-      }
-
-      @media screen and (max-width: $media-sm) {
-        padding-top: 30px;
       }
 
       &--slide3 {

@@ -18,11 +18,12 @@ export function aboutMeMobileSlider() {
 
 $(`.slider`).on(`mousewheel`, function (evt) {
   evt.preventDefault();
-  if (evt.deltaX > 0 || evt.deltaY < 0) {
-    $($(`.slider`)).slick(`slickNext`);
-  } else if (evt.deltaX < 0 || evt.deltaY > 0) {
-    $($(`.slider`)).slick(`slickPrev`);
-  }
+    if (evt.deltaX > 0 || evt.deltaY < 0) {
+      $($(`.slider`)).slick(`slickNext`);
+    } else if (evt.deltaX < 0 || evt.deltaY > 0) {
+      $($(`.slider`)).slick(`slickPrev`);
+    }
+    console.log($(`.slider`))
 });
 
 export function changeToMobileSlider() {

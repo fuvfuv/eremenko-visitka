@@ -51,7 +51,10 @@
 }
 
 .fake-slider {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 
   .fake-slider__slider-swap {
     background-color: #000;
@@ -62,8 +65,7 @@
     display: inline-block;
     font-size: 9px;
     font-weight: 500;
-    // margin-bottom: 177px;
-    // margin-top: 600px;
+    margin-bottom: 32px;
     padding: 2px;
     text-transform: uppercase;
     width: 76px;
@@ -72,7 +74,6 @@
   .fake-slider__arrow {
     background: url(../images/icons/arrow-mobile.svg) no-repeat;
     background-size: auto;
-    display: none;
     height: 49px;
     width: 10px;
   }

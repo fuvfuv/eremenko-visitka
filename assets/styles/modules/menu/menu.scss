@@ -1,6 +1,5 @@
 .menu {
   background-color: #fff;
-  border-left: 1px solid #ededed;
   bottom: 0;
   height: auto;
   // outline: 1px solid red; // временно
@@ -8,8 +7,30 @@
   position: fixed;
   right: 0;
   top: 0;
+  padding-left: 1px;
   width: 120px;
   z-index: 1000;
+  transition: .6s transform;
+  transform: translate3d(0, 0, 0);
+
+  .name-lettering-hovered & {
+    transform: translate3d(100%, 0, 0);
+    transition: .3s transform;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #ededed;
+    content: '';
+  
+    @include hide-on-menu-hover;
+  }
 
   @media screen and (max-width: $media-lg) {
     background-color: #fff;
@@ -43,12 +64,14 @@
   &__body {
     background-color: #fff;
     box-sizing: border-box;
-    left: 0;
+    left: 1px;
     outline: none; // временно
     position: absolute;
     top: 47px;
     width: 100%;
     z-index: 0;
+
+    
 
     @media screen and (max-width: $media-md) {
       padding: 0 20px;
@@ -89,7 +112,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: 45px;
+      margin-bottom: 44px;
 
       @media screen and (max-width: $media-md) {
         margin-bottom: 30px;
@@ -106,22 +129,72 @@
       color: $global-black;
     }
   }
-
-  a {
+  
+  &__link {
+    // position: relative;
     color: inherit;
-    display: inline-block;
+    display: block;
     font-size: 10px;
     font-weight: 400;
     padding: 45px 0;
-    transform: rotate(-90deg);
     white-space: nowrap;
-    width: auto;
+    width: 100%;
+
+    span {
+      display: block;
+      text-align: center;
+      transform: rotate(-90deg) translateY(0);
+
+      .menu--animated & {
+        transition: .2s transform;
+        transition-delay: .45s;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: -22px;
+      left: 0;
+      right: 0;
+      bottom: -22px;
+      display: block;
+      content: '';
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 52px;
+      color: #000;
+      content: attr(data-text);
+      transform: translateY(-52%) translateX(100%);
+      transform-origin: right;
+      transition: .5s transform .1s;
+    }
+
+    &:hover {
+      span {
+        transition-delay: 0s;
+        transform: rotate(-90deg) translateY(80px);
+      }
+      &:after {
+        transform: translateY(-50%) translateX(0.02em);
+      }
+    }
 
     @media screen and (max-width: $media-lg) {
       font-size: 24px;
       font-weight: 700;
       padding: 0;
       transform: none;
+
+      &:after {
+        display: none;
+      }
     }
   }
 }

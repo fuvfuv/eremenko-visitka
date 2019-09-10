@@ -21,6 +21,8 @@
     justify-content: space-between;
     width: 100%;
 
+    @include hide-on-menu-hover;
+
     @media screen and (max-width: $media-lg) {
       flex-basis: 100%;
       // margin-bottom: 30px;

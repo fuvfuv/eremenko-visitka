@@ -84,8 +84,17 @@
   }
 }
 
-$letteringTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
-$letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
+// $letteringTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
+// $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
+
+// $partOne: (((260px + 76px) - 184px - 182px) / 2) - 184px;
+// $partTwo: 182px;
+
+// $letteringTop: "50vh - #{abs($partOne)}";
+// $letteringBottom: "(50vh - #{abs($partOne)}) + #{abs($partTwo)}";
+
+$letteringTop: "50vh - 167px";
+$letteringBottom: "50vh + 15px";
 
 // .ieromin__lettering {
 //   position: absolute;
@@ -221,7 +230,7 @@ $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182p
       }
 
       &:before {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        transform: scale3d(1, 0, 1);
       }
     }
   }
@@ -243,7 +252,8 @@ $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182p
     top: calc(#{$letteringTop});
     // top: 0;
     left: 120px;
-    transition: .5s all;
+    transition: .5s opacity;
+    transform: translate3d(0, 0, 0);
 
     &::before {
       position: absolute;
@@ -267,7 +277,8 @@ $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182p
   background-repeat: no-repeat;
   background-attachment: fixed;
   filter: brightness(0.75) contrast(200%);
-  transition: .5s all;
+  transition: .5s filter;
+  transform: translate3d(0, 0, 0);
 }
 
 .ieromin__lettering-front {
@@ -288,20 +299,23 @@ $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182p
     background-attachment: fixed;
     background-position: calc(120px + 0.07em) calc((#{$letteringTop}) - 54px - 36px);
     clip-path: polygon(0 0, 100% 0, 100% calc(#{$letteringTop}), 0 calc(#{$letteringTop}));
-    transition: .5s all;
+    transition-duration: .5s;
+    transition-property: filter, clip-path;
     filter: brightness(0.75) contrast(200%);
+    transform: translate3d(0, 0, 0);
   }
 
   &:before {
     position: absolute;
-    top: 0;
+    top: calc(#{$letteringBottom});
     left: 0;
     right: 0;
     bottom: 0;
     display: block;
     content: '';
     background-color: #fff;
-    clip-path: polygon(0 100%, 100% 100%, 100% calc(#{$letteringBottom}), 0 calc(#{$letteringBottom}));
-    transition: .5s all;
+    transition: .5s transform;
+    transform: scale3d(1, 1, 1);
+    transform-origin: bottom;
   }
 }

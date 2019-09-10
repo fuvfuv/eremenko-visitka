@@ -7,9 +7,11 @@
   position: fixed;
   right: 0;
   top: 0;
+  padding-left: 1px;
   width: 120px;
   z-index: 1000;
   transition: .6s transform;
+  transform: translate3d(0, 0, 0);
 
   .name-lettering-hovered & {
     transform: translate3d(100%, 0, 0);
@@ -19,14 +21,14 @@
   &:before {
     position: absolute;
     top: 0;
-    left: -1px;
+    left: 0;
     bottom: 0;
     display: block;
     width: 1px;
     height: 100%;
     background-color: #ededed;
     content: '';
-
+  
     @include hide-on-menu-hover;
   }
 
@@ -62,7 +64,7 @@
   &__body {
     background-color: #fff;
     box-sizing: border-box;
-    left: 0;
+    left: 1px;
     outline: none; // временно
     position: absolute;
     top: 47px;

@@ -137,6 +137,16 @@ input[type="radio"].visually-hidden {
       padding: 0 20px 0 0;
     }
   }
+
+  &--reviews-achievements {
+    @media screen and (max-width: $media-xl-plus) {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      padding-left: 15px;
+    }
+  }
 }
 
 .hidden {
@@ -161,10 +171,10 @@ ul.p-list {
 }
 
 .index-page {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .index-slider {
-  overflow: hidden;
+  // overflow: hidden;
 }
 // ===================================================================

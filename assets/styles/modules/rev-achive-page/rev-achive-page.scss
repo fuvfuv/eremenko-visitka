@@ -8,7 +8,7 @@
   &__wrapper {
     display: flex;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       display: initial;
     }
   }
@@ -16,7 +16,7 @@
   &__item {
     flex-basis: 50%;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $media-lg) {
       flex-basis: initial;
     }
   }

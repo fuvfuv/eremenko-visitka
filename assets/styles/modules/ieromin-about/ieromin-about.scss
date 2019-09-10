@@ -1,3 +1,48 @@
 .ieromin-about {
   height: 100vh;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__profile {
+    display: flex;
+    margin-bottom: 158px;
+  }
+
+  &__image-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+    overflow: hidden;
+  }
+
+  &__list {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
+
+    span {
+      color: inherit;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      opacity: 0.5;
+    }
+  }
+
+  &__slogan {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 808px;
+  }
 }

@@ -6,15 +6,15 @@
   <form class="form__wrapper container--content2">
     <div class="form__field field">
       <label for="name">Name</label>
-      <input class="field__input" id="name" type="text" value="" min="2" required />
+      <input class="field__input" type="text" name="username" id="name" minlength="2" required />
     </div>
     <div class="form__field field">
       <label for="email">Email</label>
-      <input class="field__input" id="email" type="email" value="" min="5" maxlength="15" required />
+      <input class="field__input" type="email" name="email" id="email" minlength="5" maxlength="30" required />
     </div>
     <div class="form__field field">
-      <label for="mess">Message</label>
-      <textarea class="field__input text" id="mess" type="text" value="" required></textarea>
+      <label for="message">Message</label>
+      <textarea class="field__input text" type="text" name="message" id="message" required></textarea>
     </div>
     <a class="form__btn btn btn--indent">send</a>
   </form>

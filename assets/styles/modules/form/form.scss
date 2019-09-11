@@ -168,4 +168,11 @@
       height: 40px;
     }
   }
+
+  input:required:invalid {
+    background: pink;
+}
+input:required:valid {
+    background: green;
+}
 }

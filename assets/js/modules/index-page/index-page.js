@@ -5,6 +5,8 @@ import "jquery-mousewheel";
 
 const indexSlider = $(`.index-slider`);
 
+const nameLettering = $(`.js-name-lettering`);
+
 export function indexPage() {
   if ($(window).width() > MEDIA.LG) {
     indexSlider.slick({
@@ -30,4 +32,10 @@ indexSlider.on(`mousewheel`, function (evt) {
   } else if (evt.deltaX < 0 || evt.deltaY > 0) {
     $(indexSlider).slick(`slickPrev`);
   }
+});
+
+nameLettering.hover(function () {
+  $(`body`).addClass(`name-lettering-hovered`);
+}, function () {
+  $(`body`).removeClass(`name-lettering-hovered`);
 });

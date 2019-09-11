@@ -46,12 +46,17 @@
   background-color: $global-black;
   height: 181px;
   margin-bottom: 59px;
+  position: relative;
   width: 268px;
-   
+
+  @media screen and (max-width: 1600px) {
+    height: 161px;
+    width: 248px;
+  }
 
   @media screen and (max-width: $media-xl-plus) {
-    margin-bottom: 35px;
     height: 131px;
+    margin-bottom: 45px;
     width: 218px;
   }
 
@@ -67,28 +72,76 @@
   //   width: 208px;
   // }
 
-  &::after {
-    // background-image: url(../images/icons/thank_you.svg);
-    // background-repeat: no-repeat;
-    // content: "";
-    // height: 53px;
-    // left: 0;
-    // position: absolute;
-    // top: 57px;
-    // width: 447px;
+  .caption__text {
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+
+    @media screen and (max-width: $media-xl-plus) {
+      top: 22px;
+    }
+
+    .text-main {
+      color: #fff;
+      font-size: 72px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1600px) {
+        font-size: 66px;
+      }
+
+      @media screen and (max-width: $media-xl-plus) {
+        font-size: 58px;
+      }
+    }
+
+    .text-minor {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1600px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $media-xl-plus) {
+        font-size: 13px;
+      }
+    }
   }
 
-  // &::before {
-  //   background: url(../images/icons/viewing.png) left no-repeat;
-  //   content: "";
-    //   height: 13px;
-  //   left: 14px;
-  //   position: absolute;
-  //   top: 138px;
-  //   width: 227px;
-  // }
+  .caprion-word {
+    height: 53px;
+    position: absolute;
+    right: -78px;
+    top: 35px;
+    width: 60px;
 
+    @media screen and (max-width: $media-xl-plus) {
+      top: 22px;
+    }
 
+    .word-main {
+      color: $global-black;
+      font-size: 72px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1600px) {
+        font-size: 66px;
+      }
+
+      @media screen and (max-width: $media-xl-plus) {
+        font-size: 58px;
+      }
+    }
+  }
 }
 
 .text-one {
@@ -97,6 +150,7 @@
 
   @media screen and (max-width: $media-xl-plus) {
     margin-bottom: 70px;
+    max-width: 357px;
   }
 
   @media screen and (max-width: $media-md) {
@@ -112,9 +166,12 @@
   font-weight: 300;
   height: auto;
   line-height: 20px;
-  margin-bottom: 78px;
   padding-left: 78px;
   text-transform: initial;
+
+  @media screen and (max-width: 1600px) {
+    padding-left: 59px;
+  }
 
   @media screen and (max-width: $media-lg) {
     background-size: 30px 30px;

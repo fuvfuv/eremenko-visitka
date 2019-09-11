@@ -1,29 +1,31 @@
-// import {MEDIA} from "../constants/constants";
-// import $ from "jquery"; // если нужен jquery
-// import "slick-carousel";
-// import "jquery-mousewheel";
+import {MEDIA} from "../constants/constants";
+import $ from "jquery"; // если нужен jquery
+import "slick-carousel";
+import "jquery-mousewheel";
 
-// export function aboutMeMobileSlider() {
-//   $(`.slider`).slick({
-//     dots: true,
-//     dotsClass: `about-me-mobile__slider-bullets`,
-//     slidesToShow: 1,
-//     adaptiveHeight: true,
-//     infinite: false,
-//     prevArrow: null,
-//     nextArrow: null,
-//     responsive: true,
-//   });
-// }
+const aboutMobileSlider = $(`.slider`);
 
-// export function changeToMobileSlider() {
-//   let desktopView = document.querySelector(`#about-me`);
-//   let mobileView = document.querySelector(`#about-me-mobile`);
-//   let page = document.querySelector(`.about-me-page`);
+export function aboutMeMobileSlider() {
+  aboutMobileSlider.slick({
+    dots: true,
+    dotsClass: `about-me-mobile__slider-bullets`,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    infinite: false,
+    prevArrow: null,
+    nextArrow: null,
+    responsive: true,
+  });
+}
 
-//   if (document.body.clientWidth < 768) {
-//     desktopView.style.display = `none`;
-//     mobileView.style.display = `block`;
-//     page.style.overflow = `scroll`;
-//   }
-// }
+export function changeToMobileSlider() {
+  let desktopView = document.querySelector(`#about-me`);
+  let mobileView = document.querySelector(`#about-me-mobile`);
+  let page = document.querySelector(`.about-me-page`);
+
+  if (document.body.clientWidth < 768) {
+    desktopView.style.display = `none`;
+    mobileView.style.display = `block`;
+    page.style.overflow = `scroll`;
+  }
+}

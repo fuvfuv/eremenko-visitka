@@ -19,9 +19,9 @@
       height: 14px;
       width: 14px;
 
-      // &:first-child {
-      //   display: none;
-      // }
+      &:first-child {
+        display: none;
+      }
 
       @media screen and (max-width: $media-lg) {
         height: 13px;

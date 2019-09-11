@@ -13,8 +13,6 @@ export function aboutMeSlider() {
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
   console.log(fakeSlider);
-  // console.log(swap);
-  // console.log(arrow);
 
   aboutBlockSlider.on(`init`, function () {
     dots.style.visibility = `hidden`;

@@ -46,11 +46,13 @@
   background-color: $global-black;
   height: 181px;
   margin-bottom: 59px;
-  position: relative;
   width: 268px;
+   
 
   @media screen and (max-width: $media-xl-plus) {
     margin-bottom: 35px;
+    height: 131px;
+    width: 218px;
   }
 
   @media screen and (max-width: $media-lg) {
@@ -79,12 +81,14 @@
   // &::before {
   //   background: url(../images/icons/viewing.png) left no-repeat;
   //   content: "";
-  //   height: 13px;
+    //   height: 13px;
   //   left: 14px;
   //   position: absolute;
   //   top: 138px;
   //   width: 227px;
   // }
+
+
 }
 
 .text-one {

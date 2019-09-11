@@ -9,22 +9,29 @@ export function aboutMeSlider() {
   const dots = document.querySelector(`#about-me__slider-controls`);
   // const swap = document.querySelector(`#fake-slider__slider-swap`);
   // const arrow = document.querySelector(`#fake-slider__arrow`);
+  const fakeSlider = document.querySelector(`#about-me__fake-slider`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
+  console.log(fakeSlider);
+  // console.log(swap);
+  // console.log(arrow);
 
   aboutBlockSlider.on(`init`, function () {
-    dots.style.display = `none`;
+    dots.style.visibility = `hidden`;
+    fakeSlider.style.display = `flex`;
     // swap.style.display = `inline-block`;
     // arrow.style.display = `block`;
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
     if (nextSlide === 0) {
-      dots.style.display = `none`;
+      dots.style.visibility = `hidden`;
+      fakeSlider.style.display = `flex`;
       // swap.style.display = `inline-block`;
       // arrow.style.display = `block`;
     } else if (nextSlide > 0) {
-      dots.style.display = `flex`;
+      dots.style.visibility = `visible`;
+      fakeSlider.style.display = `none`;
       // swap.style.display = `none`;
       // arrow.style.display = `none`;
     }
@@ -40,14 +47,13 @@ export function aboutMeSlider() {
 
   aboutBlockSlider.slick({
     slidesToShow: 1,
-    adaptiveHeight: true,
     dots: true,
     dotsClass: `about-me__slider-bullets`,
     appendDots: $(`.about-me__slider-controls`),
     infinite: false,
     prevArrow: null,
     nextArrow: null,
-    responsive: true,
+    // responsive: true,
     vertical: true,
     verticalSwiping: true,
   });

@@ -22,7 +22,7 @@
     //= "modules/menu/menu.html"
   </div>
   <!-- обертка для основного контента -->
-  <div class="page-wrapper container container--about-me">
+  <div class="page-wrapper container">
     <!-- шапка сайта -->
     <header class="header header--about-me">
       <div class="header--slideSix"></div>
@@ -34,108 +34,117 @@
     <!-- MAIN -->
     <main>
       <div class="about-me" id="about-me">
-        <!-- Контроллы слайдера -->
-        <div class="about-me__slider-controls" id="about-me__slider-controls">
-          <span class="about-me__slider-swap" id="about-me__slider-swap">scroll down</span>
+        <div class="about-me-slider-wrap">
+          <!-- Контроллы слайдера -->
+          <div class="about-me__slider-controls" id="about-me__slider-controls">
+            <span class="about-me__slider-swap" id="about-me__slider-swap">scroll down</span>
+          </div>
+          <div class="about-me__list-wrap">
+            <div class="about-me__list">
+                //= "modules/about-me-slides/about-me-slide0.html"
+                //= "modules/about-me-slides/about-me-slide1.html"
+                //= "modules/about-me-slides/about-me-slide2.html"
+                //= "modules/about-me-slides/about-me-slide3.html"
+                //= "modules/about-me-slides/about-me-slide4.html"
+                //= "modules/about-me-slides/about-me-slide5.html"
+                //= "modules/about-me-slides/about-me-slide6.html"
+              </div>
+          </div>
         </div>
+      </div>
+
         <!-- <div class="about-me__fake-slider">
           <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
           <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
         </div> -->
-        <!-- Слайды -->
-        <div class="about-me__list">
-          //= "modules/about-me-slides/about-me-slide0.html"
-          //= "modules/about-me-slides/about-me-slide1.html"
-          //= "modules/about-me-slides/about-me-slide2.html"
-          //= "modules/about-me-slides/about-me-slide3.html"
-          //= "modules/about-me-slides/about-me-slide4.html"
-          //= "modules/about-me-slides/about-me-slide5.html"
-          //= "modules/about-me-slides/about-me-slide6.html"
+          <!-- <div class="about-me-list-wrap" style="position: relative;"> -->
+            <!-- Слайды -->
+<!--
         </div>
-      </div>
+      </div> -->
 
-      <div class="about-me-mobile" id="about-me-mobile">
-          <div class="about-mob__content content">
-            <div class="slider__wrapper">
-                <div class="content__slider__photo-part photo-part">
-                  <img class="photo-part__photo" src="/images/content/cover/planet-mobile.jpg" alt="#"/>
-                </div>
-                <div class="content__slider" style="position: relative">
-                    <div class="slider">
-                        //= "modules/about-me-slides-mobile/about-me-slide-mob0.0.html"
-                    </div>
-                    <div class="fake-slider fake-slider">
-                      <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
-                      <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
-                    </div>
-                    <div class="about-me-mobile__slider-controls"></div>
-                  </div>
-              </div>
-            <div class="slider__wrapper">
+      <!-- <div class="about-me-mobile" id="about-me-mobile"> -->
+        <!-- <div class="about-mob__content content">
+          <!-- <div class="slider__wrapper">
               <div class="content__slider__photo-part photo-part">
-                <img class="photo-part__photo" src="/images/content/cover/childhood.jpg" alt="#"/>
+                <img class="photo-part__photo" src="/images/content/cover/planet-mobile.jpg" alt="#"/>
               </div>
               <div class="content__slider" style="position: relative">
                   <div class="slider">
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob1.0.html"
+                      //= "modules/about-me-slides-mobile/about-me-slide-mob0.0.html"
+                  </div>
+                  <div class="fake-slider fake-slider">
+                    <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
+                    <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
                   </div>
                   <div class="about-me-mobile__slider-controls"></div>
                 </div>
+            </div> -->
+          <!-- <div class="slider__wrapper">
+            <div class="content__slider__photo-part photo-part">
+              <img class="photo-part__photo" src="/images/content/cover/childhood.jpg" alt="#"/>
             </div>
-            <div class="slider__wrapper">
-                <div class="content__slider__photo-part photo-part">
-                  <img class="photo-part__photo" src="/images/content/cover/library.jpg" alt="#"/>
+            <div class="content__slider" style="position: relative">
+                <div class="slider">
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob1.0.html"
                 </div>
-                <div class="content__slider" style="position: relative">
-                  <div class="slider">
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob2.0.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob2.1.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob2.2.html"
-                  </div>
-                  <div class="about-me-mobile__slider-controls"></div>
+                <div class="about-me-mobile__slider-controls"></div>
+              </div>
+          </div> -->
+          <!-- <div class="slider__wrapper">
+              <div class="content__slider__photo-part photo-part">
+                <img class="photo-part__photo" src="/images/content/cover/library.jpg" alt="#"/>
+              </div>
+              <div class="content__slider" style="position: relative">
+                <div class="slider">
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob2.0.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob2.1.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob2.2.html"
                 </div>
-            </div>
-            <div class="slider__wrapper">
-                <div class="content__slider__photo-part photo-part">
-                  <img class="photo-part__photo" src="/images/content/cover/feedback.jpg" alt="#"/>
+                <div class="about-me-mobile__slider-controls"></div>
+              </div>
+          </div> -->
+          <!-- <div class="slider__wrapper">
+              <div class="content__slider__photo-part photo-part">
+                <img class="photo-part__photo" src="/images/content/cover/feedback.jpg" alt="#"/>
+              </div>
+              <div class="content__slider" style="position: relative">
+                <div class="slider">
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob3.0.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob3.1.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob3.2.html"
                 </div>
-                <div class="content__slider" style="position: relative">
-                  <div class="slider">
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob3.0.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob3.1.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob3.2.html"
-                  </div>
-                  <div class="about-me-mobile__slider-controls"></div>
+                <div class="about-me-mobile__slider-controls"></div>
+              </div>
+          </div> -->
+          <!-- <div class="slider__wrapper">
+              <div class="content__slider__photo-part photo-part">
+                <img class="photo-part__photo" src="/images/content/cover/prof-certifications.jpg" alt="#"/>
+              </div>
+              <div class="content__slider" style="position: relative">
+                <div class="slider">
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob4.0.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob4.1.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob4.2.html"
                 </div>
-            </div>
-            <div class="slider__wrapper">
-                <div class="content__slider__photo-part photo-part">
-                  <img class="photo-part__photo" src="/images/content/cover/prof-certifications.jpg" alt="#"/>
+                <div class="about-me-mobile__slider-controls"></div>
+              </div>
+          </div> -->
+          <!-- <div class="slider__wrapper">
+              <div class="content__slider__photo-part photo-part">
+                <img class="photo-part__photo" src="/images/content/cover/prof-award.jpg" alt="#"/>
+              </div>
+              <div class="content__slider" style="position: relative">
+                <div class="slider">
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob5.0.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob5.1.html"
+                  //= "modules/about-me-slides-mobile/about-me-slide-mob5.2.html"
                 </div>
-                <div class="content__slider" style="position: relative">
-                  <div class="slider">
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob4.0.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob4.1.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob4.2.html"
-                  </div>
-                  <div class="about-me-mobile__slider-controls"></div>
-                </div>
-            </div>
-            <div class="slider__wrapper">
-                <div class="content__slider__photo-part photo-part">
-                  <img class="photo-part__photo" src="/images/content/cover/prof-award.jpg" alt="#"/>
-                </div>
-                <div class="content__slider" style="position: relative">
-                  <div class="slider">
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob5.0.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob5.1.html"
-                    //= "modules/about-me-slides-mobile/about-me-slide-mob5.2.html"
-                  </div>
-                  <div class="about-me-mobile__slider-controls"></div>
-                </div>
-            </div>
-          </div>
-      </div>
+                <div class="about-me-mobile__slider-controls"></div>
+              </div>
+          </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
     </main>
   </div>
 

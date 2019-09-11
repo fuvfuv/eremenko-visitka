@@ -128,22 +128,22 @@
   }
 }
 
-// .header--slideSix {
-//   display: none;
-//   justify-content: flex-start;
-//   margin-bottom: 0;
+.header--slideSix {
+  display: none;
+  justify-content: flex-start;
+  margin-bottom: 0;
 
-//   .header__after {
-//     background-color: #f7f7f7;
-//     height: 100%;
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     width: 42%;
-//     z-index: -1;
+  .header__after {
+    background-color: #f7f7f7;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49%;
+    z-index: -1;
 
-//     @media screen and (max-width: $media-sm) {
-//       display: none;
-//     }
-//   }
-// }
+    @media screen and (max-width: $media-sm) {
+      display: none;
+    }
+  }
+}

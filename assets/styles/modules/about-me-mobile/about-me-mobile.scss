@@ -2,7 +2,7 @@
   margin-bottom: 20px;
 }
 
-.about-me-mobile {
+.about-mob__content {
   align-items: flex-start;
   display: flex;
 
@@ -51,9 +51,9 @@
 }
 
 .fake-slider {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
 
   .fake-slider__slider-swap {

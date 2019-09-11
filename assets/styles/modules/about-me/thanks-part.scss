@@ -1,90 +1,140 @@
-.slider-item--six {
+.slider-item {
   align-items: flex-start;
-  display: block;
-  display: flex !important; // костыль, но пока не убирать:)
-  width: 100%;
+  display: flex !important; //костыль, но пока не убирать:)
+}
 
-  &__thanks-part {
-    float: left;
-    height: 100vh;
-    position: relative;
-    width: 35%;
+.slider-item__thanks-part {
+  float: left;
+  height: 100vh;
+  position: relative;
+  width: 45%;
+}
+
+.thanks-part-wrap {
+  padding-top: 165px;
+
+  @media screen and (max-width: $media-xl-plus) {
+    padding-top: 120px;
   }
 
-  .thanks-part__text {
+  // @media screen and (max-width: $media-lg) {
+  //   max-width: 320px;
+  // }
+
+  @media screen and (max-width: $media-md) {
+    padding-top: 90px;
+  }
+}
+
+.thanks-part__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  width: 100%;
+
+  @media screen and (max-width: $media-xl-plus) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    font-size: 12px;
+  }
+}
+
+.thanks-part__caption {
+  background-color: $global-black;
+  height: 181px;
+  margin-bottom: 59px;
+  position: relative;
+  width: 268px;
+
+  @media screen and (max-width: $media-xl-plus) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    height: 121px;
+    margin-bottom: 25px;
+    width: 208px;
+  }
+
+  // @media screen and (max-width: $media-lg) {
+  //   height: 121px;
+  //   margin-bottom: 25px;
+  //   width: 208px;
+  // }
+
+  &::after {
+    // background-image: url(../images/icons/thank_you.svg);
+    // background-repeat: no-repeat;
+    // content: "";
+    // height: 53px;
+    // left: 0;
+    // position: absolute;
+    // top: 57px;
+    // width: 447px;
+  }
+
+  // &::before {
+  //   background: url(../images/icons/viewing.png) left no-repeat;
+  //   content: "";
+  //   height: 13px;
+  //   left: 14px;
+  //   position: absolute;
+  //   top: 138px;
+  //   width: 227px;
+  // }
+}
+
+.text-one {
+  margin-bottom: 119px;
+  max-width: 403px;
+
+  @media screen and (max-width: $media-xl-plus) {
+    margin-bottom: 70px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    margin-bottom: 30px;
+  }
+}
+
+.text-two__items {
+  background-image: url(../images/icons/quote.svg);
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
+  font-size: 18px;
+  font-weight: 300;
+  height: auto;
+  line-height: 20px;
+  margin-bottom: 78px;
+  padding-left: 78px;
+  text-transform: initial;
+
+  @media screen and (max-width: $media-lg) {
+    background-size: 30px 30px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+  }
+
+  .text-two__items-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding-top: 109px;
+    max-width: 397px;
     text-transform: none;
     width: 100%;
 
     @media screen and (max-width: $media-xl-plus) {
       font-size: 14px;
     }
-  }
 
-  .thanks-part__caption {
-    background-color: $global-black;
-    height: 181px;
-    margin-bottom: 59px;
-    position: relative;
-    width: 268px;
-
-    @media screen and (max-width: $media-xl-plus) {
-      margin-bottom: 35px;
-    }
-
-    &::after {
-      background-image: url(../images/icons/thank_you.png);
-      background-repeat: no-repeat;
-      content: "";
-      height: 53px;
-      left: 0;
-      position: absolute;
-      top: 57px;
-      width: 447px;
-    }
-
-    &::before {
-      background: url(../images/icons/viewing.png) left no-repeat;
-      content: "";
-      height: 13px;
-      left: 14px;
-      position: absolute;
-      top: 138px;
-      width: 227px;
-    }
-  }
-
-  .text-one {
-    margin-bottom: 119px;
-    max-width: 403px;
-
-    @media screen and (max-width: $media-xl-plus) {
-      margin-bottom: 70px;
-    }
-  }
-
-  .text-two__items {
-    background-image: url(../images/icons/quote.svg);
-    background-repeat: no-repeat;
-    background-size: 37px 37px;
-    font-size: 18px;
-    font-weight: 300;
-    height: auto;
-    line-height: 20px;
-    margin-bottom: 78px;
-    padding-left: 78px;
-    text-transform: initial;
-
-    .text-two__items-text {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      max-width: 397px;
-      text-transform: none;
-      width: 100%;
+    @media screen and (max-width: $media-lg) {
+      font-size: 12px;
     }
   }
 }

@@ -1,12 +1,14 @@
 .slider-item {
+  // display: block !important;
+  // display: flex;
   align-items: flex-start;
+  // display: flex;
   display: flex !important; //костыль, но пока не убирать:)
-  justify-content: flex-start;
-  width: 100%;
+  // justify-content: flex-start;
+  // width: 100%;
 
-  &__text-part {
-    margin-right: 15px;
-    width: 35%;
+  .slider-item__text-part {
+    width: 45%;
 
     // @media screen and (max-width: $media-md) {
     //   width: 40%;
@@ -95,9 +97,9 @@
     }
   }
 
-  &__photo-part {
+  .slider-item__photo-part {
     height: 100vh;
-    width: 50%;
+    width: 55%;
 
     &-img {
       max-width: 721px;

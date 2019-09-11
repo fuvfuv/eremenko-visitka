@@ -12,36 +12,36 @@
   background-color: $bg-color;
   height: 100vh;
   position: relative;
-  width: 50%;
+  width: 55%;
 
-  // &::after {
-  //   background-color: #f7f7f7;
-  //   content: "";
-  //   height: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   width: 51vw;
-  //   z-index: -1;
+  &::after {
+    background-color: #f7f7f7;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 51vw;
+    z-index: -1;
 
-  //   @media screen and (max-width: 1200px) {
-  //     display: none;
-  //   }
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
 
-  //   @media screen and (max-width: $media-lg) {
-  //     background-color: #f7f7f7;
-  //     content: "";
-  //     display: block;
-  //     height: 10%;
-  //     position: absolute;
-  //     top: -10%;
-  //     width: 50vw;
-  //     z-index: 10;
-  //   }
+    @media screen and (max-width: $media-lg) {
+      background-color: #f7f7f7;
+      content: "";
+      display: block;
+      height: 10%;
+      position: absolute;
+      top: -10%;
+      width: 50vw;
+      z-index: 10;
+    }
 
-  //   @media screen and (max-width: $media-sm) {
-  //     display: none;
-  //   }
-  // }
+    @media screen and (max-width: $media-sm) {
+      display: none;
+    }
+  }
 
   @media screen and (max-width: $media-sm) {
     width: 100%;
@@ -59,7 +59,7 @@
     }
   }
 
-  &__wrapper {
+  .form-part__wrapper {
     font-size: 16px;
     max-width: 530px;
     width: 100%;

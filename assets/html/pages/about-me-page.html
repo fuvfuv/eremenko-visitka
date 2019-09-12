@@ -41,6 +41,11 @@
             <span class="about-me__slider-swap" id="about-me__slider-swap">scroll down</span>
           </div>
           <div class="about-me__list-wrap">
+              <!-- <div class="caption__text" id="caption__text"></div> -->
+            <div class="about-me__fake-slider" id="about-me__fake-slider">
+                <span class="fake-slider__slider-swap" id="fake-slider__slider-swap">scroll down</span>
+                <div class="fake-slider__arrow" id="fake-slider__arrow"></div>
+            </div>
             <div class="about-me__list">
                 //= "modules/about-me-slides/about-me-slide0.html"
                 //= "modules/about-me-slides/about-me-slide1.html"
@@ -61,6 +66,7 @@
               <img class="photo-part__photo" src="/images/content/cover/planet-mobile.jpg" alt="#"/>
             </div>
             <div class="content__slider" style="position: relative">
+              <div class="content__slider__caption-text"></div>
               <div class="slider">
                 //= "modules/about-me-slides-mobile/about-me-slide-mob0.0.html"
               </div>
@@ -95,9 +101,6 @@
               <div class="about-me-mobile__slider-controls"></div>
             </div>
           </div>
-          
-
-
           <div class="slider__wrapper">
             <div class="content__slider__photo-part photo-part">
               <img class="photo-part__photo" src="/images/content/cover/feedback.jpg" alt="#"/>
@@ -141,7 +144,6 @@
       </div>
     </main>
   </div>
-
   <!-- Скрипты -->
   <script src="../js/bundle.js"></script>
 </body>

@@ -17,15 +17,3 @@ export function aboutMeMobileSlider() {
     responsive: true,
   });
 }
-
-export function changeToMobileSlider() {
-  let desktopView = document.querySelector(`#about-me`);
-  let mobileView = document.querySelector(`#about-me-mobile`);
-  let page = document.querySelector(`.about-me-page`);
-
-  if (document.body.clientWidth < 768) {
-    desktopView.style.display = `none`;
-    mobileView.style.display = `block`;
-    page.style.overflow = `scroll`;
-  }
-}

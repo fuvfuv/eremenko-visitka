@@ -1,29 +1,14 @@
 .citizen-wrap {
   display: flex !important; //костыль, но пока не убирать:)
-  width: 100%;
+  height: 100%;
   position: relative;
-
-  .title__text {
-    position: absolute;
-    width: 270px;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 0.55px;
-    height: auto;
-    top: 50px;
-    left: 50px;
-    span {
-      // color: #ffffff;
-    font-size: 64px;
-    }
-  }
 }
 
 .content__slider__photo-part {
   height: 100%;
   margin-bottom: 40px;
-  width: 100%;
   position: relative;
+  width: 100%;
 
   .photo-part__photo {
     display: block;

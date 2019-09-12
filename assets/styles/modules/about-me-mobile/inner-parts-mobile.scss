@@ -1,7 +1,4 @@
 .slider-item-mob {
-  // align-items: flex-start;
-  // display: flex !important; //костыль, но пока не убирать:)
-  // justify-content: space-around;
   max-width: 750px;
   width: 100%;
 
@@ -20,13 +17,12 @@
   }
 }
 
-.slider__wrappe {
-
+.slider__wrapper {
   .content__slider__photo-part {
     height: 100%;
     margin-bottom: 40px;
     width: 100%;
-  
+
     .photo-part__photo {
       display: block;
       height: auto;
@@ -35,4 +31,3 @@
     }
   }
 }
-

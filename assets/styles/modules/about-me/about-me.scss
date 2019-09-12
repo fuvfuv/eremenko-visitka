@@ -1,7 +1,5 @@
 .about-me-page {
-  // height: 100%;
   overflow: hidden;
-  // overflow: auto;
 }
 
 .about-me-slider-wrap {
@@ -119,4 +117,68 @@
     text-transform: uppercase;
     width: 76px;
   }
+}
+
+.about-me__fake-slider {
+  align-self: flex-end;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  height: 265px;
+  left: 120px;
+  position: absolute;
+  width: 10%;
+
+  .fake-slider__slider-swap {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    padding: 2px;
+    text-transform: uppercase;
+    width: 76px;
+  }
+
+  .fake-slider__arrow {
+    background: url(../images/icons/arrow.svg) no-repeat;
+    background-size: auto;
+    display: block;
+    height: 109px;
+    width: 10px;
+  }
+}
+
+.caption__text {
+  background: url(../images/icons/citizen-text.svg) no-repeat;
+  background-size: auto;
+  height: 240px;
+  left: 120px;
+  position: absolute;
+  top: 385px;
+  width: 741px;
+  z-index: 1;
+
+  @media screen and (max-width: 1600px) {
+    background-size: 527px 215px;
+  }
+
+  // @media screen and (max-width: $media-xl-plus) {
+  //   background-size: 193px 11px;
+  //   top: 98px;
+  // }
+
+  // @media screen and (max-width: $media-lg) {
+  //   background-size: 181px 11px;
+  //   top: 89px;
+  // }
+
+  // @media screen and (max-width: $media-md) {
+  //   background-size: 144px 10px;
+  //   left: 13px;
+  //   top: 59px;
+  // }
 }

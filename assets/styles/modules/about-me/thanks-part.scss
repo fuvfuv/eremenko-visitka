@@ -1,6 +1,6 @@
 .slider-item {
   align-items: flex-start;
-  display: flex !important; //костыль, но пока не убирать:)
+  display: flex !important; //костыль, но не убирать:) иначе slick переписывает на inline-block
 }
 
 .slider-item__thanks-part {
@@ -11,15 +11,15 @@
 }
 
 .thanks-part-wrap {
-  padding-top: 165px;
+  padding-top: 128px;
 
   @media screen and (max-width: $media-xl-plus) {
     padding-top: 120px;
   }
 
-  // @media screen and (max-width: $media-lg) {
-  //   max-width: 320px;
-  // }
+  @media screen and (max-width: $media-lg) {
+    padding-top: 100px;
+  }
 
   @media screen and (max-width: $media-md) {
     padding-top: 90px;
@@ -39,6 +39,10 @@
 
   @media screen and (max-width: $media-lg) {
     font-size: 12px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    max-width: 298px;
   }
 }
 
@@ -66,80 +70,74 @@
     width: 208px;
   }
 
-  // @media screen and (max-width: $media-lg) {
-  //   height: 121px;
-  //   margin-bottom: 25px;
-  //   width: 208px;
-  // }
+  @media screen and (max-width: $media-md) {
+    height: 80px;
+    margin-bottom: 15px;
+    width: 167px;
+  }
 
   .caption__text {
-    height: 100px;
+    background: url(../images/icons/thank-you.svg) no-repeat;
+    background-size: auto;
+    height: 53px;
     left: 0;
     position: absolute;
-    top: 35px;
-    width: 100%;
+    top: 57px;
+    width: 447px;
+    z-index: 1;
+
+    @media screen and (max-width: 1600px) {
+      background-size: 407px 53px;
+      top: 40px;
+    }
 
     @media screen and (max-width: $media-xl-plus) {
-      top: 22px;
+      background-size: 359px 48px;
+      top: 31px;
     }
 
-    .text-main {
-      color: #fff;
-      font-size: 72px;
-      font-weight: bold;
-      text-transform: uppercase;
-
-      @media screen and (max-width: 1600px) {
-        font-size: 66px;
-      }
-
-      @media screen and (max-width: $media-xl-plus) {
-        font-size: 58px;
-      }
+    @media screen and (max-width: $media-lg) {
+      background-size: 342px 44px;
+      top: 25px;
     }
 
-    .text-minor {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 30px;
-      text-align: center;
-      text-transform: uppercase;
-
-      @media screen and (max-width: 1600px) {
-        font-size: 14px;
-      }
-
-      @media screen and (max-width: $media-xl-plus) {
-        font-size: 13px;
-      }
+    @media screen and (max-width: $media-md) {
+      background-size: 275px 32px;
+      top: 14px;
     }
   }
 
   .caprion-word {
-    height: 53px;
+    background: url(../images/icons/viewing.svg) no-repeat;
+    background-size: auto;
+    background-size: 181px 11px;
+    height: 13px;
+    left: 21px;
     position: absolute;
-    right: -78px;
-    top: 35px;
-    width: 60px;
+    top: 138px;
+    width: 227px;
+    z-index: 1;
 
-    @media screen and (max-width: $media-xl-plus) {
-      top: 22px;
+    @media screen and (max-width: 1600px) {
+      background-size: 215px 12px;
+      left: 16px;
+      top: 122px;
     }
 
-    .word-main {
-      color: $global-black;
-      font-size: 72px;
-      font-weight: bold;
-      text-transform: uppercase;
+    @media screen and (max-width: $media-xl-plus) {
+      background-size: 193px 11px;
+      top: 98px;
+    }
 
-      @media screen and (max-width: 1600px) {
-        font-size: 66px;
-      }
+    @media screen and (max-width: $media-lg) {
+      background-size: 181px 11px;
+      top: 89px;
+    }
 
-      @media screen and (max-width: $media-xl-plus) {
-        font-size: 58px;
-      }
+    @media screen and (max-width: $media-md) {
+      background-size: 144px 10px;
+      left: 13px;
+      top: 59px;
     }
   }
 }
@@ -149,7 +147,7 @@
   max-width: 403px;
 
   @media screen and (max-width: $media-xl-plus) {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
     max-width: 357px;
   }
 
@@ -173,13 +171,17 @@
     padding-left: 59px;
   }
 
-  @media screen and (max-width: $media-lg) {
-    background-size: 30px 30px;
+  @media screen and (max-width: $media-xl-plus) {
+    background-size: 32px 32px;
     font-size: 14px;
-    margin-bottom: 30px;
+    max-width: 365px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 50px;
+    padding-top: 45px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    background-size: 30px 30px;
   }
 
   .text-two__items-text {

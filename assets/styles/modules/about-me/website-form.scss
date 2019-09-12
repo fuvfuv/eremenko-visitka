@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   width: 55%;
+  z-index: 11;
 
   &::after {
     background-color: #f7f7f7;
@@ -15,17 +16,6 @@
 
     @media screen and (max-width: 1200px) {
       display: none;
-    }
-
-    @media screen and (max-width: $media-lg) {
-      background-color: #f7f7f7;
-      content: "";
-      display: block;
-      height: 10%;
-      position: absolute;
-      top: -10%;
-      width: 50vw;
-      z-index: 10;
     }
 
     @media screen and (max-width: $media-sm) {

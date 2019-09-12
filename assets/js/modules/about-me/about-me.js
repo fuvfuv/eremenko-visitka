@@ -7,31 +7,26 @@ const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
   const dots = document.querySelector(`#about-me__slider-controls`);
-  // const swap = document.querySelector(`#fake-slider__slider-swap`);
-  // const arrow = document.querySelector(`#fake-slider__arrow`);
+  const caption = document.querySelector(`#caption__text`);
   const fakeSlider = document.querySelector(`#about-me__fake-slider`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
-  console.log(fakeSlider);
 
   aboutBlockSlider.on(`init`, function () {
     dots.style.visibility = `hidden`;
     fakeSlider.style.display = `flex`;
-    // swap.style.display = `inline-block`;
-    // arrow.style.display = `block`;
+    // caption.style.position = `absolute`;
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
     if (nextSlide === 0) {
       dots.style.visibility = `hidden`;
       fakeSlider.style.display = `flex`;
-      // swap.style.display = `inline-block`;
-      // arrow.style.display = `block`;
+      // caption.style.position = `absolute`;
     } else if (nextSlide > 0) {
       dots.style.visibility = `visible`;
       fakeSlider.style.display = `none`;
-      // swap.style.display = `none`;
-      // arrow.style.display = `none`;
+      // caption.style.display = `none`;
     }
     if (nextSlide === 6) {
       pageHeader.classList.add(`header--slideSix`);
@@ -51,7 +46,6 @@ export function aboutMeSlider() {
     infinite: false,
     prevArrow: null,
     nextArrow: null,
-    // responsive: true,
     vertical: true,
     verticalSwiping: true,
   });
@@ -65,3 +59,23 @@ aboutBlockSlider.on(`mousewheel`, function (evt) {
     $(aboutBlockSlider).slick(`slickPrev`);
   }
 });
+
+export function changeToMobileSlider() {
+  let desktopView = document.querySelector(`#about-me`);
+  let mobileView = document.querySelector(`#about-me-mobile`);
+  let page = document.querySelector(`.about-me-page`);
+
+  window.onload = function () {
+    if (document.body.clientWidth > 768) {
+      mobileView.remove();
+    } else if (document.body.clientWidth < 767 || document.body.clientWidth === 767) {
+      desktopView.remove();
+      page.style.overflow = `scroll`;
+    }
+  };
+
+  // if (document.body.clientWidth < 768) {
+  //   desktopView.style.display = `none`;
+  //   mobileView.style.display = `block`;
+  //   page.style.overflow = `scroll`;
+}

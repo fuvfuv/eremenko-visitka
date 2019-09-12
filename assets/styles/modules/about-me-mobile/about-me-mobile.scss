@@ -1,5 +1,18 @@
 .content__slider {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.content__slider__caption-text {
+  background: url(../images/icons/citizen-text-mob.svg) no-repeat;
+  background-size: auto;
+  height: 86px;
+  left: 50%;
+  position: absolute;
+  top: -86px;
+  transform: translateX(-50%);
+  width: 265px;
+  z-index: 1;
 }
 
 .about-mob__content {

@@ -84,10 +84,6 @@
     margin-bottom: 0;
   }
 
-  // &--about-form {
-  //   padding-top: 0;
-  // }
-
   &--about-form {
     margin-bottom: 110px;
     max-width: 370px;
@@ -141,6 +137,10 @@
     top: 0;
     width: 50%;
     z-index: -1;
+
+    @media screen and (max-width: $media-lg) {
+      z-index: 10;
+    }
 
     @media screen and (max-width: $media-sm) {
       display: none;

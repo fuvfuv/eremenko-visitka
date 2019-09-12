@@ -1,25 +1,17 @@
 .slider-item {
-  // display: block !important;
-  // display: flex;
   align-items: flex-start;
-  // display: flex;
-  display: flex !important; //костыль, но пока не убирать:)
-  // justify-content: flex-start;
-  // width: 100%;
+  display: flex !important; //костыль, но не убирать:) иначе slick переписывает на inline-block
+  height: 100vh;
 
   .slider-item__text-part {
     width: 45%;
-
-    // @media screen and (max-width: $media-md) {
-    //   width: 40%;
-    // }
 
     &-text {
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
       max-width: 378px;
-      padding-top: 197px;
+      padding-top: 225px;
       text-transform: none;
       width: 100%;
 
@@ -40,12 +32,17 @@
 
       @media screen and (max-width: $media-md) {
         font-size: 12px;
+        max-width: 260px;
         padding-top: 86px;
       }
 
       &--slide2 {
         @media screen and (max-width: $media-lg) {
           max-width: 300px;
+        }
+
+        @media screen and (max-width: $media-md) {
+          max-width: 260px;
         }
       }
 
@@ -63,6 +60,7 @@
         max-width: 448px;
 
         @media screen and (max-width: $media-xl-plus) {
+          max-width: 400px;
           padding-top: 148px;
         }
 
@@ -71,6 +69,7 @@
         }
 
         @media screen and (max-width: $media-md) {
+          max-width: 270px;
           padding-top: 45px;
         }
       }
@@ -87,6 +86,7 @@
         }
 
         @media screen and (max-width: $media-md) {
+          max-width: 276px;
           padding-top: 15px;
         }
 
@@ -98,7 +98,6 @@
   }
 
   .slider-item__photo-part {
-    height: 100vh;
     width: 55%;
 
     &-img {

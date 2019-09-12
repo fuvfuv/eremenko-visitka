@@ -53,7 +53,7 @@ if (page.classList.contains(PAGE.ABOUT_ME)) {
   aboutMeMobileSlider();
 }
 
-import {changeToMobileSlider} from "./modules/about-me/about-me-mobile";
+import {changeToMobileSlider} from "./modules/about-me/about-me";
 if (page.classList.contains(PAGE.ABOUT_ME)) {
   changeToMobileSlider();
 }

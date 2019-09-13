@@ -1,0 +1,252 @@
+.about-me-page {
+  overflow: hidden;
+}
+
+.about-me-slider-wrap {
+  align-items: flex-start;
+  display: flex;
+
+  .about-me__slider-bullets {
+    display: flex;
+    flex-direction: column;
+    max-width: 76px;
+
+    li {
+      background-color: transparent;
+      border: 2px solid #000;
+      height: 14px;
+      width: 14px;
+
+      &:first-child {
+        display: none;
+      }
+
+      @media screen and (max-width: $media-lg) {
+        height: 13px;
+        width: 13px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 55px;
+
+        @media screen and (max-width: $media-xl-plus) {
+          margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: $media-lg) {
+          margin-bottom: 36px;
+        }
+
+        @media screen and (max-width: $media-md) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 92px;
+
+        @media screen and (max-width: $media-xl-plus) {
+          margin-bottom: 65px;
+        }
+
+        @media screen and (max-width: $media-lg) {
+          margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: $media-md) {
+          margin-bottom: 40px;
+        }
+      }
+
+      &.slick-active {
+        background-color: #000;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 0;
+      }
+    }
+  }
+
+  .about-me__slider {
+    padding-left: 120px;
+    padding-right: 180px;
+
+    @media screen and (max-width: 1200px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .about-me__slider-controls {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 120px;
+    max-width: 76px;
+    padding-top: 200px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      margin-right: 40px;
+      padding-top: 140px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-right: 32px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-right: 15px;
+      padding-top: 80px;
+    }
+  }
+
+  .about-me__slider-swap {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    padding: 2px;
+    text-transform: uppercase;
+    width: 76px;
+
+    @media screen and (max-width: $media-lg) {
+      font-size: 8px;
+    }
+  }
+}
+
+.about-me__fake-slider {
+  align-self: flex-end;
+  top: 770px;;
+  display: none;
+  flex-direction: column;
+  height: 245px;
+  left: 120px;
+  position: absolute;
+  width: 10%;
+
+  @media screen and (max-width: $media-xl-plus) {
+    top: 480px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    top: 432px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    height: 285px;
+    top: 580px;
+    left: 15px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    height: 200px;
+    top: 404px;
+  }
+
+  .fake-slider__slider-swap {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    padding: 2px;
+    text-transform: uppercase;
+    width: 76px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      margin-bottom: 15px;
+      font-size: 8px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 15px;
+      font-size: 8px;
+    }
+  }
+
+  .fake-slider__arrow {
+    background: url(../images/icons/arrow.svg) no-repeat;
+    background-size: auto;
+    display: block;
+    height: 109px;
+    width: 10px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      background-size: 10px 85px;
+      height: 85px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      background-size: 10px 65px;
+      height: 65px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      background-size: 10px 85px;
+      height: 85px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      background-size: 10px 55px;
+      height: 55px;
+    }
+  }
+}
+
+.caption__text {
+  background: url(../images/icons/citizen-text.svg) no-repeat;
+  background-size: auto;
+  height: 240px;
+  left: 120px;
+  position: absolute;
+  top: 385px;
+  width: 741px;
+  z-index: 1;
+  display: none;
+
+  @media screen and (max-width: $media-xl-plus) {
+    background-size: 580px 210px;
+    height: 210px;
+    width: 630px;
+    top: 230px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    background-size: 506px 163px;
+    height: 163px;
+    width: 506px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    background-size: 475px 145px;
+    height: 145px;
+    width: 475px;
+    top: 300px;
+    left: 0;
+  }
+
+  @media screen and (max-width: $media-md) {
+    background-size: 368px 112px;
+    height: 112px;
+    width: 368px;
+    left: 0;
+    top: 215px;
+  }
+}
+

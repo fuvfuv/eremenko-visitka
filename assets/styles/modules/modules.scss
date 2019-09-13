@@ -44,6 +44,18 @@
 @import "gallery-inner/gallery-inner";
 @import "gallery-opened/gallery-opened";
 
+//Страница обо мне
+@import "about-me/citizen";
+@import "about-me/inner-parts";
+@import "about-me/about-me";
+@import "about-me/website-form";
+@import "about-me/thanks-part";
+
+//Страница обо мне-мобилка
+@import "about-me-mobile/about-me-mobile";
+@import "about-me-mobile/inner-parts-mobile";
+@import "about-me-mobile/citizen-mobile";
+
 // Главная страница
 @import "ieromin/ieromin";
 @import "ieromin-about/ieromin-about";

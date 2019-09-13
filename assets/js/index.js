@@ -42,6 +42,22 @@ if (page.classList.contains(PAGE.BLOG_INNER)) {
   blogInnerPageSettings();
 }
 
+// About-me
+import {aboutMeSlider} from "./modules/about-me/about-me";
+if (page.classList.contains(PAGE.ABOUT_ME)) {
+  aboutMeSlider();
+}
+
+import {aboutMeMobileSlider} from "./modules/about-me/about-me-mobile";
+if (page.classList.contains(PAGE.ABOUT_ME)) {
+  aboutMeMobileSlider();
+}
+
+import {changeToMobileSlider} from "./modules/about-me/about-me";
+if (page.classList.contains(PAGE.ABOUT_ME)) {
+  changeToMobileSlider();
+}
+
 // index-page
 import {indexPage} from "./modules/index-page/index-page";
 if (page.classList.contains(PAGE.INDEX)) {

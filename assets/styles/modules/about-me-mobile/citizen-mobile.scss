@@ -1,0 +1,19 @@
+.citizen-wrap {
+  display: flex !important; //костыль, но пока не убирать:)
+  height: 100%;
+  position: relative;
+}
+
+.content__slider__photo-part {
+  height: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+
+  .photo-part__photo {
+    display: block;
+    height: auto;
+    padding-top: 30px;
+    width: 100%;
+  }
+}

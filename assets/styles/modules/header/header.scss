@@ -139,7 +139,14 @@
     z-index: -1;
 
     @media screen and (max-width: $media-lg) {
+      height: 140px;
+      right: 10px;
+      width: 49%;
       z-index: 10;
+    }
+
+    @media screen and (max-width: $media-md) {
+      width: 47%;
     }
 
     @media screen and (max-width: $media-sm) {

@@ -2,35 +2,50 @@
   align-items: center;
   display: flex;
   height: 100vh;
+  justify-content: flex-end;
+  position: relative;
   width: 100%;
+  max-width: 1320px;
+  margin-left: 165px;
 
-  &::after {
-    background: url("../images/content/cover/planet.png") no-repeat;
-    background-size: auto;
-    content: "";
-    height: auto;
-    height: 100%;
-    margin-left: 479px;
-    // margin-left: 24%;
-    max-width: 1320px;
-    position: absolute;
-    right: 0;
-    top: 16%;
-    width: 100%;
+  @media screen and (max-width: $media-xl-plus) {
+    margin-left: 168px;
   }
 
-  // .citizen-wrap__photo-part {
-  // display: flex;
-  // justify-content: flex-end;
-  // max-width: 1320px;
+  @media screen and (max-width: 1200px) {
+    margin-left: 141px;
+  }
 
-  // .photo {
-  //   height: auto;
-  //   width: 100%;
+  @media screen and (max-width: $media-lg) {
+    margin-left: 108px;
+  }
 
-  //   @media screen and (max-width: 1600px) {
-  //     width: 95%;
-  //   }
-  // }
-  // }
+  @media screen and (max-width: $media-md) {
+    margin-left: 80px;
+  }
+
+  .citizen-wrap__photo-part {
+    margin-top: 250px;
+    background: url("../images/content/cover/planet.png") no-repeat;
+    background-size: contain;
+    height: 100%;
+    max-width: 1320px;
+    width: 100%;
+  
+    @media screen and (max-width: $media-xl-plus) {
+      margin-top: 110px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 108px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      margin-top: 115px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-top: 32px;
+    }
+  }
 }

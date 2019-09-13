@@ -7,7 +7,7 @@ const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
   const dots = document.querySelector(`#about-me__slider-controls`);
-  const caption = document.querySelector(`#caption__text`);
+  const caption = document.querySelector(`#caption__text-main`);
   const fakeSlider = document.querySelector(`#about-me__fake-slider`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
@@ -15,18 +15,18 @@ export function aboutMeSlider() {
   aboutBlockSlider.on(`init`, function () {
     dots.style.visibility = `hidden`;
     fakeSlider.style.display = `flex`;
-    // caption.style.position = `absolute`;
+    caption.style.display = `block`;
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
     if (nextSlide === 0) {
       dots.style.visibility = `hidden`;
       fakeSlider.style.display = `flex`;
-      // caption.style.position = `absolute`;
+      caption.style.display = `block`;
     } else if (nextSlide > 0) {
       dots.style.visibility = `visible`;
       fakeSlider.style.display = `none`;
-      // caption.style.display = `none`;
+      caption.style.display = `none`;
     }
     if (nextSlide === 6) {
       pageHeader.classList.add(`header--slideSix`);
@@ -73,9 +73,4 @@ export function changeToMobileSlider() {
       page.style.overflow = `scroll`;
     }
   };
-
-  // if (document.body.clientWidth < 768) {
-  //   desktopView.style.display = `none`;
-  //   mobileView.style.display = `block`;
-  //   page.style.overflow = `scroll`;
 }

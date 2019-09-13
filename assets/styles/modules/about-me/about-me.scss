@@ -116,18 +116,41 @@
     padding: 2px;
     text-transform: uppercase;
     width: 76px;
+
+    @media screen and (max-width: $media-md) {
+      font-size: 8px;
+    }
   }
 }
 
 .about-me__fake-slider {
   align-self: flex-end;
-  bottom: 0;
+  top: 770px;;
   display: none;
   flex-direction: column;
-  height: 265px;
+  height: 245px;
   left: 120px;
   position: absolute;
   width: 10%;
+
+  @media screen and (max-width: $media-xl-plus) {
+    top: 480px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    top: 432px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    height: 285px;
+    top: 580px;
+    left: 15px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    height: 200px;
+    top: 404px;
+  }
 
   .fake-slider__slider-swap {
     background-color: #000;
@@ -141,6 +164,20 @@
     padding: 2px;
     text-transform: uppercase;
     width: 76px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      margin-bottom: 15px;
+      font-size: 8px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      margin-bottom: 15px;
+      font-size: 8px;
+    }
   }
 
   .fake-slider__arrow {
@@ -149,10 +186,30 @@
     display: block;
     height: 109px;
     width: 10px;
+
+    @media screen and (max-width: $media-xl-plus) {
+      background-size: 10px 85px;
+      height: 85px;
+    }
+
+    @media screen and (max-width: $media-lg) {
+      background-size: 10px 65px;
+      height: 65px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      background-size: 10px 85px;
+      height: 85px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      background-size: 10px 55px;
+      height: 55px;
+    }
   }
 }
 
-.caption__text {
+.caption__text-main {
   background: url(../images/icons/citizen-text.svg) no-repeat;
   background-size: auto;
   height: 240px;
@@ -161,24 +218,35 @@
   top: 385px;
   width: 741px;
   z-index: 1;
+  display: none;
 
-  @media screen and (max-width: 1600px) {
-    background-size: 527px 215px;
+  @media screen and (max-width: $media-xl-plus) {
+    background-size: 580px 210px;
+    height: 210px;
+    width: 630px;
+    top: 230px;
   }
 
-  // @media screen and (max-width: $media-xl-plus) {
-  //   background-size: 193px 11px;
-  //   top: 98px;
-  // }
+  @media screen and (max-width: 1200px) {
+    background-size: 506px 163px;
+    height: 163px;
+    width: 506px;
+  }
 
-  // @media screen and (max-width: $media-lg) {
-  //   background-size: 181px 11px;
-  //   top: 89px;
-  // }
+  @media screen and (max-width: $media-lg) {
+    background-size: 475px 145px;
+    height: 145px;
+    width: 475px;
+    top: 300px;
+    left: 0;
+  }
 
-  // @media screen and (max-width: $media-md) {
-  //   background-size: 144px 10px;
-  //   left: 13px;
-  //   top: 59px;
-  // }
+  @media screen and (max-width: $media-md) {
+    background-size: 368px 112px;
+    height: 112px;
+    width: 368px;
+    left: 0;
+    top: 215px;
+  }
 }
+

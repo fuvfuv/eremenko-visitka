@@ -14,10 +14,6 @@
     width: 51vw;
     z-index: -1;
 
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
-
     @media screen and (max-width: $media-sm) {
       display: none;
     }

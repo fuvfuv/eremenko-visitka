@@ -7,7 +7,7 @@ const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
   const dots = document.querySelector(`#about-me__slider-controls`);
-  const caption = document.querySelector(`#caption__text-main`);
+  const caption = document.querySelector(`#caption__text`);
   const fakeSlider = document.querySelector(`#about-me__fake-slider`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);

@@ -117,7 +117,7 @@
     text-transform: uppercase;
     width: 76px;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       font-size: 8px;
     }
   }
@@ -209,7 +209,7 @@
   }
 }
 
-.caption__text-main {
+.caption__text {
   background: url(../images/icons/citizen-text.svg) no-repeat;
   background-size: auto;
   height: 240px;

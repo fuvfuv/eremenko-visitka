@@ -1,10 +1,12 @@
 .btn {
   @include btn-default;
-
   box-sizing: border-box;
-  padding: 20px 30px;
   text-align: left;
   text-transform: uppercase;
+
+  span {
+    padding: 20px 30px;
+  }
 
   @media screen and (max-width: $media-lg) {
     max-width: 100%;

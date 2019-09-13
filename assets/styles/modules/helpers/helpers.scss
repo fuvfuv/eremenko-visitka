@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
     }
 
     @media screen and (max-width: $media-lg) {
-      padding: 0 0 0 20px;
+      padding: 0;
     }
 
     @media screen and (max-width: $media-sm) {
@@ -135,6 +135,18 @@ input[type="radio"].visually-hidden {
   &--about-content {
     @media screen and (max-width: $media-md) {
       padding: 0 20px 0 0;
+    }
+  }
+
+  &--content {
+    @media screen and (max-width: $media-lg) {
+      padding: 0 0 0 20px;
+    }
+  }
+
+  &--content2 {
+    @media screen and (max-width: $media-xs) {
+      padding: 0 0 0 20px;
     }
   }
 

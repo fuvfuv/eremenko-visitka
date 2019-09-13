@@ -183,7 +183,11 @@ ul.p-list {
 }
 
 .index-page {
-  // overflow: hidden;
+  overflow: hidden;
+
+  @media screen and (max-width: $media-lg) {
+    overflow: initial;
+  }
 }
 
 .index-slider {

@@ -34,6 +34,10 @@ export function reviewsSlider() {
 
 export function customScroll() {
   $(window).on(`load`, function () {
-    $(`.about-me`).mCustomScrollbar();
+    $(`.reviews__body`).mCustomScrollbar();
+  });
+
+  $(window).on(`load`, function () {
+    $(`.achievements__body`).mCustomScrollbar();
   });
 }

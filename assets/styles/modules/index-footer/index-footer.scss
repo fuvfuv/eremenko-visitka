@@ -6,18 +6,33 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+
   @include hide-on-menu-hover;
   @include hide-on-name-lettering-hover;
+
+  @media screen and (max-width: $media-lg) {
+    display: none;
+  }
 
   &__soc {
     align-items: center;
     display: flex;
   }
 
+  &__soc-title {
+    margin-right: 70px;
+  }
+
   &__soc-list {
     align-items: center;
     color: #000;
     display: flex;
+  }
+
+  &__soc-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
   }
 
   &__container {

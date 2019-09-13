@@ -16,7 +16,7 @@
 
 <body class="index-page">
   <!-- обертка для меню -->
-  <div class="menu-wrapper">
+  <div class="menu-wrapper menu-wrapper--index">
     //= "modules/menu/menu.html"
   </div>
 
@@ -56,13 +56,12 @@
                 and adapt to complex environments.</p>
             </div>
             <div class="ieromin__footer-col ieromin__footer-col--awards">
-              <span class="ieromin__footer-awards">17+ <br>awards</span>
+              <span class="ieromin__footer-awards">17+ awards</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- // слайд 2 -->
       <section class="ieromin-about">
         <div class="ieromin-about__container container">
           <div class="index-header">
@@ -72,46 +71,104 @@
             <a class="index-header__link btn" href="#">view resume</a>
           </div>
 
-          <div class="ieromin-about__info">
-            <div class="ieromin-about__wrapper">
-              <div class="ieromin-about__image-wrapper">
-                <img class="img-responsive img-cover" src="../images/content/index-page/profile.jpg" alt="ieromin">
+          <div class="ieromin-about__wrapper">
+            <div class="ieromin-about__info">
+              <div class="ieromin-about__profile">
+                <div class="ieromin-about__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 575px)"
+                      srcset="../images/content/index-page/profile-mobile.jpg, ../images/content/index-page/profile-mobile@2x.jpg 2x">
+                    <img class="img-responsive img-cover" src="../images/content/index-page/profile.jpg" alt="ieromin">
+                  </picture>
+                </div>
+                <ul class="ieromin-about__list">
+                  <li class="ieromin-about__item">
+                    <span>country:</span>
+                    <p>great britain</p>
+                  </li>
+                  <li class="ieromin-about__item">
+                    <span>specialization:</span>
+                    <p>corporate responsibility</p>
+                  </li>
+                  <li class="ieromin-about__item">
+                    <span>hobies:</span>
+                    <p>dancing, theater, movies</p>
+                  </li>
+                </ul>
               </div>
-              <ul class="ieromin-about__list">
-                <li class="ieromin-about__item">
-                  <span>country:</span>
-                  <p>great britain</p>
-                </li>
-                <li class="ieromin-about__item">
-                  <span>specialization:</span>
-                  <p>corporate responsibility</p>
-                </li>
-                <li class="ieromin-about__item">
-                  <span>hobies:</span>
-                  <p>dancing, theater, movies</p>
-                </li>
-              </ul>
+              <div class="ieromin-about__slogan">
+                <p class="ieromin__footer-slogan">i see myself very much as a "citizen of the world"</p>
+              </div>
             </div>
-            <div class="ieromin-about__slogan">
-              <p class="ieromin__footer-slogan">i see myself very much as a "citizen of the world"</p>
-            </div>
-          </div>
 
-          <div class="ieromin-about__video">
-            <div class="ieromin-about__video-preview">
-              <img src="" alt="video-prev">
-            </div>
-            <div class="ieromin-about__video-frame">
-              <iframe src="" frameborder="0"></iframe>
+            <div class="ieromin-about__video video">
+              <div class="ieromin-about__video-wrapper">
+                <div class="video__image-wrapper img-overlay">
+                  <picture>
+                    <source media="(max-width: 575px)"
+                      srcset="../images/content/index-page/video-prev-mobile.jpg, ../images/content/index-page/video-prev-mobile@2x.jpg 2x">
+                    <img class="article-inner__image img-responsive img-cover"
+                      src="../images/content/index-page/video-prev.jpg"
+                      srcset="../images/content/index-page/video-prev@2x.jpg 2x" alt="video-preview">
+                  </picture>
+                  <button class="video__play-btn">
+                    <svg class="icon-video-play video__play-icon">
+                      <use xlink:href="../images/sprite/sprite.svg#video-play"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="video__wrapper">
+                  <!-- <iframe src="" frameborder="0"></iframe> -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- // слайд 3 -->
+
       <section class="ieromin-contact">
-        <div class="ieromin-contact__container container">
-          Write to me
+        <div class="ieromin-contact__container">
+          <div class="ieromin-contact__feedback">
+            <span class="ieromin-contact__feedback-logo logo logo--white">
+              <img src="../images/general/logo-white.svg" alt="logotype">
+            </span>
+            <div class="ieromin-contact__write-me">
+              <div class="ieromin-contact__square">
+              </div>
+              <span class="ieromin-contact__write-me-text">
+                <span class="white">writ<span class="black">e</span></span>
+                <span class="black">to me</span>
+              </span>
+            </div>
+            <p class="ieromin-contact__feedback-text">and I will be happy to answer you</p>
+          </div>
+
+          <form class="ieromin-form" action="#" method="POST">
+            <div class="ieromin-form__container">
+              <span class="ieromin-form__title">write for any questions</span>
+
+              <div class="ieromin-form__group">
+
+                <div class="ieromin-form__field">
+                  <label for="name">name</label>
+                  <input class="ieromin-form__input" type="text" name="name">
+                </div>
+
+                <div class="ieromin-form__field">
+                  <label for="email">email</label>
+                  <input class="ieromin-form__input" type="email" name="email">
+                </div>
+
+                <div class="ieromin-form__field">
+                  <label for="message">message</label>
+                  <textarea class="ieromin-form__textarea" id="message"></textarea>
+                </div>
+
+                <button class="ieromin-form__submit btn" type="submit" data-text="send"><span>send</span></button>
+              </div>
+          </form>
+
         </div>
       </section>
     </div>

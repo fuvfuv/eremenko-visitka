@@ -2,33 +2,41 @@
   background-color: #fff;
   bottom: 0;
   height: auto;
+  padding-left: 1px;
   // outline: 1px solid red; // временно
   padding-top: 65px;
   position: fixed;
   right: 0;
   top: 0;
-  padding-left: 1px;
+  transform: translate3d(0, 0, 0);
+  transition: 0.6s transform;
   width: 120px;
   z-index: 1000;
-  transition: .6s transform;
-  transform: translate3d(0, 0, 0);
+
+  @media screen and (max-width: $media-md) {
+    position: absolute;
+  }
 
   .name-lettering-hovered & {
     transform: translate3d(100%, 0, 0);
-    transition: .3s transform;
+    transition: 0.3s transform;
+
+    @media screen and (max-width: $media-lg) {
+      transform: none;
+    }
   }
 
-  &:before {
+  &::before {
+    background-color: #ededed;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
-    display: block;
     width: 1px;
-    height: 100%;
-    background-color: #ededed;
-    content: '';
-  
+
     @include hide-on-menu-hover;
   }
 
@@ -50,7 +58,7 @@
     position: relative;
     z-index: 10;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       display: flex;
     }
   }
@@ -71,9 +79,8 @@
     width: 100%;
     z-index: 0;
 
-    
-
     @media screen and (max-width: $media-md) {
+      left: 0;
       padding: 0 20px;
       padding-top: 100px;
     }
@@ -129,7 +136,7 @@
       color: $global-black;
     }
   }
-  
+
   &__link {
     // position: relative;
     color: inherit;
@@ -145,44 +152,58 @@
       text-align: center;
       transform: rotate(-90deg) translateY(0);
 
+      @media screen and (max-width: $media-lg) {
+        text-align: left;
+        transform: none;
+      }
+
       .menu--animated & {
-        transition: .2s transform;
-        transition-delay: .45s;
+        transition: 0.2s transform;
+        transition-delay: 0.45s;
       }
     }
 
-    &:before {
-      position: absolute;
-      top: -22px;
-      left: 0;
-      right: 0;
+    &::before {
       bottom: -22px;
+      content: "";
       display: block;
-      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: -22px;
     }
 
-    &:after {
-      position: absolute;
-      top: 50%;
-      right: 0;
+    &::after {
+      color: #000;
+      content: attr(data-text);
       display: block;
       font-size: 72px;
       font-weight: 900;
       line-height: 52px;
-      color: #000;
-      content: attr(data-text);
+      position: absolute;
+      right: 0;
+      top: 50%;
       transform: translateY(-52%) translateX(100%);
       transform-origin: right;
-      transition: .5s transform .1s;
+      transition: 0.5s transform 0.1s;
     }
 
     &:hover {
       span {
-        transition-delay: 0s;
         transform: rotate(-90deg) translateY(80px);
+        transition-delay: 0s;
+
+        @media screen and (max-width: $media-lg) {
+          transform: none;
+        }
       }
-      &:after {
+
+      &::after {
         transform: translateY(-50%) translateX(0.02em);
+
+        @media screen and (max-width: $media-lg) {
+          transform: none;
+        }
       }
     }
 
@@ -192,7 +213,7 @@
       padding: 0;
       transform: none;
 
-      &:after {
+      &::after {
         display: none;
       }
     }
@@ -205,6 +226,49 @@
 
     @media screen and (max-width: $media-sm) {
       display: block;
+    }
+  }
+
+  &--index {
+    .menu,
+    .menu__header {
+      @media screen and (max-width: $media-lg) {
+        background-color: transparent;
+      }
+    }
+
+    .menu::before {
+      @media screen and (max-width: $media-lg) {
+        display: none;
+      }
+    }
+
+    .menu__fake-logo {
+      background-color: #fff;
+    }
+
+    .sandwich__bars {
+      background-color: #fff;
+
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+
+    .menu.is-active {
+      .menu__fake-logo {
+        background-color: #000;
+      }
+
+      .sandwich__bars {
+        background-color: #000;
+
+        &::before,
+        &::after {
+          background-color: #000;
+        }
+      }
     }
   }
 }

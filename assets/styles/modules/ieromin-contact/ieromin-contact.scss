@@ -1,3 +1,93 @@
-.slide-contact {
+.ieromin-contact {
   height: 100vh;
+
+  @media screen and (max-width: $media-md) {
+    height: auto;
+  }
+
+  &__container {
+    box-sizing: content-box;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1680px;
+    padding: 0 120px;
+
+    @media screen and (max-width: $media-md) {
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+    }
+  }
+
+  &__feedback {
+    flex-basis: 50%;
+    width: 50%;
+
+    @media screen and (max-width: $media-md) {
+      flex-basis: 100%;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+
+  &__feedback-logo {
+    margin-top: 60px;
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (max-width: $media-md) {
+      display: none;
+    }
+  }
+
+  &__square {
+    background-color: #000;
+    display: block;
+    height: 540px;
+    left: -60px;
+    margin-bottom: 80px;
+    position: relative;
+    top: 0;
+    width: 410px;
+
+    @media screen and (max-width: $media-md) {
+      height: 114px;
+      left: 0;
+      margin-bottom: 30px;
+      width: 136px;
+    }
+  }
+
+  &__write-me {
+    position: relative;
+  }
+
+  &__write-me-text {
+    color: #fff;
+    font-size: 120px;
+    font-weight: 700;
+    position: absolute;
+    top: 290px;
+    white-space: nowrap;
+
+    @media screen and (max-width: $media-md) {
+      font-size: 37px;
+      left: 28px;
+      top: 40px;
+    }
+
+    .black {
+      color: #000;
+    }
+  }
+
+  &__feedback-text {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+
+    @media screen and (max-width: $media-md) {
+      display: none;
+    }
+  }
 }

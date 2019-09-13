@@ -5,7 +5,16 @@
 
   @include hide-on-name-lettering-hover;
 
+  @media screen and (max-width: $media-lg) {
+    display: none;
+  }
+
   &__link {
     margin-right: 120px;
+
+    @media screen and (max-width: $media-lg) {
+      margin-right: 0;
+      max-width: 100%;
+    }
   }
 }

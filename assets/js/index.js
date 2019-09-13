@@ -45,5 +45,5 @@ if (page.classList.contains(PAGE.BLOG_INNER)) {
 // index-page
 import {indexPage} from "./modules/index-page/index-page";
 if (page.classList.contains(PAGE.INDEX)) {
-  // indexPage();
+  indexPage();
 }

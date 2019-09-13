@@ -13,6 +13,7 @@ export const siteMenu = () => {
     if (window.innerWidth > MEDIA.MD) {
       switcher.classList.add(`hidden`);
       commonBlock.classList.add(`hidden`);
+      menu.classList.remove(`menu--animated`);
     }
   }
 

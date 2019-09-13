@@ -3,13 +3,28 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-  
+
+  @media screen and (max-width: $media-md) {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
   &__content-wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     position: relative;
     z-index: 1;
+
+    @media screen and (max-width: $media-xl-plus) {
+      padding-left: 10px;
+    }
+  }
+
+  &__body {
+    @media screen and (max-width: $media-md) {
+      height: 248px;
+    }
   }
 
   &__footer {
@@ -23,21 +38,47 @@
 
     @include hide-on-name-lettering-hover;
 
+    @media screen and (max-width: $media-lg) {
+      display: initial;
+      margin-bottom: 0;
+      margin-right: 0;
+      min-height: 298px;
+    }
+
     &-col {
       &:nth-child(1) {
         box-sizing: border-box;
         padding-right: 150px;
         width: 40%;
+
+        @media screen and (max-width: $media-lg) {
+          margin-bottom: 25px;
+          padding-right: 0;
+          width: 100%;
+        }
       }
 
       &:nth-child(2) {
         padding-right: 75px;
         width: 24%;
+
+        @media screen and (max-width: $media-lg) {
+          padding-right: 0;
+          width: 100%;
+        }
       }
 
       &:nth-child(3) {
         flex: 1;
+        margin-bottom: 30px;
+        margin-top: 30px;
         padding-left: 180px;
+
+        @media screen and (max-width: $media-lg) {
+          font-size: 18px;
+          padding-left: 0;
+          width: 100%;
+        }
       }
 
       &:not(:last-child) {
@@ -48,10 +89,19 @@
     &-slogan {
       font-size: 48px;
       font-weight: 700;
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 24px;
+      }
     }
 
     &-about {
       display: block;
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 12px;
+        font-weight: 500;
+      }
 
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -74,122 +124,172 @@ $letteringTop: "50vh - 167px";
 $letteringBottom: "50vh + 15px";
 
 .ieromin__lettering {
-  position: absolute;
-  z-index: -1;
-  top: calc(#{$letteringTop});
-  left: 0;
-  right: 0;
   bottom: calc(#{$letteringBottom});
-
-  height: 182px;
-  font-weight: 900;
-  font-size: 276px;
-  line-height: 182px;
   color: #fff;
+  font-size: 276px;
+  font-weight: 900;
+  height: 182px;
+  left: 0;
+  line-height: 182px;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
+  top: calc(#{$letteringTop});
+  z-index: -1;
+
+  @media screen and (max-width: $media-lg) {
+    bottom: 0;
+    font-size: 68px;
+    line-height: 70px;
+    top: 0;
+  }
 
   &:hover {
     span {
-      opacity: .15;
+      opacity: 0.15;
+
+      @media screen and (max-width: $media-lg) {
+        opacity: 1;
+      }
     }
 
     .ieromin__lettering-back {
       filter: brightness(1) contrast(100%);
+
+      @media screen and (max-width: $media-lg) {
+        filter: none;
+      }
     }
 
     .ieromin__lettering-front {
-      &:after {
+      &::after {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         filter: brightness(1) contrast(100%);
+
+        @media screen and (max-width: $media-lg) {
+          filter: none;
+        }
       }
 
-      &:before {
+      &::before {
         transform: scale3d(1, 0, 1);
       }
     }
   }
-
 }
 
 .ieromin__lettering-back,
 .ieromin__lettering-front {
+  bottom: calc((#{$letteringBottom}) * -1);
+  left: 0;
   pointer-events: none;
   position: absolute;
-  top: calc((#{$letteringTop}) * -1);
-  left: 0;
   right: 0;
-  bottom: calc((#{$letteringBottom}) * -1);
+  top: calc((#{$letteringTop}) * -1);
+
+  @media screen and (max-width: $media-lg) {
+    bottom: 0;
+    top: 0;
+  }
 
   span {
-    position: absolute;
     display: block;
-    top: calc(#{$letteringTop});
     // top: 0;
     left: 120px;
-    transition: .5s opacity;
+    position: absolute;
+    top: calc(#{$letteringTop});
     transform: translate3d(0, 0, 0);
+    transition: 0.5s opacity;
+
+    @media screen and (max-width: $media-lg) {
+      left: 50%;
+      top: 156px;
+      transform: translateX(-50%);
+    }
 
     &::before {
-      position: absolute;
-      left: 0;
-      top: -90px;
-      display: block;
-      width: 54px;
-      height: 54px;
-      margin-left: 0.07em;
       background-color: #fff;
-      content: '';
+      content: "";
+      display: block;
+      height: 54px;
+      left: 0;
+      margin-left: 0.07em;
+      position: absolute;
+      top: -90px;
+      width: 54px;
+
+      @media screen and (max-width: $media-lg) {
+        display: none;
+      }
     }
   }
 }
 
 .ieromin__lettering-back {
-  background-image:
-    linear-gradient(rgba(#000, .25), rgba(#000, .25)),
-    url("../images/content/index-page/photo.jpg");
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(#000, 0.25), rgba(#000, 0.25)), url("../images/content/index-page/photo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   filter: brightness(0.75) contrast(200%);
-  transition: .5s filter;
   transform: translate3d(0, 0, 0);
+  transition: 0.5s filter;
+
+  @media screen and (max-width: $media-lg) {
+    background-attachment: scroll;
+    background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)), url("../images/content/index-page/photo-mobile.jpg");
+    background-size: cover;
+    filter: none;
+    min-height: 215px;
+    transform: none;
+  }
 }
 
 .ieromin__lettering-front {
-
-  &:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    content: '';
-    background-color: #fff;
-    background-image:
-      linear-gradient(#727272, #727272);
-    background-size: 54px 54px;
-    background-repeat: no-repeat;
+  &::after {
     background-attachment: fixed;
+    background-color: #fff;
+    background-image: linear-gradient(#727272, #727272);
     background-position: calc(120px + 0.07em) calc((#{$letteringTop}) - 54px - 36px);
+    background-repeat: no-repeat;
+    background-size: 54px 54px;
+    bottom: 0;
     clip-path: polygon(0 0, 100% 0, 100% calc(#{$letteringTop}), 0 calc(#{$letteringTop}));
-    transition-duration: .5s;
-    transition-property: filter, clip-path;
+    content: "";
+    display: block;
     filter: brightness(0.75) contrast(200%);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transform: translate3d(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: filter, clip-path;
+
+    @media screen and (max-width: $media-lg) {
+      display: none;
+      filter: none;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
-  &:before {
-    position: absolute;
-    top: calc(#{$letteringBottom});
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    content: '';
+  &::before {
     background-color: #fff;
-    transition: .5s transform;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: calc(#{$letteringBottom});
     transform: scale3d(1, 1, 1);
     transform-origin: bottom;
+    transition: 0.5s transform;
+
+    @media screen and (max-width: $media-lg) {
+      display: none;
+    }
   }
 }

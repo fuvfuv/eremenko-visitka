@@ -1,0 +1,99 @@
+.ieromin-form {
+  background-color: #f7f7f7;
+  height: 100vh;
+  width: 50%;
+
+  @media screen and (max-width: $media-lg) {
+    height: auto;
+  }
+
+  @media screen and (max-width: $media-md) {
+    width: 100%;
+  }
+
+  &__container {
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+
+  &__group {
+    padding-left: 170px;
+    padding-right: 170px;
+
+    @media screen and (max-width: $media-md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 130px;
+    padding-top: 60px;
+    text-align: center;
+
+    @media screen and (max-width: $media-md) {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+
+      @media screen and (max-width: $media-md) {
+        margin-bottom: 14px;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: $media-md) {
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__input {
+    background-color: #fff;
+    border: 1px solid transparent;
+    min-height: 70px;
+    padding: 0 8px;
+
+    @media screen and (max-width: $media-md) {
+      min-height: 40px;
+    }
+  }
+
+  &__textarea {
+    background-color: #fff;
+    border: 1px solid transparent;
+    font-family: inherit;
+    min-height: 134px;
+    padding: 8px;
+    resize: none;
+
+    @media screen and (max-width: $media-md) {
+      min-height: 40px;
+    }
+  }
+
+  &__submit {
+    margin-left: auto;
+
+    @media screen and (max-width: $media-md) {
+      max-width: 100%;
+    }
+  }
+}

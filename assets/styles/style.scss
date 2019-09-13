@@ -5,7 +5,7 @@
 
 html {
   box-sizing: border-box;
-  //  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 *,
@@ -13,6 +13,7 @@ html {
 *::after {
   box-sizing: inherit;
   outline: none;
+  // outline: 1px solid red;
 }
 
 * {
@@ -22,14 +23,14 @@ html {
 
 body {
   color: $global-black;
+  cursor: url($cursor-default) 20 20, auto;
   font-family: $main-font;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  min-width: 320px;
   overflow-x: hidden;
   text-transform: uppercase;
-
-  cursor: url($cursor-default) 20 20, auto;
 }
 
 a,

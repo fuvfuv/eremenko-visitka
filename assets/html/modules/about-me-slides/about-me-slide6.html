@@ -29,13 +29,13 @@
         </div>
         <div class="form-part__field field">
           <label for="email">Email</label>
-          <input class="field__input" id="email" type="email" value="" min="5" maxlength="15" required />
+          <input class="field__input" type="email" name="email" id="email" minlength="5" maxlength="30" />
         </div>
         <div class="form-part__field field">
           <label for="mess">Message</label>
-          <textarea class="field__input text" id="mess" type="text" value="" required></textarea>
+          <textarea class="field__input text" type="text" name="message" id="message"></textarea>
         </div>
-        <a class="form-part__btn btn btn--indent">send</a>
+        <button class="form-part__btn btn btn--indent" type="submit"><span>send</span></button>
       </form>
     </div>
   </div>

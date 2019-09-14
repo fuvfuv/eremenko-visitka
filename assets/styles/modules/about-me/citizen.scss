@@ -3,10 +3,10 @@
   display: flex;
   height: 100vh;
   justify-content: flex-end;
+  margin-left: 165px;
+  max-width: 1320px;
   position: relative;
   width: 100%;
-  max-width: 1320px;
-  margin-left: 165px;
 
   @media screen and (max-width: $media-xl-plus) {
     margin-left: 168px;
@@ -25,13 +25,13 @@
   }
 
   .citizen-wrap__photo-part {
-    margin-top: 160px;
     background: url("../images/content/cover/planet.png") no-repeat;
     background-size: contain;
     height: 100%;
+    margin-top: 160px;
     max-width: 1320px;
     width: 100%;
-  
+
     @media screen and (max-width: $media-xl-plus) {
       margin-top: 110px;
     }

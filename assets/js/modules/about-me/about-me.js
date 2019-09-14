@@ -11,11 +11,13 @@ export function aboutMeSlider() {
   const fakeSlider = document.querySelector(`#about-me__fake-slider`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
+  const btnViewRes = document.querySelector(`#btn--about`);
 
   aboutBlockSlider.on(`init`, function () {
     dots.style.visibility = `hidden`;
     fakeSlider.style.display = `flex`;
     caption.style.display = `block`;
+    btnViewRes.style.display = `block`;
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
@@ -23,10 +25,12 @@ export function aboutMeSlider() {
       dots.style.visibility = `hidden`;
       fakeSlider.style.display = `flex`;
       caption.style.display = `block`;
+      btnViewRes.style.display = `block`;
     } else if (nextSlide > 0) {
       dots.style.visibility = `visible`;
       fakeSlider.style.display = `none`;
       caption.style.display = `none`;
+      btnViewRes.style.display = `none`;
     }
     if (nextSlide === 6) {
       pageHeader.classList.add(`header--slideSix`);
@@ -64,6 +68,7 @@ export function changeToMobileSlider() {
   let desktopView = document.querySelector(`#about-me`);
   let mobileView = document.querySelector(`#about-me-mobile`);
   let page = document.querySelector(`.about-me-page`);
+  let btnViewRes = document.querySelector(`#btn--about`);
 
   window.onload = function () {
     if (document.body.clientWidth > 768) {
@@ -71,6 +76,7 @@ export function changeToMobileSlider() {
     } else if (document.body.clientWidth < 767 || document.body.clientWidth === 767) {
       desktopView.remove();
       page.style.overflow = `scroll`;
+      btnViewRes.style.display = `none`;
     }
   };
 }

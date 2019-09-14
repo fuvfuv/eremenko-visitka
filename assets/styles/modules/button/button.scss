@@ -1,5 +1,6 @@
 .btn {
   @include btn-default;
+
   box-sizing: border-box;
   text-align: left;
   text-transform: uppercase;
@@ -56,5 +57,19 @@
 
   &--inner-blog {
     max-width: 240px;
+  }
+
+  &--about {
+    display: none;
+    margin-right: 120px;
+    max-width: 240px;
+
+    @media screen and (max-width: 1200px) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: $media-sm) {
+      display: none;
+    }
   }
 }

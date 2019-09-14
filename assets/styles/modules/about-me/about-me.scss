@@ -125,13 +125,45 @@
 
 .about-me__fake-slider {
   align-self: flex-end;
-  top: 710px;;
   display: none;
   flex-direction: column;
   height: 245px;
-  left: 120px;
+  left: 17%; // ширина 2560px
   position: absolute;
+  top: 710px;
   width: 10%;
+
+  @media screen and (max-width: 2500px) {
+    left: 16%;
+  }
+
+  @media screen and (max-width: 2410px) {
+    left: 15%;
+  }
+
+  @media screen and (max-width: 2380px) {
+    left: 14%;
+  }
+
+  @media screen and (max-width: 2300px) {
+    left: 13%;
+  }
+
+  @media screen and (max-width: 2250px) {
+    left: 12%;
+  }
+
+  @media screen and (max-width: 2150px) {
+    left: 10%;
+  }
+
+  @media screen and (max-width: 2060px) {
+    left: 8%;
+  }
+
+  @media screen and (max-width: 1920px) {
+    left: 120px;
+  }
 
   @media screen and (max-width: $media-xl-plus) {
     top: 480px;
@@ -143,8 +175,8 @@
 
   @media screen and (max-width: $media-lg) {
     height: 285px;
-    top: 580px;
     left: 15px;
+    top: 580px;
   }
 
   @media screen and (max-width: $media-md) {
@@ -170,13 +202,13 @@
     }
 
     @media screen and (max-width: $media-lg) {
-      margin-bottom: 15px;
       font-size: 8px;
+      margin-bottom: 15px;
     }
 
     @media screen and (max-width: $media-md) {
-      margin-bottom: 15px;
       font-size: 8px;
+      margin-bottom: 15px;
     }
   }
 
@@ -212,19 +244,51 @@
 .caption__text {
   background: url(../images/icons/citizen-text.svg) no-repeat;
   background-size: auto;
+  display: none;
   height: 240px;
-  left: 120px;
+  left: 17%; // ширина 2560px
   position: absolute;
   top: 330px;
   width: 741px;
   z-index: 1;
-  display: none;
+
+  @media screen and (max-width: 2500px) {
+    left: 16%;
+  }
+
+  @media screen and (max-width: 2410px) {
+    left: 15%;
+  }
+
+  @media screen and (max-width: 2380px) {
+    left: 14%;
+  }
+
+  @media screen and (max-width: 2300px) {
+    left: 13%;
+  }
+
+  @media screen and (max-width: 2250px) {
+    left: 12%;
+  }
+
+  @media screen and (max-width: 2150px) {
+    left: 10%;
+  }
+
+  @media screen and (max-width: 2060px) {
+    left: 8%;
+  }
+
+  @media screen and (max-width: 1920px) {
+    left: 120px;
+  }
 
   @media screen and (max-width: $media-xl-plus) {
     background-size: 580px 210px;
     height: 210px;
-    width: 630px;
     top: 230px;
+    width: 630px;
   }
 
   @media screen and (max-width: 1200px) {
@@ -236,17 +300,16 @@
   @media screen and (max-width: $media-lg) {
     background-size: 475px 145px;
     height: 145px;
-    width: 475px;
-    top: 300px;
     left: 0;
+    top: 300px;
+    width: 475px;
   }
 
   @media screen and (max-width: $media-md) {
     background-size: 368px 112px;
     height: 112px;
-    width: 368px;
     left: 0;
     top: 215px;
+    width: 368px;
   }
 }
-

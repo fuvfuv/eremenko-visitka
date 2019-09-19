@@ -1,6 +1,12 @@
 .index-slider {
   &__swap {
     margin-right: 115px;
+    transition-duration: .3s;
+    transition-property: color;
+
+    &.hidden {
+      color: transparent;
+    }
   }
 
   &__controls {

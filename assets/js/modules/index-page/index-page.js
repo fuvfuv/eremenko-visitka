@@ -12,6 +12,7 @@ export function indexPage() {
   const viewResumeBtnClone = viewResumeBtn.cloneNode(true);
 
   const ierominFooter = $(`.ieromin__footer`);
+  const swapElement = $(`.index-slider__swap`);
 
   if ($(window).width() > MEDIA.LG) {
     indexSlider.slick({
@@ -37,6 +38,14 @@ export function indexPage() {
         $(indexSlider).slick(`slickNext`);
       } else if (evt.deltaX < 0 || evt.deltaY > 0) {
         $(indexSlider).slick(`slickPrev`);
+      }
+    });
+
+    indexSlider.on(`beforeChange`, function (event, slick, currentSlide, nextSlide) {
+      if (nextSlide === slick.slideCount - 1) {
+        swapElement.addClass(`hidden`);
+      } else {
+        swapElement.removeClass(`hidden`);
       }
     });
   }

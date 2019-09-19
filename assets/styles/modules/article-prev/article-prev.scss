@@ -52,16 +52,25 @@
     min-height: 186px;
     overflow: hidden;
     position: relative;
+    filter: grayscale(100%);
+    transition-duration: .4s;
+    transition-property: filter, box-shadow;
+    box-shadow: 0 0 0 rgba(#000, 0);
 
     &::after {
       background-color: #000;
       content: "";
       height: 100%;
       left: 0;
-      opacity: 0.35;
+      opacity: 0.25;
       position: absolute;
       top: 0;
       width: 100%;
+    }
+
+    &:hover {
+      filter: grayscale(0%);
+      box-shadow: 0 8px 25px rgba(#000, .05);
     }
 
     @media screen and (max-width: $media-sm) {
@@ -71,14 +80,13 @@
     @media screen and (max-width: $media-lg) {
       margin-bottom: 20px;
     }
-  }
-
-  &__image {
-    filter: grayscale(100%);
 
     @media screen and (max-width: $media-md) {
       filter: none;
     }
+  }
+
+  &__image {
   }
 
   &__caption {

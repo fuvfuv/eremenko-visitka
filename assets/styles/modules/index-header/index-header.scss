@@ -11,7 +11,12 @@
 
   &__link {
     margin-right: 120px;
+    width: 240px;
 
+    @media screen and (max-width: $media-xl-plus) {
+      width: 170px;
+    }
+    
     @media screen and (max-width: $media-lg) {
       margin-right: 0;
       max-width: 100%;

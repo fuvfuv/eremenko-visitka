@@ -1,12 +1,24 @@
+@mixin btn-padding-right($width) {
+  // padding-right: #{($width - 30) / 3}px;
+  // padding-right: calc((100% - 30px) / 3);
+}
+
 .btn {
   @include btn-default;
 
   box-sizing: border-box;
+  max-width: 240px;
   text-align: left;
   text-transform: uppercase;
+    flex-shrink: 0;
 
   span {
-    padding: 20px 30px;
+    flex-shrink: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: calc((100% - 30px) / 3);
+    @include btn-padding-right(240);
   }
 
   @media screen and (max-width: $media-lg) {
@@ -15,10 +27,18 @@
 
   @media screen and (max-width: $media-md) {
     max-width: 185px;
+
+    span {
+      @include btn-padding-right(185);
+    }
   }
 
   @media screen and (max-width: $media-sm) {
     max-width: 160px;
+
+    span {
+      @include btn-padding-right(160);
+    }
   }
 
   &--indent {
@@ -28,11 +48,19 @@
     @media (max-width: $media-xl-plus) {
       height: 50px;
       width: 200px;
+
+      span {
+        @include btn-padding-right(200);
+      }
     }
 
     @media screen and (max-width: $media-md) {
       height: 50px;
       width: 170px;
+
+      span {
+        @include btn-padding-right(170);
+      }
     }
 
     @media screen and (max-width: $media-xs) {
@@ -40,6 +68,10 @@
       margin-bottom: 35px;
       padding: 18px 30px;
       width: 270px;
+
+      span {
+        @include btn-padding-right(270);
+      }
     }
   }
 
@@ -48,15 +80,31 @@
 
     @media screen and (max-width: $media-md) {
       max-width: 185px;
+
+      span {
+        @include btn-padding-right(185);
+      }
     }
 
     @media screen and (max-width: $media-sm) {
-      max-width: 151px;
+      max-width: 150px;
+
+      span {
+        @include btn-padding-right(150);
+      }
     }
   }
 
   &--inner-blog {
     max-width: 240px;
+  }
+
+  &--category {
+    max-width: unset;
+
+    span {
+      @include btn-padding-right(180);
+    }
   }
 
   &--about {

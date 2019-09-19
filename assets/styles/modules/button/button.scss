@@ -10,7 +10,7 @@
   max-width: 240px;
   text-align: left;
   text-transform: uppercase;
-    flex-shrink: 0;
+  flex-shrink: 0;
 
   span {
     flex-shrink: 0;
@@ -76,10 +76,10 @@
   }
 
   &--gallery {
-    max-width: 240px;
+    width: 240px;
 
     @media screen and (max-width: $media-md) {
-      max-width: 185px;
+      width: 185px;
 
       span {
         @include btn-padding-right(185);
@@ -87,7 +87,7 @@
     }
 
     @media screen and (max-width: $media-sm) {
-      max-width: 150px;
+      width: 150px;
 
       span {
         @include btn-padding-right(150);
@@ -96,7 +96,7 @@
   }
 
   &--inner-blog {
-    max-width: 240px;
+    min-width: 240px;
   }
 
   &--category {
@@ -108,9 +108,14 @@
   }
 
   &--about {
-    display: none;
     margin-right: 120px;
-    max-width: 240px;
+    width: 240px;
+    transition-property: box-shadow, opacity;
+
+    &.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
 
     @media screen and (max-width: 1200px) {
       margin-right: 0;

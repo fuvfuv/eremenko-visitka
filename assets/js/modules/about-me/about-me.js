@@ -17,7 +17,7 @@ export function aboutMeSlider() {
     dots.style.visibility = `hidden`;
     fakeSlider.style.display = `flex`;
     caption.style.display = `block`;
-    btnViewRes.style.display = `block`;
+    btnViewRes.classList.remove(`hidden`);
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
@@ -25,12 +25,12 @@ export function aboutMeSlider() {
       dots.style.visibility = `hidden`;
       fakeSlider.style.display = `flex`;
       caption.style.display = `block`;
-      btnViewRes.style.display = `block`;
+      btnViewRes.classList.remove(`hidden`);
     } else if (nextSlide > 0) {
       dots.style.visibility = `visible`;
       fakeSlider.style.display = `none`;
       caption.style.display = `none`;
-      btnViewRes.style.display = `none`;
+      btnViewRes.classList.add(`hidden`);
     }
     if (nextSlide === 6) {
       pageHeader.classList.add(`header--slideSix`);
@@ -76,7 +76,7 @@ export function changeToMobileSlider() {
     } else if (document.body.clientWidth < 767 || document.body.clientWidth === 767) {
       desktopView.remove();
       page.style.overflow = `scroll`;
-      btnViewRes.style.display = `none`;
+      btnViewRes.classList.add(`hidden`);
     }
   };
 }

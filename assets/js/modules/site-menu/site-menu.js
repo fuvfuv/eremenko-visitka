@@ -10,10 +10,9 @@ export const siteMenu = () => {
     menu.classList.add(`menu--animated`);
 
     switcher.classList.remove(`hidden`);
-    if (window.innerWidth > MEDIA.MD) {
+    if (window.matchMedia(`(min-width: ${MEDIA.MD}px)`).matches) {
       switcher.classList.add(`hidden`);
       commonBlock.classList.add(`hidden`);
-      menu.classList.remove(`menu--animated`);
     }
   }
 

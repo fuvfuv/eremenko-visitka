@@ -1,30 +1,49 @@
 // Внимание!! Спасибо за внимание!
 .gallery {
   margin: 0 auto;
-  max-height: 811px;
+  column-count: 4;
+  column-gap: 40px;
 
-  @media (min-width: 786px) and (max-width: 1199px) {
-    margin: 0 auto;
+  @media screen and (max-width: $media-xl-plus) {
+    column-gap: 30px;
+  }
+
+  @media screen and (max-width: $media-lg) {
+    column-gap: 22px;
+  }
+
+  @media screen and (max-width: $media-md) {
+    column-count: 3;
+    column-gap: 10px;
   }
 
   @media screen and (max-width: 768px) {
-    margin: 0 auto;
-    max-height: 1030px;
+    column-count: 2;
   }
+  
+  // @media (min-width: 786px) and (max-width: 1199px) {
+  //   margin: 0 auto;
+  // }
+  // 
+  // @media screen and (max-width: 768px) {
+  //   margin: 0 auto;
+  //   // max-height: 1030px;
+  // }
 
-  .gutter-width {
-    width: 40px;
-
-    @media (min-width: 786px) and (max-width: 1199px) {
-      width: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 15px;
-    }
-  }
+  // .gutter-width {
+  //   width: 40px;
+  // 
+  //   @media (min-width: 786px) and (max-width: 1199px) {
+  //     width: 20px;
+  //   }
+  // 
+  //   @media screen and (max-width: 768px) {
+  //     width: 15px;
+  //   }
+  // }
 
   &-item {
+    position: relative;
     background-color: $global-light-grey;
     cursor: pointer;
     height: auto;
@@ -37,13 +56,16 @@
       width: 100%;
     }
 
-    @media (min-width: 786px) and (max-width: 1199px) {
+    @media screen and (max-width: $media-xl-plus) {
       margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $media-lg) {
+      margin-bottom: 22px;
+    }
+
+    @media screen and (max-width: $media-md) {
       margin-bottom: 10px;
-      width: 150px;
     }
   }
 

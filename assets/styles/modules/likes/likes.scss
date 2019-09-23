@@ -1,6 +1,11 @@
 .likes {
   align-items: center;
   display: flex;
+  margin-right: 20px;
+
+  @media screen and (max-width: $media-lg) {
+    margin-right: 65px;
+  }
 
   &__heart {
     background-color: #000;
@@ -30,7 +35,6 @@
   &__text {
     font-size: 18px;
     font-weight: 500;
-    margin-right: 20px;
 
     .text__word {
       @media screen and (max-width: 768px) {

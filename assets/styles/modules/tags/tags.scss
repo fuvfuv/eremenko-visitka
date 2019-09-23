@@ -8,8 +8,12 @@
     display: inline-block;
     margin-bottom: 20px;
 
+    @media screen and (max-width: $media-xl-plus) {
+      margin-bottom: 15px;
+    }
+
     @media screen and (max-width: $media-lg) {
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 
     &:not(:last-child) {

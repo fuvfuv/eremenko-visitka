@@ -3,10 +3,11 @@
   justify-content: space-between;
   max-width: 1416px;
 
-  @media screen and (max-width: $media-md) {
+  @media screen and (max-width: $media-lg) {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 735px;
   }
 
   &__content {
@@ -15,10 +16,6 @@
     text-transform: initial;
 
     @media screen and (max-width: $media-lg) {
-      margin-right: 40px;
-    }
-
-    @media screen and (max-width: $media-md) {
       margin-right: 0;
     }
   }
@@ -28,14 +25,14 @@
     position: sticky;
     top: 30px;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
       height: auto;
-      justify-content: space-between;
+      // justify-content: space-between;
       margin-bottom: 20px;
-      order: -1;
+      // order: -1;
       position: initial;
       width: 100%;
     }
@@ -49,7 +46,7 @@
   &__share {
     margin-top: 40px;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       align-items: center;
       display: flex;
       margin-top: 30px;
@@ -71,7 +68,7 @@
     max-width: 1030px;
     position: relative;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       display: block;
       margin-bottom: 50px;
     }
@@ -110,7 +107,7 @@
     &:not(:last-child) {
       margin-bottom: 70px;
 
-      @media screen and (max-width: $media-md) {
+      @media screen and (max-width: $media-lg) {
         margin-bottom: 60px;
       }
 
@@ -123,7 +120,7 @@
       margin-bottom: 90px;
       text-transform: uppercase;
 
-      @media screen and (max-width: $media-md) {
+      @media screen and (max-width: $media-lg) {
         margin-bottom: 80px;
       }
 
@@ -140,7 +137,7 @@
     margin-bottom: 50px;
     opacity: 0.85;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       font-size: 17px;
       line-height: 28px;
       margin-bottom: 40px;
@@ -170,7 +167,7 @@
       margin-bottom: 50px;
       padding-left: 100px;
 
-      @media screen and (max-width: $media-md) {
+      @media screen and (max-width: $media-lg) {
         background-position: 2px 0;
         background-size: 20px 20px;
         margin-bottom: 40px;
@@ -190,7 +187,7 @@
       margin-bottom: 40px;
       opacity: 1;
 
-      @media screen and (max-width: $media-md) {
+      @media screen and (max-width: $media-lg) {
         font-size: 23px;
         line-height: 34px;
         margin-bottom: 30px;
@@ -214,7 +211,7 @@
   }
 
   &__list {
-    @media screen and (max-width: $media-sm) {
+    @media screen and (max-width: $media-lg) {
       font-size: 14px;
       line-height: 24px;
     }
@@ -282,7 +279,7 @@
       margin-right: 20px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 20px;
       margin-right: 0;
     }
@@ -294,7 +291,7 @@
       opacity: 0.5;
       padding-bottom: 70px;
 
-      @media screen and (max-width: $media-md) {
+      @media screen and (max-width: $media-lg) {
         padding-bottom: 0;
       }
 
@@ -308,7 +305,7 @@
   &__likes {
     margin-bottom: 60px;
 
-    @media screen and (max-width: $media-md) {
+    @media screen and (max-width: $media-lg) {
       margin-bottom: 0;
     }
   }

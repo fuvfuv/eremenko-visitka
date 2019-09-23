@@ -3,6 +3,20 @@
   max-width: 643px;
   width: 100%;
 
+  .img-overlay:after {
+    transition: .3s opacity;
+  }
+
+  &:hover {
+    .img-overlay:after {
+      opacity: 0.2;
+    }
+
+    .video__play-icon {
+      transform: translateX(-50%) translateY(-50%) scale3d(1.2, 1.2, 1);
+    }
+  }
+
   &__image-wrapper {
     align-items: center;
     background-color: #f7f7f7;
@@ -37,6 +51,7 @@
     transform: translateX(-50%) translateY(-50%);
     width: 70px;
     z-index: 1;
+    transition: .3s transform;
 
     @media screen and (max-width: $media-xs) {
       height: 36px;

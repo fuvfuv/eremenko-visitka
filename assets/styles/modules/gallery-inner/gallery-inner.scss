@@ -55,17 +55,17 @@
 
   .gallery-item__hover {
     background: rgba(0, 0, 0, 0.6);
-    display: none;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     width: 100%;
+    opacity: 0;
+    transition: .3s opacity;
 
     .hover__wrapper {
       height: 100%;
       position: relative;
-      width: 100%;
 
       &::after {
         background: url("/images/content/gallery-page/zoom.png");
@@ -84,7 +84,6 @@
   }
 
   .gallery-item:hover .gallery-item__hover {
-    display: block;
-    transition: all 2s;
+    opacity: 1;
   }
 }

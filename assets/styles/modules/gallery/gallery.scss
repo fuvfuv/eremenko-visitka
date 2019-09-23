@@ -1,6 +1,7 @@
 // Внимание!! Спасибо за внимание!
 .gallery {
   margin: 0 auto;
+  padding-bottom: 40px;
   column-count: 4;
   column-gap: 40px;
 
@@ -71,34 +72,38 @@
 
   .gallery-item__hover {
     background: rgba(0, 0, 0, 0.6);
-    display: none;
+    // display: none;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     width: 100%;
+    opacity: 0;
+    transition: .3s opacity;
 
     .hover__wrapper {
       color: $global-white;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       font-size: 16px;
       height: 100%;
-      justify-content: space-around;
-      padding-left: 39px;
+      justify-content: space-between;
+      padding: 35px 40px;
 
-      @media (min-width: 786px) and (max-width: 1199px) {
-        font-size: 14px;
-        padding-left: 30px;
+      @media screen and (max-width: 1600px) {
+        font-size: 12px;
+        padding: 22px 30px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $media-lg) {
         font-size: 12px;
-        padding-left: 20px;
+        padding: 16px 20px;
       }
 
       &__title {
         max-width: 210px;
+        margin: 10px 0;
 
         @media (min-width: 786px) and (max-width: 1199px) {
           max-width: 130px;
@@ -124,7 +129,6 @@
   }
 
   .gallery-item:hover .gallery-item__hover {
-    display: block;
-    transition: all 2s;
+    opacity: 1;
   }
 }

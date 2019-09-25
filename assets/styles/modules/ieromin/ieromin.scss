@@ -16,9 +16,9 @@
     position: relative;
     z-index: 1;
 
-    @media screen and (max-width: $media-xl-plus) {
-      padding-left: 10px;
-    }
+    // @media screen and (max-width: $media-xl-plus) {
+    //   padding-left: 10px;
+    // }
   }
 
   &__body {
@@ -38,11 +38,24 @@
 
     @include hide-on-name-lettering-hover;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-xl-plus) {
+      height: 205px;
+      margin-bottom: 55px;
+    }
+
+    @media (max-width: $media-lg) {
+    }
+
+    @media screen and (max-width: $media-md) {
       display: initial;
       margin-bottom: 0;
       margin-right: 0;
       min-height: 298px;
+    }
+
+    @media (min-width: $media-xxl) {
+      height: 390px;
+      margin-bottom: 100px;
     }
 
     &-col {
@@ -51,7 +64,7 @@
         padding-right: 150px;
         width: 40%;
 
-        @media screen and (max-width: $media-lg) {
+        @media screen and (max-width: $media-md) {
           margin-bottom: 25px;
           padding-right: 0;
           width: 100%;
@@ -62,7 +75,7 @@
         padding-right: 75px;
         width: 24%;
 
-        @media screen and (max-width: $media-lg) {
+        @media screen and (max-width: $media-md) {
           padding-right: 0;
           width: 100%;
         }
@@ -74,7 +87,7 @@
         margin-top: 30px;
         padding-left: 180px;
 
-        @media screen and (max-width: $media-lg) {
+        @media screen and (max-width: $media-md) {
           font-size: 18px;
           padding-left: 0;
           width: 100%;
@@ -90,21 +103,37 @@
       font-size: 48px;
       font-weight: 700;
 
-      @media screen and (max-width: $media-lg) {
+      @media screen and (max-width: $media-md) {
         font-size: 24px;
+      }
+
+      @media screen and (max-width: $media-xl-plus) {
+        font-size: 34px;
+      }
+
+      @media screen and (max-width: $media-lg) {
+        font-size: 26px;
+      }
+
+      @media (min-width: $media-xxl) {
+        font-size: 64px;
       }
     }
 
     &-about {
       display: block;
+      font-weight: 500;
 
-      @media screen and (max-width: $media-lg) {
+      @media screen and (max-width: $media-xl-plus) {
         font-size: 12px;
-        font-weight: 500;
+      }
+
+      @media (min-width: $media-xxl) {
+        font-size: 22px;
       }
 
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 1.2em;
       }
     }
 
@@ -113,42 +142,77 @@
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
+
+      @media (min-width: $media-xxl) {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
   }
 }
 
-// $letteringTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
-// $letteringBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
+// $letterTop: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px";
+// $letterBottom: "((100vh - (260px + 76px) - 184px - 182px) / 2) + 184px + 182px";
 
-$letteringTop: "50vh - 167px";
-$letteringBottom: "50vh + 15px";
+// $letterHeight: 182px;
+$letterHeight: (182 / 276 * 1em);
+
+$headerHeight: 184px;
+$footerHeight: (260px + 76px);
+
+$headerHeightXL: 250px;
+$footerHeightXL: 490px;
+
+$headerHeightLG: 128px;
+$footerHeightLG: (205px + 55px);
+
+$letterTop: "((100vh - #{($footerHeight + $headerHeight)} - #{$letterHeight}) / 2) + #{$headerHeight}";
+$letterBottom: "((100vh - #{($footerHeight + $headerHeight)} - #{$letterHeight}) / 2) + #{$headerHeight} + #{$letterHeight}";
+
+$letterTopLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHeight}) / 2) + #{$headerHeightLG}";
+$letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHeight}) / 2) + #{$headerHeightLG} + #{$letterHeight}";
+
+// $letterTop: "50vh - 167px";
+// $letterBottom: "50vh + 15px";
 
 .ieromin__lettering {
-  bottom: calc(#{$letteringBottom});
-  color: #fff;
-  font-size: 276px;
-  font-weight: 900;
-  height: 182px;
-  left: 0;
-  line-height: 182px;
   position: absolute;
+  bottom: calc(#{$letterBottom});
+  top: calc(#{$letterTop});
+  left: 0;
   right: 0;
-  text-transform: uppercase;
-  top: calc(#{$letteringTop});
   z-index: -1;
+  height: (182px / 276px * 1em);
+  font-size: 276px;
+  line-height: (182px / 276px);
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
 
-  @media screen and (max-width: $media-lg) {
+  @media screen and (max-width: $media-md) {
     bottom: 0;
     font-size: 68px;
     line-height: 70px;
     top: 0;
   }
 
+  @media (max-width: $media-xl-plus) {
+    bottom: calc(#{$letterBottomLG});
+    top: calc(#{$letterTopLG});
+    font-size: 195px;
+  }
+
+  @media (max-width: $media-lg) {}
+
+  @media (min-width: 1921px) {
+    font-size: 369px;
+  }
+
   &:hover {
     span {
       opacity: 0.15;
 
-      @media screen and (max-width: $media-lg) {
+      @media screen and (max-width: $media-md) {
         opacity: 1;
       }
     }
@@ -156,7 +220,7 @@ $letteringBottom: "50vh + 15px";
     .ieromin__lettering-back {
       filter: brightness(1) contrast(100%);
 
-      @media screen and (max-width: $media-lg) {
+      @media screen and (max-width: $media-md) {
         filter: none;
       }
     }
@@ -166,7 +230,7 @@ $letteringBottom: "50vh + 15px";
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         filter: brightness(1) contrast(100%);
 
-        @media screen and (max-width: $media-lg) {
+        @media screen and (max-width: $media-md) {
           filter: none;
         }
       }
@@ -180,45 +244,55 @@ $letteringBottom: "50vh + 15px";
 
 .ieromin__lettering-back,
 .ieromin__lettering-front {
-  bottom: calc((#{$letteringBottom}) * -1);
-  left: 0;
-  pointer-events: none;
   position: absolute;
   right: 0;
-  top: calc((#{$letteringTop}) * -1);
+  left: 0;
+  top: calc((#{$letterTop}) * -1);
+  bottom: calc((#{$letterBottom}) * -1);
+  pointer-events: none;
 
-  @media screen and (max-width: $media-lg) {
+  @media screen and (max-width: $media-md) {
     bottom: 0;
     top: 0;
+  }
+
+  @media (max-width: $media-xl-plus) {
+    top: calc((#{$letterTopLG}) * -1);
+    bottom: calc((#{$letterBottomLG}) * -1);
   }
 
   span {
     display: block;
     // top: 0;
     left: 120px;
+    margin-left: -0.07em;
     position: absolute;
-    top: calc(#{$letteringTop});
+    top: calc(#{$letterTop});
     transform: translate3d(0, 0, 0);
     transition: 0.5s opacity;
 
-    @media screen and (max-width: $media-lg) {
+    @media screen and (max-width: $media-md) {
       left: 50%;
       top: 156px;
       transform: translateX(-50%);
+    }
+
+    @media (max-width: $media-xl-plus) {
+      top: calc(#{$letterTopLG});
     }
 
     &::before {
       background-color: #fff;
       content: "";
       display: block;
-      height: 54px;
-      left: 0;
-      margin-left: 0.07em;
       position: absolute;
-      top: -90px;
-      width: 54px;
+      top: (90 / 276 * -1em);
+      left: 0;
+      height: (54 / 276 * 1em);
+      width: (54 / 276 * 1em);
+      margin-left: 0.07em;
 
-      @media screen and (max-width: $media-lg) {
+      @media screen and (max-width: $media-md) {
         display: none;
       }
     }
@@ -234,13 +308,17 @@ $letteringBottom: "50vh + 15px";
   transform: translate3d(0, 0, 0);
   transition: 0.5s filter;
 
-  @media screen and (max-width: $media-lg) {
+  @media screen and (max-width: $media-md) {
     background-attachment: scroll;
     background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)), url("../images/content/index-page/photo-mobile.jpg");
     background-size: cover;
     filter: none;
     min-height: 215px;
     transform: none;
+  }
+
+  @media (min-width: 1921px) {
+    background-size: cover;
   }
 }
 
@@ -249,11 +327,11 @@ $letteringBottom: "50vh + 15px";
     background-attachment: fixed;
     background-color: #fff;
     background-image: linear-gradient(#727272, #727272);
-    background-position: calc(120px + 0.07em) calc((#{$letteringTop}) - 54px - 36px);
+    background-position: calc(120px + 0px) calc((#{$letterTop}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
     background-repeat: no-repeat;
-    background-size: 54px 54px;
+    background-size: #{(54 / 276 * 1em)} #{(54 / 276 * 1em)};
     bottom: 0;
-    clip-path: polygon(0 0, 100% 0, 100% calc(#{$letteringTop}), 0 calc(#{$letteringTop}));
+    clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTop}), 0 calc(#{$letterTop}));
     content: "";
     display: block;
     filter: brightness(0.75) contrast(200%);
@@ -265,13 +343,18 @@ $letteringBottom: "50vh + 15px";
     transition-duration: 0.5s;
     transition-property: filter, clip-path;
 
-    @media screen and (max-width: $media-lg) {
+    @media screen and (max-width: $media-md) {
       display: none;
       filter: none;
 
       &::after {
         display: none;
       }
+    }
+
+    @media (max-width: $media-xl-plus) {
+      background-position: calc(120px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
+      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
   }
 
@@ -283,12 +366,12 @@ $letteringBottom: "50vh + 15px";
     left: 0;
     position: absolute;
     right: 0;
-    top: calc(#{$letteringBottom});
+    top: calc(#{$letterBottom});
     transform: scale3d(1, 1, 1);
     transform-origin: bottom;
     transition: 0.5s transform;
 
-    @media screen and (max-width: $media-lg) {
+    @media screen and (max-width: $media-md) {
       display: none;
     }
   }

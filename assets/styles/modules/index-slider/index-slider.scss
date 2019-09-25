@@ -7,6 +7,14 @@
     &.hidden {
       color: transparent;
     }
+
+    @media (max-width: $media-xl-plus) {
+      margin-right: 70px;
+    }
+
+    @media (max-width: $media-lg) {
+      margin-right: 56px;
+    }
   }
 
   &__controls {
@@ -20,7 +28,14 @@
 
     @include hide-on-name-lettering-hover;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-xl-plus) {
+      bottom: 45px;
+    }
+
+    @media (max-width: $media-lg) {
+    }
+
+    @media screen and (max-width: $media-md) {
       display: none;
     }
   }
@@ -47,6 +62,18 @@
 
       &.slick-active {
         background-color: #000;
+      }
+
+      @media (max-width: $media-xl-plus) {
+        width: 9px;
+        height: 9px;
+
+        &:not(:last-child) {
+          margin-right: 54px;
+        }
+      }
+
+      @media (max-width: $media-lg) {
       }
     }
   }

@@ -14,7 +14,7 @@ export function indexPage() {
   const ierominFooter = $(`.ieromin__footer`);
   const swapElement = $(`.index-slider__swap`);
 
-  if ($(window).width() > MEDIA.LG) {
+  if ($(window).width() > MEDIA.MD) {
     indexSlider.slick({
       slidesToShow: 1,
       adaptiveHeight: true,
@@ -31,7 +31,7 @@ export function indexPage() {
     $(`#items.slick-initialized`).slick(`unslick`);
   }
 
-  if ($(window).width() > MEDIA.LG) {
+  if ($(window).width() > MEDIA.MD) {
     indexSlider.on(`mousewheel`, function (evt) {
       evt.preventDefault();
       if (evt.deltaX > 0 || evt.deltaY < 0) {
@@ -50,7 +50,7 @@ export function indexPage() {
     });
   }
 
-  if ($(window).width() > MEDIA.LG) {
+  if ($(window).width() > MEDIA.MD) {
     nameLettering.hover(
         function () {
           $(`body`).addClass(`name-lettering-hovered`);
@@ -61,7 +61,7 @@ export function indexPage() {
     );
   }
 
-  if ($(window).width() < MEDIA.LG) {
+  if ($(window).width() < MEDIA.MD) {
     ierominFooter.append(viewResumeBtnClone);
   }
 }

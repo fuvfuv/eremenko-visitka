@@ -7,10 +7,18 @@
   width: 100%;
   z-index: 2;
 
+  @media (max-width: $media-xl-plus) {
+    padding: 45px 0;
+    font-size: 10px;
+  }
+
+  @media (max-width: $media-lg) {
+  }
+
   @include hide-on-menu-hover;
   @include hide-on-name-lettering-hover;
 
-  @media screen and (max-width: $media-lg) {
+  @media screen and (max-width: $media-md) {
     display: none;
   }
 
@@ -21,6 +29,14 @@
 
   &__soc-title {
     margin-right: 70px;
+
+    @media (max-width: $media-xl-plus) {
+      margin-right: 45px;
+    }
+
+    @media (max-width: $media-lg) {
+      margin-right: 25px;
+    }
   }
 
   &__soc-list {
@@ -32,6 +48,18 @@
   &__soc-item {
     &:not(:last-child) {
       margin-right: 25px;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+
+    @media (max-width: $media-lg) {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
     }
   }
 

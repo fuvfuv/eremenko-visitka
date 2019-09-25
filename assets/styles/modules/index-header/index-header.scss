@@ -5,7 +5,14 @@
 
   @include hide-on-name-lettering-hover;
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-xl-plus) {
+    padding: 45px 0;
+  }
+
+  @media (max-width: $media-lg) {
+  }
+
+  @media screen and (max-width: $media-md) {
     display: none;
   }
 
@@ -13,11 +20,21 @@
     margin-right: 120px;
     width: 240px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       width: 170px;
+      margin-right: 85px;
+    }
+
+    @media (max-width: $media-lg) {
+      margin-right: 60px;
     }
     
-    @media screen and (max-width: $media-lg) {
+    @media (min-width: $media-xxl) {
+      width: 320px;
+      margin-right: 160px;
+    }
+
+    @media (max-width: $media-md) {
       margin-right: 0;
       max-width: 100%;
     }

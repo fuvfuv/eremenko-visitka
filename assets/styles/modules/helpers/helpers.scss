@@ -95,17 +95,29 @@ input[type="radio"].visually-hidden {
 .container {
   box-sizing: content-box;
   margin: 0 auto;
-  max-width: 1680px;
+  // max-width: 1680px;
   padding: 0 120px;
   width: auto;
 
-  @media (min-width: $media-sm) and (max-width: $media-lg) {
+  @media (max-width: $media-xl-plus) {
+    padding: 0 85px;
+  }
+
+  @media (max-width: $media-lg) {
+    padding: 0 60px;
+  }
+  
+  @media (min-width: $media-sm) and (max-width: $media-md) {
     box-sizing: border-box;
     padding: 0 10px;
   }
 
   @media screen and (max-width: $media-sm) {
     padding: 0 15px;
+  }
+
+  @media (min-width: 1921px) {
+    padding: 0 160px;
   }
 
   &--contacts {

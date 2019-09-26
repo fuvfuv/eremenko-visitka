@@ -1,12 +1,30 @@
 .ieromin-about {
   position: relative;
+  box-sizing: border-box;
   height: 100vh;
-
+  
   @media screen and (max-width: $media-md) {
     height: auto;
     margin-bottom: 70px;
   }
 
+  &__container {
+    box-sizing: border-box;
+    padding-bottom: 138px;
+
+    @media (min-width: $media-md + 1px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: $media-lg) {
+    }
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -14,11 +32,27 @@
     @media screen and (max-width: $media-md) {
       flex-direction: column;
     }
+
+    @media (min-width: $media-md + 1px) {
+      height: 100%;
+    }
+
+    @media (min-width: $media-xxl) {
+      margin-top: 160px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $media-xxl) {
+    }
   }
 
   &__profile {
     display: flex;
-    margin-bottom: 158px;
+    // margin-bottom: 158px;
 
     @media screen and (max-width: $media-md) {
       margin-bottom: 40px;
@@ -36,6 +70,10 @@
       flex-basis: 50%;
       margin-right: 30px;
     }
+
+    @media (min-width: $media-xxl) {
+      margin-right: 125px;
+    }
   }
 
   &__list {
@@ -47,6 +85,10 @@
       flex-basis: 50%;
       font-size: 14px;
     }
+
+    @media (min-width: $media-xxl) {
+      font-size: 32px;
+    }
   }
 
   &__item {
@@ -55,6 +97,10 @@
 
       @media screen and (max-width: $media-md) {
         margin-bottom: 15px;
+      }
+
+      @media (min-width: $media-xxl) {
+        margin-bottom: 55px;
       }
     }
 
@@ -70,6 +116,10 @@
         font-size: 10px;
         margin-bottom: 10px;
       }
+
+      @media (min-width: $media-xxl) {
+        font-size: 22px;
+      }
     }
   }
 
@@ -77,17 +127,26 @@
     color: #000;
     font-size: 48px;
     font-weight: 700;
-    max-width: 808px;
+    // max-width: 808px;
+    margin-top: auto;
+    margin-bottom: auto;
 
     @media screen and (max-width: $media-md) {
       margin-bottom: 35px;
     }
+
+    @media (min-width: $media-xxl) {
+      font-size: 64px;
+    }
   }
 
   &__video {
-    position: absolute;
-    right: 120px;
-    bottom: 167px;
+    // position: absolute;
+    // right: 120px;
+    // bottom: 167px;
+    position: relative;
+    display: block;
+    align-self: flex-end;
     width: 642px;
     height: 550px;
     box-shadow: 0 8px 5px rgba(#000, .05);
@@ -130,6 +189,14 @@
       &:before {
         transform: translate(-48px, -67px);
       }
+    }
+
+    @media (min-width: $media-xxl) {
+      right: 160px;
+      bottom: 220px;
+      width: 865px;
+      height: 735px;
+      max-width: 865px;
     }
 
     &-wrapper {

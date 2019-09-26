@@ -14,6 +14,14 @@
   &__container {
     padding: 0 15px;
     padding-bottom: 30px;
+
+    @media (min-width: $media-xxl) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding-bottom: 138px;
+      box-sizing: border-box;
+    }
   }
 
   &__group {
@@ -23,6 +31,11 @@
     @media screen and (max-width: $media-md) {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    @media (min-width: $media-xxl) {
+      margin-top: auto;
+      margin-bottom: auto;
     }
   }
 
@@ -38,6 +51,11 @@
       font-size: 12px;
       margin-bottom: 30px;
     }
+
+    @media (min-width: $media-xxl) {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
   }
 
   &__field {
@@ -49,6 +67,10 @@
 
       @media screen and (max-width: $media-md) {
         margin-bottom: 14px;
+      }
+
+      @media (min-width: $media-xxl) {
+        margin-bottom: 54px;
       }
     }
 
@@ -62,6 +84,11 @@
         font-size: 10px;
         margin-bottom: 4px;
       }
+
+      @media (min-width: $media-xxl) {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -73,6 +100,10 @@
 
     @media screen and (max-width: $media-md) {
       min-height: 40px;
+    }
+
+    @media (min-width: $media-xxl) {
+      min-height: 92px;
     }
   }
 
@@ -90,10 +121,19 @@
   }
 
   &__submit {
+    width: 240px;
     margin-left: auto;
 
     @media screen and (max-width: $media-md) {
       max-width: 100%;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      width: 170px;
+    }
+
+    @media (min-width: $media-xxl) {
+      width: 320px;
     }
   }
 }

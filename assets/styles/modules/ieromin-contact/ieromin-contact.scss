@@ -1,4 +1,5 @@
 .ieromin-contact {
+  position: relative;
   height: 100vh;
 
   @media screen and (max-width: $media-md) {
@@ -6,11 +7,11 @@
   }
 
   &__container {
-    box-sizing: content-box;
+    // box-sizing: content-box;
     display: flex;
-    margin: 0 auto;
-    max-width: 1680px;
-    padding: 0 120px;
+    // margin: 0 auto;
+    // max-width: 1680px;
+    // padding: 0 120px;
 
     @media screen and (max-width: $media-md) {
       flex-direction: column;
@@ -22,6 +23,9 @@
   &__feedback {
     flex-basis: 50%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 138px;
 
     @media screen and (max-width: $media-md) {
       flex-basis: 100%;
@@ -29,65 +33,176 @@
       width: 100%;
     }
   }
-
-  &__feedback-logo {
-    margin-top: 60px;
-    position: absolute;
-    z-index: 1;
-
-    @media screen and (max-width: $media-md) {
-      display: none;
-    }
-  }
-
-  &__square {
-    background-color: #000;
-    display: block;
-    height: 540px;
-    left: -60px;
-    margin-bottom: 80px;
-    position: relative;
-    top: 0;
-    width: 410px;
-
-    @media screen and (max-width: $media-md) {
-      height: 114px;
-      left: 0;
-      margin-bottom: 30px;
-      width: 136px;
-    }
-  }
-
-  &__write-me {
-    position: relative;
-  }
-
-  &__write-me-text {
-    color: #fff;
-    font-size: 120px;
-    font-weight: 700;
-    position: absolute;
-    top: 290px;
-    white-space: nowrap;
-
-    @media screen and (max-width: $media-md) {
-      font-size: 37px;
-      left: 28px;
-      top: 40px;
-    }
-
-    .black {
-      color: #000;
-    }
-  }
+  // 
+  // &__feedback-logo {
+  //   margin-top: 60px;
+  //   position: absolute;
+  //   z-index: 1;
+  // 
+  //   @media screen and (max-width: $media-md) {
+  //     display: none;
+  //   }
+  // }
+  // 
+  // &__square {
+  //   background-color: #000;
+  //   display: block;
+  //   height: 540px;
+  //   left: -60px;
+  //   margin-bottom: 80px;
+  //   position: relative;
+  //   top: 0;
+  //   width: 410px;
+  // 
+  //   @media screen and (max-width: $media-md) {
+  //     height: 114px;
+  //     left: 0;
+  //     margin-bottom: 30px;
+  //     width: 136px;
+  //   }
+  // }
+  // 
+  // &__write-me {
+  //   position: relative;
+  // }
+  // 
+  // &__write-me-text {
+  //   color: #fff;
+  //   font-size: 120px;
+  //   font-weight: 700;
+  //   position: absolute;
+  //   top: 290px;
+  //   white-space: nowrap;
+  // 
+  //   @media screen and (max-width: $media-md) {
+  //     font-size: 37px;
+  //     left: 28px;
+  //     top: 40px;
+  //   }
+  // 
+  //   .black {
+  //     color: #000;
+  //   }
+  //
+  //   @media (min-width: $media-xxl) {
+  //     font-size: 160px;
+  //   }
+  // }
 
   &__feedback-text {
     color: #000;
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: auto;
+    margin-top: auto;
 
     @media screen and (max-width: $media-md) {
       display: none;
     }
+
+    @media (min-width: $media-xxl) {
+      font-size: 64px;
+    }
+  }
+}
+
+.ieromin-contact__lettering {
+  position: relative;
+  top: 0;
+  left: -120px;
+  height: 530px;
+  font-size: 120px;
+
+  @media (min-width: $media-xxl) {
+    left: -160px;
+    height: 720px;
+    font-size: 160px;
+  }
+
+  @media (max-width: $media-xl-plus) {
+    height: 385px;
+    font-size: 86px;
+    left: -85px;
+  }
+
+  @media (max-width: $media-lg) {
+    font-size: 60px;
+    left: -60px;
+  }
+}
+
+.ieromin-contact__lettering-text {
+  position: absolute;
+  top: 300px;
+  left: 120px;
+  display: block;
+  font-weight: 900;
+  line-height: .7em;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  @media (min-width: $media-xxl) {
+    top: 400px;
+    left: 160px;
+  }
+}
+
+$leftEdge: 120px / 2;
+$rightEdge: "120px + 2.85em";
+
+$leftEdgeXL: 160px / 2;
+$rightEdgeXL: "160px + 2.85em";
+
+.ieromin-contact__lettering-inverted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+
+  // transition: .4s clip-path;
+  clip-path: polygon(calc(#{$rightEdge} - 2px) 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 80px, calc(#{$rightEdge} - 2px) 80px);
+  //
+  // animation-name: unfoldInverted;
+  // animation-duration: .5s;
+  // animation-iteration-count: 1;
+  // animation-direction: reverse;
+  // animation-delay: 1s;
+  // animation-fill-mode: forwards;
+
+  .slick-active & {
+    // animation-direction: normal;
+  }
+  clip-path: polygon($leftEdge 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 100%, $leftEdge 100%);
+
+  @media (min-width: $media-xxl) {
+    clip-path: polygon($leftEdgeXL 0, calc(#{$rightEdgeXL}) 0, calc(#{$rightEdgeXL}) 100%, $leftEdgeXL 100%);
+  }
+}
+
+// @keyframes unfoldInverted {
+//   0% {
+//     clip-path: polygon(calc(#{$rightEdge} - 2px) 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 80px, calc(#{$rightEdge} - 2px) 80px);
+//   }
+//   50% {
+//     clip-path: polygon(calc(#{$rightEdge} - 2px) 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 100%, calc(#{$rightEdge} - 2px) 100%);
+//   }
+//
+//   100% {
+//     clip-path: polygon(60px 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 100%, 60px 100%);
+//   }
+// }
+
+.ieromin-contact__lettering-logo {
+  position: absolute;
+  top: 72px;
+  left: 120px;
+
+  @media (min-width: $media-xxl) {
+    top: 100px;
+    left: 160px;
   }
 }

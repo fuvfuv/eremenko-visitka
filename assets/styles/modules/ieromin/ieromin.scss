@@ -281,6 +281,10 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
       top: calc(#{$letterTopLG});
     }
 
+    @media (min-width: $media-xxl) {
+      left: 160px;
+    }
+
     &::before {
       background-color: #fff;
       content: "";
@@ -317,7 +321,7 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     transform: none;
   }
 
-  @media (min-width: 1921px) {
+  @media (min-width: $media-xxl) {
     background-size: cover;
   }
 }
@@ -354,6 +358,11 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
 
     @media (max-width: $media-xl-plus) {
       background-position: calc(120px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
+      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
+    }
+
+    @media (min-width: $media-xxl) {
+      background-position: calc(160px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
       clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
   }

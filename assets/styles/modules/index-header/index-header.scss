@@ -1,6 +1,7 @@
 .index-header {
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
   padding: 65px 0;
 
   @include hide-on-name-lettering-hover;

@@ -2,40 +2,60 @@
   background-color: #f7f7f7;
   height: 100vh;
   width: 50%;
+  flex-shrink: 0;
 
   @media screen and (max-width: $media-lg) {
-    height: auto;
+    width: 40%;
   }
 
   @media screen and (max-width: $media-md) {
     width: 100%;
+    height: auto;
   }
 
   &__container {
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 60px;
     padding-bottom: 30px;
+    padding-left: 22.5%;
+    padding-right: 14%;
 
     @media (min-width: $media-xxl) {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
       padding-bottom: 138px;
-      box-sizing: border-box;
+    }
+
+    @media (max-width: $media-xl-plus) {
+    }
+
+    @media (max-width: $media-lg) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 35px;
+      padding-top: 35px;
     }
   }
 
   &__group {
-    padding-left: 170px;
-    padding-right: 170px;
+    // padding-left: 170px;
+    // padding-right: 170px;
 
-    @media screen and (max-width: $media-md) {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    // @media screen and (max-width: $media-md) {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
+    margin-top: auto;
+    margin-bottom: auto;
 
     @media (min-width: $media-xxl) {
-      margin-top: auto;
-      margin-bottom: auto;
     }
   }
 
@@ -43,9 +63,8 @@
     display: block;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 130px;
-    padding-top: 60px;
-    text-align: center;
+    // margin-bottom: 130px;
+    // text-align: center;
 
     @media screen and (max-width: $media-md) {
       font-size: 12px;
@@ -95,15 +114,22 @@
   &__input {
     background-color: #fff;
     border: 1px solid transparent;
-    min-height: 70px;
+    height: 70px;
     padding: 0 8px;
 
     @media screen and (max-width: $media-md) {
-      min-height: 40px;
+      height: 40px;
     }
 
     @media (min-width: $media-xxl) {
-      min-height: 92px;
+      height: 92px;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      height: 50px;
+    }
+
+    @media (max-width: $media-lg) {
     }
   }
 
@@ -118,15 +144,18 @@
     @media screen and (max-width: $media-md) {
       min-height: 40px;
     }
+
+    @media (max-width: $media-xl-plus) {
+      min-height: 96px;
+    }
+
+    @media (max-width: $media-lg) {
+    }
   }
 
   &__submit {
     width: 240px;
     margin-left: auto;
-
-    @media screen and (max-width: $media-md) {
-      max-width: 100%;
-    }
 
     @media (max-width: $media-xl-plus) {
       width: 170px;
@@ -134,6 +163,11 @@
 
     @media (min-width: $media-xxl) {
       width: 320px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -24,6 +24,11 @@
 
     @media (max-width: $media-lg) {
     }
+
+    @media screen and (max-width: $media-md) {
+      padding-bottom: 0;
+      margin-bottom: 65px;
+    }
   }
   &__wrapper {
     display: flex;
@@ -43,6 +48,8 @@
   }
 
   &__info {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
 
@@ -83,6 +90,11 @@
 
     @media screen and (max-width: $media-md) {
       flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-size: 14px;
     }
 
@@ -124,19 +136,12 @@
   }
 
   &__slogan {
-    color: #000;
-    font-size: 48px;
-    font-weight: 700;
     // max-width: 808px;
     margin-top: auto;
     margin-bottom: auto;
 
     @media screen and (max-width: $media-md) {
       margin-bottom: 35px;
-    }
-
-    @media (min-width: $media-xxl) {
-      font-size: 64px;
     }
   }
 
@@ -164,15 +169,7 @@
       pointer-events: none;
     }
 
-    @media screen and (max-width: $media-md) {
-      height: auto;
-      margin-right: 0;
-      width: auto;
-    }
-
     @media (max-width: $media-xl-plus) {
-      right: 85px;
-      bottom: 120px;
       width: 465px;
       height: 394px;
 
@@ -182,8 +179,6 @@
     }
 
     @media (max-width: $media-lg) {
-      bottom: 120px;
-      right: 60px;
       width: 300px;
 
       &:before {
@@ -191,9 +186,18 @@
       }
     }
 
+    @media screen and (max-width: $media-md) {
+      height: auto;
+      margin-right: 0;
+      width: auto;
+      align-self: unset;
+
+      &:before {
+        display: none;
+      }
+    }
+
     @media (min-width: $media-xxl) {
-      right: 160px;
-      bottom: 220px;
       width: 865px;
       height: 735px;
       max-width: 865px;
@@ -205,9 +209,6 @@
 
       @media screen and (max-width: $media-md) {
         height: auto;
-        margin-right: 0;
-        right: 0;
-        top: 0;
         width: auto;
       }
     }

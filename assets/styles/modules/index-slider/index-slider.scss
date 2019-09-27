@@ -1,6 +1,9 @@
 .index-slider {
+  
   &__swap {
-    margin-right: 115px;
+    // margin-right: 115px;
+    margin-right: auto;
+    flex-shrink: 0;
     transition-duration: .3s;
     transition-property: color;
 
@@ -9,30 +12,39 @@
     }
 
     @media (max-width: $media-xl-plus) {
-      margin-right: 70px;
+      // margin-right: 70px;
+      // margin-right: 20px;
     }
 
     @media (max-width: $media-lg) {
-      margin-right: 56px;
+      margin-right: 40px;
     }
   }
 
   &__controls {
+    box-sizing: border-box;
     align-items: center;
-    bottom: 60px;
+    // bottom: 60px;
     display: flex;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    z-index: 10;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 380px;
+    margin-left: 70px;
+    margin-right: 70px;
+    // left: 50%;
+    // position: absolute;
+    // transform: translateX(-50%);
+    // z-index: 10;
 
     @include hide-on-name-lettering-hover;
 
     @media (max-width: $media-xl-plus) {
-      bottom: 45px;
+      // bottom: 45px;
+      max-width: 270px;
     }
 
     @media (max-width: $media-lg) {
+      flex-grow: 0;
     }
 
     @media screen and (max-width: $media-md) {
@@ -42,7 +54,21 @@
 
   &__bullets {
     display: flex;
+    justify-content: space-between;
     font-size: 0;
+    width: 100%;
+    max-width: 182px + 70px;
+    padding-left: 70px;
+
+    @media (max-width: $media-xl-plus) {
+      max-width: 135px + 54px;
+      padding-left: 54px;
+    }
+
+    @media (max-width: $media-lg) {
+      max-width: 100%;
+      padding-left: 0;
+    }
 
     li {
       background-color: transparent;
@@ -52,7 +78,8 @@
       width: 14px;
 
       &:not(:last-child) {
-        margin-right: 70px;
+        // margin-right: 70px;
+        margin-right: 20px;
       }
 
       button {
@@ -69,11 +96,15 @@
         height: 9px;
 
         &:not(:last-child) {
-          margin-right: 54px;
+          // margin-right: 54px;
+          margin-right: 10px;
         }
       }
 
       @media (max-width: $media-lg) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
       }
     }
   }

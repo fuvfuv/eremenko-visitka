@@ -33,7 +33,7 @@
     height: 260px;
     justify-content: space-between;
     margin-bottom: 76px;
-    margin-right: 120px;
+    // margin-right: 120px;
     margin-top: auto;
 
     @include hide-on-name-lettering-hover;
@@ -41,16 +41,19 @@
     @media (max-width: $media-xl-plus) {
       height: 205px;
       margin-bottom: 55px;
+      margin-right: 85px;
     }
 
     @media (max-width: $media-lg) {
+      margin-right: 60px;
     }
 
     @media screen and (max-width: $media-md) {
       display: initial;
       margin-bottom: 0;
       margin-right: 0;
-      min-height: 298px;
+      // min-height: 298px;
+      height: auto;
     }
 
     @media (min-width: $media-xxl) {
@@ -61,62 +64,80 @@
     &-col {
       &:nth-child(1) {
         box-sizing: border-box;
-        padding-right: 150px;
-        width: 40%;
+        width: 360px;
+        flex-shrink: 0;
+        margin-right: auto;
+        // padding-right: 150px;
+        // width: 40%;
 
         @media screen and (max-width: $media-md) {
           margin-bottom: 25px;
+          margin-right: 0;
           padding-right: 0;
           width: 100%;
         }
       }
 
       &:nth-child(2) {
-        padding-right: 75px;
-        width: 24%;
+        // padding-right: 75px;
+        // width: 24%;
+        max-width: 380px;
+        margin-left: 90px;
+        margin-right: 90px;
+
+        @media (max-width: $media-xl-plus) {
+          width: 280px;
+          padding-right: 0;
+        }
 
         @media screen and (max-width: $media-md) {
-          padding-right: 0;
           width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 25px;
         }
       }
 
       &:nth-child(3) {
-        flex: 1;
+        // flex: 1;
         margin-bottom: 30px;
-        margin-top: 30px;
-        padding-left: 180px;
+        margin-right: 120px;
+        margin-left: auto;
+        // margin-top: 30px;
+        max-width: 360px;
+        min-width: 200px;
+        // padding-left: 180px;
+
+        @media (min-width: 1700px) {
+          flex-grow: 1;
+        }
+
+        @media (max-width: $media-xl-plus) {
+          margin-top: 0;
+          width: 24%;
+          margin-left: auto;
+        }
 
         @media screen and (max-width: $media-md) {
-          font-size: 18px;
-          padding-left: 0;
           width: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          margin-left: 0;
+          margin-right: 0;
         }
       }
 
       &:not(:last-child) {
-        margin-right: 30px;
+        // margin-right: 30px;
       }
     }
 
     &-slogan {
-      font-size: 48px;
-      font-weight: 700;
+      width: 430px;
 
       @media screen and (max-width: $media-md) {
+        width: auto;
         font-size: 24px;
-      }
-
-      @media screen and (max-width: $media-xl-plus) {
-        font-size: 34px;
-      }
-
-      @media screen and (max-width: $media-lg) {
-        font-size: 26px;
-      }
-
-      @media (min-width: $media-xxl) {
-        font-size: 64px;
       }
     }
 
@@ -142,6 +163,14 @@
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
+
+      @media screen and (max-width: $media-md) {
+        font-size: 18px;
+
+        br {
+          display: none;
+        }
+      }
 
       @media (min-width: $media-xxl) {
         font-size: 32px;
@@ -189,13 +218,6 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
   color: #fff;
   text-transform: uppercase;
 
-  @media screen and (max-width: $media-md) {
-    bottom: 0;
-    font-size: 68px;
-    line-height: 70px;
-    top: 0;
-  }
-
   @media (max-width: $media-xl-plus) {
     bottom: calc(#{$letterBottomLG});
     top: calc(#{$letterTopLG});
@@ -204,10 +226,18 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
 
   @media (max-width: $media-lg) {}
 
+  @media screen and (max-width: $media-md) {
+    top: 0;
+    bottom: 0;
+    height: 215px;
+    font-size: 68px;
+    line-height: 70px;
+  }
+
   @media (min-width: 1921px) {
     font-size: 369px;
   }
-
+  
   &:hover {
     span {
       opacity: 0.15;
@@ -251,14 +281,14 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
   bottom: calc((#{$letterBottom}) * -1);
   pointer-events: none;
 
-  @media screen and (max-width: $media-md) {
-    bottom: 0;
-    top: 0;
-  }
-
   @media (max-width: $media-xl-plus) {
     top: calc((#{$letterTopLG}) * -1);
     bottom: calc((#{$letterBottomLG}) * -1);
+  }
+
+  @media screen and (max-width: $media-md) {
+    bottom: 0;
+    top: 0;
   }
 
   span {
@@ -271,14 +301,19 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     transform: translate3d(0, 0, 0);
     transition: 0.5s opacity;
 
+    @media (max-width: $media-xl-plus) {
+      top: calc(#{$letterTopLG});
+      left: 85px;
+    }
+
+    @media (max-width: $media-lg) {
+      left: 60px;
+    }
+
     @media screen and (max-width: $media-md) {
       left: 50%;
       top: 156px;
       transform: translateX(-50%);
-    }
-
-    @media (max-width: $media-xl-plus) {
-      top: calc(#{$letterTopLG});
     }
 
     @media (min-width: $media-xxl) {
@@ -347,6 +382,18 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     transition-duration: 0.5s;
     transition-property: filter, clip-path;
 
+    @media (max-width: $media-xl-plus) {
+      background-position: calc(85px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
+      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
+    }
+
+    @media (max-width: $media-xl-plus) {
+    }
+
+    @media (max-width: $media-lg) {
+      background-position: calc(60px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
+    }
+
     @media screen and (max-width: $media-md) {
       display: none;
       filter: none;
@@ -354,11 +401,6 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
       &::after {
         display: none;
       }
-    }
-
-    @media (max-width: $media-xl-plus) {
-      background-position: calc(120px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
-      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
 
     @media (min-width: $media-xxl) {

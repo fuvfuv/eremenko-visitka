@@ -21,8 +21,8 @@
   }
 
   &__feedback {
-    flex-basis: 50%;
-    width: 50%;
+    flex-basis: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 138px;
@@ -90,18 +90,11 @@
   // }
 
   &__feedback-text {
-    color: #000;
-    font-size: 48px;
-    font-weight: 700;
     margin-bottom: auto;
     margin-top: auto;
 
     @media screen and (max-width: $media-md) {
       display: none;
-    }
-
-    @media (min-width: $media-xxl) {
-      font-size: 64px;
     }
   }
 }
@@ -129,6 +122,12 @@
     font-size: 60px;
     left: -60px;
   }
+
+  @media (max-width: $media-md) {
+    height: 115px;
+    left: 0;
+    font-size: 40px;
+  }
 }
 
 .ieromin-contact__lettering-text {
@@ -145,13 +144,37 @@
     top: 400px;
     left: 160px;
   }
+
+  @media (max-width: $media-xl-plus) {
+    top: 215px;
+    left: 85px;
+  }
+
+  @media (max-width: $media-lg) {
+    left: 60px;
+  }
+
+  @media (max-width: $media-md) {
+    top: 45px;
+    left: 20px;
+  }
 }
 
-$leftEdge: 120px / 2;
-$rightEdge: "120px + 2.85em";
+$textRatio: 2.85em;
 
-$leftEdgeXL: 160px / 2;
-$rightEdgeXL: "160px + 2.85em";
+$leftEdge: 120px / 2;
+$rightEdge: "120px + #{$textRatio}";
+
+$leftEdgeXXL: 160px / 2;
+$rightEdgeXXL: "160px + #{$textRatio}";
+
+$leftEdgeXL: 84px / 2;
+$rightEdgeXL: "84px + #{$textRatio}";
+
+$leftEdgeLG: 60px / 2;
+$rightEdgeLG: "60px + #{$textRatio}";
+
+$rightEdgeMD: "20px + #{$textRatio}";
 
 .ieromin-contact__lettering-inverted {
   position: absolute;
@@ -179,8 +202,21 @@ $rightEdgeXL: "160px + 2.85em";
   clip-path: polygon($leftEdge 0, calc(#{$rightEdge}) 0, calc(#{$rightEdge}) 100%, $leftEdge 100%);
 
   @media (min-width: $media-xxl) {
+    clip-path: polygon($leftEdgeXXL 0, calc(#{$rightEdgeXXL}) 0, calc(#{$rightEdgeXXL}) 100%, $leftEdgeXXL 100%);
+  }
+
+  @media (max-width: $media-xl-plus) {
     clip-path: polygon($leftEdgeXL 0, calc(#{$rightEdgeXL}) 0, calc(#{$rightEdgeXL}) 100%, $leftEdgeXL 100%);
   }
+
+  @media (max-width: $media-lg) {
+    clip-path: polygon($leftEdgeLG 0, calc(#{$rightEdgeLG}) 0, calc(#{$rightEdgeLG}) 100%, $leftEdgeLG 100%);
+  }
+
+  @media (max-width: $media-md) {
+    clip-path: polygon(0 0, calc(#{$rightEdgeMD}) 0, calc(#{$rightEdgeMD}) 100%, 0 100%);
+  }
+
 }
 
 // @keyframes unfoldInverted {
@@ -204,5 +240,19 @@ $rightEdgeXL: "160px + 2.85em";
   @media (min-width: $media-xxl) {
     top: 100px;
     left: 160px;
+  }
+
+  @media (max-width: $media-xl-plus) {
+    width: 86px;
+    height: 18px;
+    left: 85px;
+  }
+
+  @media (max-width: $media-lg) {
+    left: 60px;
+  }
+
+  @media (max-width: $media-md) {
+    display: none;
   }
 }

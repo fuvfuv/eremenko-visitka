@@ -7,26 +7,9 @@ export function blogInnerPageSettings() {
   const likes = document.querySelector(`.article-inner__likes`);
   const tags = document.querySelector(`.article-inner__tags`);
 
-  const likesClone = likes.cloneNode(true);
-  const tagsClone = tags.cloneNode(true);
-
-  if (window.innerWidth < MEDIA.XS) {
-    moveLikesToHeader();
-    moveTagsToArticle();
-  }
-
-  function moveLikesToHeader() {
-    likesClone.classList.add(`likes--reverse`);
-    pageHeader.appendChild(likesClone);
-    cutDomElement(likes);
-  }
-
-  function moveTagsToArticle() {
-    article.insertBefore(tagsClone, articleContent);
-    cutDomElement(tags);
-  }
-
-  function cutDomElement(el) {
-    el.parentNode.removeChild(el);
+  if (window.matchMedia(`(max-width: ${MEDIA.MD}px)`).matches) {
+    likes.classList.add(`likes--reverse`);
+    pageHeader.appendChild(likes);
+    article.insertBefore(tags, articleContent);
   }
 }

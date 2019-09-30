@@ -1,7 +1,9 @@
-import $ from "jquery"; // если нужен jquery
+import $ from "jquery";
 import "slick-carousel";
 import "jquery-mousewheel";
 import "malihu-custom-scrollbar-plugin";
+
+import {MEDIA} from "../constants/constants";
 
 export function certificatesMsnry() {
   const container = document.querySelector(`.certificates`);
@@ -15,7 +17,7 @@ export function certificatesMsnry() {
 }
 
 export function reviewsSlider() {
-  if ($(window).width() < 1200) {
+  if (window.matchMedia(`(max-width: ${MEDIA.LG}px)`).matches) {
     $(`.reviews__list`).slick({
       slidesToShow: 1,
       adaptiveHeight: true,
@@ -35,9 +37,6 @@ export function reviewsSlider() {
 export function customScroll() {
   $(window).on(`load`, function () {
     $(`.reviews__body`).mCustomScrollbar();
-  });
-
-  $(window).on(`load`, function () {
     $(`.achievements__body`).mCustomScrollbar();
   });
 }

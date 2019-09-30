@@ -3,7 +3,7 @@
 
   &-info {
     align-items: center;
-    cursor: pointer;
+    // cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin-bottom: 77px;
@@ -28,6 +28,10 @@
         font-size: 18px;
         max-width: 236px;
       }
+    }
+
+    .info__likes {
+      margin-left: 20px;
     }
   }
 
@@ -54,32 +58,40 @@
   }
 
   .gallery-item__hover {
-    background: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-    transition: .3s opacity;
 
     .hover__wrapper {
       height: 100%;
       position: relative;
 
-      &::after {
-        background: url("/images/content/gallery-page/zoom.png");
-        content: "";
-        height: 50px;
-        left: 0;
-        margin: auto;
-        margin-top: -25px;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        vertical-align: middle;
-        width: 53px;
+      background-image: url("/images/content/gallery-page/zoom.svg");
+      background-size: 53px 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (max-width: $media-xl-plus) {
+        background-size: 38px 36px;
       }
+      @media (max-width: $media-xl-plus) {
+        background-size: 38px 36px;
+      }
+
+      @media (min-width: $media-xxl) {
+        background-size: 72px 68px;
+      }
+
+      // &::after {
+      //   content: "";
+      //   height: 50px;
+      //   left: 0;
+      //   margin: auto;
+      //   margin-top: -25px;
+      //   position: absolute;
+      //   right: 0;
+      //   top: 50%;
+      //   vertical-align: middle;
+      //   width: 53px;
+      //
+      // }
     }
   }
 

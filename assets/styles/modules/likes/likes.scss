@@ -50,6 +50,11 @@
 
     .likes__heart {
       margin-right: 0;
+      margin-left: 20px;
+
+      @media (max-width: $media-xl-plus) {
+        margin-left: 15px;
+      }
     }
   }
 }

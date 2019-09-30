@@ -18,11 +18,18 @@
     @include btn-padding-right(240);
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-xl-plus) {
+    span {
+      padding-left: 20px;
+      padding-right: calc((100% - 20px) / 3);
+    }
+  }
+
+  @media (max-width: $media-lg) {
     max-width: 100%;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     max-width: 185px;
 
     span {
@@ -30,11 +37,17 @@
     }
   }
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     max-width: 160px;
 
     span {
       @include btn-padding-right(160);
+    }
+  }
+
+  @media (min-width: $media-xxl) {
+    span {
+      padding-left: 40px;
     }
   }
 

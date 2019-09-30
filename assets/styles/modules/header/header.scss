@@ -2,16 +2,22 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 66px;
-  padding-top: 66px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  margin-bottom: 65px - 20px;
 
-  @media screen and (max-width: $media-lg) {
-    padding: 0;
-    padding-top: 100px;
+  @media (min-width: $media-xxl) {
+    padding-top: 88px;
+    margin-bottom: 88px - 20px;
+  }
+
+  @media (max-width: $media-xl-plus) {
+    padding-top: 45px;
+    margin-bottom: 45px - 20px;
   }
 
   @media screen and (max-width: $media-sm) {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   &__wrapper {
@@ -62,6 +68,10 @@
   }
 
   // модификаторы
+  &--part {
+    justify-content: flex-start;
+  }
+  
   &--article-inner {
     justify-content: flex-start;
 

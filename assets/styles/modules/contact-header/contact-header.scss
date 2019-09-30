@@ -3,7 +3,6 @@
     align-items: center;
     display: flex;
     margin-bottom: 205px;
-    padding-top: 66px;
 
     @media screen and (max-width: $media-xl-plus) {
       margin-bottom: 125px;
@@ -11,13 +10,10 @@
 
     @media screen and (max-width: $media-lg) {
       margin-bottom: 117px;
-      // padding-top: 0;
-      padding-top: 94px; // временно убрать!
     }
 
     @media screen and (max-width: $media-md) {
       margin-bottom: 107px;
-      // padding-top: 0;
     }
 
     @media screen and (max-width: $media-sm) {
@@ -26,7 +22,6 @@
 
     @media screen and (max-width: $media-xs) {
       margin-bottom: 39px;
-      // padding-top: 0;
     }
 
     &__logo {

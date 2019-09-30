@@ -11,75 +11,59 @@
 .form {
   background-color: $bg-color;
   height: 100vh;
-  position: relative;
   width: 50%;
-
-  &::after {
-    background-color: #f7f7f7;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 51vw;
-    z-index: -1;
-
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
-
-    @media screen and (max-width: $media-lg) {
-      background-color: #f7f7f7;
-      content: "";
-      display: block;
-      height: 20%;
-      position: absolute;
-      top: 0;
-      width: 50vw;
-      z-index: 10;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      display: none;
-    }
-  }
 
   @media screen and (max-width: $media-sm) {
     width: 100%;
   }
 
   &__content {
-    align-items: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 120px;
+    padding-left: 22.5%;
+    padding-right: 14%;
 
-    @media screen and (max-width: $media-xs) {
-      align-items: flex-start;
+    @media (min-width: $media-xxl) {
+      padding-bottom: 138px;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      padding-bottom: 85px;
+    }
+
+    @media (max-width: $media-lg) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: $media-md) {
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 35px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 0;
+
+    @media screen and (max-width: $media-md) {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $media-xxl) {
+      font-size: 32px;
+      margin-bottom: 0;
     }
   }
 
   &__wrapper {
-    font-size: 16px;
-    max-width: 530px;
-    width: 100%;
-
-    @media screen and (max-width: $media-xl-plus) {
-      font-size: 14px;
-      max-width: 430px;
-    }
-
-    @media screen and (max-width: $media-lg) {
-      max-width: 350px;
-    }
-
-    @media screen and (max-width: $media-md) {
-      max-width: 300px;
-    }
-
-    @media screen and (max-width: $media-xs) {
-      max-width: 280px;
-    }
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .field {
@@ -148,16 +132,15 @@
   }
 
   .text {
-    height: 128px;
+    height: 134px;
     padding: 20px;
     resize: none;
 
     @media screen and (max-width: $media-xl-plus) {
-      height: 90px;
+      height: 96px;
     }
 
     @media screen and (max-width: $media-lg) {
-      height: 60px;
     }
 
     @media screen and (max-width: $media-sm) {

@@ -234,18 +234,19 @@ $rightEdgeMD: "20px + #{$textRatio}";
 
 .ieromin-contact__lettering-logo {
   position: absolute;
-  top: 72px;
+  top: 65px;
   left: 120px;
 
   @media (min-width: $media-xxl) {
-    top: 100px;
+    top: 88px;
     left: 160px;
   }
 
   @media (max-width: $media-xl-plus) {
+    top: 45px;
+    left: 85px;
     width: 86px;
     height: 18px;
-    left: 85px;
   }
 
   @media (max-width: $media-lg) {

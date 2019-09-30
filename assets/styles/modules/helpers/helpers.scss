@@ -120,19 +120,19 @@ input[type="radio"].visually-hidden {
     padding: 0 160px;
   }
 
-  &--contacts {
-    @media (max-width: $media-xl-plus) {
-      padding: 0 125px 0 100px;
-    }
-
-    @media screen and (max-width: $media-lg) {
-      padding: 0;
-    }
-
-    @media screen and (max-width: $media-sm) {
-      padding: 0;
-    }
-  }
+  // &--contacts {
+  //   @media (max-width: $media-xl-plus) {
+  //     padding: 0 125px 0 100px;
+  //   }
+  // 
+  //   @media screen and (max-width: $media-lg) {
+  //     padding: 0;
+  //   }
+  // 
+  //   @media screen and (max-width: $media-sm) {
+  //     padding: 0;
+  //   }
+  // }
 
   &--about-me {
     @media screen and (max-width: $media-lg) {
@@ -152,11 +152,11 @@ input[type="radio"].visually-hidden {
     }
   }
 
-  &--content {
-    @media screen and (max-width: $media-lg) {
-      padding: 0 0 0 20px;
-    }
-  }
+  // &--content {
+  //   @media screen and (max-width: $media-lg) {
+  //     padding: 0 0 0 20px;
+  //   }
+  // }
 
   &--content2 {
     @media screen and (max-width: $media-xs) {

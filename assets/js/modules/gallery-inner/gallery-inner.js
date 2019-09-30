@@ -4,20 +4,9 @@ export function galleryInnerSettings() {
   const pageHeader = document.querySelector(`.header--gallery-inner`);
   const likes = document.querySelector(`.likes--reverse`);
 
-  const likesClone = likes.cloneNode(true);
-
-  if (window.innerWidth < MEDIA.XS) {
-    moveLikesToHeader();
-  }
-
-  function moveLikesToHeader() {
-    likesClone.classList.add(`likes--reverse`);
-    pageHeader.appendChild(likesClone);
-    cutDomElement(likes);
-  }
-
-  function cutDomElement(el) {
-    el.parentNode.removeChild(el);
+  if (window.matchMedia(`(max-width: ${MEDIA.XS}px)`).matches) {
+    likes.classList.add(`likes--reverse`);
+    pageHeader.appendChild(likes);
   }
 }
 
@@ -31,18 +20,18 @@ export const galleryModal = () => {
   for (let i = 0; i < openImg.length; i++) {
     openImg[i].addEventListener(`click`, function (event) {
       event.preventDefault();
-      let parentClass = event.currentTarget.classList[1];
-      let imageInside = document.querySelector(`.${parentClass} > img`);
+      let item = event.currentTarget;
+      let imageInside = item.querySelector(`img`);
       let bigImg = imageInside.getAttribute(`src`);
       modal.style.background = null;
       modal.style.backgroundImage = `url(${bigImg})`;
       modal.style.top = window.pageYOffset + 175 + `px`;
       modal.style.display = `block`;
       modalWrapper.style.display = `block`;
-      if (document.body.clientWidth < 990 && document.body.clientWidth > 768) {
+      if (window.matchMedia(`(max-width: ${MEDIA.MD}px)`).matches) {
         close.style.top = window.pageYOffset + 110 + `px`;
       }
-      if (document.body.clientWidth < 767) {
+      if (window.matchMedia(`(max-width: ${MEDIA.SM}px)`).matches) {
         close.style.top = window.pageYOffset + 122 + `px`;
       } else {
         close.style.top = window.pageYOffset + 55 + `px`;

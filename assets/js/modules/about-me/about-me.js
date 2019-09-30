@@ -71,12 +71,12 @@ export function changeToMobileSlider() {
   let btnViewRes = document.querySelector(`#btn--about`);
 
   window.onload = function () {
-    if (document.body.clientWidth > 768) {
-      mobileView.remove();
-    } else if (document.body.clientWidth < 767 || document.body.clientWidth === 767) {
+    if (window.matchMedia(`(max-width: ${MEDIA.SM}px)`).matches) {
       desktopView.remove();
       page.style.overflow = `scroll`;
       btnViewRes.classList.add(`hidden`);
+    } else {
+      mobileView.remove();
     }
   };
 }

@@ -1,14 +1,14 @@
 .rev-achiev-page {
   overflow: hidden;
 
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     overflow: auto;
   }
 
   &__wrapper {
     display: flex;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       display: initial;
     }
   }
@@ -16,7 +16,7 @@
   &__item {
     flex-basis: 50%;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       flex-basis: initial;
     }
   }

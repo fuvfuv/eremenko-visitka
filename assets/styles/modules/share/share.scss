@@ -5,7 +5,7 @@
     font-weight: 700;
     margin-bottom: 30px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 0;
       margin-right: 20px;
     }
@@ -23,7 +23,7 @@
     height: 35px;
     width: 36px;
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       height: 32px;
       width: 32px;
     }
@@ -31,7 +31,7 @@
     &:not(:last-child) {
       margin-right: 22px;
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         margin-right: 16px;
       }
     }

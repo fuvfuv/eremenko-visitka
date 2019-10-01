@@ -1,11 +1,11 @@
 .article-prev {
   flex-basis: calc(50% - 20px);
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     flex-basis: calc(50% - 15px);
   }
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     flex-basis: 100%;
   }
 
@@ -20,7 +20,7 @@
     margin-right: 20px;
     white-space: nowrap;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       display: none;
     }
 
@@ -37,7 +37,7 @@
   &__tags {
     margin-left: auto;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-left: 0;
       margin-right: auto;
     }
@@ -73,15 +73,15 @@
       box-shadow: 0 8px 25px rgba(#000, .05);
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       display: block;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 20px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       filter: none;
     }
   }
@@ -93,7 +93,7 @@
     font-weight: 700;
     margin-bottom: 28px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 18px;
@@ -107,7 +107,7 @@
     max-width: 665px;
     opacity: 0.5;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 10px;
       line-height: 15px;
     }
@@ -116,7 +116,7 @@
   &__footer {
     margin-top: 47px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-top: 28px;
     }
   }

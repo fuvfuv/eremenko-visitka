@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-width: 1416px;
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,7 +15,7 @@
     max-width: 1030px;
     text-transform: initial;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-right: 0;
     }
   }
@@ -25,7 +25,7 @@
     position: sticky;
     top: 30px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
@@ -37,7 +37,7 @@
       width: 100%;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       margin-bottom: 50px;
       order: 1;
     }
@@ -46,14 +46,14 @@
   &__share {
     margin-top: 40px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       align-items: center;
       display: flex;
       margin-top: 30px;
       width: 100%;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       justify-content: center;
     }
   }
@@ -68,12 +68,12 @@
     max-width: 1030px;
     position: relative;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       display: block;
       margin-bottom: 50px;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       margin-bottom: 20px;
     }
   }
@@ -83,7 +83,7 @@
     font-weight: 700;
     margin-bottom: 40px;
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 18px;
@@ -96,7 +96,7 @@
     line-height: 30px;
     opacity: 0.5;
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       font-size: 10px;
       line-height: 15px;
       margin-bottom: 18px;
@@ -107,11 +107,11 @@
     &:not(:last-child) {
       margin-bottom: 70px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         margin-bottom: 60px;
       }
 
-      @media screen and (max-width: $media-xs) {
+      @media (max-width: $media-xs) {
         margin-bottom: 40px;
       }
     }
@@ -120,11 +120,11 @@
       margin-bottom: 90px;
       text-transform: uppercase;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         margin-bottom: 80px;
       }
 
-      @media screen and (max-width: $media-xs) {
+      @media (max-width: $media-xs) {
         margin-bottom: 20px;
       }
     }
@@ -137,13 +137,13 @@
     margin-bottom: 50px;
     opacity: 0.85;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 17px;
       line-height: 28px;
       margin-bottom: 40px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       font-size: 14px;
       line-height: 24px;
       margin-bottom: 30px;
@@ -167,13 +167,13 @@
       margin-bottom: 50px;
       padding-left: 100px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         background-position: 2px 0;
         background-size: 20px 20px;
         margin-bottom: 40px;
       }
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 16px;
         line-height: 30px;
         padding-left: 0;
@@ -187,13 +187,13 @@
       margin-bottom: 40px;
       opacity: 1;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 23px;
         line-height: 34px;
         margin-bottom: 30px;
       }
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 26px;
@@ -203,7 +203,7 @@
     &--bold {
       font-weight: 700;
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 14px;
         line-height: 30px;
       }
@@ -211,7 +211,7 @@
   }
 
   &__list {
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 14px;
       line-height: 24px;
     }
@@ -220,18 +220,18 @@
       padding-left: 80px;
       position: relative;
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         padding-left: 20px;
       }
 
       &:not(:last-child) {
         margin-bottom: 40px;
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           margin-bottom: 30px;
         }
 
-        @media screen and (max-width: $media-sm) {
+        @media (max-width: $media-sm) {
           margin-bottom: 20px;
         }
       }
@@ -246,7 +246,7 @@
         transform: translateY(-50%);
         width: 12px;
 
-        @media screen and (max-width: $media-sm) {
+        @media (max-width: $media-sm) {
           height: 10px;
           left: 0;
           top: 12px;
@@ -261,13 +261,13 @@
     display: flex;
     margin-bottom: 70px;
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       align-items: flex-start;
       flex-direction: column;
       margin-bottom: 50px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       margin-bottom: 40px;
     }
   }
@@ -275,11 +275,11 @@
   &__video {
     margin-right: 30px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-right: 20px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 20px;
       margin-right: 0;
     }
@@ -291,11 +291,11 @@
       opacity: 0.5;
       padding-bottom: 70px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         padding-bottom: 0;
       }
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 12px;
         line-height: 18px;
       }
@@ -305,7 +305,7 @@
   &__likes {
     margin-bottom: 60px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 0;
     }
   }
@@ -314,7 +314,7 @@
   }
 
   &__share-title {
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       display: none;
     }
   }

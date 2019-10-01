@@ -8,7 +8,7 @@
     justify-content: space-between;
     margin-bottom: 77px;
 
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       margin-bottom: 24px;
     }
 
@@ -16,15 +16,15 @@
       font-size: 30px;
       font-weight: 700;
 
-      @media screen and (min-width: 786px) and (max-width: 1199px) {
+      @media (min-width: 786px) and (max-width: 1199px) {
         font-size: 24px;
       }
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         max-width: 312px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 18px;
         max-width: 236px;
       }
@@ -51,7 +51,7 @@
       margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       margin-bottom: 10px;
       width: 145px;
     }

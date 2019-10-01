@@ -118,7 +118,7 @@
     outline: none;
   }
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     font-size: 12px;
     height: 38px;
 
@@ -128,7 +128,7 @@
     }
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     width: 100%;
     max-width: 100%;
     height: 50px;

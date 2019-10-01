@@ -19,39 +19,39 @@
         margin-bottom: 20px;
       }
 
-      @media screen and (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus) {
         max-width: 325px;
         padding-top: 165px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 14px;
         max-width: 300px;
         padding-top: 157px;
       }
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         font-size: 12px;
         max-width: 260px;
         padding-top: 86px;
       }
 
       &--slide2 {
-        @media screen and (max-width: $media-lg) {
+        @media (max-width: $media-lg) {
           max-width: 300px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           max-width: 260px;
         }
       }
 
       &--slide3 {
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           padding-top: 148px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           padding-top: 15px;
         }
       }
@@ -59,16 +59,16 @@
       &--slide4 {
         max-width: 448px;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           max-width: 400px;
           padding-top: 148px;
         }
 
-        @media screen and (max-width: $media-lg) {
+        @media (max-width: $media-lg) {
           max-width: 320px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           max-width: 270px;
           padding-top: 45px;
         }
@@ -77,15 +77,15 @@
       &--slide5 {
         max-width: 435px;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           padding-top: 100px;
         }
 
-        @media screen and (max-width: $media-lg) {
+        @media (max-width: $media-lg) {
           max-width: 320px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           max-width: 276px;
           padding-top: 15px;
         }
@@ -110,22 +110,22 @@
       padding-top: 100px;
       width: 100%;
 
-      @media screen and (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus) {
         padding-top: 58px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         padding-top: 90px;
       }
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         padding-top: 0;
       }
 
       &--slide3 {
         padding-top: 105px;
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           padding-top: 17px;
         }
       }
@@ -135,17 +135,17 @@
         margin-bottom: 35px;
         padding-top: 0;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           margin-bottom: 10px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           margin-bottom: 10px;
         }
       }
 
       &--slide5 {
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           padding-top: 50px;
         }
       }
@@ -161,16 +161,16 @@
       &:first-of-type {
         margin-bottom: 20px;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           margin-bottom: 0;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           margin-bottom: 0;
         }
       }
 
-      @media screen and (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus) {
         font-size: 12px;
       }
     }

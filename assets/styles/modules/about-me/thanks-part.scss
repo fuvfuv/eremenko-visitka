@@ -13,15 +13,15 @@
 .thanks-part-wrap {
   padding-top: 128px;
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     padding-top: 120px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     padding-top: 100px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     padding-top: 90px;
   }
 }
@@ -33,15 +33,15 @@
   text-transform: none;
   width: 100%;
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     font-size: 14px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     font-size: 12px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     max-width: 298px;
   }
 }
@@ -53,24 +53,24 @@
   position: relative;
   width: 268px;
 
-  @media screen and (max-width: 1600px) {
+  @media (max-width: 1600px) {
     height: 161px;
     width: 248px;
   }
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     height: 131px;
     margin-bottom: 45px;
     width: 218px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     height: 121px;
     margin-bottom: 25px;
     width: 208px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     height: 80px;
     margin-bottom: 15px;
     width: 167px;
@@ -87,22 +87,22 @@
     z-index: 1;
     display: block;
 
-    @media screen and (max-width: 1600px) {
+    @media (max-width: 1600px) {
       background-size: 407px 53px;
       top: 40px;
     }
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       background-size: 359px 48px;
       top: 31px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       background-size: 342px 44px;
       top: 25px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       background-size: 275px 32px;
       top: 14px;
     }
@@ -119,23 +119,23 @@
     width: 227px;
     z-index: 1;
 
-    @media screen and (max-width: 1600px) {
+    @media (max-width: 1600px) {
       background-size: 215px 12px;
       left: 16px;
       top: 122px;
     }
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       background-size: 193px 11px;
       top: 98px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       background-size: 181px 11px;
       top: 89px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       background-size: 144px 10px;
       left: 13px;
       top: 59px;
@@ -147,12 +147,12 @@
   margin-bottom: 119px;
   max-width: 403px;
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     margin-bottom: 55px;
     max-width: 357px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     margin-bottom: 30px;
   }
 }
@@ -168,11 +168,11 @@
   padding-left: 78px;
   text-transform: initial;
 
-  @media screen and (max-width: 1600px) {
+  @media (max-width: 1600px) {
     padding-left: 59px;
   }
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     background-size: 32px 32px;
     font-size: 14px;
     max-width: 365px;
@@ -181,7 +181,7 @@
     padding-top: 45px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     background-size: 30px 30px;
   }
 
@@ -193,11 +193,11 @@
     text-transform: none;
     width: 100%;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       font-size: 14px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 12px;
     }
   }

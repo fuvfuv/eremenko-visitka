@@ -8,18 +8,18 @@
     display: inline-block;
     margin-bottom: 20px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 15px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 0;
     }
 
     &:not(:last-child) {
       margin-right: 20px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         margin-right: 10px;
       }
     }
@@ -32,7 +32,7 @@
       padding: 10px;
       white-space: nowrap;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 13px;
         padding: 9px 5px;
       }

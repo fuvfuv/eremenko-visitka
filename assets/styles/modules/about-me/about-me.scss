@@ -21,7 +21,7 @@
         display: none;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         height: 13px;
         width: 13px;
       }
@@ -29,15 +29,15 @@
       &:not(:last-child) {
         margin-bottom: 55px;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           margin-bottom: 40px;
         }
 
-        @media screen and (max-width: $media-lg) {
+        @media (max-width: $media-lg) {
           margin-bottom: 36px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           margin-bottom: 30px;
         }
       }
@@ -45,15 +45,15 @@
       &:last-child {
         margin-bottom: 92px;
 
-        @media screen and (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus) {
           margin-bottom: 65px;
         }
 
-        @media screen and (max-width: $media-lg) {
+        @media (max-width: $media-lg) {
           margin-bottom: 50px;
         }
 
-        @media screen and (max-width: $media-md) {
+        @media (max-width: $media-md) {
           margin-bottom: 40px;
         }
       }
@@ -73,7 +73,7 @@
     padding-left: 120px;
     padding-right: 180px;
 
-    @media screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -86,20 +86,20 @@
     max-width: 76px;
     padding-top: 200px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-right: 40px;
       padding-top: 140px;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       margin-right: 32px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-right: 40px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       margin-right: 15px;
       padding-top: 80px;
     }
@@ -117,7 +117,7 @@
     text-transform: uppercase;
     width: 76px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 8px;
     }
   }
@@ -133,53 +133,53 @@
   top: 710px;
   width: 10%;
 
-  @media screen and (max-width: 2500px) {
+  @media (max-width: 2500px) {
     left: 16%;
   }
 
-  @media screen and (max-width: 2410px) {
+  @media (max-width: 2410px) {
     left: 15%;
   }
 
-  @media screen and (max-width: 2380px) {
+  @media (max-width: 2380px) {
     left: 14%;
   }
 
-  @media screen and (max-width: 2300px) {
+  @media (max-width: 2300px) {
     left: 13%;
   }
 
-  @media screen and (max-width: 2250px) {
+  @media (max-width: 2250px) {
     left: 12%;
   }
 
-  @media screen and (max-width: 2150px) {
+  @media (max-width: 2150px) {
     left: 10%;
   }
 
-  @media screen and (max-width: 2060px) {
+  @media (max-width: 2060px) {
     left: 8%;
   }
 
-  @media screen and (max-width: 1920px) {
+  @media (max-width: 1920px) {
     left: 120px;
   }
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     top: 480px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     top: 432px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     height: 285px;
     left: 15px;
     top: 580px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     height: 200px;
     top: 404px;
   }
@@ -197,16 +197,16 @@
     text-transform: uppercase;
     width: 76px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 35px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       font-size: 8px;
       margin-bottom: 15px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       font-size: 8px;
       margin-bottom: 15px;
     }
@@ -219,22 +219,22 @@
     height: 109px;
     width: 10px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       background-size: 10px 85px;
       height: 85px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       background-size: 10px 65px;
       height: 65px;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       background-size: 10px 85px;
       height: 85px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       background-size: 10px 55px;
       height: 55px;
     }
@@ -252,52 +252,52 @@
   width: 741px;
   z-index: 1;
 
-  @media screen and (max-width: 2500px) {
+  @media (max-width: 2500px) {
     left: 16%;
   }
 
-  @media screen and (max-width: 2410px) {
+  @media (max-width: 2410px) {
     left: 15%;
   }
 
-  @media screen and (max-width: 2380px) {
+  @media (max-width: 2380px) {
     left: 14%;
   }
 
-  @media screen and (max-width: 2300px) {
+  @media (max-width: 2300px) {
     left: 13%;
   }
 
-  @media screen and (max-width: 2250px) {
+  @media (max-width: 2250px) {
     left: 12%;
   }
 
-  @media screen and (max-width: 2150px) {
+  @media (max-width: 2150px) {
     left: 10%;
   }
 
-  @media screen and (max-width: 2060px) {
+  @media (max-width: 2060px) {
     left: 8%;
   }
 
-  @media screen and (max-width: 1920px) {
+  @media (max-width: 1920px) {
     left: 120px;
   }
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     background-size: 580px 210px;
     height: 210px;
     top: 230px;
     width: 630px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     background-size: 506px 163px;
     height: 163px;
     width: 506px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     background-size: 475px 145px;
     height: 145px;
     left: 0;
@@ -305,7 +305,7 @@
     width: 475px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     background-size: 368px 112px;
     height: 112px;
     left: 0;

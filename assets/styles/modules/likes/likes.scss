@@ -3,7 +3,7 @@
   display: flex;
   margin-right: 20px;
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     margin-right: 65px;
   }
 
@@ -37,7 +37,7 @@
     font-weight: 500;
 
     .text__word {
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }

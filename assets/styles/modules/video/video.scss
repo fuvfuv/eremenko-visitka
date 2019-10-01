@@ -26,16 +26,16 @@
     position: relative;
     width: 643px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       max-width: 500px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       // display: block;
       width: 100%;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       // display: block;
       display: flex;
     }
@@ -53,7 +53,7 @@
     z-index: 1;
     transition: .3s transform;
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       height: 36px;
       width: 30px;
     }

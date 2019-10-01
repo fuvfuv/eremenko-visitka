@@ -23,7 +23,7 @@
   @include hide-on-menu-hover;
   @include hide-on-name-lettering-hover;
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     display: none;
   }
 

@@ -2,7 +2,7 @@
   align-items: flex-start;
   display: flex;
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     display: flex;
     flex-direction: column;
   }
@@ -13,7 +13,7 @@
   height: 100vh;
   width: 50%;
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     width: 100%;
   }
 
@@ -39,7 +39,7 @@
       padding-right: 40px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       display: block;
       padding-left: 15px;
       padding-right: 15px;
@@ -50,7 +50,7 @@
   &__header {
     margin-bottom: 0;
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       font-size: 12px;
       margin-bottom: 30px;
     }
@@ -69,11 +69,11 @@
   .field {
     margin-bottom: 35px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 25px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 20px;
     }
 
@@ -81,16 +81,16 @@
       display: block;
       margin-bottom: 19px;
 
-      @media screen and (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus) {
         margin-bottom: 13px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 12px;
         margin-bottom: 10px;
       }
 
-      @media screen and (max-width: $media-xs) {
+      @media (max-width: $media-xs) {
         font-size: 10px;
       }
     }
@@ -112,20 +112,20 @@
       outline: none;
     }
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       font-size: 14px;
       height: 55px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       height: 45px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       height: 42px;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       font-size: 12px;
       height: 40px;
     }
@@ -136,18 +136,18 @@
     padding: 20px;
     resize: none;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       height: 96px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       height: 70px;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       height: 40px;
     }
   }

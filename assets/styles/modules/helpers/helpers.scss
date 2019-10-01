@@ -76,17 +76,17 @@ input[type="radio"].visually-hidden {
   padding-right: 6.25% * 2;
   width: auto;
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     padding-left: 30px;
     padding-right: 160px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     box-sizing: border-box;
     padding: 0 20px;
   }
@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
     padding: 0 10px;
   }
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     padding: 0 15px;
   }
 
@@ -125,51 +125,51 @@ input[type="radio"].visually-hidden {
   //     padding: 0 125px 0 100px;
   //   }
   // 
-  //   @media screen and (max-width: $media-lg) {
+  //   @media (max-width: $media-lg) {
   //     padding: 0;
   //   }
   // 
-  //   @media screen and (max-width: $media-sm) {
+  //   @media (max-width: $media-sm) {
   //     padding: 0;
   //   }
   // }
 
   &--about-me {
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       padding-left: 15px;
       padding-right: 15px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       box-sizing: border-box;
       padding: 0 20px;
     }
   }
 
   &--about-content {
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       padding: 0 20px 0 0;
     }
   }
 
   // &--content {
-  //   @media screen and (max-width: $media-lg) {
+  //   @media (max-width: $media-lg) {
   //     padding: 0 0 0 20px;
   //   }
   // }
 
   &--content2 {
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       padding: 0 0 0 20px;
     }
   }
 
   &--reviews-achievements {
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       padding-left: 20px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       padding-left: 15px;
     }
   }
@@ -199,7 +199,7 @@ ul.p-list {
 .index-page {
   overflow: hidden;
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     overflow: initial;
   }
 }

@@ -5,20 +5,20 @@
   column-count: 4;
   column-gap: 40px;
 
-  @media screen and (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus) {
     column-gap: 30px;
   }
 
-  @media screen and (max-width: $media-lg) {
+  @media (max-width: $media-lg) {
     column-gap: 22px;
   }
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     column-count: 3;
     column-gap: 10px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     column-count: 2;
   }
   
@@ -41,15 +41,15 @@
       width: 100%;
     }
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 30px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 22px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       margin-bottom: 10px;
     }
 
@@ -78,12 +78,12 @@
       justify-content: space-between;
       padding: 35px 40px;
 
-      @media screen and (max-width: 1600px) {
+      @media (max-width: 1600px) {
         font-size: 12px;
         padding: 22px 30px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 12px;
         padding: 16px 20px;
       }
@@ -101,7 +101,7 @@
           max-width: 130px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           max-width: 160px;
         }
       }

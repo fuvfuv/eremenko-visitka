@@ -5,12 +5,12 @@
   min-height: 54px;
   padding-bottom: 140px;
 
-  @media screen and (max-width: $media-md) {
+  @media (max-width: $media-md) {
     margin-top: 70px;
     padding-bottom: 60px;
   }
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     display: none;
   }
 }

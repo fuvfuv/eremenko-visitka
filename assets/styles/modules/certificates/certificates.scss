@@ -2,11 +2,11 @@
   &__gap {
     width: 48px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       width: 20px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       width: 14px;
     }
   }
@@ -18,12 +18,12 @@
     position: relative;
     width: 190px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 15px;
       width: 153px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       margin-bottom: 15px;
       width: 153px;
     }

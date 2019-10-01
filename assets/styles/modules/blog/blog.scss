@@ -7,14 +7,14 @@
     &:nth-child(odd) {
       margin-right: 40px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         margin-right: 0;
       }
     }
 
     margin-bottom: 100px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 80px;
     }
   }

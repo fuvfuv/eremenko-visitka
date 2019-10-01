@@ -13,34 +13,35 @@ export function aboutMeSlider() {
   const slideSixHeader = document.querySelector(`.header--slideSix`);
   const btnViewRes = document.querySelector(`#btn--about`);
 
-  aboutBlockSlider.on(`init`, function () {
-    dots.style.visibility = `hidden`;
-    fakeSlider.style.display = `flex`;
-    caption.style.display = `block`;
-    btnViewRes.classList.remove(`hidden`);
-  });
-
-  aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
-    if (nextSlide === 0) {
+  if (dots && caption && fakeSlider && pageHeader && slideSixHeader && btnViewRes) {
+    aboutBlockSlider.on(`init`, function () {
       dots.style.visibility = `hidden`;
       fakeSlider.style.display = `flex`;
       caption.style.display = `block`;
       btnViewRes.classList.remove(`hidden`);
-    } else if (nextSlide > 0) {
-      dots.style.visibility = `visible`;
-      fakeSlider.style.display = `none`;
-      caption.style.display = `none`;
-      btnViewRes.classList.add(`hidden`);
-    }
-    if (nextSlide === 6) {
-      pageHeader.classList.add(`header--slideSix`);
-      slideSixHeader.style.display = `flex`;
-    } else if (nextSlide !== 6) {
-      pageHeader.classList.remove(`header--slideSix`);
-      slideSixHeader.style.display = `none`;
-      pageHeader.style.display = `flex`;
-    }
-  });
+    });
+    aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
+      if (nextSlide === 0) {
+        dots.style.visibility = `hidden`;
+        fakeSlider.style.display = `flex`;
+        caption.style.display = `block`;
+        btnViewRes.classList.remove(`hidden`);
+      } else if (nextSlide > 0) {
+        dots.style.visibility = `visible`;
+        fakeSlider.style.display = `none`;
+        caption.style.display = `none`;
+        btnViewRes.classList.add(`hidden`);
+      }
+      if (nextSlide === 6) {
+        pageHeader.classList.add(`header--slideSix`);
+        slideSixHeader.style.display = `flex`;
+      } else if (nextSlide !== 6) {
+        pageHeader.classList.remove(`header--slideSix`);
+        slideSixHeader.style.display = `none`;
+        pageHeader.style.display = `flex`;
+      }
+    });
+  }
 
   aboutBlockSlider.slick({
     slidesToShow: 1,

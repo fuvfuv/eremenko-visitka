@@ -8,8 +8,13 @@ export function blogInnerPageSettings() {
   const tags = document.querySelector(`.article-inner__tags`);
 
   if (window.matchMedia(`(max-width: ${MEDIA.MD}px)`).matches) {
-    likes.classList.add(`likes--reverse`);
-    pageHeader.appendChild(likes);
-    article.insertBefore(tags, articleContent);
+    if (likes) {
+      likes.classList.add(`likes--reverse`);
+      pageHeader.appendChild(likes);
+    }
+
+    if (tags) {
+      article.insertBefore(tags, articleContent);
+    }
   }
 }

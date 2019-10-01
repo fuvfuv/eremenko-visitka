@@ -4,23 +4,27 @@
     display: flex;
     margin-bottom: 205px;
 
-    @media screen and (max-width: $media-xl-plus) {
+    @media (min-width: $media-xxl) {
+      margin-bottom: 300px;
+    }
+    
+    @media (max-width: $media-xl-plus) {
       margin-bottom: 125px;
     }
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 117px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       margin-bottom: 107px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       margin-bottom: 60px;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       margin-bottom: 39px;
     }
 
@@ -33,7 +37,7 @@
       margin-right: 95px;
       width: 107px;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         display: none;
       }
     }
@@ -43,11 +47,11 @@
       font-weight: 700;
       margin-bottom: 0;
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 36px;
       }
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         font-size: 28px;
       }
     }

@@ -236,10 +236,17 @@ $rightEdgeMD: "20px + #{$textRatio}";
   position: absolute;
   top: 65px;
   left: 120px;
+  width: 107px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   @media (min-width: $media-xxl) {
     top: 88px;
     left: 160px;
+    width: 155px;
   }
 
   @media (max-width: $media-xl-plus) {

@@ -17,6 +17,20 @@
     display: none;
   }
 
+  &__logo {
+    width: 107px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: $media-xxl) {
+      margin-right: 120px;
+      width: 155px;
+    }
+}
+
   &__link {
     margin-right: 120px;
     width: 240px;

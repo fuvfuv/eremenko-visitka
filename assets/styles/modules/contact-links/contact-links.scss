@@ -1,5 +1,5 @@
 .contact-wrapper {
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     display: flex;
     flex-direction: column;
   }
@@ -11,14 +11,14 @@
   position: relative;
   width: 50%;
 
-  @media screen and (max-width: $media-sm) {
+  @media (max-width: $media-sm) {
     display: flex;
     height: 460px;
     justify-content: center;
     width: 100%;
   }
 
-  @media screen and (max-width: $media-xs) {
+  @media (max-width: $media-xs) {
     display: block;
     height: 400px;
   }
@@ -28,21 +28,21 @@
     display: flex;
     margin-bottom: 62px;
 
-    @media screen and (max-width: $media-lg) {
+    @media (max-width: $media-lg) {
       margin-bottom: 40px;
     }
 
-    @media screen and (max-width: $media-md) {
+    @media (max-width: $media-md) {
       flex-wrap: wrap;
       margin-bottom: 35px;
     }
 
-    @media screen and (max-width: $media-sm) {
+    @media (max-width: $media-sm) {
       flex-direction: row;
       margin-bottom: 39px;
     }
 
-    @media screen and (max-width: $media-xs) {
+    @media (max-width: $media-xs) {
       flex-direction: column;
       margin-bottom: 39px;
     }
@@ -51,24 +51,31 @@
       color: $global-dark-grey;
       margin-right: 86px;
 
-      @media screen and (max-width: $media-xl-plus) {
+      @media (min-width: $media-xxl) {
+        width: 200px;
+        margin-right: 0;
+        padding-right: 70px;
+        font-size: 21px;
+      }
+
+      @media (max-width: $media-xl-plus) {
         font-size: 14px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         margin-right: 55px;
       }
 
-      @media screen and (max-width: $media-md) {
+      @media (max-width: $media-md) {
         margin: 0 44px 0 0;
       }
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 14px;
         margin-right: 60px;
       }
 
-      @media screen and (max-width: $media-xs) {
+      @media (max-width: $media-xs) {
         font-size: 10px;
         margin: 0 0 18px 0;
       }
@@ -79,19 +86,23 @@
       font-size: 24px;
       font-weight: 700;
 
+      @media (min-width: $media-xxl) {
+        font-size: 32px;
+      }
+
       @media (max-width: $media-xl-plus) {
         font-size: 17px;
       }
 
-      @media screen and (max-width: $media-lg) {
+      @media (max-width: $media-lg) {
         font-size: 15px;
       }
 
-      @media screen and (max-width: $media-sm) {
+      @media (max-width: $media-sm) {
         font-size: 15px;
       }
 
-      @media screen and (max-width: $media-xs) {
+      @media (max-width: $media-xs) {
         font-size: 13px;
       }
     }

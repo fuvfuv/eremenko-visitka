@@ -71,9 +71,10 @@
     }
 
     li {
+      position: relative;
       background-color: transparent;
       border: 2px solid #000;
-      cursor: pointer;
+      // cursor: pointer;
       height: 14px;
       width: 14px;
 
@@ -83,7 +84,13 @@
       }
 
       button {
-        cursor: pointer;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        display: block;
+        // cursor: pointer;
         font-size: 0;
       }
 

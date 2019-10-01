@@ -23,7 +23,7 @@
 
   &__body {
     @media screen and (max-width: $media-md) {
-      height: 248px;
+      margin-bottom: 35px;
     }
   }
 
@@ -227,8 +227,17 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
   @media (max-width: $media-lg) {}
 
   @media screen and (max-width: $media-md) {
+    position: relative;
     top: 0;
     bottom: 0;
+    height: 40vw;
+    font-size: 20.5vw;
+    line-height: 0.7em;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @media screen and (max-width: $media-xs) {
     height: 215px;
     font-size: 68px;
     line-height: 70px;
@@ -312,8 +321,15 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
 
     @media screen and (max-width: $media-md) {
       left: 50%;
-      top: 156px;
+      top: auto;
+      bottom: 0;
       transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: $media-xs) {
+      top: 156px;
+      bottom: auto;
     }
 
     @media (min-width: $media-xxl) {
@@ -351,6 +367,7 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     background-attachment: scroll;
     background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)), url("../images/content/index-page/photo-mobile.jpg");
     background-size: cover;
+    background-position: top;
     filter: none;
     min-height: 215px;
     transform: none;

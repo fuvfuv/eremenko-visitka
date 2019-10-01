@@ -216,7 +216,7 @@
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-52%) translateX(100%);
+      transform: translateY(-52%) translateX(100%) translateX(10px);
       transform-origin: right;
       transition: 0.5s transform 0.1s;
 

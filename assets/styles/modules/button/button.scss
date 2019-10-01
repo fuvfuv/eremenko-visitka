@@ -1,8 +1,3 @@
-@mixin btn-padding-right($width) {
-  // padding-right: #{($width - 30) / 3}px;
-  // padding-right: calc((100% - 30px) / 3);
-}
-
 .btn {
   @include btn-default;
 
@@ -14,8 +9,8 @@
 
   span {
     padding-left: 30px;
-    padding-right: calc((100% - 30px) / 3);
-    @include btn-padding-right(240);
+    // padding-right: calc((100% - 30px) / 3);
+    padding-right: 30%;
   }
 
   @media (max-width: $media-xl-plus) {
@@ -31,18 +26,10 @@
 
   @media (max-width: $media-md) {
     max-width: 185px;
-
-    span {
-      @include btn-padding-right(185);
-    }
   }
 
   @media (max-width: $media-sm) {
     max-width: 160px;
-
-    span {
-      @include btn-padding-right(160);
-    }
   }
 
   @media (min-width: $media-xxl) {
@@ -52,25 +39,16 @@
   }
 
   &--indent {
-    float: right;
     width: 240px;
+    margin-left: auto;
 
     @media (max-width: $media-xl-plus) {
       height: 50px;
       width: 200px;
-
-      span {
-        @include btn-padding-right(200);
-      }
     }
 
     @media (max-width: $media-md) {
-      height: 50px;
       width: 170px;
-
-      span {
-        @include btn-padding-right(170);
-      }
     }
 
     @media (max-width: $media-xs) {
@@ -78,10 +56,6 @@
       margin-bottom: 35px;
       padding: 18px 30px;
       width: 270px;
-
-      span {
-        @include btn-padding-right(270);
-      }
     }
   }
 
@@ -90,18 +64,10 @@
 
     @media (max-width: $media-md) {
       width: 185px;
-
-      span {
-        @include btn-padding-right(185);
-      }
     }
 
     @media (max-width: $media-sm) {
       width: 150px;
-
-      span {
-        @include btn-padding-right(150);
-      }
     }
   }
 
@@ -111,10 +77,6 @@
 
   &--category {
     max-width: unset;
-
-    span {
-      @include btn-padding-right(180);
-    }
   }
 
   &--about {

@@ -7,12 +7,20 @@
     &:nth-child(odd) {
       margin-right: 40px;
 
+      @media (min-width: $media-xxl) {
+        margin-right: 50px;
+      }
+
       @media (max-width: $media-lg) {
         margin-right: 0;
       }
     }
 
     margin-bottom: 100px;
+
+    @media (min-width: $media-xxl) {
+      margin-bottom: 135px;
+    }
 
     @media (max-width: $media-lg) {
       margin-bottom: 80px;

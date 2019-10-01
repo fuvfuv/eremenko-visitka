@@ -19,6 +19,10 @@
     &:not(:last-child) {
       margin-right: 20px;
 
+      @media (min-width: $media-xxl) {
+        margin-right: 55px;
+      }
+
       @media (max-width: $media-lg) {
         margin-right: 10px;
       }
@@ -31,6 +35,10 @@
       font-weight: 400;
       padding: 10px;
       white-space: nowrap;
+
+      @media (min-width: $media-xxl) {
+        font-size: 21px;
+      }
 
       @media (max-width: $media-lg) {
         font-size: 13px;

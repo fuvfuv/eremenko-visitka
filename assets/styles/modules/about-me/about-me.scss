@@ -3,6 +3,7 @@
 }
 
 .about-me-slider-wrap {
+  position: relative;
   align-items: flex-start;
   display: flex;
 
@@ -10,6 +11,8 @@
     display: flex;
     flex-direction: column;
     max-width: 76px;
+    opacity: 1;
+    transition: .5s opacity;
 
     li {
       background-color: transparent;
@@ -27,8 +30,12 @@
       }
 
       &:not(:last-child) {
-        margin-bottom: 55px;
+        margin-bottom: 54px;
 
+        @media (min-width: $media-xxl) {
+          margin-bottom: 76px;
+        }
+        
         @media (max-width: $media-xl-plus) {
           margin-bottom: 40px;
         }
@@ -45,8 +52,12 @@
       &:last-child {
         margin-bottom: 92px;
 
+        @media (min-width: $media-xxl) {
+          margin-bottom: 120px;
+        }
+
         @media (max-width: $media-xl-plus) {
-          margin-bottom: 65px;
+          margin-bottom: 64px;
         }
 
         @media (max-width: $media-lg) {
@@ -80,11 +91,64 @@
   }
 
   .about-me__slider-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column-reverse;
-    margin-right: 120px;
-    max-width: 76px;
-    padding-top: 200px;
+    // padding-top: 200px;
+    height: 100vh;
+    padding: 45px 0;
+
+    &:before,
+    &:after {
+      display: block;
+      height: 109px;
+      width: 10px;
+      content: '';
+
+      @media (max-width: $media-xl-plus) {
+        height: 85px;
+      }
+
+      @media (max-width: $media-lg) {
+        height: 65px;
+      }
+    }
+
+    &:after {
+      margin-bottom: auto;
+    }
+
+    &:before {
+      display: block;
+      margin-top: auto;
+      background: url(../images/icons/arrow.svg) no-repeat;
+      background-size: auto;
+      opacity: 0;
+      transition: .5s opacity;
+
+      @media (max-width: $media-xl-plus) {
+        background-size: 10px 85px;
+      }
+
+      @media (max-width: $media-lg) {
+        background-size: 10px 65px;
+      }
+    }
+
+    &--intro {
+      .about-me__slider-bullets {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &:before {
+        opacity: 1;
+      }
+    }
 
     @media (max-width: $media-xl-plus) {
       margin-right: 40px;
@@ -116,6 +180,11 @@
     padding: 2px;
     text-transform: uppercase;
     width: 76px;
+    transition: .3s color;
+
+    &.hidden {
+      color: transparent;
+    }
 
     @media (max-width: $media-lg) {
       font-size: 8px;

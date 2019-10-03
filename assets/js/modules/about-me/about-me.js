@@ -6,39 +6,29 @@ import "jquery-mousewheel";
 const aboutBlockSlider = $(`.about-me__list`);
 
 export function aboutMeSlider() {
-  const dots = document.querySelector(`#about-me__slider-controls`);
-  const caption = document.querySelector(`#caption__text`);
-  const fakeSlider = document.querySelector(`#about-me__fake-slider`);
+  const dots = document.querySelector(`.about-me__slider-controls`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const slideSixHeader = document.querySelector(`.header--slideSix`);
-  const btnViewRes = document.querySelector(`#btn--about`);
+  const swapElement = document.querySelector(`.about-me__slider-swap`);
 
   aboutBlockSlider.on(`init`, function () {
-    dots.style.visibility = `hidden`;
-    fakeSlider.style.display = `flex`;
-    caption.style.display = `block`;
-    btnViewRes.classList.remove(`hidden`);
+    pageHeader.classList.add(`header--about-intro`);
+    dots.classList.add(`about-me__slider-controls--intro`);
   });
 
   aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
     if (nextSlide === 0) {
-      dots.style.visibility = `hidden`;
-      fakeSlider.style.display = `flex`;
-      caption.style.display = `block`;
-      btnViewRes.classList.remove(`hidden`);
+      dots.classList.add(`about-me__slider-controls--intro`);
+      pageHeader.classList.add(`header--about-intro`);
     } else if (nextSlide > 0) {
-      dots.style.visibility = `visible`;
-      fakeSlider.style.display = `none`;
-      caption.style.display = `none`;
-      btnViewRes.classList.add(`hidden`);
+      dots.classList.remove(`about-me__slider-controls--intro`);
+      pageHeader.classList.remove(`header--about-intro`);
     }
-    if (nextSlide === 6) {
-      pageHeader.classList.add(`header--slideSix`);
-      slideSixHeader.style.display = `flex`;
-    } else if (nextSlide !== 6) {
-      pageHeader.classList.remove(`header--slideSix`);
-      slideSixHeader.style.display = `none`;
-      pageHeader.style.display = `flex`;
+
+    if (nextSlide === slick.slideCount - 1) {
+      swapElement.classList.add(`hidden`);
+    } else {
+      swapElement.classList.remove(`hidden`);
     }
   });
 

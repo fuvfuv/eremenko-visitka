@@ -115,8 +115,40 @@
   }
 
   &--about-me {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    z-index: 10;
     justify-content: flex-start;
     margin-bottom: 0;
+
+    @media (max-width: $media-xl-plus) {
+      left: 85px;
+      right: 85px;
+    }
+
+    @media (max-width: $media-lg) {
+      left: 60px;
+      right: 60px;
+    }
+
+    @media (max-width: $media-md) {
+      position: static;
+    }
+
+    @media (min-width: $media-xxl) {
+      left: 160px;
+      right: 160px;
+    }
+  }
+
+  &--about-intro {
+
+    .btn--about {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 
   &--about-form {

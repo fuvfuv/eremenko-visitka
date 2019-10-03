@@ -16,7 +16,7 @@
   @media (max-width: $media-xl-plus) {
     span {
       padding-left: 20px;
-      padding-right: calc((100% - 20px) / 3);
+      // padding-right: calc((100% - 20px) / 3);
     }
   }
 
@@ -84,10 +84,10 @@
     width: 240px;
     transition-property: box-shadow, opacity;
 
-    &.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
+    // &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    // }
 
     @media (max-width: 1200px) {
       margin-right: 0;

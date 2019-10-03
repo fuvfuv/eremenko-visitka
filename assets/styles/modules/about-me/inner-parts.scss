@@ -5,6 +5,15 @@
 
   .slider-item__text-part {
     width: 45%;
+    padding-left: 200px;
+
+    @media (min-width: $media-xxl) {
+      padding-left: 260px;
+    }
+
+    @media (max-width: $media-xl-plus) {
+      padding-left: 144px;
+    }
 
     &-text {
       font-size: 16px;

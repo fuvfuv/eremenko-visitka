@@ -1,3 +1,15 @@
+@mixin captionOffset($headerHeight, $footerHeight) {
+  padding-top: $headerHeight;
+
+  .citizen-wrap__inner {
+    margin-bottom: $footerHeight;
+  }
+
+  .citizen-wrap__text {
+    margin-top: ($headerHeight - $footerHeight) / -2;
+  }
+}
+
 .slider-item__citizen-wrap {
   // align-items: center;
   display: flex;
@@ -8,15 +20,22 @@
   position: relative;
   width: 100%;
   font-size: 180px;
-  padding-top: 110px;
+  // padding-top: 110px;
+
+  @include captionOffset(100px, 65px);
 
   @media (min-width: $media-xxl) {
     padding-top: 180px;
     font-size: 237px;
+
+    @include captionOffset(180px, 105px);
   }
   
   @media (max-width: $media-xl-plus) {
     // margin-left: 168px;
+    font-size: 128px;
+
+    @include captionOffset(105px, 45px);
   }
 
   @media (max-width: 1200px) {
@@ -24,7 +43,7 @@
   }
 
   @media (max-width: $media-lg) {
-    margin-left: 108px;
+    // margin-left: 108px;
   }
 
   @media (max-width: $media-md) {
@@ -54,6 +73,7 @@
       left: 2.03em;
       right: 0;
       bottom: 0;
+      min-height: calc(50vh + 1em);
       padding-top: calc((100% - 2.03em) * 0.565);
       display: block;
       background: url("../images/content/cover/planet.png") no-repeat;
@@ -87,15 +107,15 @@
 
 .citizen-wrap__inner {
   position: relative;
-  margin-bottom: 65px;
+  // margin-bottom: 65px;
   width: 100%;
 
   @media (min-width: $media-xxl) {
-    margin-bottom: 105px;
+    // margin-bottom: 105px;
   }
 
   @media (max-width: $media-xl-plus) {
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
   }
 }
 
@@ -108,7 +128,14 @@
   margin-top: 0;
   color: #000;
   text-transform: uppercase;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateY(-1em);
+  transition-duration: .1s;
+  transition-property: transform;
+
+  .slick-current & {
+    transform: translateY(-50%);
+    transition-duration: .8s;
+  }
 
   small {
     display: block;

@@ -46,9 +46,12 @@
         display: none;
       }
 
+      @media (max-width: $media-xl-plus) {
+        width: 9px;
+        height: 9px;
+      }
+
       @media (max-width: $media-lg) {
-        height: 13px;
-        width: 13px;
       }
 
       &:not(:last-child) {

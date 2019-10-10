@@ -1,4 +1,11 @@
 .index-slider {
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+
+  @media (max-width: $media-md) {
+    height: auto;
+  }
   
   &__swap {
     // margin-right: 115px;

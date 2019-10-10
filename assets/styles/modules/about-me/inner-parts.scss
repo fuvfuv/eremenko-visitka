@@ -1,4 +1,5 @@
 $bulletsHeight: 284px;
+$bulletsHeightLG: 234px;
 
 .slider-item {
   align-items: flex-start;
@@ -42,6 +43,7 @@ $bulletsHeight: 284px;
       @media (max-width: $media-lg) {
         max-width: 300px;
         padding-top: 157px;
+        padding-top: calc((100vh - #{$bulletsHeightLG}) / 2);
       }
 
       @media (max-width: $media-md) {

@@ -80,12 +80,17 @@
   }
 
   &__caption {
+    font-size: 48px;
     margin-bottom: 0;
 
     @media (min-width: $media-xxl) {
       font-size: 64px;
     }
 
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
+      font-size: 34px;
+    }
+    
     @media (max-width: $media-md) {
       font-size: 24px;
       margin-bottom: 20px;

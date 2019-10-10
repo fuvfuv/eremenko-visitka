@@ -1,11 +1,9 @@
 .achievements {
   background-color: #f7f7f7;
-  padding-top: 50px;
   position: relative;
 
-  @media (max-width: $media-lg) {
+  @media (max-width: $media-md) {
     background-color: transparent;
-    padding-top: 0;
   }
 
   .mCSB_draggerContainer {
@@ -32,31 +30,24 @@
     }
   }
 
-  &__caption {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  &__header {
+    margin-bottom: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
     text-align: center;
+    flex-shrink: 0;
+
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
+      margin-bottom: 55px;
+    }
 
     @media (max-width: $media-lg) {
-      font-size: 24px;
       text-align: left;
     }
-
-    @media (max-width: 768px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__header {
-    margin-bottom: 100px;
-
-    @media (max-width: $media-xl-plus) {
-      margin-bottom: 60px;
-    }
-
-    @media (max-width: $media-lg) {
-      margin-bottom: 30px;
+    
+    @media (max-width: $media-md) {
+      margin-bottom: 0;
+      padding: 0;
     }
   }
 
@@ -65,7 +56,7 @@
     padding-right: 80px;
     padding-top: 50px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $media-md) {
       padding: 0;
     }
   }
@@ -83,7 +74,7 @@
       right: 0;
       z-index: 5;
 
-      @media (max-width: 1200px) {
+      @media (max-width: $media-md) {
         display: none;
       }
     }
@@ -101,7 +92,7 @@
   }
 
   &__body {
-    height: calc(100vh - 206px);
+    height: calc(100vh - 230px);
     overflow: scroll;
     padding: 0 80px;
     scrollbar-width: none; // Firefox
@@ -110,18 +101,19 @@
       display: none; // Safari and Chrome
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       height: calc(100vh - 160px);
-      padding: 0 20px;
+      padding: 0 55px;
     }
 
-    @media (max-width: $media-lg) {
+    @media (max-width: $media-md) {
       height: auto;
       padding: 0;
     }
 
-    @media (max-width: $media-md) {
-      padding: 0;
+    @media (min-width: $media-xxl) {
+      padding-left: 100px;
+      padding-right: 100px;
     }
   }
 }

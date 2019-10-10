@@ -154,20 +154,6 @@ input[type="radio"].visually-hidden {
       padding: 0 0 0 20px;
     }
   }
-
-  &--reviews-achievements {
-    @media (max-width: $media-xl-plus) {
-      padding-left: 20px;
-    }
-
-    @media (max-width: $media-md) {
-      padding-left: 30px;
-    }
-
-    @media (max-width: $media-sm) {
-      padding-left: 15px;
-    }
-  }
 }
 
 .hidden {

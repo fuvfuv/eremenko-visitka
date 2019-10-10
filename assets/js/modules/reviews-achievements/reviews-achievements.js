@@ -10,12 +10,11 @@ export function certificatesMsnry() {
     gutter: `.certificates__gap`,
     horizontalOrder: true,
     isResizeBound: true,
-    fitWidth: true,
   });
 }
 
 export function reviewsSlider() {
-  if ($(window).width() < 1200) {
+  if ($(window).width() <= 991) {
     $(`.reviews__list`).slick({
       slidesToShow: 1,
       adaptiveHeight: true,

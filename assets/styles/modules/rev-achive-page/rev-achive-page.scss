@@ -1,14 +1,16 @@
 .rev-achiev-page {
+  height: 100vh;
   overflow: hidden;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $media-md) {
+    height: auto;
     overflow: auto;
   }
 
   &__wrapper {
     display: flex;
 
-    @media (max-width: $media-lg) {
+    @media (max-width: $media-md) {
       display: initial;
     }
   }
@@ -16,7 +18,7 @@
   &__item {
     flex-basis: 50%;
 
-    @media (max-width: $media-lg) {
+    @media (max-width: $media-md) {
       flex-basis: initial;
     }
   }

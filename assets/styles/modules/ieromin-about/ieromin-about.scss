@@ -204,7 +204,7 @@
     }
 
     @media (max-width: $media-md) {
-      height: auto;
+      height: 40vw;
       margin-right: 0;
       width: auto;
       align-self: unset;
@@ -212,6 +212,10 @@
       &:before {
         display: none;
       }
+    }
+
+    @media (max-width: $media-sm) {
+      height: auto;
     }
 
     @media (min-width: $media-xxl) {
@@ -225,8 +229,11 @@
       width: 100%;
 
       @media (max-width: $media-md) {
-        height: auto;
         width: auto;
+      }
+
+      @media (max-width: $media-sm) {
+        height: auto;
       }
     }
 

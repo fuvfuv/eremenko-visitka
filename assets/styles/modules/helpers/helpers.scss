@@ -88,6 +88,11 @@ input[type="radio"].visually-hidden {
 
   @media (max-width: $media-md) {
     box-sizing: border-box;
+    padding: 0 30px;
+  }
+
+  @media (max-width: $media-sm) {
+    box-sizing: border-box;
     padding: 0 20px;
   }
 }
@@ -109,7 +114,7 @@ input[type="radio"].visually-hidden {
   
   @media (min-width: $media-sm) and (max-width: $media-md) {
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 30px;
   }
 
   @media (max-width: $media-sm) {
@@ -119,20 +124,6 @@ input[type="radio"].visually-hidden {
   @media (min-width: $media-xxl) {
     padding: 0 160px;
   }
-
-  // &--contacts {
-  //   @media (max-width: $media-xl-plus) {
-  //     padding: 0 125px 0 100px;
-  //   }
-  // 
-  //   @media (max-width: $media-lg) {
-  //     padding: 0;
-  //   }
-  // 
-  //   @media (max-width: $media-sm) {
-  //     padding: 0;
-  //   }
-  // }
 
   &--about-me {
     @media (max-width: $media-lg) {
@@ -170,6 +161,10 @@ input[type="radio"].visually-hidden {
     }
 
     @media (max-width: $media-md) {
+      padding-left: 30px;
+    }
+
+    @media (max-width: $media-sm) {
       padding-left: 15px;
     }
   }

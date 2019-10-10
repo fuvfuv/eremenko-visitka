@@ -8,7 +8,6 @@ const aboutBlockSlider = $(`.about-me__list`);
 export function aboutMeSlider() {
   const dots = document.querySelector(`.about-me__slider-controls`);
   const pageHeader = document.querySelector(`.header--about-me`);
-  const slideSixHeader = document.querySelector(`.header--slideSix`);
   const swapElement = document.querySelector(`.about-me__slider-swap`);
 
   aboutBlockSlider.on(`init`, function () {
@@ -61,9 +60,9 @@ export function changeToMobileSlider() {
   let btnViewRes = document.querySelector(`#btn--about`);
 
   window.onload = function () {
-    if (document.body.clientWidth > 768) {
+    if (document.body.clientWidth > 991) {
       mobileView.remove();
-    } else if (document.body.clientWidth < 767 || document.body.clientWidth === 767) {
+    } else {
       desktopView.remove();
       page.style.overflow = `scroll`;
       btnViewRes.classList.add(`hidden`);

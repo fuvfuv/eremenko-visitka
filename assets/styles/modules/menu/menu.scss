@@ -57,9 +57,13 @@
     background-color: #fff;
     height: 85px;
     outline: none; // временно
-    padding: 0 20px;
+    padding: 0 30px;
     width: 100%;
     z-index: 10;
+  }
+
+  @media (max-width: $media-sm) {
+    padding: 0 20px;
   }
 
   &__header {
@@ -79,9 +83,14 @@
 
   &__fake-logo {
     background-color: #000;
-    height: 14px;
-    width: 14px;
+    height: 24px;
+    width: 24px;
     transition: .3s background-color;
+
+    @media (max-width: $media-sm) {
+      height: 14px;
+      width: 14px;
+    }
   }
 
   &__body {
@@ -99,16 +108,19 @@
     }
 
     @media (max-width: $media-md) {
+      top: 0;
       left: 0;
-      padding: 0 20px;
+      padding: 0 30px;
       padding-top: 100px;
+      padding-bottom: 35px;
+      transform: translateY(-100%);
+      transition-duration: 0.3s;
+      transition-property: transform, box-shadow;
+      transition-timing-function: ease-in-out;
     }
 
-    @media (max-width: $media-md) {
-      padding-bottom: 35px;
-      top: 0;
-      transform: translateY(-100%);
-      transition: transform ease-in-out 0.3s;
+    @media (max-width: $media-sm) {
+      padding: 0 20px;
     }
   }
 

@@ -16,7 +16,7 @@
     position: relative;
     z-index: 1;
 
-    // @media (max-width: $media-xl-plus) {
+    // @media (max-width: $media-xl-plus), (max-height: 850px) {
     //   padding-left: 10px;
     // }
   }
@@ -38,7 +38,7 @@
 
     @include hide-on-name-lettering-hover;
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl), (max-height: 850px) {
       height: 205px;
       margin-bottom: 55px;
       margin-right: 85px;
@@ -85,7 +85,7 @@
         margin-left: 90px;
         margin-right: 90px;
 
-        @media (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus), (max-height: 850px) {
           width: 280px;
           padding-right: 0;
         }
@@ -112,7 +112,7 @@
           flex-grow: 1;
         }
 
-        @media (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus), (max-height: 850px) {
           margin-top: 0;
           width: 24%;
           margin-left: auto;
@@ -145,7 +145,7 @@
       display: block;
       font-weight: 500;
 
-      @media (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus), (max-height: 850px) {
         font-size: 12px;
       }
 
@@ -218,7 +218,7 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
   color: #fff;
   text-transform: uppercase;
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     bottom: calc(#{$letterBottomLG});
     top: calc(#{$letterTopLG});
     font-size: 195px;
@@ -290,7 +290,7 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
   bottom: calc((#{$letterBottom}) * -1);
   pointer-events: none;
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     top: calc((#{$letterTopLG}) * -1);
     bottom: calc((#{$letterBottomLG}) * -1);
   }
@@ -311,8 +311,11 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     transition: 0.5s opacity;
 
     @media (max-width: $media-xl-plus) {
-      top: calc(#{$letterTopLG});
       left: 85px;
+    }
+
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
+      top: calc(#{$letterTopLG});
     }
 
     @media (max-width: $media-lg) {
@@ -398,13 +401,14 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     transform: translate3d(0, 0, 0);
     transition-duration: 0.5s;
     transition-property: filter, clip-path;
-
-    @media (max-width: $media-xl-plus) {
+    
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       background-position: calc(85px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
       clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (min-width: $media-xl-plus + 1px) and (max-height: 850px) {
+      background-position: calc(120px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
     }
 
     @media (max-width: $media-lg) {

@@ -118,7 +118,7 @@
     outline: none;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     font-size: 12px;
     height: 38px;
 

@@ -8,7 +8,7 @@
       margin-bottom: 300px;
     }
     
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       margin-bottom: 125px;
     }
 

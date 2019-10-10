@@ -21,7 +21,7 @@
       margin-top: 120px + 14px;
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       margin-bottom: 64px;
       margin-top: 64px + 14px;
     }
@@ -46,7 +46,7 @@
         display: none;
       }
 
-      @media (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus), (max-height: 850px) {
         width: 9px;
         height: 9px;
       }
@@ -61,7 +61,7 @@
           margin-bottom: 76px;
         }
         
-        @media (max-width: $media-xl-plus) {
+        @media (max-width: $media-xl-plus), (max-height: 850px) {
           margin-bottom: 40px;
         }
 
@@ -114,7 +114,7 @@
       width: 10px;
       content: '';
 
-      @media (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus), (max-height: 850px) {
         height: 85px;
       }
 
@@ -135,7 +135,7 @@
       opacity: 0;
       transition: .5s opacity;
 
-      @media (max-width: $media-xl-plus) {
+      @media (max-width: $media-xl-plus), (max-height: 850px) {
         background-size: 10px 85px;
       }
 
@@ -155,7 +155,7 @@
       }
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       // margin-right: 40px;
       // padding-top: 140px;
     }
@@ -239,7 +239,7 @@
     left: 120px;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     top: 480px;
   }
 
@@ -271,7 +271,7 @@
     text-transform: uppercase;
     width: 76px;
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       margin-bottom: 35px;
     }
 
@@ -293,7 +293,7 @@
     height: 109px;
     width: 10px;
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       background-size: 10px 85px;
       height: 85px;
     }
@@ -358,7 +358,7 @@
     left: 120px;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     background-size: 580px 210px;
     height: 210px;
     top: 230px;

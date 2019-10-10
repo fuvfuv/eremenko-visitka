@@ -35,8 +35,11 @@
     margin-right: 120px;
     width: 240px;
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       width: 170px;
+    }
+
+    @media (max-width: $media-xl-plus) {
       margin-right: 85px;
     }
 

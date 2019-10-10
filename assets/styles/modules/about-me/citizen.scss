@@ -22,7 +22,7 @@
   font-size: 180px;
   // padding-top: 110px;
 
-  @include captionOffset(100px, 65px);
+  @include captionOffset(140px, 65px);
 
   @media (min-width: $media-xxl) {
     padding-top: 180px;

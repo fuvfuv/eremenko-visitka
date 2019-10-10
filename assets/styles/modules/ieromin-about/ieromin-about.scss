@@ -18,7 +18,7 @@
       height: 100%;
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl), (max-height: 850px) {
       padding-bottom: 100px;
     }
 
@@ -169,7 +169,7 @@
       pointer-events: none;
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl), (max-height: 850px) {
       width: 465px;
       height: 394px;
 

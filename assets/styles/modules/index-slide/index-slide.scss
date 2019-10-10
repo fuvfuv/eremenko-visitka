@@ -11,7 +11,7 @@
     font-size: 64px;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl), (max-height: 850px) {
     font-size: 34px;
   }
 

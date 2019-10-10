@@ -22,7 +22,7 @@
 .thanks-part-wrap {
   padding-top: 128px;
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     padding-top: 120px;
   }
 
@@ -42,7 +42,7 @@
   text-transform: none;
   width: 100%;
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     font-size: 14px;
   }
 
@@ -67,7 +67,7 @@
     width: 248px;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     height: 131px;
     margin-bottom: 45px;
     width: 218px;
@@ -101,7 +101,7 @@
       top: 40px;
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       background-size: 359px 48px;
       top: 31px;
     }
@@ -134,7 +134,7 @@
       top: 122px;
     }
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       background-size: 193px 11px;
       top: 98px;
     }
@@ -156,7 +156,7 @@
   margin-bottom: 119px;
   max-width: 403px;
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     margin-bottom: 55px;
     max-width: 357px;
   }
@@ -181,7 +181,7 @@
     padding-left: 59px;
   }
 
-  @media (max-width: $media-xl-plus) {
+  @media (max-width: $media-xl-plus), (max-height: 850px) {
     background-size: 32px 32px;
     font-size: 14px;
     max-width: 365px;
@@ -202,7 +202,7 @@
     text-transform: none;
     width: 100%;
 
-    @media (max-width: $media-xl-plus) {
+    @media (max-width: $media-xl-plus), (max-height: 850px) {
       font-size: 14px;
     }
 

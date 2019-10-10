@@ -323,11 +323,12 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     }
 
     @media (max-width: $media-md) {
-      left: 50%;
+      // left: 50%;
+      left: 20px;
       top: auto;
       bottom: 0;
-      transform: translateX(-50%);
-      margin-left: 0;
+      // transform: translateX(-50%);
+      // margin-left: 0;
     }
 
     @media (max-width: $media-xs) {

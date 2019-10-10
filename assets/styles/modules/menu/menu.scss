@@ -13,6 +13,30 @@
   width: 120px;
   z-index: 1000;
 
+  &::before {
+    background-color: #ededed;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+
+    @include hide-on-menu-hover;
+  }
+
+  .name-lettering-hovered & {
+    transform: translate3d(100%, 0, 0);
+    transition: 0.3s transform;
+
+    @media (max-width: $media-md) {
+      transition: 0s;
+      transform: none;
+    }
+  }
+
   @media (max-width: $media-md) {
     position: absolute;
   }
@@ -29,32 +53,9 @@
     width: 160px;
   }
 
-  .name-lettering-hovered & {
-    transform: translate3d(100%, 0, 0);
-    transition: 0.3s transform;
-
-    @media (max-width: $media-md) {
-      transform: none;
-    }
-  }
-
-  &::before {
-    background-color: #ededed;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1px;
-
-    @include hide-on-menu-hover;
-  }
-
   @media (max-width: $media-md) {
     background-color: #fff;
-    height: 100px;
+    height: 85px;
     outline: none; // временно
     padding: 0 20px;
     width: 100%;
@@ -72,6 +73,7 @@
 
     @media (max-width: $media-md) {
       display: flex;
+      padding-bottom: 20px;
     }
   }
 
@@ -79,6 +81,7 @@
     background-color: #000;
     height: 14px;
     width: 14px;
+    transition: .3s background-color;
   }
 
   &__body {

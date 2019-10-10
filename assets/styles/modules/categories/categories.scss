@@ -5,6 +5,10 @@
   justify-content: flex-end;
   margin-bottom: -10px;
 
+  @media (max-width: $media-md) {
+    justify-content: flex-start;
+  }
+
   &__item {
     // background-color: #000;
     margin-bottom: 10px;
@@ -13,6 +17,11 @@
     // &:not(:first-child) {
       margin-left: 10px;
     // }
+
+    @media (max-width: $media-md) {
+      margin-left: 0;
+      margin-right: 10px;
+    }
   }
 
   &__link {
@@ -23,6 +32,10 @@
     // padding: 20px 30px;
     white-space: nowrap;
     box-shadow: 0 8px 23px 3px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: $media-md) {
+      height: 38px;
+    }
 
     @media (max-width: $media-sm) {
       font-size: 11px;

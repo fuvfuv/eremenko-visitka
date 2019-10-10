@@ -22,13 +22,13 @@
   }
 
   @media (max-width: $media-sm) {
+    padding-top: 85px;
     margin-bottom: 0;
   }
 
   &__wrapper {
     align-items: center;
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 
@@ -37,6 +37,10 @@
     @media (max-width: $media-lg) {
       flex-basis: 100%;
       // margin-bottom: 30px;
+    }
+    
+    @media (max-width: $media-md) {
+      display: block;
     }
   }
 

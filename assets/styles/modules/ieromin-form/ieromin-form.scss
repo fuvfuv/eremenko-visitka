@@ -9,8 +9,10 @@
   }
 
   @media (max-width: $media-md) {
-    width: 100%;
+    width: auto;
     height: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &__container {
@@ -37,9 +39,6 @@
 
     @media (max-width: $media-md) {
       display: block;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 35px;
       padding-top: 35px;
     }
   }

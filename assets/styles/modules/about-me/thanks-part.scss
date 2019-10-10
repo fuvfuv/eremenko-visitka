@@ -33,6 +33,10 @@
   @media (max-width: $media-md) {
     padding-top: 90px;
   }
+
+  @media (min-width: $media-xxl) {
+    padding-top: 20vh;
+  }
 }
 
 .thanks-part__text {
@@ -52,6 +56,11 @@
 
   @media (max-width: $media-md) {
     max-width: 298px;
+  }
+
+  @media (min-width: $media-xxl) {
+    font-size: 21px;
+    line-height: 40px;
   }
 }
 
@@ -164,6 +173,10 @@
   @media (max-width: $media-md) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $media-xxl) {
+    max-width: 600px;
+  }
 }
 
 .text-two__items {
@@ -208,6 +221,12 @@
 
     @media (max-width: $media-lg) {
       font-size: 12px;
+    }
+
+    @media (min-width: $media-xxl) {
+      max-width: 530px;
+      font-size: 21px;
+      line-height: 40px;
     }
   }
 }

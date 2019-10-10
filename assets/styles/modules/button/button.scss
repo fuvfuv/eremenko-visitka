@@ -97,5 +97,9 @@
     @media (max-width: $media-md) {
       display: none;
     }
+
+    @media (min-width: $media-xxl) {
+      width: 320px;
+    }
   }
 }

@@ -41,5 +41,9 @@
       font-size: 11px;
       padding: 10px;
     }
+
+    @media (min-width: $media-xxl) {
+      font-size: 21px;
+    }
   }
 }

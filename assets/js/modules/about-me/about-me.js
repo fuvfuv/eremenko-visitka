@@ -1,57 +1,53 @@
 import {MEDIA} from "../constants/constants";
-import $ from "jquery"; // если нужен jquery
 import "slick-carousel";
 import "jquery-mousewheel";
-
-const aboutBlockSlider = $(`.about-me__list`);
+import Swiper from "swiper";
 
 export function aboutMeSlider() {
-  const dots = document.querySelector(`.about-me__slider-controls`);
   const pageHeader = document.querySelector(`.header--about-me`);
   const swapElement = document.querySelector(`.about-me__slider-swap`);
+  const aboutBlockSlider = document.querySelector(`.about-me__list-wrap`);
+  const dots = document.querySelector(`.about-me__slider-controls`);
 
-  aboutBlockSlider.on(`init`, function () {
+  const sliderOpts = {
+    init: false,
+    direction: `vertical`,
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 1,
+    slideClass: `slider-item`,
+    slideActiveClass: `slider-item-active`,
+    pagination: {
+      el: dots.querySelector(`.swiper-pagination`),
+      type: `bullets`,
+    },
+  };
+
+  const slider = new Swiper(aboutBlockSlider, sliderOpts);
+
+  slider.on(`init`, () => {
     pageHeader.classList.add(`header--about-intro`);
     dots.classList.add(`about-me__slider-controls--intro`);
   });
 
-  aboutBlockSlider.on(`beforeChange`, (event, slick, currentSlide, nextSlide) => {
-    if (nextSlide === 0) {
+  slider.on(`slideChange`, () => {
+    if (slider.isBeginning) {
       dots.classList.add(`about-me__slider-controls--intro`);
       pageHeader.classList.add(`header--about-intro`);
-    } else if (nextSlide > 0) {
+    } else {
       dots.classList.remove(`about-me__slider-controls--intro`);
       pageHeader.classList.remove(`header--about-intro`);
     }
 
-    if (nextSlide === slick.slideCount - 1) {
+    if (slider.isEnd) {
       swapElement.classList.add(`hidden`);
     } else {
       swapElement.classList.remove(`hidden`);
     }
   });
 
-  aboutBlockSlider.slick({
-    slidesToShow: 1,
-    dots: true,
-    dotsClass: `about-me__slider-bullets`,
-    appendDots: $(`.about-me__slider-controls`),
-    infinite: false,
-    prevArrow: null,
-    nextArrow: null,
-    vertical: true,
-    verticalSwiping: true,
-  });
+  slider.init();
 }
-
-aboutBlockSlider.on(`mousewheel`, function (evt) {
-  evt.preventDefault();
-  if (evt.deltaX > 0 || evt.deltaY < 0) {
-    $(aboutBlockSlider).slick(`slickNext`);
-  } else if (evt.deltaX < 0 || evt.deltaY > 0) {
-    $(aboutBlockSlider).slick(`slickPrev`);
-  }
-});
 
 export function changeToMobileSlider() {
   let desktopView = document.querySelector(`#about-me`);
@@ -60,7 +56,7 @@ export function changeToMobileSlider() {
   let btnViewRes = document.querySelector(`#btn--about`);
 
   window.onload = function () {
-    if (document.body.clientWidth > 991) {
+    if (window.matchMedia(`(min-width: ${MEDIA.MD}px)`).matches) {
       mobileView.remove();
     } else {
       desktopView.remove();

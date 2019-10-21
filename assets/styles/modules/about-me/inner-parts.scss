@@ -6,7 +6,9 @@ $bulletsHeightXXL: 464px;
   align-items: flex-start;
   display: flex !important; //костыль, но не убирать:) иначе slick переписывает на inline-block
   height: 100vh;
-  overflow: auto;
+  // overflow: auto;
+  overflow: hidden;
+  box-sizing: border-box;
 
   .slider-item__text-part {
     width: 50%;

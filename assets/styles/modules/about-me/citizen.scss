@@ -132,7 +132,7 @@
   transition-duration: .1s;
   transition-property: transform;
 
-  .slick-current & {
+  .slider-item-active & {
     transform: translateY(-50%);
     transition-duration: .8s;
   }

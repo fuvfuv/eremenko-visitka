@@ -14,6 +14,9 @@ const webpackConfig = (isProduction) => {
     output: {
       filename: `bundle.js`,
     },
+    optimization: {
+      minimize: isProduction ? true : false
+    },
     module: {
       rules: [
         {

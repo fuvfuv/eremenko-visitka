@@ -21,4 +21,4 @@ gulp.task(`watch`, () => {
 
 gulp.task(`dev`, gulp.series(`del`, gulp.parallel(`fonts`, `html`, `img`, `svg-sprite`, `css`, `js`), gulp.parallel(`watch`, `serve`)));
 
-gulp.task(`build`, gulp.series(`del`, gulp.parallel(`fonts`, `html:prod`, `img:prod`, `svg-sprite`, `css:prod`, `js:prod`), gulp.parallel(`watch`, `serve`)));
+gulp.task(`build`, gulp.series(`del`, gulp.parallel(`fonts`, `html:prod`, `img:prod`, `svg-sprite`, `css:prod`, `js:prod`)));

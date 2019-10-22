@@ -1,7 +1,7 @@
 import {MEDIA} from "../constants/constants";
 import "slick-carousel";
 import "jquery-mousewheel";
-import Swiper from "swiper";
+// import Swiper from "swiper";
 
 export function aboutMeSlider() {
   const pageHeader = document.querySelector(`.header--about-me`);

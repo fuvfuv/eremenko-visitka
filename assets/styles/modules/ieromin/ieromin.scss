@@ -272,7 +272,8 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
 
     .ieromin__lettering-front {
       &::after {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        height: 0;
         filter: brightness(1) contrast(100%);
 
         @media (max-width: $media-md) {
@@ -396,8 +397,9 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     background-position: calc(120px + 0px) calc((#{$letterTop}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
     background-repeat: no-repeat;
     background-size: #{(54 / 276 * 1em)} #{(54 / 276 * 1em)};
-    bottom: 0;
-    clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTop}), 0 calc(#{$letterTop}));
+    // bottom: calc(#{$letterTop});
+    height: calc(#{$letterTop});
+    // clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTop}), 0 calc(#{$letterTop}));
     content: "";
     display: block;
     filter: brightness(0.75) contrast(200%);
@@ -407,11 +409,11 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
     top: 0;
     transform: translate3d(0, 0, 0);
     transition-duration: 0.5s;
-    transition-property: filter, clip-path;
+    transition-property: filter, height;
     
     @media (max-width: $media-xl-plus), (max-height: 850px) {
       background-position: calc(85px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
-      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
+      // clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
 
     @media (min-width: $media-xl-plus + 1px) and (max-height: 850px) {
@@ -433,7 +435,7 @@ $letterBottomLG: "((100vh - #{($footerHeightLG + $headerHeightLG)} - #{$letterHe
 
     @media (min-width: $media-xxl) {
       background-position: calc(160px + 0px) calc((#{$letterTopLG}) - (#{(54 / 276)}em) - (#{(36 / 276)}em));
-      clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
+      // clip-path: polygon(0 0, 100% 0, 100% calc(#{$letterTopLG}), 0 calc(#{$letterTopLG}));
     }
   }
 

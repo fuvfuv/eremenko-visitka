@@ -12,7 +12,10 @@ export function aboutMeSlider() {
   const sliderOpts = {
     init: false,
     direction: `vertical`,
-    mousewheel: true,
+    mousewheel: {
+      releaseOnEdges: true,
+      sensitivity: 20
+    },
     keyboard: true,
     slidesPerView: 1,
     slideClass: `slider-item`,
@@ -20,17 +23,18 @@ export function aboutMeSlider() {
     pagination: {
       el: dots.querySelector(`.swiper-pagination`),
       type: `bullets`,
+      clickable: true
     },
   };
 
+  pageHeader.classList.add(`header--about-intro`);
+  dots.classList.add(`about-me__slider-controls--intro`);
+
   const slider = new Swiper(aboutBlockSlider, sliderOpts);
 
-  slider.on(`init`, () => {
-    pageHeader.classList.add(`header--about-intro`);
-    dots.classList.add(`about-me__slider-controls--intro`);
-  });
+  document.body.classList.add(`about-me-animated`);
 
-  slider.on(`slideChange`, () => {
+  slider.on(`slideChangeTransitionStart`, () => {
     if (slider.isBeginning) {
       dots.classList.add(`about-me__slider-controls--intro`);
       pageHeader.classList.add(`header--about-intro`);

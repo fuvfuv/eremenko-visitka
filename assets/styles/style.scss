@@ -35,7 +35,8 @@ body {
 }
 
 a,
-button {
+button,
+.swiper-pagination-clickable .swiper-pagination-bullet {
   &:hover {
     cursor: url($cursor-pointer) 30 30, pointer;
   }

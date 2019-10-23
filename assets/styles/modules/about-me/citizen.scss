@@ -11,16 +11,12 @@
 }
 
 .slider-item__citizen-wrap {
-  // align-items: center;
   display: flex;
   height: 100vh;
   justify-content: flex-end;
-  // margin-left: 165px;
-  // max-width: 1320px;
   position: relative;
   width: 100%;
   font-size: 180px;
-  // padding-top: 110px;
 
   @include captionOffset(140px, 65px);
 
@@ -32,18 +28,9 @@
   }
   
   @media (max-width: $media-xl-plus) {
-    // margin-left: 168px;
     font-size: 128px;
 
     @include captionOffset(105px, 45px);
-  }
-
-  @media (max-width: 1200px) {
-    // margin-left: 141px;
-  }
-
-  @media (max-width: $media-lg) {
-    // margin-left: 108px;
   }
 
   @media (max-width: $media-md) {
@@ -51,26 +38,15 @@
   }
 
   .citizen-wrap__photo-part {
-    // position: relative;
-    // height: calc(100% - 65px);
-    // margin-top: 160px;
-    // max-width: 1320px;
-    // width: 100%;
+    position: relative;
     height: 100%;
     width: calc(100% - 2.03em);
     margin-left: auto;
-    // overflow: hidden;
-
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      0 100%
-    );
+    overflow: hidden;
 
     &:before {
       position: absolute;
-      left: 2.03em;
+      left: 0;
       right: 0;
       bottom: 0;
       min-height: calc(50vh + 1em);
@@ -81,22 +57,6 @@
       background-position: center;
       background-color: #000;
       content: '';
-    }
-
-    @media (max-width: $media-xl-plus) {
-      // margin-top: 110px;
-    }
-
-    @media (max-width: 1200px) {
-      // margin-top: 108px;
-    }
-
-    @media (max-width: $media-lg) {
-      // margin-top: 115px;
-    }
-
-    @media (max-width: $media-md) {
-      // margin-top: 32px;
     }
   }
 }
@@ -123,16 +83,23 @@
   position: absolute;
   top: 50%;
   left: 0;
+  width: 2.03em;
+  overflow: hidden;
   font-weight: 900;
   line-height: .95;
   margin-top: 0;
   color: #000;
   text-transform: uppercase;
-  transform: translateY(-50%) translateY(-1em);
-  transition-duration: .1s;
-  transition-property: transform;
+  white-space: nowrap;
+  transform: translateY(-50%);
 
-  .slider-item-active & {
+  .about-me-animated & {
+    transform: translateY(-50%) translateY(-1em);
+    transition-duration: .1s;
+    transition-property: transform;
+  }
+
+  .about-me-animated .slider-item-active & {
     transform: translateY(-50%);
     transition-duration: .8s;
   }
@@ -143,6 +110,8 @@
   }
 
   &--inverted {
+    width: auto;
     color: #fff;
+    left: -2.03em;
   }
 }

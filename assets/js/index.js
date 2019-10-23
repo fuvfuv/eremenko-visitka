@@ -17,10 +17,10 @@ siteMenu();
 //   galleryMasonry();
 // }
 
-import {galleryModal} from "./modules/gallery-inner/gallery-inner";
-if (page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
-  galleryModal();
-}
+// import {galleryModal} from "./modules/gallery-inner/gallery-inner";
+// if (page.classList.contains(PAGE.PHOTOGALLERY_INNER)) {
+//   galleryModal();
+// }
 
 // gallery inner
 import {galleryInnerSettings} from "./modules/gallery-inner/gallery-inner";

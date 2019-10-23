@@ -29,8 +29,9 @@
 
   &-item {
     position: relative;
+    display: block;
     background-color: $global-light-grey;
-    cursor: pointer;
+    // cursor: pointer;
     height: auto;
     margin-bottom: 40px;
     // max-width: 360px;

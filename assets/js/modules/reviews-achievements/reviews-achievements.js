@@ -4,13 +4,15 @@ import "jquery-mousewheel";
 import "malihu-custom-scrollbar-plugin";
 
 export function certificatesMsnry() {
-  const container = document.querySelector(`.certificates`);
-  const msnry = new Masonry(container, {
-    itemSelector: `.certificates__item`,
-    gutter: `.certificates__gap`,
-    horizontalOrder: true,
-    isResizeBound: true,
-  });
+  window.onload = function () {
+    const container = document.querySelector(`.certificates`);
+    const msnry = new Masonry(container, {
+      itemSelector: `.certificates__item`,
+      gutter: `.certificates__gap`,
+      horizontalOrder: true,
+      isResizeBound: true,
+    });
+  };
 }
 
 export function reviewsSlider() {
